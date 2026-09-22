@@ -6,6 +6,7 @@ import { GroupedTableExample } from './GroupedTableExample'
 import { parseDate, parseTime } from '@internationalized/date'
 import { useMemo, useState } from 'react'
 import * as DS from '../runtime'
+import { publicAssetUrl } from '../services/environment'
 import { DEMO_BRAND_SWATCHES, DEMO_COLORS, DEMO_HUE_COLORS, DEMO_STATUS_SWATCHES } from '../data/demo-colors'
 // Stable sample data prevents the table from resetting its page on selection rerenders.
 const resourceRows=[
@@ -95,7 +96,7 @@ export function RuntimeExample({id,demoVariant='default',disabled=false,buttonVa
  case 'steps': return <DS.DSSteps items={['填写','确认','完成']} current={is('start')?0:is('complete')?2:1} />
  case 'drop-zone': return <div className={`runtime-drop-zone-example${is('compact')?' runtime-drop-zone-example--compact':''}`}><DS.DSDropZone label={is('compact')?'拖入单个文件':'上传文件'} onFiles={files=>setValue(files.map(f=>f.name).join('、'))}/>{value&&<p role="status"><DS.DSIcon name="success" weight="filled" size="sm" decorative />已选择 {value}</p>}</div>
  case 'resizable-panel': return <DS.DSResizablePanel min={is('wide')?320:180} max={is('wide')?720:480}>调整宽度查看内容</DS.DSResizablePanel>
- case 'image-preview': { const square=is('square');return <DS.DSImagePreview src="/assets/hj-logo-112.png" aspect={square?'square':'landscape'} alt={square?'方形品牌标识':'横向品牌标识预览'} /> }
+ case 'image-preview': { const square=is('square');return <DS.DSImagePreview src={publicAssetUrl('/assets/hj-logo-112.png')} aspect={square?'square':'landscape'} alt={square?'方形品牌标识':'横向品牌标识预览'} /> }
  case 'icon': return <div className="runtime-icon-grid">{[
    ['add','添加'],['edit','编辑'],['delete','删除'],['search','搜索'],['filter','筛选'],['calendar','日历'],
    ['user','用户'],['settings','设置'],['success','成功'],['warning','警告'],['upload','上传'],['download','下载'],
@@ -114,7 +115,7 @@ export function RuntimeExample({id,demoVariant='default',disabled=false,buttonVa
  case 'grid': return <DS.DSGrid columns={is('three')?3:2}><DS.DSCard>设计</DS.DSCard><DS.DSCard>开发</DS.DSCard>{is('three')&&<DS.DSCard>测试</DS.DSCard>}</DS.DSGrid>
  case 'page-container': return <DS.DSPageContainer style={is('compact')?{padding:12,maxWidth:520}:undefined}>页面内容</DS.DSPageContainer>
  case 'kbd': return <DS.DSKbd>{is('search')?'Ctrl + K':'Ctrl + C'}</DS.DSKbd>
- case 'avatar': return <div><DS.DSAvatar name="设计师" src={is('recovery')?value||'/audit-intentionally-missing-avatar.png':is('image')?'/assets/hj-logo-112.png':undefined} size={is('sm')?24:is('lg')?48:32} />{is('recovery')&&<DS.DSButton variant="secondary" onClick={()=>setValue('/assets/hj-logo-112.png')}>替换有效图片</DS.DSButton>}</div>
+ case 'avatar': return <div><DS.DSAvatar name="设计师" src={is('recovery')?value||publicAssetUrl('/audit-intentionally-missing-avatar.png'):is('image')?publicAssetUrl('/assets/hj-logo-112.png'):undefined} size={is('sm')?24:is('lg')?48:32} />{is('recovery')&&<DS.DSButton variant="secondary" onClick={()=>setValue(publicAssetUrl('/assets/hj-logo-112.png'))}>替换有效图片</DS.DSButton>}</div>
  case 'descriptions': return <DS.DSDescriptions label="项目信息" items={is('detailed')?[{label:'项目',value:'演示项目'},{label:'状态',value:'草稿'},{label:'负责人',value:'设计团队'},{label:'更新时间',value:'今天'}]:[{label:'项目',value:'演示项目'},{label:'状态',value:'草稿'}]} />
  case 'file-list': { const files=[{id:'a',name:'说明.txt',size:256},{id:'b',name:'变量.json',size:1024}].filter(file=>!removedFiles.includes(file.id));return <div className="runtime-file-list-example">{files.length?<DS.DSFileList files={files} onRemove={is('removable')?fileId=>{setRemovedFiles(items=>[...items,fileId]);setValue(`已移除 ${fileId==='a'?'说明.txt':'变量.json'}`)}:undefined}/>:<DS.DSEmpty title="文件已全部移除" description="刷新页面可恢复示例文件。" />}{value&&<p role="status">{value}</p>}</div> }
  case 'skeleton': return <DS.DSSkeleton style={is('card')?{width:280,height:128}:{width:280,height:18}} />
