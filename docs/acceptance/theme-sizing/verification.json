@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-20",
+  "scope": "TDesign adaptation phase 1: sizing and spacing",
+  "status": "passed",
+  "parameters": 13,
+  "tests": {
+    "files": 57,
+    "passed": 772,
+    "pool": "threads",
+    "workers": 1,
+    "targeted": 19,
+    "server": 32
+  },
+  "build": "passed",
+  "runtimeArchive": "passed",
+  "independentConsumerBuild": "passed",
+  "package": {
+    "projectId": "sizing-lab",
+    "releaseVersion": "1.0.0",
+    "packageName": "@design-workspace/sizing-lab",
+    "packageVersion": "1.0.0",
+    "runtimeBuildId": "sha256:5faf4fd912b08a6c8aabd7d2b3d4e6e2429802ac5f57c809c7d26ab46766f8b7",
+    "snapshotChecksum": "fnv1a64:e084a9bf5fb26901",
+    "snapshotSha256": "e279a754f61095b10a404176eb1c92e4b9597d37870c3eef1b31d76a1492540d",
+    "componentIds": [
+      "button",
+      "input",
+      "select",
+      "table",
+      "pagination",
+      "dialog",
+      "drawer",
+      "tabs",
+      "tag",
+      "badge",
+      "toast",
+      "form",
+      "field",
+      "upload",
+      "empty",
+      "loading",
+      "alert",
+      "checkbox",
+      "radio",
+      "switch"
+    ],
+    "archiveName": "design-workspace-sizing-lab-1.0.0.tgz",
+    "sha256": "ebcb59b7807f720c0e894dc5d68666bbe3f054cc7676aa77bd74e9164779ccbb",
+    "bytes": 5399036,
+    "createdAt": "2026-09-20T08:03:18.779Z"
+  },
+  "browser": {
+    "package": {
+      "controlHeight": 36,
+      "buttonInlinePadding": 22,
+      "inputInlinePadding": 18,
+      "selectStartPadding": 20,
+      "popupPadding": 32,
+      "narrowPopupPadding": 16
+    },
+    "editor": {
+      "overrideAfterDensityChange": 20,
+      "followHeightSm": 32,
+      "followHeightLg": 44,
+      "inputRestoredToFollow": 12,
+      "savedReloadedInputPadding": 12,
+      "unsavedAfterReload": false
+    },
+    "narrowOverflow": false
+  },
+  "compatibility": "optional sizing v1; old themes are not automatically enabled; frozen assets unchanged",
+  "limitations": [
+    "Full typography and shadow role hierarchy remain future phases.",
+    "Global full-screen design canvas not implemented in this phase."
+  ]
+}

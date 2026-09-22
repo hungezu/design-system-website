@@ -1,0 +1,2 @@
+export const PRODUCT_ROUTES = ['/', '/quick-start', '/search', '/assets', '/components', '/patterns', '/templates', '/projects', '/releases', '/workbench', '/layouts', '/audit', '/announcements'] as const
+export function isProductRoute(pathname: string): boolean { return PRODUCT_ROUTES.includes(pathname as typeof PRODUCT_ROUTES[number]) || pathname.startsWith('/assets/') || pathname.startsWith('/patterns/') || pathname.startsWith('/components/') || pathname.startsWith('/templates/') || pathname.startsWith('/projects/') }

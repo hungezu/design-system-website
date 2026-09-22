@@ -1,0 +1,3004 @@
+[
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/app/product-requirements.test.tsx",
+    "line": 66,
+    "snippet": "Undocumented color #102030 is outside DESIGN.md colors",
+    "ignoreValue": "#102030"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/design-system/primitives/Forms/Forms.css",
+    "line": 11,
+    "snippet": "border-radius: 20px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "20px",
+    "importedBy": [
+      "index.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 29,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 37,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 43,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 57,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 64,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 94,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 96,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 99,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 115,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 117,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 131,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 133,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 139,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 140,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 143,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 152,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 167,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 179,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 180,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 198,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 203,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 219,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 227,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 230,
+    "snippet": "border-radius: 999px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "999px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 238,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 243,
+    "snippet": "border-radius: 999px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "999px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 266,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 277,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 279,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 283,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 299,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 307,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 320,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 341,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 374,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 378,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 381,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 384,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 526,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 573,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.4) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.4)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 582,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 585,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 590,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 598,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 604,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 617,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 638,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 638,
+    "snippet": "border-radius: 0.75) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "0.75)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 657,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 662,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 665,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 675,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 689,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 718,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 739,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 753,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 767,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.4) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.4)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 771,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 775,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 776,
+    "snippet": "Undocumented color rgba(37, 99, 235, 0.2) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(37, 99, 235, 0.2)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 791,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 803,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 805,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 826,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 830,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 835,
+    "snippet": "Undocumented color #d54941 is outside DESIGN.md colors",
+    "ignoreValue": "#d54941"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 851,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 862,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 866,
+    "snippet": "Undocumented color rgba(0, 0, 0, 0.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0, 0, 0, 0.26)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 873,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 892,
+    "snippet": "Undocumented color #c6c6c6 is outside DESIGN.md colors",
+    "ignoreValue": "#c6c6c6"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 893,
+    "snippet": "border-radius: 9999px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "9999px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 896,
+    "snippet": "Undocumented color #a6a6a6 is outside DESIGN.md colors",
+    "ignoreValue": "#a6a6a6"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 900,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 930,
+    "snippet": "Undocumented color rgba(37, 99, 235, 0.08) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(37, 99, 235, 0.08)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 933,
+    "snippet": "Undocumented color rgba(37, 99, 235, 0.12) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(37, 99, 235, 0.12)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 984,
+    "snippet": "border-radius: 3px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1017,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1027,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1044,
+    "snippet": "Undocumented color #777777 is outside DESIGN.md colors",
+    "ignoreValue": "#777777"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1047,
+    "snippet": "Undocumented color #777777 is outside DESIGN.md colors",
+    "ignoreValue": "#777777"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1063,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1081,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1084,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1091,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1095,
+    "snippet": "Undocumented color #2563eb is outside DESIGN.md colors",
+    "ignoreValue": "#2563eb"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1101,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1200,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1201,
+    "snippet": "Undocumented color rgba(0,0,0,.16) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.16)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1235,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1258,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1266,
+    "snippet": "border-radius: 999px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "999px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1269,
+    "snippet": "Undocumented color rgba(0,0,0,.6) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.6)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1273,
+    "snippet": "Undocumented color rgba(0,0,0,.9) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.9)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1289,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1323,
+    "snippet": "Undocumented color rgba(0,0,0,.6) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.6)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1345,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1366,
+    "snippet": "Undocumented color rgba(0,0,0,.9) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.9)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1372,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1376,
+    "snippet": "Undocumented color rgba(0,0,0,.26) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.26)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1397,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1401,
+    "snippet": "Undocumented color #ed7b2f is outside DESIGN.md colors",
+    "ignoreValue": "#ed7b2f"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1407,
+    "snippet": "Undocumented color rgba(0,0,0,.4) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.4)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1418,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1422,
+    "snippet": "Undocumented color rgba(0,0,0,.9) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.9)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1448,
+    "snippet": "Undocumented color #2ba471 is outside DESIGN.md colors",
+    "ignoreValue": "#2ba471"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1453,
+    "snippet": "Undocumented color #d54941 is outside DESIGN.md colors",
+    "ignoreValue": "#d54941"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1471,
+    "snippet": "Undocumented color rgba(0,0,0,.4) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.4)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1509,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1516,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1517,
+    "snippet": "border-radius: 999px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "999px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1532,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1537,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1546,
+    "snippet": "border-radius: 6px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "6px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1550,
+    "snippet": "Undocumented color #d54941 is outside DESIGN.md colors",
+    "ignoreValue": "#d54941"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1553,
+    "snippet": "Undocumented color #e37318 is outside DESIGN.md colors",
+    "ignoreValue": "#e37318"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1573,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1577,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1583,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1592,
+    "snippet": "Undocumented color rgba(0,0,0,.16) is outside DESIGN.md colors",
+    "ignoreValue": "rgba(0,0,0,.16)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1624,
+    "snippet": "Undocumented color #646a73 is outside DESIGN.md colors",
+    "ignoreValue": "#646a73"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1632,
+    "snippet": "Undocumented color #d54941 is outside DESIGN.md colors",
+    "ignoreValue": "#d54941"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1650,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1654,
+    "snippet": "Undocumented color #0052d9 is outside DESIGN.md colors",
+    "ignoreValue": "#0052d9"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1658,
+    "snippet": "border-radius: 999px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "999px)"
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1671,
+    "snippet": "border-radius: 4px) is outside the DESIGN.md rounded scale",
+    "ignoreValue": "4px)"
+  },
+  {
+    "antipattern": "design-system-color",
+    "name": "Color outside DESIGN.md",
+    "description": "A literal color is outside the DESIGN.md palette and sidecar tonal ramps. This may be legitimate, but it should be an intentional design-system addition rather than drift.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.css",
+    "line": 1678,
+    "snippet": "Undocumented color #d54941 is outside DESIGN.md colors",
+    "ignoreValue": "#d54941"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/runtime/vendor/runtime.js",
+    "line": 15040,
+    "snippet": "font-size: .6rem is off the DESIGN.md type ramp",
+    "ignoreValue": ".6rem",
+    "importedBy": [
+      "index.tsx",
+      "Button.stories.tsx",
+      "Additional.tsx",
+      "Tree.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.tsx",
+      "index.ts"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 73,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "ignoreValue": "15px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 97,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 113,
+    "snippet": "font-size: 17px is off the DESIGN.md type ramp",
+    "ignoreValue": "17px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 116,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 135,
+    "snippet": "font-size: 18px is off the DESIGN.md type ramp",
+    "ignoreValue": "18px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 153,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 160,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 165,
+    "snippet": "font-size: 17px is off the DESIGN.md type ramp",
+    "ignoreValue": "17px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 169,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 179,
+    "snippet": "border-radius: 9px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 183,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "ignoreValue": "15px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 208,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 211,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 212,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 214,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 217,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 218,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 219,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 224,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 225,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 226,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 226,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 228,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 230,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 233,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 234,
+    "snippet": "font-size: 8px is off the DESIGN.md type ramp",
+    "ignoreValue": "8px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 237,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 245,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 249,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 253,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 259,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 266,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 267,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 273,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 276,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 277,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 279,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "7px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 289,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "7px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 312,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 320,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "ignoreValue": "15px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 329,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 336,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 337,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 340,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "ignoreValue": "15px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 344,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 346,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "7px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 356,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 357,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 363,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 366,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 371,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 399,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 404,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 415,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 438,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 442,
+    "snippet": "font-size: 32px is off the DESIGN.md type ramp",
+    "ignoreValue": "32px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 443,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 445,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 454,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 459,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 478,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 487,
+    "snippet": "border-radius: 5px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "5px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 491,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "ignoreValue": "15px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 494,
+    "snippet": "font-size: 23px is off the DESIGN.md type ramp",
+    "ignoreValue": "23px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 502,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "7px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 511,
+    "snippet": "font-size: 56px is off the DESIGN.md type ramp",
+    "ignoreValue": "56px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 512,
+    "snippet": "font-size: 18px is off the DESIGN.md type ramp",
+    "ignoreValue": "18px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 525,
+    "snippet": "border-radius: 9px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 536,
+    "snippet": "border-radius: 7px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "7px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 545,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 558,
+    "snippet": "border-radius: 13px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 571,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 590,
+    "snippet": "font-size: clamp(24px, 2.4vw, 32px) has fluid endpoints 24px and 32px off the DESIGN.md type ramp",
+    "ignoreValue": "24px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 591,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 593,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 601,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 605,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 611,
+    "snippet": "font-size: 17px is off the DESIGN.md type ramp",
+    "ignoreValue": "17px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 625,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 626,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 650,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 651,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 656,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 660,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 666,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 667,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 678,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 687,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 697,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 713,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 719,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 729,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 739,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 741,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 742,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 745,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 758,
+    "snippet": "font-size: 9px is off the DESIGN.md type ramp",
+    "ignoreValue": "9px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 759,
+    "snippet": "font-size: 10px is off the DESIGN.md type ramp",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 849,
+    "snippet": "font-size: 46px is off the DESIGN.md type ramp",
+    "ignoreValue": "46px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 886,
+    "snippet": "font-size: 26px is off the DESIGN.md type ramp",
+    "ignoreValue": "26px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 941,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 967,
+    "snippet": "border-radius: 10px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "10px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 969,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 973,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1143,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1148,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-radius",
+    "name": "Radius outside DESIGN.md",
+    "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1163,
+    "snippet": "border-radius: 3px is outside the DESIGN.md rounded scale",
+    "ignoreValue": "3px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1170,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1176,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1217,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/Zhuanz/Documents/ChatGPT/设计智能系统/src/styles/index.css",
+    "line": 1223,
+    "snippet": "font-size: 13px is off the DESIGN.md type ramp",
+    "ignoreValue": "13px",
+    "importedBy": [
+      "main.tsx"
+    ]
+  }
+]

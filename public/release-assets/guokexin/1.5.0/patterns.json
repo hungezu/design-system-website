@@ -1,0 +1,136 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.5.0",
+  "patternId": "query-list",
+  "patternVersion": "1.0.0",
+  "status": "confirmed",
+  "resolvedLayout": {
+    "pageContentMaxWidth": 1160,
+    "pagePaddingX": 44,
+    "pagePaddingY": 50,
+    "sectionGap": 16,
+    "headerGap": 8,
+    "headerActionAlignment": "space-between",
+    "contentContainerMode": "card",
+    "contentPadding": 20,
+    "contentRadiusRole": "radius.container"
+  },
+  "resolvedFilter": {
+    "displayMode": "grid",
+    "columns": 3,
+    "rowGap": 12,
+    "columnGap": 12,
+    "fieldWidthMode": "fill",
+    "fieldMinWidth": 220,
+    "fieldMaxWidth": 320,
+    "labelPlacement": "top",
+    "actionPlacement": "row",
+    "actionAlignment": "start",
+    "collapsible": false,
+    "defaultVisibleRows": 1,
+    "backgroundRole": "surface.subtle",
+    "padding": 14,
+    "radiusRole": "radius.container"
+  },
+  "resolvedResults": {
+    "headerAlignment": "space-between",
+    "titleActionGap": 12,
+    "tableGap": 12,
+    "paginationAlignment": "end",
+    "paginationGap": 12,
+    "minTableWidth": 720,
+    "overflowStrategy": "scroll",
+    "backgroundRole": "surface.card",
+    "padding": 16
+  },
+  "responsiveRules": {
+    "breakpoints": {
+      "tablet": 1050,
+      "compact": 620
+    },
+    "desktop": {
+      "filterColumns": 3,
+      "actionsWrap": false,
+      "paginationAlignment": "end",
+      "contentMaxWidth": 1160
+    },
+    "tablet": {
+      "filterColumns": 2,
+      "actionsWrap": true,
+      "tableOverflow": "scroll"
+    },
+    "compact": {
+      "filterColumns": 1,
+      "actionsFullWidth": true,
+      "tableMinWidth": 560,
+      "paginationWrap": "wrap"
+    }
+  },
+  "slotMapping": [
+    {
+      "slot": "pageHeader",
+      "domSelector": "[data-pattern-slot=\"page-header\"]",
+      "region": "page"
+    },
+    {
+      "slot": "description",
+      "domSelector": "[data-pattern-slot=\"description\"]",
+      "region": "page"
+    },
+    {
+      "slot": "filterArea",
+      "domSelector": "[data-pattern-slot=\"filter-area\"]",
+      "region": "filter-group"
+    },
+    {
+      "slot": "resultSummary",
+      "domSelector": "[data-pattern-slot=\"result-summary\"]",
+      "region": "results"
+    },
+    {
+      "slot": "primaryActions",
+      "domSelector": "[data-pattern-slot=\"primary-actions\"]",
+      "region": "results"
+    },
+    {
+      "slot": "secondaryActions",
+      "domSelector": "[data-pattern-slot=\"secondary-actions\"]",
+      "region": "results"
+    },
+    {
+      "slot": "table",
+      "domSelector": "[data-pattern-slot=\"table\"]",
+      "region": "results"
+    },
+    {
+      "slot": "pagination",
+      "domSelector": "[data-pattern-slot=\"pagination\"]",
+      "region": "results"
+    },
+    {
+      "slot": "emptyState",
+      "domSelector": "[data-pattern-slot=\"empty-state\"]",
+      "region": "results"
+    },
+    {
+      "slot": "loadingState",
+      "domSelector": "[data-pattern-slot=\"loading-state\"]",
+      "region": "results"
+    }
+  ],
+  "patternCss": ".bds-pattern-query-list {\n  --bds-pattern-page-max-width: 1160px;\n  --bds-pattern-page-padding-x: 44px;\n  --bds-pattern-page-padding-y: 50px;\n  --bds-pattern-section-gap: 16px;\n  --bds-pattern-header-gap: 8px;\n  --bds-pattern-header-action-alignment: space-between;\n  --bds-pattern-content-padding: 20px;\n  --bds-pattern-content-radius: var(--bds-radius-md, 6px);\n  --bds-pattern-filter-columns: 3;\n  --bds-pattern-filter-row-gap: 12px;\n  --bds-pattern-filter-column-gap: 12px;\n  --bds-pattern-field-min-width: 220px;\n  --bds-pattern-field-max-width: 320px;\n  --bds-pattern-filter-padding: 14px;\n  --bds-pattern-filter-bg: var(--bds-bg-surface-alt, transparent);\n  --bds-pattern-filter-radius: var(--bds-radius-md, 6px);\n  --bds-pattern-results-gap: 12px;\n  --bds-pattern-results-padding: 16px;\n  --bds-pattern-results-bg: var(--bds-bg-surface, transparent);\n  --bds-pattern-results-header-alignment: space-between;\n  --bds-pattern-pagination-alignment: end;\n  --bds-pattern-pagination-gap: 12px;\n  --bds-pattern-table-min-width: 720px;\n  --bds-pattern-action-alignment: start;\n  --bds-pattern-actions-wrap: nowrap;\n  --bds-pattern-compact-actions-full: 1;\n  --bds-pattern-compact-pagination-wrap: wrap;\n}\n\n@media (max-width: 1050px) {\n  .bds-pattern-query-list {\n    --bds-pattern-filter-columns: 2;\n    --bds-pattern-actions-wrap: wrap;\n    --bds-pattern-page-max-width: none;\n  }\n}\n\n@media (max-width: 620px) {\n  .bds-pattern-query-list {\n    --bds-pattern-filter-columns: 1;\n    --bds-pattern-table-min-width: 560px;\n    --bds-pattern-pagination-alignment: end;\n  }\n}",
+  "source": "GKX 候选：DESIGN.md（仅 GKX 来源）+ 1440 截图观察；单张截图不构成响应式证据 · 确认人：GKX Pattern 确认（DESIGN.md + 1440 截图候选 → 设计师确认）",
+  "fieldStatus": {
+    "total": 46,
+    "confirmed": 46,
+    "bySource": {
+      "design-image-observation": 38,
+      "platform-default": 8
+    }
+  },
+  "locked": true,
+  "missing": [],
+  "checksum": "caa2f57b1aa557ddbd7a9da113ce8497",
+  "note": "页面内容排版唯一来源：Consumer 注入 patternCss（--bds-pattern-* 变量 + tablet/compact 媒体查询）；系统结构在 layout.json、表面在 region-appearance.json、组件造型在 recipes.json（四层职责分离）"
+}

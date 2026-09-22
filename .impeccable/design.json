@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T12:53:20Z",
+  "title": "Design System: 国科信设计系统",
+  "extensions": {
+    "colorMeta": {
+      "brand-primary": { "role": "primary", "displayName": "国科信蓝", "canonical": "#165DFF", "tonalRamp": ["#001A52", "#002B85", "#003DB8", "#0E4FE5", "#4080FF", "#73A4FF", "#BBD5FF", "#E8F3FF"] },
+      "brand-secondary": { "role": "primary", "displayName": "国科信浅蓝", "canonical": "#E8F3FF", "tonalRamp": ["#16335C", "#28517F", "#4773A4", "#7398C7", "#A4BDE0", "#C8D9EF", "#E8F3FF", "#F6FAFF"] },
+      "text-primary": { "role": "neutral", "displayName": "主要文字", "canonical": "#1D2129", "tonalRamp": ["#111318", "#1D2129", "#343A45", "#4E5969", "#6B7785", "#A9B0BA", "#D8DBE0", "#F2F3F5"] },
+      "text-secondary": { "role": "neutral", "displayName": "次要文字", "canonical": "#4E5969", "tonalRamp": ["#15181D", "#272C34", "#3B434F", "#4E5969", "#76808E", "#A2A9B3", "#D4D7DC", "#F1F2F4"] },
+      "text-tertiary": { "role": "neutral", "displayName": "三级文字", "canonical": "#6B7785", "tonalRamp": ["#181B20", "#30353D", "#4A525E", "#6B7785", "#8D97A3", "#B4BAC2", "#DBDEE2", "#F3F4F5"] },
+      "text-on-brand": { "role": "neutral", "displayName": "品牌色上文字", "canonical": "#FFFFFF", "tonalRamp": ["#1D2129", "#4E5969", "#6B7785", "#A9B0BA", "#C9CDD4", "#E5E6EB", "#F7F8FA", "#FFFFFF"] },
+      "surface-page": { "role": "neutral", "displayName": "页面灰", "canonical": "#F2F3F5", "tonalRamp": ["#1D2129", "#343A45", "#6B7785", "#A9B0BA", "#C9CDD4", "#E5E6EB", "#F2F3F5", "#FAFAFB"] },
+      "surface-card": { "role": "neutral", "displayName": "内容白", "canonical": "#FFFFFF", "tonalRamp": ["#1D2129", "#4E5969", "#86909C", "#C9CDD4", "#E5E6EB", "#F2F3F5", "#F7F8FA", "#FFFFFF"] },
+      "surface-subtle": { "role": "neutral", "displayName": "分组灰", "canonical": "#F7F8FA", "tonalRamp": ["#1D2129", "#343A45", "#6B7785", "#A9B0BA", "#D8DBE0", "#E5E6EB", "#F2F3F5", "#F7F8FA"] },
+      "surface-inverse": { "role": "neutral", "displayName": "反色墨黑", "canonical": "#1D2129", "tonalRamp": ["#111318", "#1D2129", "#343A45", "#4E5969", "#86909C", "#C9CDD4", "#E5E6EB", "#F7F8FA"] },
+      "border-default": { "role": "neutral", "displayName": "默认边框", "canonical": "#E5E6EB", "tonalRamp": ["#1D2129", "#4E5969", "#6B7785", "#86909C", "#A9B0BA", "#C9CDD4", "#E5E6EB", "#F7F8FA"] },
+      "border-strong": { "role": "neutral", "displayName": "强调边框", "canonical": "#C9CDD4", "tonalRamp": ["#1D2129", "#343A45", "#4E5969", "#6B7785", "#86909C", "#A9B0BA", "#C9CDD4", "#E5E6EB"] },
+      "status-success": { "role": "secondary", "displayName": "成功绿", "canonical": "#00B42A", "tonalRamp": ["#002D0B", "#005C16", "#008524", "#00B42A", "#36C95A", "#74DE8C", "#B7EFC3", "#E8F8EC"] },
+      "status-warning": { "role": "secondary", "displayName": "警告橙", "canonical": "#FF7D00", "tonalRamp": ["#4A2100", "#7A3500", "#B84F00", "#FF7D00", "#FF9A2E", "#FFBD6B", "#FFDEB5", "#FFF3E8"] },
+      "status-error": { "role": "secondary", "displayName": "错误红", "canonical": "#F53F3F", "tonalRamp": ["#4A0B0B", "#7D1717", "#B92727", "#F53F3F", "#F76565", "#F99595", "#FCCACA", "#FFECEC"] },
+      "status-error-strong": { "role": "secondary", "displayName": "危险红", "canonical": "#C62835", "tonalRamp": ["#39070D", "#65101A", "#941C27", "#C62835", "#DB505C", "#EA7F88", "#F4B8BE", "#FCE9EB"] },
+      "status-info": { "role": "secondary", "displayName": "信息蓝", "canonical": "#165DFF", "tonalRamp": ["#001A52", "#002B85", "#003DB8", "#0E4FE5", "#4080FF", "#73A4FF", "#BBD5FF", "#E8F3FF"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "展示标题", "purpose": "当前页面实现中的一级展示标题。" },
+      "page-title": { "displayName": "页面标题", "purpose": "语义 Token 中的标准一级页面标题。" },
+      "section-title": { "displayName": "模块标题", "purpose": "页面模块和内容分组标题。" },
+      "body": { "displayName": "正文", "purpose": "正文、说明和表格数据。" },
+      "secondary": { "displayName": "辅助文字", "purpose": "辅助说明与元信息。" },
+      "table-head": { "displayName": "表头", "purpose": "Table 列标题。" },
+      "table-body": { "displayName": "表格正文", "purpose": "Table 数据内容。" },
+      "label": { "displayName": "工具标签", "purpose": "按钮、字段、标签和状态。" },
+      "code": { "displayName": "技术索引", "purpose": "变量名、资源 ID、序号和测量值。" }
+    },
+    "shadows": [
+      { "name": "base", "value": "0 1px 3px rgba(29, 33, 41, 0.08)", "purpose": "轻量浮起与悬停反馈。" },
+      { "name": "overlay", "value": "0 8px 24px rgba(29, 33, 41, 0.14)", "purpose": "下拉、Popover、Drawer 与 Table 更多菜单。" },
+      { "name": "dialog", "value": "0 16px 40px rgba(29, 33, 41, 0.18)", "purpose": "需要阻断焦点的 Dialog。" },
+      { "name": "search-entry", "value": "0 10px 26px rgba(20, 27, 24, 0.06)", "purpose": "设计资源搜索主入口。" },
+      { "name": "card-hover", "value": "0 9px 24px rgba(20, 27, 24, 0.06)", "purpose": "可点击资源卡片悬停反馈。" }
+    ],
+    "motion": [
+      { "name": "theme-transition", "value": "200ms ease", "purpose": "解析主题作用于文字色与画布色。" },
+      { "name": "control-feedback", "value": "150ms ease", "purpose": "按钮位移、背景和文字状态反馈。" },
+      { "name": "drawer", "value": "220ms cubic-bezier(.2,.8,.2,1)", "purpose": "移动侧栏抽屉进出。" },
+      { "name": "loading-spin", "value": "750ms linear infinite", "purpose": "Button Loading 图标旋转。" },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "在 prefers-reduced-motion 下覆盖动画和过渡。" }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "1050px" },
+      { "name": "drawer-navigation", "value": "820px" },
+      { "name": "single-column", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "标准 32px 主按钮，用于当前任务最重要的操作。",
+      "html": "<button class=\"ds-btn-primary\">保存更改</button>",
+      "css": ".ds-btn-primary { height: 32px; padding: 0 16px; display: inline-flex; align-items: center; justify-content: center; color: var(--text-on-brand, #fff); background: var(--brand-primary, #165DFF); border: 0; border-radius: var(--radius-control, 4px); font: 500 14px/22px \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; cursor: pointer; transition: transform .15s ease, filter .15s ease; } .ds-btn-primary:hover { filter: brightness(.9); transform: translateY(-1px); } .ds-btn-primary:active { filter: brightness(.82); transform: translateY(1px); } .ds-btn-primary:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "sidebar-navigation",
+      "description": "唯一前台系统的四项一级导航，当前项使用国科信蓝。",
+      "html": "<nav class=\"ds-nav\" aria-label=\"一级导航\"><a class=\"ds-nav-item ds-nav-active\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><path d=\"m3 10 9-7 9 7v10H3z\"/><path d=\"M9 20v-6h6v6\"/></svg>首页</a><a class=\"ds-nav-item\" href=\"#\">设计资源</a><a class=\"ds-nav-item\" href=\"#\">设计模式</a><a class=\"ds-nav-item\" href=\"#\">设计检查</a></nav>",
+      "css": ".ds-nav { width: 220px; padding: 8px; display: grid; gap: 4px; background: var(--surface-card, #fff); font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; } .ds-nav-item { height: 42px; padding: 0 12px; display: flex; align-items: center; gap: 11px; color: var(--text-secondary, #4E5969); border-radius: 8px; font-size: 14px; text-decoration: none; } .ds-nav-item:hover { color: var(--text-primary, #1D2129); background: var(--surface-subtle, #F7F8FA); } .ds-nav-active { color: var(--brand-primary, #165DFF); background: var(--brand-secondary, #E8F3FF); font-weight: 650; } .ds-nav-item:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: 2px; }"
+    },
+    {
+      "name": "Resource Search",
+      "kind": "input",
+      "refersTo": "input-default",
+      "description": "设计资源页的搜索主入口。",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-4-4\"/></svg><input aria-label=\"搜索设计资源\" placeholder=\"搜索设计资源、组件或图标……\"><kbd>⌘ K</kbd></label>",
+      "css": ".ds-search { height: 72px; padding: 0 20px; display: flex; align-items: center; gap: 14px; color: var(--text-primary, #1D2129); background: var(--surface-card, #fff); border: 1px solid var(--border-strong, #C9CDD4); border-radius: var(--radius-container, 6px); box-shadow: 0 10px 26px rgba(20,27,24,.06); font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; } .ds-search input { min-width: 0; flex: 1; color: inherit; background: transparent; border: 0; font-size: 17px; } .ds-search input:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: 2px; } .ds-search kbd { padding: 4px 7px; color: var(--text-tertiary, #6B7785); background: var(--surface-subtle, #F7F8FA); border: 1px solid var(--border-default, #E5E6EB); border-radius: 4px; font: 10px ui-monospace, monospace; }"
+    },
+    {
+      "name": "Semantic Token Row",
+      "kind": "custom",
+      "refersTo": "token-row",
+      "description": "同时展示预览、名称、ID、语义说明和解析值。",
+      "html": "<a class=\"ds-token-row\" href=\"#\"><i></i><span><strong>品牌主色</strong><code>brand-primary</code></span><small>主操作、链接、焦点和选中状态。</small><code>#165DFF</code></a>",
+      "css": ".ds-token-row { min-height: 58px; padding: 8px 14px; display: grid; grid-template-columns: 38px 180px minmax(220px, 1fr) 100px; align-items: center; gap: 12px; color: var(--text-primary, #1D2129); background: var(--surface-card, #fff); border-bottom: 1px solid var(--border-default, #E5E6EB); font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; text-decoration: none; } .ds-token-row:hover { background: var(--surface-subtle, #F7F8FA); } .ds-token-row i { width: 38px; height: 30px; background: var(--brand-primary, #165DFF); border: 1px solid var(--border-default, #E5E6EB); border-radius: 4px; } .ds-token-row span { display: grid; gap: 3px; } .ds-token-row strong { font-size: 12px; } .ds-token-row small { color: var(--text-secondary, #4E5969); font-size: 11px; } .ds-token-row code { color: var(--text-tertiary, #6B7785); font: 11px ui-monospace, monospace; } .ds-token-row:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: -3px; }"
+    },
+    {
+      "name": "Professional Table",
+      "kind": "custom",
+      "refersTo": "table-row",
+      "description": "展示固定表头、状态和右侧高频操作的紧凑 Table。",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><thead><tr><th>资源名称</th><th>分类</th><th>更新时间</th><th>状态</th><th>操作</th></tr></thead><tbody><tr><td><strong>复杂表格规范</strong><small>resource-001</small></td><td>组件</td><td>2026-09-07</td><td><span class=\"ds-status\">正常</span></td><td><button>查看</button><button>编辑</button></td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap { overflow: auto; background: var(--surface-card, #fff); border: 1px solid var(--border-default, #E5E6EB); border-radius: var(--radius-container, 6px); font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; } .ds-table { width: 100%; min-width: 680px; border-collapse: collapse; table-layout: fixed; font-size: 12px; } .ds-table thead { background: var(--surface-subtle, #F7F8FA); } .ds-table th, .ds-table td { height: 48px; padding: 0 12px; color: var(--text-secondary, #4E5969); text-align: left; border-bottom: 1px solid var(--border-default, #E5E6EB); } .ds-table th { height: 42px; color: var(--text-primary, #1D2129); font-weight: 550; } .ds-table th:last-child, .ds-table td:last-child { text-align: right; } .ds-table td strong, .ds-table td small { display: block; } .ds-table td strong { color: var(--text-primary, #1D2129); font-weight: 500; } .ds-table td small { color: var(--text-tertiary, #6B7785); font-size: 9px; } .ds-table button { padding: 4px 6px; color: var(--brand-primary, #165DFF); background: transparent; border: 0; cursor: pointer; } .ds-table button:hover { background: var(--brand-secondary, #E8F3FF); } .ds-table button:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); } .ds-status::before { content: \"\"; width: 6px; height: 6px; display: inline-block; margin-right: 6px; background: var(--status-success, #00B42A); border-radius: 50%; }"
+    },
+    {
+      "name": "Pattern List Item",
+      "kind": "custom",
+      "refersTo": "pattern-row",
+      "description": "结构化 Pattern 的索引行，强调任务而非单个组件。",
+      "html": "<a class=\"ds-pattern-row\" href=\"#\"><span class=\"ds-pattern-index\">06</span><span class=\"ds-pattern-icon\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"><path d=\"M3 6h18M8 6V4h8v2M5 6l1 14h12l1-14\"/></svg></span><span class=\"ds-pattern-copy\"><strong>删除确认</strong><small>从触发、风险确认、处理中到结果反馈的完整危险操作流程。</small></span><span class=\"ds-pattern-tag\">危险</span><b>→</b></a>",
+      "css": ".ds-pattern-row { min-height: 82px; padding: 12px 4px; display: grid; grid-template-columns: 34px 36px minmax(0, 1fr) 70px 24px; align-items: center; gap: 12px; color: var(--text-primary, #1D2129); border-bottom: 1px solid var(--border-default, #E5E6EB); font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; text-decoration: none; } .ds-pattern-row:hover { padding-left: 10px; padding-right: 10px; background: var(--surface-card, #fff); } .ds-pattern-index { color: var(--text-tertiary, #6B7785); font: 9px ui-monospace, monospace; } .ds-pattern-icon { width: 34px; height: 34px; display: grid; place-items: center; color: var(--brand-primary, #165DFF); background: var(--brand-secondary, #E8F3FF); border-radius: 6px; } .ds-pattern-copy { display: grid; gap: 4px; } .ds-pattern-copy strong { font-size: 13px; } .ds-pattern-copy small { color: var(--text-secondary, #4E5969); font-size: 11px; } .ds-pattern-tag { padding: 2px 7px; color: var(--text-secondary, #4E5969); background: var(--surface-subtle, #F7F8FA); border-radius: 2px; font-size: 11px; } .ds-pattern-row:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: -3px; }"
+    },
+    {
+      "name": "Audit Finding",
+      "kind": "custom",
+      "refersTo": "audit-finding",
+      "description": "模拟检查中的警告 Finding，包含维度、严重度、证据和建议。",
+      "html": "<article class=\"ds-finding\"><span class=\"ds-finding-icon\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 3 2 21h20Z\"/><path d=\"M12 9v4M12 17h.01\"/></svg></span><div><header><h2>检测到非标准间距</h2><span>间距</span><b>需要关注</b></header><p>筛选区与操作栏之间使用了 20px。</p><aside><strong>建议</strong> 使用 spacing-16。</aside></div><i>›</i></article>",
+      "css": ".ds-finding { min-height: 98px; padding: 18px; display: grid; grid-template-columns: 36px 1fr 20px; gap: 12px; color: var(--text-primary, #1D2129); background: var(--surface-card, #fff); border: 1px solid var(--border-default, #E5E6EB); border-radius: 9px; font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; } .ds-finding-icon { width: 32px; height: 32px; display: grid; place-items: center; color: var(--status-warning, #FF7D00); background: color-mix(in srgb, var(--status-warning, #FF7D00) 10%, white); border-radius: 8px; } .ds-finding header { display: flex; align-items: center; gap: 6px; } .ds-finding h2 { margin: 0 auto 0 0; font-size: 13px; } .ds-finding header span, .ds-finding header b { padding: 2px 7px; background: var(--surface-subtle, #F7F8FA); border-radius: 2px; color: var(--text-secondary, #4E5969); font-size: 11px; font-weight: 500; } .ds-finding p { margin: 7px 0; color: var(--text-secondary, #4E5969); font-size: 11px; } .ds-finding aside { color: var(--text-secondary, #4E5969); font-size: 11px; } .ds-finding aside strong { margin-right: 8px; color: var(--status-warning, #FF7D00); } .ds-finding > i { color: var(--text-tertiary, #6B7785); font-style: normal; }"
+    },
+    {
+      "name": "Inheritance Trace",
+      "kind": "custom",
+      "refersTo": "inheritance-trace",
+      "description": "Global 到 Guokexin Configuration 再到 Resolved 的可见解析链。",
+      "html": "<div class=\"ds-trace\"><div><span>01</span><strong>Global</strong><small>语义 Token 与通用组件</small></div><div class=\"ds-trace-active\"><span>02</span><strong>Guokexin Configuration</strong><small>品牌、密度与业务规则</small></div><div><span>03</span><strong>Resolved</strong><small>国科信实际设计资源</small></div></div>",
+      "css": ".ds-trace { display: grid; grid-template-columns: repeat(3, 1fr); color: var(--text-primary, #1D2129); background: var(--surface-card, #fff); border: 1px solid var(--border-default, #E5E6EB); border-radius: var(--radius-container, 6px); overflow: hidden; font-family: \"Noto Sans SC Variable\", \"PingFang SC\", sans-serif; } .ds-trace > div { position: relative; min-height: 104px; padding: 18px; display: grid; align-content: center; gap: 5px; border-right: 1px solid var(--border-default, #E5E6EB); } .ds-trace > div:last-child { border-right: 0; } .ds-trace > div:not(:last-child)::after { content: \"›\"; position: absolute; right: -6px; top: 42px; z-index: 1; width: 12px; color: var(--text-tertiary, #6B7785); background: var(--surface-card, #fff); text-align: center; } .ds-trace-active { background: var(--brand-secondary, #E8F3FF); } .ds-trace span { color: var(--text-tertiary, #6B7785); font: 10px ui-monospace, monospace; } .ds-trace strong { font-size: 12px; } .ds-trace small { color: var(--text-secondary, #4E5969); font-size: 11px; } @media (max-width: 620px) { .ds-trace { grid-template-columns: 1fr; } .ds-trace > div { min-height: 67px; border-right: 0; border-bottom: 1px solid var(--border-default, #E5E6EB); } .ds-trace > div:not(:last-child)::after { content: \"↓\"; top: auto; right: auto; bottom: -7px; left: 16px; } }"
+    },
+    {
+      "name": "Lucide Public Icon",
+      "kind": "custom",
+      "refersTo": "public-icon",
+      "description": "公共图标统一使用 Lucide、currentColor 和 1.75px 描边。",
+      "html": "<button class=\"ds-icon-button\" aria-label=\"搜索\"><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg></button>",
+      "css": ".ds-icon-button { width: 32px; height: 32px; display: grid; place-items: center; padding: 0; color: var(--text-secondary, #4E5969); background: var(--surface-card, #fff); border: 1px solid var(--border-default, #E5E6EB); border-radius: var(--radius-control, 4px); cursor: pointer; } .ds-icon-button:hover { color: var(--brand-primary, #165DFF); background: var(--brand-secondary, #E8F3FF); } .ds-icon-button:active { transform: translateY(1px); } .ds-icon-button:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand-primary, #165DFF) 30%, transparent); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "可追溯的国科信规范工作台",
+    "overview": "前台只呈现一个系统身份：国科信设计系统。浅灰工作区、白色内容面、国科信品牌蓝与紧凑表格共同形成专业 B 端工具语言；结构和业务规则优先于装饰。\n\n首页把 Global → Guokexin Configuration → Resolved 的解析关系作为系统骨架。设计资源、设计模式与设计检查分别承载资产检索、任务组合和规范验证，所有页面共享同一语义 Token、组件语言与 Lucide 公共图标。",
+    "keyCharacteristics": [
+      "唯一系统身份与稳定的左侧导航、顶栏、中央工作区。",
+      "国科信蓝只用于主操作、当前项、焦点与关键信息。",
+      "语义 Token 按品牌、文字、背景、边框、状态、字体、间距、控件尺寸、圆角和阴影分组。",
+      "Button 与 Table 提供可操作的专业详情，展示变体、状态、规则与变量来源。",
+      "12 个结构化 Pattern 描述组件组合、任务步骤、必要状态与使用规则。",
+      "Audit 明确标注为本地模拟检查结果，不冒充真实检查服务。"
+    ],
+    "rules": [
+      { "name": "The Resolved Token Rule", "body": "前台只消费解析后的语义 Token；界面通过 Global、Guokexin Configuration 和 Resolved 的来源关系解释值从何而来。", "section": "colors" },
+      { "name": "The One Blue Rule", "body": "国科信蓝是唯一前台品牌强调色，不为不同页面建立平行品牌主题。", "section": "colors" },
+      { "name": "The State Redundancy Rule", "body": "成功、警告和错误必须同时使用文字或图标表达，不能只依赖颜色。", "section": "colors" },
+      { "name": "The Tool Density Rule", "body": "大字只用于页面身份；任务区、控件和表格以 12–14px 为主并保持清晰行高。", "section": "typography" },
+      { "name": "The Technical Label Rule", "body": "等宽字体服务于可复制、可比对的技术值，不用于长段中文内容。", "section": "typography" },
+      { "name": "The Stable Frame Rule", "body": "大屏保持“侧栏 + 顶栏 + 工作区”，只有视口不足时才把侧栏转换为抽屉。", "section": "layout" },
+      { "name": "The Task Order Rule", "body": "复杂列表按“筛选 → 操作 → 表格 → 分页”组织；详情先说明对象与来源，再展示可操作示例和规则。", "section": "layout" },
+      { "name": "The Flat-by-Default Rule", "body": "静止容器优先依靠表面色和边框分组，阴影只说明真实层级或交互反馈。", "section": "elevation" },
+      { "name": "The Four-Pixel Control Rule", "body": "业务控件以 32px 高、4px 圆角为默认组合，只有紧凑表格操作或重点流程才切换到已定义的 28px / 40px 尺寸。", "section": "shapes" }
+    ],
+    "dos": [
+      "Do 保持“国科信设计系统”作为唯一前台系统身份。",
+      "Do 通过语义 Token 和解析来源实现颜色、密度、圆角与组件表现，不在页面组件内硬编码另一套规则。",
+      "Do 使用统一 Lucide 图标，并让图标随 currentColor 响应状态。",
+      "Do 以 32px 高、4px 圆角作为标准业务控件基线。",
+      "Do 将 Button、Table、Pattern 和 Audit 的状态、规则和来源完整呈现。",
+      "Do 为键盘焦点保留清晰轮廓，并尊重 prefers-reduced-motion。"
+    ],
+    "donts": [
+      "Don't 在当前前台加入多系统切换或平行主题演示。",
+      "Don't 添加没有对应路由、数据和交互闭环的入口。",
+      "Don't 使用装饰性渐变、紫色发光、玻璃拟态或无意义的大面积品牌色。",
+      "Don't 用阴影代替结构，也不要让所有静止卡片默认浮起。",
+      "Don't 把单个组件当作 Pattern；Pattern 必须包含任务步骤、必要状态和组合规则。",
+      "Don't 把本地 Audit Demo 描述为真实上传、解析或自动检查结果。"
+    ]
+  }
+}

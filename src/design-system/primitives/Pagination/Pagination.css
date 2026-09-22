@@ -1,0 +1,8 @@
+.ds-pagination.owned-pagination { width:100%; display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:var(--spacing-12,12px); }
+.owned-pagination > .ds-pagination__total { margin-inline-end:auto; }
+.owned-pagination__controls { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:var(--spacing-8,8px); max-width:100%; }
+@media(max-width:640px){.ds-pagination.owned-pagination { justify-content:flex-end; }.owned-pagination__controls{margin-inline-start:auto}.owned-pagination > .ds-pagination__total{flex-basis:100%}}
+.owned-pagination { --control-height-sm:var(--pagination-control-height,28px); --bds-ctrl-sm:var(--pagination-control-height,28px); }
+.owned-pagination > .ds-pagination__total { margin-inline-start:var(--spacing-8,8px); }
+.owned-pagination .gkx-button.ds-pagination__btn { box-sizing:border-box; width:var(--pagination-control-height,28px); min-width:var(--pagination-control-height,28px); height:var(--pagination-control-height,28px); min-height:var(--pagination-control-height,28px); padding-inline:0; }
+.owned-pagination .ds-select__trigger { box-sizing:border-box; height:var(--pagination-control-height,28px); min-height:var(--pagination-control-height,28px); }

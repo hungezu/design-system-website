@@ -1,0 +1,3682 @@
+[
+  {
+    "component": "combo-box",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "no-results",
+        "label": "无匹配"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "slider",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "单值"
+      },
+      {
+        "id": "range",
+        "label": "范围"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "calendar",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "date-field",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "drop-zone",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "icon",
+    "source": "src/runtime/vendor/runtime.js",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小图标"
+      },
+      {
+        "id": "md",
+        "label": "中图标"
+      },
+      {
+        "id": "lg",
+        "label": "大图标"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "button",
+    "source": "src/design-system/primitives/Button/DSButton.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "primary",
+        "label": "主要"
+      },
+      {
+        "id": "secondary",
+        "label": "次要"
+      },
+      {
+        "id": "tertiary",
+        "label": "文字"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "input",
+    "source": "src/design-system/primitives/TextField/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "filled",
+        "label": "已填写"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "readonly",
+        "label": "只读且可清空"
+      },
+      {
+        "id": "required",
+        "label": "必填"
+      },
+      {
+        "id": "max-length",
+        "label": "长度限制"
+      },
+      {
+        "id": "adornments",
+        "label": "前后缀"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "select",
+    "source": "src/design-system/primitives/Select/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "open",
+      "selected",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选择"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "required",
+        "label": "必填且配置清空"
+      },
+      {
+        "id": "clearable",
+        "label": "可清空"
+      },
+      {
+        "id": "empty",
+        "label": "空选项"
+      },
+      {
+        "id": "disabled-option",
+        "label": "含禁用选项"
+      },
+      {
+        "id": "long-option",
+        "label": "长选项"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "textarea",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "filled",
+        "label": "已填写"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "required",
+        "label": "必填"
+      },
+      {
+        "id": "max-length",
+        "label": "长度限制"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "checkbox",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "indeterminate",
+      "disabled",
+      "error",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选中"
+      },
+      {
+        "id": "checked",
+        "label": "已选中"
+      },
+      {
+        "id": "indeterminate",
+        "label": "部分选中"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "checked-disabled",
+        "label": "选中且禁用"
+      },
+      {
+        "id": "indeterminate-disabled",
+        "label": "部分选中且禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "radio",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled",
+      "error",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "selected-disabled",
+        "label": "选中且禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "switch",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "关闭"
+      },
+      {
+        "id": "checked",
+        "label": "开启"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "checked-disabled",
+        "label": "开启且禁用"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "form",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "implementedStates": [
+      "default",
+      "disabled",
+      "loading",
+      "error",
+      "success"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "error",
+        "label": "提交错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "提交中"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "field",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "required",
+        "label": "必填"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "date-picker",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "date-range-picker",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "time-picker",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "cascader",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "region",
+        "label": "地区"
+      },
+      {
+        "id": "department",
+        "label": "部门"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "autocomplete",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "no-results",
+        "label": "无匹配"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "table",
+    "source": "src/runtime/vendor/runtime.js",
+    "implementedStates": [
+      "default",
+      "hover",
+      "selected",
+      "loading",
+      "empty"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "标准"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "comfortable",
+        "label": "宽松"
+      },
+      {
+        "id": "selection",
+        "label": "可选择"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "empty",
+        "label": "空数据"
+      },
+      {
+        "id": "no-results",
+        "label": "无搜索结果"
+      },
+      {
+        "id": "sorting",
+        "label": "受控排序"
+      },
+      {
+        "id": "paged-selection",
+        "label": "跨页选择"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "pagination",
+    "source": "src/runtime/vendor/runtime.js",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "首页"
+      },
+      {
+        "id": "middle",
+        "label": "中间页"
+      },
+      {
+        "id": "end",
+        "label": "末页"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "tag",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "badge",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "empty",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "empty"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "action",
+        "label": "带操作"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "loading",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "progress",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "descriptions",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "basic",
+        "label": "基础"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "tree",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "tabs",
+    "source": "src/design-system/primitives/Navigation/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "breadcrumb",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "deep",
+        "label": "多层"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "menu",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "dropdown",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "open",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "steps",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "start",
+        "label": "开始"
+      },
+      {
+        "id": "middle",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "完成"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "dialog",
+    "source": "src/design-system/primitives/Overlays/index.tsx",
+    "implementedStates": [
+      "default",
+      "open",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "form",
+        "label": "表单"
+      },
+      {
+        "id": "loading",
+        "label": "加载保护"
+      },
+      {
+        "id": "long",
+        "label": "长内容滚动"
+      },
+      {
+        "id": "nested",
+        "label": "嵌套选择器"
+      },
+      {
+        "id": "protected",
+        "label": "关闭方式限制"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "drawer",
+    "source": "src/design-system/primitives/Overlays/index.tsx",
+    "implementedStates": [
+      "default",
+      "open",
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "查看"
+      },
+      {
+        "id": "form",
+        "label": "编辑"
+      },
+      {
+        "id": "long",
+        "label": "长内容滚动"
+      },
+      {
+        "id": "nested",
+        "label": "嵌套选择器"
+      },
+      {
+        "id": "protected",
+        "label": "关闭方式限制"
+      },
+      {
+        "id": "loading",
+        "label": "加载保护"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "toast",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      },
+      {
+        "id": "restart",
+        "label": "关闭后重开"
+      },
+      {
+        "id": "persistent",
+        "label": "持续显示"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/design-system/primitives/Feedback/Toast.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "message",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "alert",
+    "source": "src/design-system/primitives/Feedback/index.tsx",
+    "implementedStates": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "tooltip",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "top",
+        "label": "上方"
+      },
+      {
+        "id": "bottom",
+        "label": "下方"
+      },
+      {
+        "id": "left",
+        "label": "左侧"
+      },
+      {
+        "id": "right",
+        "label": "右侧"
+      },
+      {
+        "id": "top-start",
+        "label": "左上"
+      },
+      {
+        "id": "top-end",
+        "label": "右上"
+      },
+      {
+        "id": "bottom-start",
+        "label": "左下"
+      },
+      {
+        "id": "bottom-end",
+        "label": "右下"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "popover",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "popconfirm",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "normal",
+        "label": "普通"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "card",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "simple",
+        "label": "简洁"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "divider",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "grid",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "two",
+        "label": "两列"
+      },
+      {
+        "id": "three",
+        "label": "三列"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "space",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "loose",
+        "label": "宽松"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "stack",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "vertical",
+        "label": "纵向"
+      },
+      {
+        "id": "horizontal",
+        "label": "横向"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "page-container",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "标准"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "resizable-panel",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "narrow",
+        "label": "窄"
+      },
+      {
+        "id": "wide",
+        "label": "宽"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "upload",
+    "source": "src/design-system/primitives/Upload/index.tsx",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单文件"
+      },
+      {
+        "id": "multiple",
+        "label": "多文件"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "size-limit",
+        "label": "文件大小校验"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "image-preview",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "landscape",
+        "label": "横图"
+      },
+      {
+        "id": "square",
+        "label": "方图"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "avatar",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      },
+      {
+        "id": "image",
+        "label": "图片"
+      },
+      {
+        "id": "recovery",
+        "label": "失败后恢复"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/design-system/primitives/Content/Avatar.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "file-list",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "accordion",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单项展开"
+      },
+      {
+        "id": "multiple",
+        "label": "多项展开"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "alert-dialog",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "confirm",
+        "label": "确认"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "button-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "主要操作"
+      },
+      {
+        "id": "mixed",
+        "label": "混合层级"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "close-button",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "disclosure",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "disclosure-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单项展开"
+      },
+      {
+        "id": "multiple",
+        "label": "多项展开"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "checkbox-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "selected-disabled",
+        "label": "选中且禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-area",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-field",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-picker",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-slider",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-swatch",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "color-swatch-picker",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "brand",
+        "label": "品牌色"
+      },
+      {
+        "id": "status",
+        "label": "状态色"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "input-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "url",
+        "label": "网址"
+      },
+      {
+        "id": "amount",
+        "label": "金额"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "input-otp",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "six",
+        "label": "六位"
+      },
+      {
+        "id": "four",
+        "label": "四位"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/design-system/primitives/Collections/InputOTP.test.tsx"
+    ],
+    "browserEvidence": "component-state-repair.md"
+  },
+  {
+    "component": "kbd",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "copy",
+        "label": "复制"
+      },
+      {
+        "id": "search",
+        "label": "搜索"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "link",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "internal",
+        "label": "站内"
+      },
+      {
+        "id": "external",
+        "label": "外部"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "list-box",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "meter",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "normal",
+        "label": "正常"
+      },
+      {
+        "id": "warning",
+        "label": "偏高"
+      },
+      {
+        "id": "critical",
+        "label": "临界"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "modal",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "open"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "confirm",
+        "label": "确认"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "number-field",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "min",
+        "label": "最小值"
+      },
+      {
+        "id": "max",
+        "label": "最大值"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "progress-bar",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "progress-circle",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "range-calendar",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "scroll-shadow",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "tall",
+        "label": "较高"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "search-field",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "空值"
+      },
+      {
+        "id": "filled",
+        "label": "已输入"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "separator",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "skeleton",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "text",
+        "label": "文本"
+      },
+      {
+        "id": "card",
+        "label": "卡片"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "spinner",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "loading"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "implemented"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "surface",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "subtle",
+        "label": "弱背景"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "tag-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "只读"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      }
+    ],
+    "behaviorEvidence": [
+      "src/components/RuntimeExample.behavior.test.tsx"
+    ],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "time-field",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "implemented"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "toggle-button",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选中"
+      },
+      {
+        "id": "selected",
+        "label": "已选中"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "toggle-button-group",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "implemented"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  },
+  {
+    "component": "toolbar",
+    "source": "参见 Runtime 入口",
+    "implementedStates": [
+      "default"
+    ],
+    "stateApplicability": [
+      {
+        "state": "disabled",
+        "status": "not-applicable"
+      },
+      {
+        "state": "loading",
+        "status": "not-applicable"
+      },
+      {
+        "state": "error",
+        "status": "not-applicable"
+      }
+    ],
+    "variants": [
+      {
+        "id": "format",
+        "label": "格式"
+      },
+      {
+        "id": "align",
+        "label": "对齐"
+      }
+    ],
+    "behaviorEvidence": [],
+    "browserEvidence": "本轮不声明每个组合态均已浏览器验证"
+  }
+]

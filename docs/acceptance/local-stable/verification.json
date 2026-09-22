@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-19",
+  "status": "passed-in-declared-local-scope",
+  "report": "FINAL-RECHECK.md",
+  "tasks": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20"
+  ],
+  "candidate": {
+    "status": "candidate",
+    "version": "0.0.0-local.20260919.revd1f5de0e97b8",
+    "runtimeBuildId": "sha256:d1f5de0e97b83118a9710b0ecb9282b9e607c84feea4d0c5a2e944814e670981",
+    "archive": "artifacts/local-stable/local-design-system-0.0.0-local.20260919.revd1f5de0e97b8.tgz",
+    "sha256": "b34b1e1554cb426c69df92c31195dae5f92bd9122bab269fb3b510377bbd5729",
+    "snapshotChecksum": "fnv1a64:e0ef77c751abb0a2",
+    "formalRelease": false
+  },
+  "automated": {
+    "testFiles": 46,
+    "testsPassed": 706,
+    "serverTestsPassed": 21,
+    "serverTypecheck": "passed",
+    "mainBuild": "passed",
+    "lintErrors": 0,
+    "lintWarnings": 7,
+    "coreStories": 106,
+    "storybookBuild": "passed",
+    "consumerTypecheckAndBuild": "passed",
+    "deliverySourceArchiveSnapshotHostInstall": "passed"
+  },
+  "browser": {
+    "isolatedBackupRestore": {
+      "origin": "http://localhost:4182",
+      "projects": 2,
+      "frozenReleases": 1,
+      "restoredBrand": "#6236FF",
+      "productionDataModified": false
+    },
+    "button": {
+      "background": "rgb(98, 54, 255)",
+      "border": "rgb(98, 54, 255)",
+      "lineHeight": "22px",
+      "defaultSize": "62x32",
+      "loadingSize": "62x32",
+      "loadingAccessibleName": "确定"
+    },
+    "consumer": {
+      "candidate": "0.0.0-local.20260919.revd1f5de0e97b8",
+      "matched": true,
+      "editedRow": "专家资源最终复核完成",
+      "font": "Georgia, serif",
+      "fontSize": "18px",
+      "spinner": "absolute"
+    },
+    "dialogLoadingRecovery": "passed",
+    "nativeUnsavedConfirmation": "regression tests passed; browser native dialog automation unavailable"
+  },
+  "external": {
+    "figma": "pending target and library permissions",
+    "collaboration": "local Node/SQLite implemented; remote deployment pending",
+    "ai": "adapter prepared; provider and real model evaluation pending"
+  },
+  "logs": {
+    "tests": "final-tests.log",
+    "access": "final-access.log",
+    "server-typecheck": "final-server-typecheck.log",
+    "build": "final-build.log",
+    "lint": "final-lint.log",
+    "storybook": "final-storybook.log",
+    "delivery": "final-delivery.log",
+    "delivery-verify": "final-delivery-verify.log",
+    "consumer-install": "final-consumer-install.log",
+    "consumer-build": "final-consumer-build.log"
+  }
+}

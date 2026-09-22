@@ -1,0 +1,197 @@
+{
+  "formatVersion": "bds-release/1",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.1.1",
+  "blocking": [],
+  "warnings": [
+    {
+      "code": "color-tokens-unconfirmed",
+      "message": "色彩系统有 72 个 Token 未确认（算法生成值）：未确认 Token 仍会以 Resolved 值进入发布（来源于已生成色板），但请知悉其确认状态"
+    },
+    {
+      "code": "open-questions",
+      "message": "存在 3 条未确认的待确认问题（随发布说明留档，不阻塞）"
+    },
+    {
+      "code": "pages-tentative",
+      "message": "2 个页面状态为暂定/未确定（页面结构仍会完整发布）"
+    },
+    {
+      "code": "contrast-failed",
+      "message": "对比度未达标 8 项（TDesign Web 预设固定级位下的已知结论，随 validation-report 留档）：主按钮悬停文字 / 背景（action.primary.hover）；危险主按钮默认（白字 / 背景 error.6）；危险主按钮悬停（白字 / 背景 error.5）"
+    },
+    {
+      "code": "core-recipe-input-default",
+      "message": "Input Recipe 未确认为正式规范：发布时回退默认 Recipe（跟随视觉变量），recipes.json 中 source 如实标注 default"
+    },
+    {
+      "code": "core-recipe-table-default",
+      "message": "Table Recipe 未确认为正式规范：发布时回退默认 Recipe（跟随视觉变量），recipes.json 中 source 如实标注 default"
+    },
+    {
+      "code": "core-recipe-pagination-default",
+      "message": "Pagination Recipe 未确认为正式规范：发布时回退默认 Recipe（跟随视觉变量），recipes.json 中 source 如实标注 default"
+    },
+    {
+      "code": "core-recipe-dialog-default",
+      "message": "Dialog Recipe 未确认为正式规范：发布时回退默认 Recipe（跟随视觉变量），recipes.json 中 source 如实标注 default"
+    }
+  ],
+  "passed": [
+    {
+      "code": "project-id",
+      "message": "projectId 存在"
+    },
+    {
+      "code": "project-name",
+      "message": "项目名称存在"
+    },
+    {
+      "code": "color-system",
+      "message": "色彩系统已生成"
+    },
+    {
+      "code": "color-contract-resolved",
+      "message": "所有正式颜色将来自 Resolved Token（语义 41 个，其中已确认 0 个；组件 31 个）"
+    },
+    {
+      "code": "token-ref-integrity",
+      "message": "Token 引用完整：全部语义 / 组件 Token 的 ref 均可解析"
+    },
+    {
+      "code": "region-appearance",
+      "message": "区域外观已确认（6 个角色）"
+    },
+    {
+      "code": "button-recipe",
+      "message": "Button Recipe 已确认"
+    },
+    {
+      "code": "select-recipe",
+      "message": "Select Recipe 已确认"
+    },
+    {
+      "code": "page-content-slot",
+      "message": "页面内容挂载点存在"
+    },
+    {
+      "code": "node-ids-unique",
+      "message": "布局节点 ID 唯一"
+    },
+    {
+      "code": "component-refs-valid",
+      "message": "组件引用全部有效"
+    },
+    {
+      "code": "integrity-ok",
+      "message": "完整性校验通过（无问题）"
+    },
+    {
+      "code": "components-implemented",
+      "message": "所有被引用组件均为已实现契约"
+    }
+  ],
+  "componentCoverage": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "implemented": true,
+      "referenced": true
+    },
+    {
+      "id": "input",
+      "name": "文本输入 Input（React Aria 底座）",
+      "implemented": true,
+      "referenced": true
+    },
+    {
+      "id": "table",
+      "name": "数据表格 Table（TanStack Table 底座）",
+      "implemented": true,
+      "referenced": true
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select（React Aria 底座试点）",
+      "implemented": true,
+      "referenced": false
+    },
+    {
+      "id": "pagination",
+      "name": "分页 Pagination（TanStack 分页模型协同）",
+      "implemented": true,
+      "referenced": false
+    },
+    {
+      "id": "dialog",
+      "name": "对话框 Dialog（React Aria Modal 底座）",
+      "implemented": true,
+      "referenced": false
+    }
+  ],
+  "tokenReferenceIntegrity": {
+    "total": 72,
+    "unresolved": []
+  },
+  "contrast": {
+    "checked": 15,
+    "failed": [
+      {
+        "key": "button.text-on-primary-hover",
+        "label": "主按钮悬停文字 / 背景（action.primary.hover）",
+        "ratio": 4.379875906757139,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.primary-default",
+        "label": "危险主按钮默认（白字 / 背景 error.6）",
+        "ratio": 3.706793045350612,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.primary-hover",
+        "label": "危险主按钮悬停（白字 / 背景 error.5）",
+        "ratio": 2.9858651910987994,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.outlined-default",
+        "label": "危险线框默认（文字 error.6 / 表面背景）",
+        "ratio": 3.7067930453506115,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.outlined-hover",
+        "label": "危险线框悬停（文字 error.5 / 表面背景）",
+        "ratio": 2.985865191098799,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.soft-default",
+        "label": "危险浅底默认（文字 error.6 / 浅红背景 error.1）",
+        "ratio": 3.3429837026392777,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.soft-hover",
+        "label": "危险浅底悬停（文字 error.6 / 浅红背景 error.2）",
+        "ratio": 2.8268668249758866,
+        "required": 4.5
+      },
+      {
+        "key": "button.danger.soft-pressed",
+        "label": "危险浅底按下（文字 error.6 / 浅红背景 error.3）",
+        "ratio": 2.247925289484575,
+        "required": 4.5
+      }
+    ]
+  },
+  "missingCapabilities": [
+    "Table 高级能力：虚拟滚动 / 树表 / 单元格编辑 / 拖拽列宽 / 服务端请求 —— 未实现，不随 DSTable 发布",
+    "多行文本 Textarea / Toast：未开发（见组件目录 planned）",
+    "Icon Pack：未接入 —— manifest 中为 null，不提供图标资产",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "checkedAt": "2026-09-12T16:38:54.239Z",
+  "note": "发布前就绪检查报告（随发布快照冻结）；blocking 为空才允许发布，warning 需审批人确认"
+}

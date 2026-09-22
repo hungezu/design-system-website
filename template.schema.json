@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-workspace.local/schemas/page-template-1.json",
+  "title": "Design Workspace Page Template",
+  "type": "object",
+  "required": ["schemaVersion", "id", "templateVersion", "status", "intent", "patternIds", "requiredComponents", "slots", "dataContract", "actions", "necessaryStates", "responsiveRules", "accessibility", "example"],
+  "properties": {
+    "schemaVersion": { "const": "page-template/1" },
+    "id": { "type": "string", "pattern": "^template-[a-z0-9-]+$" },
+    "templateVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "status": { "enum": ["draft", "review", "stable"] },
+    "intent": { "type": "string", "minLength": 1 },
+    "patternIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "requiredComponents": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "slots": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["id", "label", "required", "accepts"] } },
+    "dataContract": { "type": "array", "items": { "type": "object", "required": ["id", "type", "required", "description"] } },
+    "actions": { "type": "array", "items": { "type": "object", "required": ["id", "label", "intent", "handler"] } },
+    "necessaryStates": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true },
+    "responsiveRules": { "type": "array", "items": { "type": "string" } },
+    "accessibility": { "type": "array", "items": { "type": "string" } },
+    "example": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}

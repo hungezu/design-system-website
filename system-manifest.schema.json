@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://guokexin.example/schemas/design-system-1.json",
+  "title": "国科信设计系统 Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "name", "platform", "profile", "constructionStyle", "modes", "brand", "appUi", "tokens", "icons", "components", "releasePolicy"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "schemaVersion": { "const": "design-system/1" },
+    "name": { "type": "string", "minLength": 1 },
+    "platform": { "const": "web" },
+    "profile": { "type": "string", "minLength": 1 },
+    "constructionStyle": { "enum": ["filled", "outlined", "hybrid"] },
+    "modes": { "type": "array", "items": { "enum": ["light", "dark"] }, "minItems": 1, "uniqueItems": true },
+    "brand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "hover", "active", "subtle"],
+      "properties": {
+        "primary": { "$ref": "#/$defs/hex" },
+        "hover": { "$ref": "#/$defs/hex" },
+        "active": { "$ref": "#/$defs/hex" },
+        "subtle": { "$ref": "#/$defs/hex" }
+      }
+    },
+    "appUi": { "$ref": "#/$defs/sourceRecord" },
+    "tokens": { "type": "object" },
+    "icons": { "type": "object" },
+    "components": { "type": "object" },
+    "releasePolicy": { "type": "object" }
+  },
+  "$defs": {
+    "hex": { "type": "string", "pattern": "^#[0-9A-F]{6}$" },
+    "sourceRecord": {
+      "type": "object",
+      "required": ["tokenNamespace", "source", "inheritsProjectBrand"],
+      "properties": {
+        "tokenNamespace": { "const": "--app-" },
+        "source": { "type": "string" },
+        "inheritsProjectBrand": { "const": false }
+      }
+    }
+  }
+}

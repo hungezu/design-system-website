@@ -1,0 +1,45 @@
+.owned-icon-action {
+  width: var(--bds-ctrl-md, var(--control-height-md, 32px));
+  height: var(--bds-ctrl-md, var(--control-height-md, 32px));
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  color: var(--bds-text-secondary, var(--text-secondary));
+  background: transparent;
+  border: 0;
+  border-radius: var(--bds-btn-radius, var(--radius-control));
+  cursor: pointer;
+  transition: color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), background-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), transform var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out);
+}
+
+.owned-icon-action--compact {
+  width: var(--bds-ctrl-sm, var(--control-height-sm, 28px));
+  height: var(--bds-ctrl-sm, var(--control-height-sm, 28px));
+}
+
+.owned-icon-action:hover:not([data-disabled]) {
+  color: var(--bds-text-primary, var(--text-primary));
+  background: var(--bds-fill-hover, var(--surface-secondary));
+}
+.owned-icon-action[data-pressed]:not([data-disabled]) { transform:scale(.94); }
+
+.owned-icon-action--danger {
+  color: var(--bds-danger-text, var(--status-error-text));
+}
+
+.owned-icon-action--danger:hover:not([data-disabled]) {
+  color: var(--bds-danger-text, var(--status-error-text));
+  background: color-mix(in srgb, var(--bds-danger, var(--status-error)) 10%, transparent);
+}
+
+.owned-icon-action[data-focus-visible] {
+  outline: 2px solid color-mix(in srgb, var(--bds-focus-ring, var(--brand-primary)) 32%, transparent);
+  outline-offset: 1px;
+}
+
+.owned-icon-action[data-disabled] {
+  color: var(--bds-text-disabled, var(--text-tertiary));
+  cursor: not-allowed;
+  opacity: .6;
+}

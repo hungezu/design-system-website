@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-19",
+  "status": "local-candidate-accepted",
+  "tasks": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08",
+    "R09",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20"
+  ],
+  "candidate": {
+    "status": "candidate",
+    "version": "0.0.0-local.20260919",
+    "runtimeBuildId": "sha256:f19dba9cb3fb50a87570b18d342fc6728679cced07437b5c6cd8cd13a33ba01c",
+    "archive": "artifacts/local-stable/local-design-system-0.0.0-local.20260919.tgz",
+    "sha256": "76560cac133cc2286a56b83349fe655fbd169615d245b05742a962211999f73a",
+    "snapshotChecksum": "fnv1a64:37a399471fc56255",
+    "formalRelease": false
+  },
+  "automated": {
+    "testFiles": 38,
+    "testsPassed": 640,
+    "mainBuild": "passed",
+    "lintErrors": 0,
+    "lintExistingWarnings": 8,
+    "storybookBuild": "passed",
+    "coreStoriesRendered": 103,
+    "consumerTypecheckAndBuild": "passed",
+    "snapshotAssetFiles": 11,
+    "snapshotPayloadFileChecks": 10
+  },
+  "browser": {
+    "resourceFlow": "filter -> detail -> edit -> failed submit -> retry -> updated list, filter preserved",
+    "patternsWithExecutableWorkflow": 12,
+    "backupRestore": {
+      "isolatedOrigin": "http://127.0.0.1:5174",
+      "invalidJsonRejected": true,
+      "validatedPreview": true,
+      "restoredBrand": "#6236FF"
+    },
+    "releaseDiff": {
+      "before": "1.5.4",
+      "after": "1.5.5",
+      "actualChanges": 5,
+      "unavailableAssets": 0
+    },
+    "invalidVersion": "99.0.0 stays unavailable; no silent substitution",
+    "responsive": {
+      "cssViewport": 390,
+      "componentMainWidthApprox": 345,
+      "fixedSidebarHidden": true,
+      "mobileDirectoryWorks": true,
+      "tableClientWidth": 303,
+      "tableScrollWidth": 600,
+      "rootOverflow": 0
+    },
+    "consumer": {
+      "origin": "http://127.0.0.1:4178",
+      "runtimeSnapshotIdentity": "matched",
+      "buttonBackground": "#165DFF",
+      "buttonBorder": "#165DFF",
+      "editedRow": "专家资源最终验收",
+      "source": "installed tarball; separate node_modules"
+    }
+  },
+  "external": {
+    "figma": "handoff prepared; target not supplied",
+    "collaboration": "client and conflict contract prepared; service not configured",
+    "ai": "proxy adapter prepared; provider not configured",
+    "deterministicChecks": "implemented and browser verified"
+  }
+}

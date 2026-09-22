@@ -1,0 +1,20 @@
+{
+  "name": "design-system-independent-consumer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --force --host 127.0.0.1 --port 4178 --strictPort",
+    "build": "tsc --noEmit && vite build"
+  },
+  "dependencies": {
+    "@local/design-system": "file:../artifacts/local-stable/local-design-system-0.0.0-local.20260919.rev33d6ce0079e3.tgz",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "typescript": "5.9.3",
+    "vite": "7.3.6"
+  }
+}

@@ -1,0 +1,228 @@
+.gkx-button {
+  --button-bg-default: var(--button-neutral-outline-bg-default);
+  --button-bg-hover: var(--button-neutral-outline-bg-hover);
+  --button-bg-active: var(--button-neutral-outline-bg-active);
+  --button-bg-disabled: var(--button-control-bg-disabled);
+  --button-text-default: var(--button-neutral-outline-text-default);
+  --button-text-disabled: var(--button-control-text-disabled);
+  --button-border-default: var(--button-neutral-outline-border-default);
+  --button-border-hover: var(--button-neutral-outline-border-default);
+  --button-border-active: var(--button-neutral-outline-border-default);
+  --button-border-disabled: var(--button-control-border-disabled);
+
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-8);
+  padding-inline: var(--button-padding-inline, var(--spacing-16));
+  color: var(--button-text-default);
+  background: var(--button-bg-default);
+  border: 1px solid var(--button-border-default);
+  border-radius: var(--radius-control);
+  font: var(--font-button);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), background-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), border-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out), box-shadow var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out);
+}
+
+.gkx-button[data-appearance="filled"][data-tone="brand"] {
+  --button-bg-default: var(--button-brand-filled-bg-default);
+  --button-bg-hover: var(--button-brand-filled-bg-hover);
+  --button-bg-active: var(--button-brand-filled-bg-active);
+  --button-text-default: var(--button-brand-filled-text-default);
+  --button-text-hover: var(--button-brand-filled-text-hover, var(--button-text-default));
+  --button-text-active: var(--button-brand-filled-text-active, var(--button-text-default));
+  --button-border-default: var(--button-brand-filled-border-default);
+  --button-border-hover: var(--button-brand-filled-border-default);
+  --button-border-active: var(--button-brand-filled-border-default);
+}
+
+.gkx-button[data-appearance="outline"][data-tone="neutral"] {
+  --button-bg-default: var(--button-neutral-outline-bg-default);
+  --button-bg-hover: var(--button-neutral-outline-bg-hover);
+  --button-bg-active: var(--button-neutral-outline-bg-active);
+  --button-text-default: var(--button-neutral-outline-text-default);
+  --button-border-default: var(--button-neutral-outline-border-default);
+  --button-border-hover: var(--button-neutral-outline-border-default);
+  --button-border-active: var(--button-neutral-outline-border-default);
+}
+
+.gkx-button[data-appearance="soft"][data-tone="neutral"] {
+  --button-bg-default: var(--button-neutral-soft-bg-default);
+  --button-bg-hover: var(--button-neutral-soft-bg-hover);
+  --button-bg-active: var(--button-neutral-soft-bg-active);
+  --button-text-default: var(--button-neutral-soft-text-default);
+  --button-border-default: var(--button-neutral-soft-border-default);
+  --button-border-hover: var(--button-neutral-soft-border-default);
+  --button-border-active: var(--button-neutral-soft-border-default);
+}
+
+.gkx-button[data-appearance="ghost"][data-tone="neutral"] {
+  --button-bg-default: var(--button-neutral-ghost-bg-default);
+  --button-bg-hover: var(--button-neutral-ghost-bg-hover);
+  --button-bg-active: var(--button-neutral-ghost-bg-active);
+  --button-text-default: var(--button-neutral-ghost-text-default);
+  --button-border-default: var(--button-neutral-ghost-border-default);
+  --button-border-hover: var(--button-neutral-ghost-border-default);
+  --button-border-active: var(--button-neutral-ghost-border-default);
+}
+
+.gkx-button[data-appearance="filled"][data-tone="danger"] {
+  --button-bg-default: var(--button-danger-filled-bg-default);
+  --button-bg-hover: var(--button-danger-filled-bg-hover);
+  --button-bg-active: var(--button-danger-filled-bg-active);
+  --button-text-default: var(--button-danger-filled-text-default);
+  --button-border-default: var(--button-danger-filled-border-default);
+  --button-border-hover: var(--button-danger-filled-border-default);
+  --button-border-active: var(--button-danger-filled-border-default);
+}
+
+.gkx-button[data-appearance="outline"][data-tone="danger"] {
+  --button-bg-default: var(--button-danger-outline-bg-default);
+  --button-bg-hover: var(--button-danger-outline-bg-hover);
+  --button-bg-active: var(--button-danger-outline-bg-active);
+  --button-text-default: var(--button-danger-outline-text-default);
+  --button-border-default: var(--button-danger-outline-border-default);
+  --button-border-hover: var(--button-danger-outline-border-default);
+  --button-border-active: var(--button-danger-outline-border-default);
+}
+
+.gkx-button--sm {
+  height: var(--control-height-sm);
+  padding-inline: var(--button-padding-inline-sm, var(--spacing-12));
+}
+
+.gkx-button--md { height: var(--control-height-md); }
+.gkx-button--lg { height: var(--control-height-lg); }
+
+.gkx-button[data-icon-only="true"] {
+  gap: 0;
+  padding-inline: 0;
+}
+
+.gkx-button--sm[data-icon-only="true"] { width: var(--control-height-sm); }
+.gkx-button--md[data-icon-only="true"] { width: var(--control-height-md); }
+.gkx-button--lg[data-icon-only="true"] { width: var(--control-height-lg); }
+
+.gkx-button:not(:disabled):hover {
+  color: var(--button-text-hover, var(--button-text-default));
+  background: var(--button-bg-hover);
+  border-color: var(--button-border-hover);
+}
+
+.gkx-button:not(:disabled):active {
+  transform: translateY(1px);
+  color: var(--button-text-active, var(--button-text-default));
+  background: var(--button-bg-active);
+  border-color: var(--button-border-active);
+}
+
+.gkx-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-primary), 0 0 0 4px var(--brand-primary);
+}
+
+.gkx-button:disabled {
+  color: var(--button-text-disabled);
+  background: var(--button-bg-disabled);
+  border-color: var(--button-border-disabled);
+  cursor: not-allowed;
+}
+
+.gkx-button__icon,
+.gkx-button__spinner {
+  width: 1em;
+  height: 1em;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+}
+
+/* Keep intrinsic text/icon geometry and the accessible name while loading. */
+.gkx-button[data-loading] .gkx-button__label,
+.gkx-button[data-loading] .gkx-button__icon { opacity: 0; }
+
+.gkx-button__icon > svg { width: 100%; height: 100%; }
+.gkx-button[data-icon-position="end"] .gkx-button__icon { order: 1; }
+
+.gkx-button__spinner {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border: 2px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: gkx-button-spin .7s linear infinite;
+}
+
+@keyframes gkx-button-spin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .gkx-button { transition: none; }
+  .gkx-button__spinner { animation-duration: 1.4s; }
+}
+
+/* Owned buttons use one recipe even when legacy Runtime styles coexist. */
+.gkx-button.ds-btn[data-priority] {
+  color: var(--button-text-default);
+  background: var(--button-bg-default);
+  border-color: var(--button-border-default);
+}
+.gkx-button.ds-btn[data-priority]:not(:disabled):hover {
+  color: var(--button-text-hover, var(--button-text-default));
+  background: var(--button-bg-hover);
+  border-color: var(--button-border-hover);
+}
+.gkx-button.ds-btn[data-priority]:not(:disabled):active {
+  color: var(--button-text-active, var(--button-text-default));
+  background: var(--button-bg-active);
+  border-color: var(--button-border-active);
+}
+.gkx-button.ds-btn[data-priority]:disabled {
+  color: var(--button-text-disabled);
+  background: var(--button-bg-disabled);
+  border-color: var(--button-border-disabled);
+}
+/* A tertiary action in a data cell keeps the project's action color. */
+:is(.ds-table__cell,.ds-table-bulk) .gkx-button[data-appearance="ghost"][data-tone="neutral"] {
+  --button-text-default:var(--brand-primary);
+  --button-text-hover:var(--brand-active);
+  --button-text-active:var(--brand-active);
+  --button-bg-hover:var(--brand-secondary);
+}
+/* Text actions align their visible text with the table header; preserve vertical hit area. */
+:is(.ds-table__cell,td) .gkx-button[data-appearance="ghost"]:not([data-icon-only="true"]) {
+  margin:0;
+  padding-inline:0;
+  border-inline-width:0;
+}
+
+.gkx-button[data-appearance="ghost"][data-tone="danger"] {
+  --button-bg-default:var(--button-danger-ghost-bg-default);
+  --button-bg-hover:var(--button-danger-ghost-bg-hover);
+  --button-bg-active:var(--button-danger-ghost-bg-active);
+  --button-text-default:var(--button-danger-ghost-text-default);
+  --button-text-hover:var(--button-danger-ghost-text-default);
+  --button-text-active:var(--button-danger-ghost-text-default);
+  --button-border-default:var(--button-danger-ghost-border-default);
+  --button-border-hover:var(--button-danger-ghost-border-default);
+  --button-border-active:var(--button-danger-ghost-border-default);
+}
+/* Table text actions change text emphasis, without drawing a hover box. */
+:is(.ds-table__cell,td,.ds-table-bulk) .gkx-button.ds-btn[data-appearance="ghost"]:not([data-icon-only="true"]) {
+  --button-bg-default:transparent;
+  --button-bg-hover:transparent;
+  --button-bg-active:transparent;
+  --button-bg-disabled:transparent;
+  --button-border-default:transparent;
+  --button-border-hover:transparent;
+  --button-border-active:transparent;
+  --button-border-disabled:transparent;
+}
+:is(.ds-table__cell,td,.ds-table-bulk) .gkx-button[data-appearance="ghost"]:hover:not(:focus-visible) {
+  outline:none;
+  box-shadow:none;
+}

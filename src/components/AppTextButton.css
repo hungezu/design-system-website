@@ -1,0 +1,14 @@
+.gkx-button.ds-btn.app-text-action[data-appearance="ghost"] {
+  --button-text-default:var(--app-accent,var(--text-primary));
+  --button-text-hover:var(--app-accent-hover,var(--text-primary));
+  --button-text-active:var(--app-accent-active,var(--text-primary));
+  --button-bg-default:transparent;
+  --button-bg-hover:var(--app-accent-subtle,var(--surface-secondary));
+  --button-bg-active:var(--app-accent-subtle,var(--surface-secondary));
+  --button-bg-disabled:transparent;
+  --button-border-disabled:transparent;
+  --button-text-disabled:var(--app-text-tertiary,var(--text-tertiary));
+  --button-border-default:transparent;
+  --button-border-hover:transparent;
+  --button-border-active:transparent;
+}

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "bds-release/1",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "projectName": "test-customer-b",
+  "releaseVersion": "1.1.1",
+  "status": "published",
+  "publishedAt": "2026-09-12T16:38:55.355Z",
+  "approvedBy": "终验审批（自动化）",
+  "checksum": "6dedfa5af1b17b1c229b9100223ac5d6",
+  "runtimeCompatibility": {
+    "runtime": "bds-runtime/1",
+    "entry": "src/runtime/index.ts",
+    "minReact": "18",
+    "styleStrategy": "css-variables",
+    "componentRuntimeVersion": "bds-components/1.0.0"
+  },
+  "colorSystemVersion": "tdesign-hct@1.6.0（palette 2026-09-11）",
+  "interactionColorPreset": "tdesign-web@tdesign-react@1.18.3（Token 基准：_light.less 与组件 CSS）",
+  "componentRuntimeVersion": "bds-components/1.0.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "sourcePath": "src/components/base/DSButton.tsx"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select",
+      "runtimeExport": "DSSelect",
+      "sourcePath": "src/components/base/DSSelect.tsx"
+    },
+    {
+      "id": "input",
+      "name": "文本输入 Input",
+      "runtimeExport": "DSInput",
+      "sourcePath": "src/components/base/DSInput.tsx"
+    },
+    {
+      "id": "table",
+      "name": "数据表格 Table",
+      "runtimeExport": "DSTable",
+      "sourcePath": "src/components/base/DSTable.tsx"
+    },
+    {
+      "id": "pagination",
+      "name": "分页 Pagination",
+      "runtimeExport": "DSPagination",
+      "sourcePath": "src/components/base/DSPagination.tsx"
+    },
+    {
+      "id": "dialog",
+      "name": "对话框 Dialog",
+      "runtimeExport": "DSDialog",
+      "sourcePath": "src/components/base/DSDialog.tsx"
+    }
+  ],
+  "iconPack": null,
+  "figmaLibrary": "pending",
+  "artifactFiles": [
+    {
+      "path": "tokens.json",
+      "bytes": 61319,
+      "checksum": "6b43e8a4c2de8a5ef598b54a888e4048",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 7160,
+      "checksum": "86a84eca0c2d25fc8a6b5c18b85fef2e",
+      "mediaType": "text/css"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 6228,
+      "checksum": "70f81af7db55500d9d5d482178787883",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "components.json",
+      "bytes": 23126,
+      "checksum": "c2f21b7797d7585d7be1fa69dd0cfedb",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "region-appearance.json",
+      "bytes": 2296,
+      "checksum": "afb1fd08138adf964ce666faf4c2b834",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 16180,
+      "checksum": "436dc03e96f5a99486459e0887c925aa",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "ai-rules.md",
+      "bytes": 2408,
+      "checksum": "f3e84275dc7721fb7f74d107da203a09",
+      "mediaType": "text/markdown"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 6462,
+      "checksum": "e352073771e3264d3b2d13093ff5d05b",
+      "mediaType": "application/json"
+    }
+  ],
+  "missingCapabilities": [
+    "Table 高级能力：虚拟滚动 / 树表 / 单元格编辑 / 拖拽列宽 / 服务端请求 —— 未实现，不随 DSTable 发布",
+    "多行文本 Textarea / Toast：未开发（见组件目录 planned）",
+    "Icon Pack：未接入 —— manifest 中为 null，不提供图标资产",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "sourceSummary": {
+    "generatedFrom": "发布快照（不可变）",
+    "schemeRevision": 7,
+    "capturedAt": "2026-09-12T16:38:54.239Z",
+    "semanticTokens": 41,
+    "regionAppearanceRoles": 6,
+    "recipes": [
+      "button",
+      "select"
+    ],
+    "pages": 2
+  }
+}

@@ -1,0 +1,36 @@
+.owned-calendar { box-sizing:border-box; width:100%; max-width:320px; padding:12px; color:var(--bds-text-primary,var(--text-primary)); background:var(--bds-bg-surface,var(--surface-primary)); border:1px solid var(--bds-border,var(--border-default)); border-radius:var(--bds-radius-md,var(--radius-container)); }
+.owned-calendar header { display:grid; grid-template-columns:32px minmax(0,1fr) 32px; align-items:center; gap:8px; margin-bottom:8px; }
+.owned-calendar h2 { margin:0; text-align:center; font-size:14px; }
+.owned-calendar header > button { width:32px; height:32px; padding:0; display:grid; place-items:center; border:0; border-radius:var(--bds-radius-sm,var(--radius-control)); background:transparent; color:inherit; cursor:pointer; }
+.owned-calendar header > button:hover { background:var(--bds-fill-hover,var(--surface-secondary)); }
+.owned-calendar header > button:focus-visible { outline:2px solid color-mix(in srgb,var(--bds-focus-ring,var(--brand-primary)) 22%,transparent); outline-offset:1px; }
+.owned-calendar table { width:100%; border-collapse:collapse; table-layout:fixed; }
+.owned-calendar th { height:28px; color:var(--bds-text-secondary,var(--text-secondary)); font-size:12px; font-weight:500; }
+.owned-calendar [role="gridcell"] { padding:1px; text-align:center; }
+.owned-calendar .react-aria-CalendarCell { display:flex; align-items:center; justify-content:center; width:32px; height:32px; border-radius:var(--bds-radius-sm,4px); cursor:pointer; }
+.owned-calendar .react-aria-CalendarCell[data-selected] { color:var(--bds-on-brand,white); background:var(--bds-brand,var(--brand-primary)); }
+.owned-calendar .react-aria-CalendarCell[data-disabled],.owned-calendar .react-aria-CalendarCell[data-outside-month] { opacity:.4; }
+.owned-calendar .react-aria-CalendarCell[data-focus-visible] { outline:2px solid var(--bds-focus-ring,var(--brand-primary)); }
+.owned-date-input { box-sizing:border-box; display:flex; align-items:center; min-height:var(--bds-ctrl-md,32px); padding-inline:10px; border:1px solid var(--bds-field-border,var(--border-default)); border-radius:var(--bds-radius-sm,var(--radius-control)); outline:2px solid transparent; outline-offset:1px; background:var(--bds-field-bg,var(--surface-primary)); transition:border-color 120ms,outline-color 120ms; }
+.owned-date-input[data-focus-within] { border-color:var(--bds-field-border-focus,var(--brand-primary)); }
+.owned-date-input:has(.react-aria-DateSegment[data-focus-visible]) { box-shadow:none; outline-color:color-mix(in srgb,var(--bds-focus-ring,var(--brand-primary)) 32%,transparent); }
+.owned-date-input .react-aria-DateSegment { padding:1px 2px; border-radius:2px; }
+.owned-date-input .react-aria-DateSegment:focus { outline:none; background:var(--bds-selection-bg,var(--surface-subtle)); }
+.owned-date-field,.owned-date-picker { max-width:360px; }
+.owned-date-range-picker { max-width:520px; }
+.owned-date-picker__control > .owned-date-input { min-width:0; flex:1; border:0; border-radius:0; box-shadow:none; }
+.owned-date-picker__control > button { border-inline-start:1px solid var(--bds-field-border,var(--border-default)); }
+.owned-date-picker[data-open] .owned-date-picker__control > button,.owned-date-picker__control[data-focus-within] > button { background:var(--bds-fill-hover,var(--surface-secondary)); }
+.owned-date-range-picker__separator { color:var(--bds-text-secondary,var(--text-secondary)); }
+.owned-calendar-popover { min-width:0; width:var(--ds-calendar-width, 300px); max-width:calc(100vw - 32px); }
+.owned-calendar-popover .owned-calendar { border-radius:inherit; }
+.owned-calendar-popover table { width:100%; }
+.owned-date-field:not([data-disabled]):not([data-readonly]) > .owned-date-input:hover { border-color:var(--bds-field-border-hover,var(--brand-hover)); }
+.owned-date-field[data-invalid]:not([data-disabled]) > .owned-date-input { border-color:var(--bds-field-border-invalid,var(--status-error)); }
+.owned-date-field[data-invalid]:not([data-disabled]) > .owned-date-input:has([data-focus-visible]) { outline-color:color-mix(in srgb,var(--bds-field-border-invalid,var(--status-error)) 32%,transparent); }
+.owned-field-stack[data-disabled] .owned-date-input { background:var(--bds-field-bg-disabled,var(--surface-secondary)); color:var(--bds-text-disabled,var(--text-tertiary)); border-color:var(--bds-control-border-disabled,var(--border-default)); outline:none; }
+.owned-field-stack[data-disabled] .react-aria-DateSegment { color:var(--bds-text-disabled,var(--text-tertiary)); }
+/* A picker has one external ring; individual segments retain their selection fill. */
+.owned-date-picker__control > .owned-date-input,
+.owned-date-picker__control > .owned-date-input:has(.react-aria-DateSegment[data-focus-visible]) { outline:none; background:transparent; }
+.owned-date-picker__control:has(.react-aria-DateSegment[data-focused]) { border-color:var(--bds-field-border-focus,var(--brand-primary)); }

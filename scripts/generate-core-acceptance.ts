@@ -1,0 +1,11 @@
+import { existsSync,writeFileSync } from 'node:fs'
+import { CORE_COMPONENT_IDS } from '../src/data/core-quality'
+import { getDesktopComponentBinding } from '../src/design-system/component-bindings'
+import { componentDemoVariants } from '../src/design-system/component-demo-variants'
+import { getRuntimeComponent } from '../src/runtime/registry'
+import api from '../src/data/generated/runtime-api.json'
+const tests:Record<string,string>={button:'primitives/Button/DSButton.test.tsx',input:'primitives/TextField/TextField.test.tsx',select:'primitives/Select/Select.test.tsx',table:'../runtime/table-updates.test.tsx',pagination:'../components/RuntimeExample.behavior.test.tsx',dialog:'primitives/extended-interaction.test.tsx',drawer:'../components/RuntimeExample.behavior.test.tsx',toast:'primitives/Feedback/Toast.test.tsx',tabs:'primitives/interaction.test.tsx',tag:'../components/RuntimeExample.behavior.test.tsx',badge:'core-acceptance.test.tsx',form:'primitives/Forms/Forms.test.tsx',field:'core-acceptance.test.tsx',upload:'../components/RuntimeExample.behavior.test.tsx',empty:'core-acceptance.test.tsx',loading:'core-acceptance.test.tsx',alert:'core-acceptance.test.tsx',checkbox:'primitives/Forms/Forms.test.tsx',radio:'primitives/Forms/Forms.test.tsx',switch:'primitives/Forms/Forms.test.tsx'}
+const rows=CORE_COMPONENT_IDS.map(id=>{const runtime=getRuntimeComponent(id)!,binding=getDesktopComponentBinding(id)!;const story=`src/design-system/stories/${id}.stories.tsx`;if(!existsSync(story))throw new Error(`缺少 Story ${id}`);return{id,export:runtime.runtimeExport,source:runtime.sourcePath,props:(api as Record<string,unknown[]>)[runtime.runtimeExport],states:binding.states,examples:componentDemoVariants(id),storybook:`core-${id}`,storyFile:story,test:`src/design-system/${tests[id]}`}})
+writeFileSync('docs/acceptance/local-stable/core-components.json',JSON.stringify(rows,null,2)+'\n')
+writeFileSync('docs/acceptance/local-stable/CORE-COMPONENTS.md',`# 核心 20 项 API—状态—示例—证据\n\n由脚本生成。状态是适用能力；通过结论由相邻验收报告与日志给出，不能仅凭清单判定。\n\n|组件|实现|适用状态|示例数|Story|回归入口|\n|---|---|---|---:|---|---|\n${rows.map(row=>`|${row.id}|${row.export}|${row.states.join(' / ')}|${row.examples.length}|${row.storyFile}|${row.test}|`).join('\n')}\n`)
+console.log(`Core evidence map: ${rows.length}`)

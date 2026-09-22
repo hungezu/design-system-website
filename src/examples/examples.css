@@ -1,0 +1,25 @@
+.resource-workflow { box-sizing:border-box; width:100%; min-width:0; padding:var(--spacing-24,24px); color:var(--text-primary); background:var(--surface-primary); font-family:var(--preview-font-family,inherit); font-size:var(--preview-body-size,14px); }
+.resource-workflow header { display:flex; justify-content:space-between; gap:16px; align-items:start; margin-bottom:20px; }
+.resource-workflow h2 { margin:0; font-size:var(--preview-title-size,20px); }
+.resource-workflow header p { color:var(--text-secondary); margin:8px 0 0; }
+.example-filters,.example-actions { display:flex; flex-wrap:wrap; align-items:end; gap:8px; }
+.example-filters { margin-bottom:16px; }
+.example-filters > .ds-input,.example-filters > .ds-select { flex:1 1 180px; }
+.example-actions { margin-block:12px; align-items:center; }
+.example-table { width:100%; min-width:0; margin-block:16px; }
+.example-table .ds-table { min-width:0; width:100%; box-sizing:border-box; }
+.example-details { display:grid; grid-template-columns:100px minmax(0,1fr); gap:12px; overflow-wrap:anywhere; }
+.example-details dd { margin:0; }
+.resource-workflow .owned-form { max-width:640px; }
+@media(max-width:600px){.resource-workflow{padding:16px}.example-details{grid-template-columns:1fr}.example-details dd{margin-bottom:12px}}
+.example-filter-count { flex-basis:100%; color:var(--text-secondary); font-size:12px; }
+
+/* Table pattern: filters → normal toolbar → contextual batch actions → table → footer. */
+.example-table-toolbar{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:var(--spacing-8);min-height:var(--control-height-md);margin-block:var(--spacing-16)}
+.example-bulk-bar{display:flex;align-items:center;flex-wrap:wrap;gap:var(--spacing-8);min-height:var(--control-height-lg);padding:var(--spacing-8) var(--spacing-12);margin-bottom:var(--spacing-16);background:var(--surface-secondary);color:var(--text-primary);border-radius:var(--radius-control)}
+.example-bulk-bar>span{font-size:14px;font-weight:500}.example-bulk-bar small{font-weight:400;color:var(--text-secondary)}
+.example-bulk-bar .example-clear-selection{margin-inline-start:auto}
+.resource-workflow .example-table{margin-top:0;margin-bottom:var(--spacing-16)}
+@media(max-width:640px){.example-bulk-bar .example-clear-selection{margin-inline-start:0}.example-table-toolbar{align-items:center}}
+.example-form-actions{width:100%;justify-content:flex-end}
+

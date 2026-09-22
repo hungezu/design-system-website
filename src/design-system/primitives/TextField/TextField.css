@@ -1,0 +1,31 @@
+.owned-textfield { display: flex; flex-direction: column; gap: var(--spacing-4, 4px); min-width: 0; }
+.owned-textfield .ds-input__required { color:var(--bds-danger,var(--status-error-text)); font-weight:600; }
+.owned-textfield .ds-input__box { box-sizing:border-box; display: flex; align-items: center; gap: var(--spacing-8, 8px); padding-inline: var(--input-padding-inline, var(--spacing-8, 8px)); min-height: var(--bds-ctrl-md, var(--control-height-md, 32px)); border: 1px solid var(--bds-field-border, var(--border-default)); border-radius: var(--bds-input-radius, var(--radius-control)); outline:2px solid transparent; outline-offset:1px; background: var(--bds-field-bg, var(--surface-primary)); transition:border-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out),outline-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out),background-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out); }
+.owned-textfield.ds-input--sm .ds-input__box { min-height: var(--bds-ctrl-sm, var(--control-height-sm, 24px)); }
+.owned-textfield.ds-input--lg .ds-input__box { min-height: var(--bds-ctrl-lg, var(--control-height-lg, 40px)); }
+.owned-textfield .ds-input__native { width: 100%; min-width: 0; border: 0; outline: none; background: transparent; color: var(--bds-text-primary, var(--text-primary)); font: inherit; line-height:1.55; }
+.owned-textfield .ds-input__native::placeholder { color:var(--bds-field-placeholder,var(--text-tertiary)); }
+.owned-textfield:not([data-disabled]) .ds-input__box:hover { border-color:var(--bds-field-border-hover,var(--border-strong)); }
+.owned-textfield:has(textarea) .ds-input__box { height:auto; min-height:96px; align-items:stretch; padding-block:var(--spacing-8,8px); }
+.owned-textfield textarea.ds-input__native { box-sizing:border-box; min-height:calc(4 * 1.55em); padding:0; resize: vertical; }
+.owned-textfield .ds-input__box:focus-within {
+  border-color: var(--bds-field-border-focus, var(--brand-primary));
+  outline-color: transparent;
+  box-shadow: none;
+}
+.owned-textfield:has(.ds-input__native:focus-visible) .ds-input__box {
+  outline-color: color-mix(in srgb, var(--bds-focus-ring, var(--brand-primary)) 32%, transparent);
+}
+.owned-textfield[data-invalid] .ds-input__box { border-color: var(--bds-danger, var(--status-error)); }
+.owned-textfield[data-invalid]:has(.ds-input__native:focus-visible) .ds-input__box {
+  outline-color: color-mix(in srgb, var(--bds-danger, var(--status-error)) 32%, transparent);
+}
+.owned-textfield[data-disabled] .ds-input__box,
+.owned-textfield[data-disabled] .ds-input__box:hover,
+.owned-textfield[data-disabled] .ds-input__box:focus-within { color:var(--bds-text-disabled,var(--text-tertiary)); background:var(--bds-field-bg-disabled,var(--surface-secondary)); border-color:var(--bds-control-border-disabled,var(--border-default)); outline-color:transparent; box-shadow:none; cursor:not-allowed; opacity:1; }
+.owned-textfield[data-disabled] .ds-input__native { cursor:not-allowed; }
+.owned-textfield__clear { margin-inline:-6px -4px; color:var(--bds-text-tertiary,var(--text-tertiary)); }
+.owned-textfield__clear:hover:not([data-disabled]) { color:var(--bds-text-secondary,var(--text-secondary)); background:transparent; }
+.owned-textfield[data-invalid]:not([data-disabled]) .ds-input__box { border-color:var(--bds-field-border-invalid,var(--status-error)); }
+.owned-textfield[data-disabled] .ds-input__native { color:var(--bds-text-disabled,var(--text-tertiary)); -webkit-text-fill-color:currentColor; }
+.owned-textfield[data-readonly]:not([data-invalid]) .ds-input__box:hover { border-color:var(--bds-field-border,var(--border-default)); }

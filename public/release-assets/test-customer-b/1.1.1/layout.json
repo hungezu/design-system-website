@@ -1,0 +1,595 @@
+{
+  "formatVersion": "bds-release/1",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.1.1",
+  "systemLayout": {
+    "role": "none",
+    "status": "tentative",
+    "source": "system",
+    "locked": false,
+    "width": {
+      "mode": "flex",
+      "grow": 1
+    },
+    "height": {
+      "mode": "flex",
+      "grow": 1
+    },
+    "children": [
+      {
+        "role": "none",
+        "status": "tentative",
+        "source": "system",
+        "locked": false,
+        "width": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "height": {
+          "mode": "fixed",
+          "value": 56
+        },
+        "children": [
+          {
+            "role": "brand",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "auto"
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [],
+            "id": "sys-brand",
+            "name": "品牌区",
+            "kind": "generic"
+          },
+          {
+            "role": "none",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [],
+            "id": "sys-header-spacer",
+            "name": "弹性间隔",
+            "kind": "generic"
+          },
+          {
+            "role": "message",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "auto"
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [],
+            "id": "sys-message",
+            "name": "消息区",
+            "kind": "generic"
+          },
+          {
+            "role": "account",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "auto"
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [],
+            "id": "sys-account",
+            "name": "账户区",
+            "kind": "generic"
+          }
+        ],
+        "id": "sys-header",
+        "name": "顶部栏",
+        "kind": "row",
+        "gap": 16,
+        "padding": 12,
+        "align": "center"
+      },
+      {
+        "role": "none",
+        "status": "tentative",
+        "source": "system",
+        "locked": false,
+        "width": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "height": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "children": [
+          {
+            "role": "nav",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "fixed",
+              "value": 220,
+              "min": 180,
+              "max": 280
+            },
+            "height": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "children": [],
+            "id": "sys-nav",
+            "name": "全局导航",
+            "kind": "column",
+            "scroll": true
+          },
+          {
+            "role": "none",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "height": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "children": [
+              {
+                "role": "title",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 52
+                },
+                "children": [],
+                "id": "sys-title",
+                "name": "页面标题区",
+                "kind": "generic",
+                "padding": 12
+              },
+              {
+                "role": "tab",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 40
+                },
+                "children": [],
+                "id": "sys-tabs",
+                "name": "页签区",
+                "kind": "generic",
+                "padding": 8
+              },
+              {
+                "role": "content",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "flex",
+                  "grow": 1
+                },
+                "height": {
+                  "mode": "flex",
+                  "grow": 1
+                },
+                "children": [],
+                "id": "sys-page",
+                "name": "页面内容区",
+                "kind": "page-content",
+                "scroll": true
+              }
+            ],
+            "id": "sys-main",
+            "name": "内容框架",
+            "kind": "column"
+          }
+        ],
+        "id": "sys-body",
+        "name": "主体区",
+        "kind": "row"
+      }
+    ],
+    "id": "sys-root",
+    "name": "系统框架",
+    "kind": "column"
+  },
+  "pages": [
+    {
+      "id": "page-list",
+      "name": "列表页（暂定）",
+      "status": "tentative",
+      "content": {
+        "role": "none",
+        "status": "tentative",
+        "source": "system",
+        "locked": false,
+        "width": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "height": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "children": [
+          {
+            "role": "toolbar",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "auto"
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pl-btn-create",
+                "name": "新增按钮",
+                "kind": "component",
+                "component": {
+                  "ref": "button",
+                  "sampleProps": {
+                    "label": "新增",
+                    "variant": "primary",
+                    "semantic": "default",
+                    "size": "md"
+                  }
+                }
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pl-btn-delete",
+                "name": "批量删除按钮",
+                "kind": "component",
+                "component": {
+                  "ref": "button",
+                  "sampleProps": {
+                    "label": "批量删除",
+                    "variant": "secondary",
+                    "semantic": "danger",
+                    "size": "md"
+                  }
+                }
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "flex",
+                  "grow": 1
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pl-spacer",
+                "name": "弹性间隔",
+                "kind": "generic"
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pl-filter",
+                "name": "搜索输入框",
+                "kind": "component",
+                "component": {
+                  "ref": "input",
+                  "sampleProps": {
+                    "placeholder": "搜索示例数据…",
+                    "size": "md"
+                  }
+                }
+              }
+            ],
+            "id": "pl-toolbar",
+            "name": "操作栏",
+            "kind": "row",
+            "gap": 8,
+            "align": "center"
+          },
+          {
+            "role": "none",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "height": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "children": [],
+            "id": "pl-table",
+            "name": "数据表格",
+            "kind": "component",
+            "component": {
+              "ref": "table"
+            }
+          }
+        ],
+        "id": "pl-root",
+        "name": "列表页内容",
+        "kind": "column",
+        "gap": 12,
+        "padding": 16
+      },
+      "overrides": [
+        {
+          "id": "ov-list-tabs",
+          "targetNodeId": "sys-tabs",
+          "description": "本页面隐藏公共区域「页签区」（页面级例外，仅本页面生效）",
+          "status": "tentative",
+          "effect": "hide"
+        }
+      ]
+    },
+    {
+      "id": "page-detail",
+      "name": "详情页（暂定）",
+      "status": "tentative",
+      "content": {
+        "role": "none",
+        "status": "tentative",
+        "source": "system",
+        "locked": false,
+        "width": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "height": {
+          "mode": "flex",
+          "grow": 1
+        },
+        "children": [
+          {
+            "role": "toolbar",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "auto"
+            },
+            "height": {
+              "mode": "auto"
+            },
+            "children": [
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pd-btn-back",
+                "name": "返回按钮",
+                "kind": "component",
+                "component": {
+                  "ref": "button",
+                  "sampleProps": {
+                    "label": "返回",
+                    "variant": "secondary",
+                    "size": "md"
+                  }
+                }
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pd-btn-draft",
+                "name": "保存草稿按钮",
+                "kind": "component",
+                "component": {
+                  "ref": "button",
+                  "sampleProps": {
+                    "label": "保存草稿",
+                    "variant": "secondary",
+                    "size": "md"
+                  }
+                }
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "flex",
+                  "grow": 1
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pd-spacer",
+                "name": "弹性间隔",
+                "kind": "generic"
+              },
+              {
+                "role": "none",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "auto"
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pd-btn-save",
+                "name": "保存按钮",
+                "kind": "component",
+                "component": {
+                  "ref": "button",
+                  "sampleProps": {
+                    "label": "保存",
+                    "variant": "primary",
+                    "size": "md"
+                  }
+                }
+              }
+            ],
+            "id": "pd-toolbar",
+            "name": "操作栏",
+            "kind": "row",
+            "gap": 8,
+            "align": "center"
+          },
+          {
+            "role": "none",
+            "status": "tentative",
+            "source": "system",
+            "locked": false,
+            "width": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "height": {
+              "mode": "flex",
+              "grow": 1
+            },
+            "children": [
+              {
+                "role": "content",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "flex",
+                  "grow": 1
+                },
+                "height": {
+                  "mode": "auto"
+                },
+                "children": [],
+                "id": "pd-info",
+                "name": "业务信息区",
+                "kind": "custom",
+                "custom": {
+                  "purpose": "展示核心业务字段（示例用途）",
+                  "contentNote": "示例：描述列表或表单，字段清单待确认"
+                }
+              },
+              {
+                "role": "auxiliary",
+                "status": "tentative",
+                "source": "system",
+                "locked": false,
+                "width": {
+                  "mode": "fixed",
+                  "value": 360,
+                  "min": 300
+                },
+                "height": {
+                  "mode": "fixed",
+                  "value": 320,
+                  "min": 240
+                },
+                "children": [],
+                "id": "pd-map",
+                "name": "地图区域",
+                "kind": "custom",
+                "custom": {
+                  "purpose": "地理位置展示（演示占位）",
+                  "contentNote": "本轮仅占位，不实现地图控件；实际用途待确认"
+                }
+              }
+            ],
+            "id": "pd-body",
+            "name": "详情主体",
+            "kind": "row",
+            "gap": 12,
+            "align": "stretch"
+          }
+        ],
+        "id": "pd-root",
+        "name": "详情页内容",
+        "kind": "column",
+        "gap": 12,
+        "padding": 16,
+        "scroll": true
+      },
+      "overrides": []
+    }
+  ],
+  "note": "结构快照：Region Appearance / Token 只装饰表面，不改布局结构"
+}

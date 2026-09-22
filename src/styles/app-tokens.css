@@ -1,0 +1,34 @@
+/*
+ * 工作台外壳的 App UI Token。
+ * 它们与项目 Design Token 分属两个作用域；下方映射只为兼容
+ * 已有工作台样式，项目预览会在更内层的 PreviewScope 中覆盖语义变量。
+ */
+.app-shell {
+  --app-accent: #171717;
+  --app-accent-hover: #2B2B2B;
+  --app-accent-active: #000000;
+  --app-accent-subtle: #F0F0EE;
+  --app-text-primary: #1D2129;
+  --app-text-secondary: #4E5969;
+  --app-text-tertiary: #6B7785;
+  --app-surface-canvas: #F5F5F3;
+  --app-surface-primary: #FFFFFF;
+  --app-surface-secondary: #F3F3F0;
+  --app-border-default: #E2E2DF;
+  --app-border-strong: #BDBDB7;
+
+  /* 工作台旧样式兼容映射；不是国科信品牌值。 */
+  --brand-primary: var(--app-accent);
+  --brand-hover: var(--app-accent-hover);
+  --brand-active: var(--app-accent-active);
+  --brand-secondary: var(--app-accent-subtle);
+  --status-info: var(--app-accent);
+  --text-primary: var(--app-text-primary);
+  --text-secondary: var(--app-text-secondary);
+  --text-tertiary: var(--app-text-tertiary);
+  --surface-canvas: var(--app-surface-canvas);
+  --surface-primary: var(--app-surface-primary);
+  --surface-secondary: var(--app-surface-secondary);
+  --border-default: var(--app-border-default);
+  --border-strong: var(--app-border-strong);
+}

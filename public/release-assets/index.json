@@ -1,0 +1,242 @@
+[
+  {
+    "dir": "guokexin/1.5.5",
+    "label": "guokexin · v1.5.5（frozen · Query List 终验修复）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.5",
+    "migrationStatus": "frozen",
+    "checksum": "7c5130f3d659356512b8c9c9c25265ef",
+    "releaseId": "rel-886ccb1f1"
+  },
+  {
+    "dir": "test-customer-b/1.4.5",
+    "label": "test-customer-b · v1.4.5（frozen · Query List 终验修复）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.5",
+    "migrationStatus": "frozen",
+    "checksum": "71cd41dbfc5af32de761b9d1869105b7",
+    "releaseId": "rel-6d000bd32"
+  },
+  {
+    "dir": "guokexin/1.5.4",
+    "label": "guokexin · v1.5.4（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.4",
+    "migrationStatus": "frozen",
+    "checksum": "3aacaf4af2a8ee5cfd5df000c4149106",
+    "releaseId": "rel-d342f3e51"
+  },
+  {
+    "dir": "test-customer-b/1.4.4",
+    "label": "test-customer-b · v1.4.4（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.4",
+    "migrationStatus": "frozen",
+    "checksum": "85ed5c22d7e058d473ff82a856e77b0e",
+    "releaseId": "rel-f18bac472"
+  },
+  {
+    "dir": "guokexin/1.5.3",
+    "label": "guokexin · v1.5.3（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.3",
+    "migrationStatus": "frozen",
+    "checksum": "990af66f83319af9fabbca85f4f1cd23",
+    "releaseId": "rel-7fd2e5611"
+  },
+  {
+    "dir": "test-customer-b/1.4.3",
+    "label": "test-customer-b · v1.4.3（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.3",
+    "migrationStatus": "frozen",
+    "checksum": "81ed03c117e552b7b5ec1f4b0a4dbeed",
+    "releaseId": "rel-acd6a3472"
+  },
+  {
+    "dir": "guokexin/1.5.2",
+    "label": "guokexin · v1.5.2（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.2",
+    "migrationStatus": "frozen",
+    "checksum": "230d8b03fd7da3b50eef7429d6767b8f",
+    "releaseId": "rel-323a60361"
+  },
+  {
+    "dir": "test-customer-b/1.4.2",
+    "label": "test-customer-b · v1.4.2（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.2",
+    "migrationStatus": "frozen",
+    "checksum": "acb0b64e6d7059b8ebc78b64b2642f82",
+    "releaseId": "rel-8af39dc12"
+  },
+  {
+    "dir": "guokexin/1.5.1",
+    "label": "guokexin · v1.5.1（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.1",
+    "migrationStatus": "frozen",
+    "checksum": "5d8b219ae37d744ca1c972905cc756f6",
+    "releaseId": "rel-5b2a35f71"
+  },
+  {
+    "dir": "test-customer-b/1.4.1",
+    "label": "test-customer-b · v1.4.1（frozen · 全局一致性整改版）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.1",
+    "migrationStatus": "frozen",
+    "checksum": "baebe2aae6d3181c328476d08554cab6",
+    "releaseId": "rel-e914b0f02"
+  },
+  {
+    "dir": "guokexin/1.5.0",
+    "label": "guokexin · v1.5.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.5.0",
+    "migrationStatus": "frozen",
+    "checksum": "50515e1013d920a610c3aa2aa71eda6c",
+    "releaseId": "rel-d84ef7f61"
+  },
+  {
+    "dir": "test-customer-b/1.4.0",
+    "label": "test-customer-b · v1.4.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.4.0",
+    "migrationStatus": "frozen",
+    "checksum": "bedab2cd29aaaf5b9e2c50b702578df1",
+    "releaseId": "rel-00503c9c2"
+  },
+  {
+    "dir": "guokexin/1.4.0",
+    "label": "guokexin · v1.4.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.4.0",
+    "migrationStatus": "frozen",
+    "checksum": "226a688131e82f972bd5d46b19bfb9cd",
+    "releaseId": "rel-ba0e43cd1"
+  },
+  {
+    "dir": "test-customer-b/1.3.0",
+    "label": "test-customer-b · v1.3.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.3.0",
+    "migrationStatus": "frozen",
+    "checksum": "ef27ffb281dfd5842785c0c8b883832e",
+    "releaseId": "rel-602fca2a2"
+  },
+  {
+    "dir": "guokexin/1.3.1",
+    "label": "guokexin · v1.3.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.3.1",
+    "migrationStatus": "frozen",
+    "checksum": "63bd2d9d3a09457b49735ac7588a6d91",
+    "releaseId": "rel-115937161"
+  },
+  {
+    "dir": "test-customer-b/1.2.1",
+    "label": "test-customer-b · v1.2.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.2.1",
+    "migrationStatus": "frozen",
+    "checksum": "52199927a61946a121776f4d2c27bf7b",
+    "releaseId": "rel-ff150bfc2"
+  },
+  {
+    "dir": "guokexin/1.3.0",
+    "label": "guokexin · v1.3.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.3.0",
+    "migrationStatus": "frozen",
+    "checksum": "69776cf3b32c63b5e28fbf792f90e3cf",
+    "releaseId": "rel-3ec588421"
+  },
+  {
+    "dir": "test-customer-b/1.2.0",
+    "label": "test-customer-b · v1.2.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.2.0",
+    "migrationStatus": "frozen",
+    "checksum": "e7f29e2e7feb84e89f649754cd78e0a2",
+    "releaseId": "rel-602e0c4a2"
+  },
+  {
+    "dir": "guokexin/1.2.1",
+    "label": "guokexin · v1.2.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.2.1",
+    "migrationStatus": "frozen",
+    "checksum": "3b0842bc2e16e13ad115ec262610f5d0",
+    "releaseId": "rel-bbf9d6bd1"
+  },
+  {
+    "dir": "test-customer-b/1.1.1",
+    "label": "test-customer-b · v1.1.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.1.1",
+    "migrationStatus": "frozen",
+    "checksum": "6dedfa5af1b17b1c229b9100223ac5d6",
+    "releaseId": "rel-4d5dc95c2"
+  },
+  {
+    "dir": "guokexin/1.2.0",
+    "label": "guokexin · v1.2.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.2.0",
+    "migrationStatus": "frozen",
+    "checksum": "1a5874cc7d32216a9f13acd6c6868580",
+    "releaseId": "rel-3e82d0bc1"
+  },
+  {
+    "dir": "test-customer-b/1.1.0",
+    "label": "test-customer-b · v1.1.0（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.1.0",
+    "migrationStatus": "frozen",
+    "checksum": "4d7d78a3f84a71a5a5665919c9fd6e4f",
+    "releaseId": "rel-875baeeb2"
+  },
+  {
+    "dir": "guokexin/1.1.1",
+    "label": "guokexin · v1.1.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.1.1",
+    "migrationStatus": "frozen",
+    "checksum": "1b4f77f9ae7f313ff458b6c3e0e9f995",
+    "releaseId": "rel-d4cee0fd1"
+  },
+  {
+    "dir": "test-customer-b/1.0.1",
+    "label": "test-customer-b · v1.0.1（frozen · 新版发布闭环）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.0.1",
+    "migrationStatus": "frozen",
+    "checksum": "f4dd4d8ed1507928f56f50848040a6f2",
+    "releaseId": "rel-14e6f91b2"
+  },
+  {
+    "dir": "guokexin/1.1.0",
+    "label": "guokexin · v1.1.0（legacy-unfrozen · 旧格式，不可变历史版本）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.1.0",
+    "migrationStatus": "legacy-unfrozen",
+    "legacy": true
+  },
+  {
+    "dir": "guokexin/1.0.0",
+    "label": "guokexin · v1.0.0（legacy-unfrozen · 旧格式，不可变历史版本）",
+    "projectId": "proj-mtwba7n6-nh1d88",
+    "version": "1.0.0",
+    "migrationStatus": "legacy-unfrozen",
+    "legacy": true
+  },
+  {
+    "dir": "test-customer-b/1.0.0",
+    "label": "test-customer-b · v1.0.0（legacy-unfrozen · 旧格式，不可变历史版本）",
+    "projectId": "proj-mtwbe3v9-zf5v8f",
+    "version": "1.0.0",
+    "migrationStatus": "legacy-unfrozen",
+    "legacy": true
+  }
+]

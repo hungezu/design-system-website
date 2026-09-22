@@ -1,0 +1,9 @@
+import {useState} from 'react'
+import {createRoot} from 'react-dom/client'
+import {AIChatDemo} from '../../../src/components/AIExample'
+import {DSButton,DSChainOfThought,DSChatTool,DSCodeBlock,DSChatAttachment,DSChatSource} from '../../../src/runtime'
+import {PreviewScope} from '../../../src/design-system/theme/PreviewScope'
+import {baselineThemeSettings,PROJECT_THEME_MODE_VALUES,projectPreviewVariables} from '../../../src/services/project-theme'
+import '../../../src/styles/index.css'
+function App(){const [mode,setMode]=useState<'light'|'dark'>('light'),[narrow,setNarrow]=useState(false);return <main style={{padding:16}}><div style={{display:'flex',gap:8,marginBottom:16}}><DSButton onClick={()=>setMode(mode==='light'?'dark':'light')}>{mode==='light'?'切换深色':'切换浅色'}</DSButton><DSButton onClick={()=>setNarrow(!narrow)}>{narrow?'宽容器':'窄容器'}</DSButton></div><PreviewScope vars={projectPreviewVariables({...baselineThemeSettings,...PROJECT_THEME_MODE_VALUES[mode],mode})}><section data-ai-acceptance style={{width:narrow?360:960,maxWidth:'100%',padding:16,boxSizing:'border-box',background:'var(--surface-primary)',color:'var(--text-primary)',display:'grid',gap:24}}><h1>AI 组件视觉验收</h1><AIChatDemo/><DSChainOfThought title="任务记录（示例）" defaultExpanded steps={[{id:'one',title:'读取输入',status:'success',description:'只展示外部传入的公开进度。'},{id:'two',title:'生成内容',status:'running'}]}/><DSChatTool name="检索资料（示例）" state="success" defaultExpanded input={{query:'design system'}} output={{count:2}}/><DSCodeBlock language="typescript" code={'const message: string = "'+ 'long content '.repeat(20)+'";\nconsole.log(message);'}/><DSChatAttachment name="非常长的附件名称_完整设计规范_版本记录_示例文件.pdf" size={824120} type="application/pdf"/><DSChatSource sources={[{id:'one',title:'组件规范和非常长的来源标题',description:'用于测试窄容器自动换行与主题可读性。',href:'/components'}]}/></section></PreviewScope></main>}
+createRoot(document.getElementById('root')!).render(<App/> )

@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-20",
+  "tests": 741,
+  "files": 53,
+  "targetedTests": 6,
+  "build": "passed",
+  "runtimeArchive": "passed",
+  "browser": [
+    "project primary entry",
+    "invalid input retains valid preview",
+    "preset changes and saved-theme comparison",
+    "save and version-publish link",
+    "narrow layout without root overflow"
+  ],
+  "scope": "isolated QA workspace; production theme values unchanged"
+}

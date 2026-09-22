@@ -1,0 +1,2696 @@
+{
+  "cssFiles": 19,
+  "definitions": 206,
+  "missingWithoutFallback": [
+    {
+      "file": "src/design-system/primitives/Select/Select.css",
+      "line": 10,
+      "property": "min-width",
+      "name": "--trigger-width",
+      "fallback": false,
+      "selector": ".owned-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 612,
+      "property": "width",
+      "name": "--trigger-width",
+      "fallback": false,
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 613,
+      "property": "min-width",
+      "name": "--trigger-width",
+      "fallback": false,
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 614,
+      "property": "max-width",
+      "name": "--trigger-width",
+      "fallback": false,
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 31,
+      "property": "min-width",
+      "name": "--trigger-width",
+      "fallback": false,
+      "selector": ".app-select__popover"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 676,
+      "property": "margin-left",
+      "name": "--ia-depth",
+      "fallback": false,
+      "selector": ".ia-node"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1070,
+      "property": "font-size",
+      "name": "--preview-body-size",
+      "fallback": false,
+      "selector": ".theme-system-preview"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1072,
+      "property": "gap",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".theme-system-preview > aside"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1078,
+      "property": "font-size",
+      "name": "--preview-title-size",
+      "fallback": false,
+      "selector": ".theme-system-preview > main > header strong"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1080,
+      "property": "padding",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".theme-preview-controls"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1080,
+      "property": "gap",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".theme-preview-controls"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1110,
+      "property": "padding",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".template-inline-create"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1111,
+      "property": "padding",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".template-query"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1111,
+      "property": "gap",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".template-query"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1236,
+      "property": "gap",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".business-preview > aside"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1244,
+      "property": "gap",
+      "name": "--preview-gap",
+      "fallback": false,
+      "selector": ".business-preview__filters"
+    },
+    {
+      "file": "src/styles/index.css",
+      "line": 1248,
+      "property": "min-height",
+      "name": "--preview-row-height",
+      "fallback": false,
+      "selector": ".business-preview__table > div"
+    }
+  ],
+  "hardColors": [
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 4,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".bds-scope"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 5,
+      "property": "background",
+      "value": "var(--bds-bg-page, #f5f6f7)",
+      "selector": ".bds-scope"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 26,
+      "property": "border-color",
+      "value": "var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".bds-scope--page .lnode:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 29,
+      "property": "outline",
+      "value": "2px solid var(--bds-brand, #2563eb)",
+      "selector": ".bds-scope--page .lnode.is-selected"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 51,
+      "property": "border",
+      "value": "1px solid var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".bds-scope--structure .lnode"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 52,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".bds-scope--structure .lnode"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 55,
+      "property": "border",
+      "value": "1px solid var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".lnode"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 56,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".lnode"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 61,
+      "property": "border-color",
+      "value": "var(--bds-border-strong, #c9cdd4)",
+      "selector": ".lnode:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 64,
+      "property": "outline",
+      "value": "2px solid var(--bds-brand, #2563eb)",
+      "selector": ".lnode.is-selected"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 66,
+      "property": "border-color",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".lnode.is-selected"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 72,
+      "property": "background",
+      "value": "var(--bds-bg-page, #f5f6f7)",
+      "selector": ".lnode--page-content"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 75,
+      "property": "background",
+      "value": "var(--bds-bg-surface-alt, #fafbfc)",
+      "selector": ".lnode--custom"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 94,
+      "property": "background",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".preview-selected-chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 95,
+      "property": "color",
+      "value": "var(--bds-on-brand, #fff)",
+      "selector": ".preview-selected-chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 140,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".demo-chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 141,
+      "property": "border",
+      "value": "1px dashed var(--bds-border-strong, #c9cdd4)",
+      "selector": ".demo-chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 152,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-placeholder"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 164,
+      "property": "color",
+      "value": "var(--bds-danger, #f53f3f)",
+      "selector": ".preview-error"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 165,
+      "property": "border",
+      "value": "1px dashed var(--bds-danger, #f53f3f)",
+      "selector": ".preview-error"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 180,
+      "property": "background",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".preview-logo"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 200,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".preview-nav-item"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 203,
+      "property": "background",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".preview-nav-item.is-active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 204,
+      "property": "color",
+      "value": "var(--bds-on-brand, #fff)",
+      "selector": ".preview-nav-item.is-active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 219,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-icon-area"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 225,
+      "property": "background-color",
+      "value": "var(--bds-danger, #f53f3f)",
+      "selector": ".preview-badge"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 238,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-account"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 245,
+      "property": "background",
+      "value": "var(--bds-fill-hover, var(--bds-bg-hover, #f0f2f5))",
+      "selector": ".preview-avatar"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 246,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".preview-avatar"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 254,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".preview-account-name"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 266,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-title-crumb"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 279,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-tab"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 283,
+      "property": "color",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".preview-tab.is-active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 284,
+      "property": "border-color",
+      "value": "var(--bds-brand, #2563eb)",
+      "selector": ".preview-tab.is-active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 285,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".preview-tab.is-active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 298,
+      "property": "border",
+      "value": "1.5px dashed var(--bds-border-strong, #c9cdd4)",
+      "selector": ".preview-custom"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 307,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".preview-custom-text"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 341,
+      "property": "outline",
+      "value": "var(--bds-btn-focus-w, 2px) solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-btn:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 374,
+      "property": "background-color",
+      "value": "var(--bds-btn-primary-bg, #2563eb)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 375,
+      "property": "color",
+      "value": "var(--bds-btn-primary-text, #fff)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 378,
+      "property": "background",
+      "value": "var(--bds-btn-primary-bg-hover, #2563eb)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 381,
+      "property": "background",
+      "value": "var(--bds-btn-primary-bg-pressed, #2563eb)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 384,
+      "property": "background-color",
+      "value": "var(--bds-btn-primary-bg-disabled, #2563eb)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 385,
+      "property": "color",
+      "value": "var(--bds-btn-primary-text, #fff)",
+      "selector": ".ds-btn--primary.ds-btn--sem-default:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 388,
+      "property": "background-color",
+      "value": "var(--bds-btn-danger-bg, #f53f3f)",
+      "selector": ".ds-btn--primary.ds-btn--sem-danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 392,
+      "property": "background",
+      "value": "var(--bds-btn-danger-bg-hover, #f53f3f)",
+      "selector": ".ds-btn--primary.ds-btn--sem-danger:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 395,
+      "property": "background",
+      "value": "var(--bds-btn-danger-bg-pressed, #f53f3f)",
+      "selector": ".ds-btn--primary.ds-btn--sem-danger:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 398,
+      "property": "background",
+      "value": "var(--bds-btn-danger-bg-disabled, #f53f3f)",
+      "selector": ".ds-btn--primary.ds-btn--sem-danger:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 402,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-bg, #fff)",
+      "selector": ".ds-btn--secondary"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 403,
+      "property": "color",
+      "value": "var(--bds-btn-sec-text, #1f2329)",
+      "selector": ".ds-btn--secondary"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 404,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-border, #c9cdd4)",
+      "selector": ".ds-btn--secondary"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 407,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-bg-hover, #f0f2f5)",
+      "selector": ".ds-btn--secondary:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 408,
+      "property": "color",
+      "value": "var(--bds-btn-sec-text-hover, #1f2329)",
+      "selector": ".ds-btn--secondary:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 409,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-border-hover, #c9cdd4)",
+      "selector": ".ds-btn--secondary:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 412,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-bg-pressed, #f0f2f5)",
+      "selector": ".ds-btn--secondary:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 413,
+      "property": "color",
+      "value": "var(--bds-btn-sec-text-pressed, #1f2329)",
+      "selector": ".ds-btn--secondary:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 414,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-border-pressed, #c9cdd4)",
+      "selector": ".ds-btn--secondary:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 417,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-danger-bg, #fff)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 418,
+      "property": "color",
+      "value": "var(--bds-btn-sec-danger-text, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 419,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-danger-border, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 422,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-danger-bg-hover, #f0f2f5)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 423,
+      "property": "color",
+      "value": "var(--bds-btn-sec-danger-text-hover, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 424,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-danger-border-hover, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 427,
+      "property": "background-color",
+      "value": "var(--bds-btn-sec-danger-bg-pressed, #f0f2f5)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 428,
+      "property": "color",
+      "value": "var(--bds-btn-sec-danger-text-pressed, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 429,
+      "property": "border-color",
+      "value": "var(--bds-btn-sec-danger-border-pressed, #f53f3f)",
+      "selector": ".ds-btn--secondary.ds-btn--sem-danger:active:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 476,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".ds-btn--tertiary"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 480,
+      "property": "background",
+      "value": "var(--bds-btn-ter-bg-hover, #f0f2f5)",
+      "selector": ".ds-btn--tertiary:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 483,
+      "property": "color",
+      "value": "var(--bds-btn-danger-outlined-text, #f53f3f)",
+      "selector": ".ds-btn--tertiary.ds-btn--sem-danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 486,
+      "property": "background",
+      "value": "var(--bds-btn-ter-danger-bg-hover, #fef0f0)",
+      "selector": ".ds-btn--tertiary.ds-btn--sem-danger:hover:not(:disabled)"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 503,
+      "property": "color",
+      "value": "var(--bds-typo-form-label-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-select__label"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 527,
+      "property": "border-color",
+      "value": "var(--bds-sel-trigger-border, #e5e6eb)",
+      "selector": ".ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 528,
+      "property": "background",
+      "value": "var(--bds-sel-trigger-bg, #fff)",
+      "selector": ".ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 529,
+      "property": "color",
+      "value": "var(--bds-typo-form-value-color, var(--bds-field-text, #1f2329))",
+      "selector": ".ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 533,
+      "property": "border",
+      "value": "var(--bds-sel-border-w, 1px) solid var(--bds-field-border, #e5e6eb)",
+      "selector": ".ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 562,
+      "property": "border-color",
+      "value": "var(--bds-sel-trigger-border, #e5e6eb)",
+      "selector": ".ds-select .ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 563,
+      "property": "background",
+      "value": "var(--bds-sel-trigger-bg, #fff)",
+      "selector": ".ds-select .ds-select__trigger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 573,
+      "property": "color",
+      "value": "var(--bds-typo-form-placeholder-color, var(--bds-field-placeholder, var(--bds-text-placeholder, rgba(0, 0, 0, 0.4))))",
+      "selector": ".ds-select__value[data-placeholder]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 582,
+      "property": "border-color",
+      "value": "var(--bds-field-border-hover, #2563eb)",
+      "selector": ".ds-select__trigger[data-hover]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 585,
+      "property": "outline",
+      "value": "var(--bds-btn-focus-w, 2px) solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-select__trigger[data-focus-visible]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 587,
+      "property": "border-color",
+      "value": "var(--bds-field-border-focus, #2563eb)",
+      "selector": ".ds-select__trigger[data-focus-visible]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 590,
+      "property": "border-color",
+      "value": "var(--bds-field-border-focus, #2563eb)",
+      "selector": ".ds-select__trigger[data-open]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 594,
+      "property": "border-color",
+      "value": "var(--bds-field-border-invalid, #f53f3f)",
+      "selector": ".ds-select__trigger[data-invalid],\n.ds-select__trigger[aria-invalid=true]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 597,
+      "property": "background",
+      "value": "var(--bds-field-bg-disabled, #fafbfc)",
+      "selector": ".ds-select__trigger[data-disabled]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 598,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-select__trigger[data-disabled]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 604,
+      "property": "color",
+      "value": "var(--bds-typo-form-description-color, var(--bds-text-secondary, var(--bds-text-2, #646a73)))",
+      "selector": ".ds-select__desc"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 609,
+      "property": "color",
+      "value": "var(--bds-typo-form-error-color, var(--bds-danger, #f53f3f))",
+      "selector": ".ds-select__error"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 616,
+      "property": "background",
+      "value": "var(--bds-surface-popup, var(--bds-bg-surface, #fff))",
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 618,
+      "property": "box-shadow",
+      "value": "var(--bds-sel-popover-shadow, 0 12px 40px rgba(31, 35, 41, 0.18))",
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 619,
+      "property": "outline",
+      "value": "1px solid var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".ds-select__popover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 640,
+      "property": "color",
+      "value": "var(--bds-sel-option-text, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-select__option"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 648,
+      "property": "background",
+      "value": "var(--bds-sel-option-bg-hover, var(--bds-fill-hover, var(--bds-bg-hover, #f0f2f5)))",
+      "selector": ".ds-select__option[data-hovered]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 651,
+      "property": "background",
+      "value": "var(--bds-sel-option-bg-focus, var(--bds-fill-subtle, var(--bds-bg-surface-alt, #fafbfc)))",
+      "selector": ".ds-select__option[data-focused]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 654,
+      "property": "background",
+      "value": "var(--bds-sel-option-bg-focus, var(--bds-fill-subtle, var(--bds-bg-surface-alt, #fafbfc)))",
+      "selector": ".ds-select__option[data-focus-visible]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 657,
+      "property": "background",
+      "value": "var(--bds-sel-option-bg-selected, var(--bds-selection-bg, #2563eb))",
+      "selector": ".ds-select__option[data-selected]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 658,
+      "property": "color",
+      "value": "var(--bds-sel-option-text-selected, var(--bds-selection-text, #1f2329))",
+      "selector": ".ds-select__option[data-selected]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 662,
+      "property": "background",
+      "value": "var(--bds-sel-option-bg-selected-hover, var(--bds-sel-option-bg-selected, var(--bds-selection-bg, #2563eb)))",
+      "selector": ".ds-select__option[data-selected][data-hovered],\n.ds-select__option[data-selected][data-focused]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 665,
+      "property": "color",
+      "value": "var(--bds-sel-option-text-disabled, var(--bds-text-disabled, rgba(0, 0, 0, 0.26)))",
+      "selector": ".ds-select__option[data-disabled]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 675,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-select__option--empty"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 689,
+      "property": "color",
+      "value": "var(--bds-typo-section-meta-color, var(--bds-text-secondary, var(--bds-text-2, #646a73)))",
+      "selector": ".ds-table-caption"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 695,
+      "property": "border-bottom",
+      "value": "1px solid var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".ds-table th,\n.ds-table td"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 703,
+      "property": "background",
+      "value": "var(--bds-fill-subtle, var(--bds-bg-surface-alt, #fafbfc))",
+      "selector": ".ds-table th"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 706,
+      "property": "color",
+      "value": "var(--bds-typo-table-header-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-table th"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 708,
+      "property": "border-top",
+      "value": "1px solid var(--bds-border-default, var(--bds-border, #e5e6eb))",
+      "selector": ".ds-table th"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 711,
+      "property": "color",
+      "value": "var(--bds-typo-table-cell-color, var(--bds-table-text, #1f2329))",
+      "selector": ".ds-table td"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 714,
+      "property": "background",
+      "value": "var(--bds-fill-hover, var(--bds-bg-hover, #f0f2f5))",
+      "selector": ".ds-table tbody tr:hover td"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 718,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-table-empty"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 731,
+      "property": "color",
+      "value": "var(--bds-typo-form-label-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-input__label"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 737,
+      "property": "background-color",
+      "value": "var(--bds-field-bg, #fff)",
+      "selector": ".ds-input__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 738,
+      "property": "border",
+      "value": "var(--bds-input-border-w, 1px) solid var(--bds-field-border, #e5e6eb)",
+      "selector": ".ds-input__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 753,
+      "property": "border-color",
+      "value": "var(--bds-field-border-hover, var(--bds-brand, #2563eb))",
+      "selector": ".ds-input__box:hover:not([data-disabled])"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 761,
+      "property": "color",
+      "value": "var(--bds-typo-form-value-color, var(--bds-field-text, var(--bds-text-primary, #1f2329)))",
+      "selector": ".ds-input__native"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 767,
+      "property": "color",
+      "value": "var(--bds-typo-form-placeholder-color, var(--bds-field-placeholder, var(--bds-text-placeholder, rgba(0, 0, 0, 0.4))))",
+      "selector": ".ds-input__native::placeholder"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 771,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-input__native:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 775,
+      "property": "border-color",
+      "value": "var(--bds-field-border-focus, var(--bds-brand, #2563eb))",
+      "selector": ".ds-input__box:focus-within"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 776,
+      "property": "box-shadow",
+      "value": "0 0 0 var(--bds-input-focus-w, 2px) var(--bds-focus-ring, rgba(37, 99, 235, 0.2))",
+      "selector": ".ds-input__box:focus-within"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 779,
+      "property": "background-color",
+      "value": "var(--bds-field-bg-disabled, #fafbfc)",
+      "selector": ".ds-input__box[data-disabled]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 780,
+      "property": "border-color",
+      "value": "var(--bds-field-border, #e5e6eb)",
+      "selector": ".ds-input__box[data-disabled]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 783,
+      "property": "background-color",
+      "value": "var(--bds-field-bg-disabled, #fafbfc)",
+      "selector": ".ds-input__box[data-readonly]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 786,
+      "property": "border-color",
+      "value": "var(--bds-field-border-invalid, var(--bds-danger, #f53f3f))",
+      "selector": ".ds-input--invalid .ds-input__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 791,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".ds-input__affix"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 805,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".ds-icon-action"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 818,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".ds-icon-action:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 819,
+      "property": "background",
+      "value": "var(--bds-fill-hover, var(--bds-bg-hover, #f0f2f5))",
+      "selector": ".ds-icon-action:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 822,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".ds-icon-action:active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 823,
+      "property": "background",
+      "value": "var(--bds-fill-active, #dddddd)",
+      "selector": ".ds-icon-action:active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 826,
+      "property": "outline",
+      "value": "2px solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-icon-action:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 830,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-icon-action:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 831,
+      "property": "background",
+      "value": "var(--bds-fill-disabled, #eeeeee)",
+      "selector": ".ds-icon-action:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 835,
+      "property": "color",
+      "value": "var(--bds-danger, #d54941)",
+      "selector": ".ds-icon-action--danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 851,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".ds-input__clear"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 855,
+      "property": "color",
+      "value": "var(--bds-text-primary, var(--bds-text, #1f2329))",
+      "selector": ".ds-input__clear:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 856,
+      "property": "background",
+      "value": "var(--bds-fill-hover, var(--bds-bg-hover, #f0f2f5))",
+      "selector": ".ds-input__clear:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 859,
+      "property": "background",
+      "value": "var(--bds-fill-active, #dddddd)",
+      "selector": ".ds-input__clear:active"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 862,
+      "property": "outline",
+      "value": "2px solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-input__clear:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 866,
+      "property": "color",
+      "value": "var(--bds-text-disabled, rgba(0, 0, 0, 0.26))",
+      "selector": ".ds-input__count"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 873,
+      "property": "color",
+      "value": "var(--bds-typo-form-description-color, var(--bds-text-secondary, var(--bds-text-2, #646a73)))",
+      "selector": ".ds-input__desc"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 878,
+      "property": "color",
+      "value": "var(--bds-typo-form-error-color, var(--bds-danger, #f53f3f))",
+      "selector": ".ds-input__error"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 882,
+      "property": "scrollbar-color",
+      "value": "var(--bds-scrollbar-thumb, #c6c6c6) var(--bds-scrollbar-track, transparent)",
+      "selector": ".ds-table"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 892,
+      "property": "background",
+      "value": "var(--bds-scrollbar-thumb, #c6c6c6)",
+      "selector": ".ds-table::-webkit-scrollbar-thumb"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 896,
+      "property": "background",
+      "value": "var(--bds-scrollbar-thumb-hover, #a6a6a6)",
+      "selector": ".ds-table::-webkit-scrollbar-thumb:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 899,
+      "property": "border",
+      "value": "var(--bds-table-border-w, 1px) solid var(--bds-table-border, #e5e6eb)",
+      "selector": ".ds-table"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 902,
+      "property": "background",
+      "value": "var(--bds-table-row-bg, #fff)",
+      "selector": ".ds-table"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 912,
+      "property": "background-color",
+      "value": "var(--bds-table-header-bg, #fafbfc)",
+      "selector": ".ds-table__head"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 915,
+      "property": "color",
+      "value": "var(--bds-typo-table-header-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-table__head"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 922,
+      "property": "background-color",
+      "value": "var(--bds-table-row-bg, #fff)",
+      "selector": ".ds-table__row"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 923,
+      "property": "border-top",
+      "value": "1px solid var(--bds-table-border, #e5e6eb)",
+      "selector": ".ds-table__row"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 927,
+      "property": "background-color",
+      "value": "var(--bds-table-row-hover, #f0f2f5)",
+      "selector": ".ds-table__row:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 930,
+      "property": "background-color",
+      "value": "var(--bds-table-row-selected, rgba(37, 99, 235, 0.08))",
+      "selector": ".ds-table__row.is-selected"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 933,
+      "property": "background-color",
+      "value": "var(--bds-table-row-selected, rgba(37, 99, 235, 0.12))",
+      "selector": ".ds-table__row.is-selected:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 945,
+      "property": "color",
+      "value": "var(--bds-typo-table-cell-color, var(--bds-table-text, #1f2329))",
+      "selector": ".ds-table__cell"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 985,
+      "property": "border",
+      "value": "1px solid var(--bds-selection-border-default, var(--bds-border-default, #e5e6eb))",
+      "selector": ".ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 986,
+      "property": "background",
+      "value": "var(--bds-selection-background-default, var(--bds-control-bg, #ffffff))",
+      "selector": ".ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 999,
+      "property": "border",
+      "value": "solid var(--bds-selection-icon-checked, var(--bds-selection-checkmark, #ffffff))",
+      "selector": ".ds-check__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1009,
+      "property": "background",
+      "value": "var(--bds-selection-icon-checked, var(--bds-selection-checkmark, #ffffff))",
+      "selector": ".ds-check__dash"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1012,
+      "property": "border-color",
+      "value": "var(--bds-selection-border-hover, var(--bds-border-hover, #c9cdd4))",
+      "selector": ".ds-check[data-hovered] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1013,
+      "property": "background",
+      "value": "var(--bds-selection-background-hover, var(--bds-control-bg, #ffffff))",
+      "selector": ".ds-check[data-hovered] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1017,
+      "property": "border-color",
+      "value": "var(--bds-selection-border-checked, var(--bds-brand, #2563eb))",
+      "selector": ".ds-check[data-selected] .ds-check__box,\n.ds-check[data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1018,
+      "property": "background",
+      "value": "var(--bds-selection-background-checked, var(--bds-brand, #2563eb))",
+      "selector": ".ds-check[data-selected] .ds-check__box,\n.ds-check[data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1027,
+      "property": "outline",
+      "value": "2px solid var(--bds-selection-focus-ring, var(--bds-focus-ring, #2563eb))",
+      "selector": ".ds-check[data-focus-visible]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1035,
+      "property": "border-color",
+      "value": "var(--bds-selection-border-disabled, var(--bds-control-border-disabled, #e8e8e8))",
+      "selector": ".ds-check[data-disabled] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1036,
+      "property": "background",
+      "value": "var(--bds-selection-background-disabled, var(--bds-control-bg-disabled, #eeeeee))",
+      "selector": ".ds-check[data-disabled] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1040,
+      "property": "border-color",
+      "value": "var(--bds-selection-border-checked-disabled, var(--bds-control-border-disabled, #e8e8e8))",
+      "selector": ".ds-check[data-disabled][data-selected] .ds-check__box,\n.ds-check[data-disabled][data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1041,
+      "property": "background",
+      "value": "var(--bds-selection-background-checked-disabled, var(--bds-control-bg-disabled, #eeeeee))",
+      "selector": ".ds-check[data-disabled][data-selected] .ds-check__box,\n.ds-check[data-disabled][data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1044,
+      "property": "border-color",
+      "value": "var(--bds-selection-icon-checked-disabled, var(--bds-selection-checkmark-checked-disabled, var(--bds-control-icon-disabled, #777777)))",
+      "selector": ".ds-check[data-disabled] .ds-check__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1047,
+      "property": "background",
+      "value": "var(--bds-selection-icon-checked-disabled, var(--bds-selection-checkmark-checked-disabled, var(--bds-control-icon-disabled, #777777)))",
+      "selector": ".ds-check[data-disabled] .ds-check__dash"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1053,
+      "property": "border-color",
+      "value": "var(--bds-selection-border-disabled, var(--bds-control-border-disabled, #e8e8e8))",
+      "selector": ".ds-check[data-disabled][data-hovered] .ds-check__box,\n.ds-check[data-disabled][data-pressed] .ds-check__box,\n.ds-check[data-disabled][data-hovered][data-selected] .ds-check__box,\n.ds-check[data-disabled][data-hovered][data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1054,
+      "property": "background",
+      "value": "var(--bds-selection-background-disabled, var(--bds-control-bg-disabled, #eeeeee))",
+      "selector": ".ds-check[data-disabled][data-hovered] .ds-check__box,\n.ds-check[data-disabled][data-pressed] .ds-check__box,\n.ds-check[data-disabled][data-hovered][data-selected] .ds-check__box,\n.ds-check[data-disabled][data-hovered][data-indeterminate] .ds-check__box"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1057,
+      "property": "accent-color",
+      "value": "var(--bds-selection-background-checked, var(--bds-selection-bg, var(--bds-brand, #2563eb)))",
+      "selector": ".ds-table__check"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1063,
+      "property": "outline",
+      "value": "2px solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-table__check:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1076,
+      "property": "color",
+      "value": "var(--bds-typo-table-header-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-table__sort"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1081,
+      "property": "color",
+      "value": "var(--bds-brand-hover, var(--bds-selection-border-hover, var(--bds-brand, #2563eb)))",
+      "selector": ".ds-table__sort:hover:not(:disabled),\n.ds-table__sort:hover:not(:disabled) .ds-table__sort-icon"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1084,
+      "property": "outline",
+      "value": "2px solid var(--bds-focus-ring, #2563eb)",
+      "selector": ".ds-table__sort:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1091,
+      "property": "color",
+      "value": "var(--bds-text-secondary, var(--bds-text-2, #646a73))",
+      "selector": ".ds-table__sort-icon"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1095,
+      "property": "color",
+      "value": "var(--bds-selection-background-checked, var(--bds-selection-bg, var(--bds-brand, #2563eb)))",
+      "selector": ".ds-table__cell.is-sorted .ds-table__sort,\n.ds-table__cell.is-sorted .ds-table__sort-icon"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1101,
+      "property": "color",
+      "value": "var(--bds-table-text-2, #646a73)",
+      "selector": ".ds-table__state"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1130,
+      "property": "color",
+      "value": "var(--bds-typo-pagination-text-color, var(--bds-text-primary, var(--bds-text, #1f2329)))",
+      "selector": ".ds-pagination__total"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1187,
+      "property": "background-color",
+      "value": "rgb(0 0 0 / var(--bds-dialog-overlay-opacity, 0.55))",
+      "selector": ".ds-dialog-overlay"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1198,
+      "property": "background-color",
+      "value": "var(--bds-surface-popup, var(--bds-dialog-bg, #fff))",
+      "selector": ".ds-dialog__panel"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1199,
+      "property": "border",
+      "value": "var(--bds-dialog-border-w, 1px) solid var(--bds-dialog-border, #e5e6eb)",
+      "selector": ".ds-dialog__panel"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1201,
+      "property": "box-shadow",
+      "value": "var(--bds-dialog-shadow, 0 12px 40px rgba(0,0,0,.16))",
+      "selector": ".ds-dialog__panel"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1229,
+      "property": "color",
+      "value": "var(--bds-dialog-title, #1f2329)",
+      "selector": ".ds-dialog__title"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1235,
+      "property": "color",
+      "value": "var(--bds-typo-section-meta-color, var(--bds-text-secondary, var(--bds-text-2, #646a73)))",
+      "selector": ".ds-dialog__desc"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1239,
+      "property": "color",
+      "value": "var(--bds-dialog-text, #1f2329)",
+      "selector": ".ds-dialog__content"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1256,
+      "property": "background",
+      "value": "var(--bds-bg-surface-alt, #f5f6f8)",
+      "selector": ".list-active-filters"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1257,
+      "property": "border",
+      "value": "1px solid var(--bds-border-1, #e5e6eb)",
+      "selector": ".list-active-filters"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1264,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".list-active-filters__chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1265,
+      "property": "border",
+      "value": "1px solid var(--bds-border-1, #e5e6eb)",
+      "selector": ".list-active-filters__chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1269,
+      "property": "color",
+      "value": "var(--bds-toolbar-meta-color, rgba(0,0,0,.6))",
+      "selector": ".list-active-filters__chip"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1273,
+      "property": "color",
+      "value": "var(--bds-text-1, rgba(0,0,0,.9))",
+      "selector": ".list-active-filters__chip .mono"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1289,
+      "property": "color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".list-active-filters__clear"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1323,
+      "property": "color",
+      "value": "var(--bds-toolbar-meta-color, rgba(0,0,0,.6))",
+      "selector": ".list-toolbar__meta"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1343,
+      "property": "background",
+      "value": "var(--bds-surface-popup, #fff)",
+      "selector": ".list-toolbar__menu"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1344,
+      "property": "border",
+      "value": "1px solid var(--bds-border-1, #e5e6eb)",
+      "selector": ".list-toolbar__menu"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1346,
+      "property": "box-shadow",
+      "value": "var(--bds-shadow-2, 0 4px 16px rgba(31,35,41,.12))",
+      "selector": ".list-toolbar__menu"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1366,
+      "property": "color",
+      "value": "var(--bds-bulk-text-color, rgba(0,0,0,.9))",
+      "selector": ".list-toolbar__menu-item"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1369,
+      "property": "background",
+      "value": "var(--bds-fill-1, rgba(0,0,0,.05))",
+      "selector": ".list-toolbar__menu-item:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1372,
+      "property": "color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".list-toolbar__menu-item[aria-checked=true]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1376,
+      "property": "color",
+      "value": "var(--bds-text-4, rgba(0,0,0,.26))",
+      "selector": ".list-toolbar__menu-item:disabled"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1391,
+      "property": "background",
+      "value": "var(--bds-fill-1, rgba(0,0,0,.05))",
+      "selector": ".list-toolbar__col-item:hover"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1400,
+      "property": "background",
+      "value": "var(--bds-fill-warning, #fff1e9)",
+      "selector": ".list-toolbar__demo-badge"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1401,
+      "property": "color",
+      "value": "var(--bds-warning, #ed7b2f)",
+      "selector": ".list-toolbar__demo-badge"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1407,
+      "property": "color",
+      "value": "var(--bds-text-3, rgba(0,0,0,.4))",
+      "selector": ".list-toolbar__note"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1416,
+      "property": "background",
+      "value": "var(--bds-bulk-bg, #fafbfc)",
+      "selector": ".list-bulk"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1417,
+      "property": "border",
+      "value": "1px solid var(--bds-bulk-border-color, #e5e6eb)",
+      "selector": ".list-bulk"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1422,
+      "property": "color",
+      "value": "var(--bds-bulk-text-color, rgba(0,0,0,.9))",
+      "selector": ".list-bulk__count"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1436,
+      "property": "color",
+      "value": "var(--bds-bulk-danger-color, #f53f3f)",
+      "selector": ".list-bulk [data-bulk-action][data-danger] .ds-btn__label,\n.list-bulk .ds-btn--danger"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1447,
+      "property": "background",
+      "value": "var(--bds-fill-success, #e8f8f2)",
+      "selector": ".list-bulk__result"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1448,
+      "property": "color",
+      "value": "var(--bds-success, #2ba471)",
+      "selector": ".list-bulk__result"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1452,
+      "property": "background",
+      "value": "var(--bds-fill-warning, #fff1e9)",
+      "selector": ".list-bulk__result.has-failed"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1453,
+      "property": "color",
+      "value": "var(--bds-bulk-danger-color, #d54941)",
+      "selector": ".list-bulk__result.has-failed"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1471,
+      "property": "color",
+      "value": "var(--bds-text-3, rgba(0,0,0,.4))",
+      "selector": ".list-bulk__dismiss"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1502,
+      "property": "color",
+      "value": "var(--bds-text, var(--bds-text-primary, #1f2329))",
+      "selector": ".ds-ext"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1509,
+      "property": "color",
+      "value": "var(--bds-text-secondary, #646a73)",
+      "selector": ".ds-loading"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1515,
+      "property": "border",
+      "value": "2px solid var(--bds-border, #dcdfe6)",
+      "selector": ".ds-loading__indicator"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1516,
+      "property": "border-top-color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".ds-loading__indicator"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1531,
+      "property": "background",
+      "value": "var(--bds-bg-surface-alt, #f7f8fa)",
+      "selector": ".ds-empty"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1537,
+      "property": "color",
+      "value": "var(--bds-text-secondary, #646a73)",
+      "selector": ".ds-empty p,\n.ds-alert p"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1545,
+      "property": "border",
+      "value": "1px solid var(--bds-border, #dcdfe6)",
+      "selector": ".ds-alert"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1547,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".ds-alert"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1550,
+      "property": "border-color",
+      "value": "var(--bds-danger, #d54941)",
+      "selector": ".ds-alert[data-tone=error]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1553,
+      "property": "border-color",
+      "value": "var(--bds-warning, #e37318)",
+      "selector": ".ds-alert[data-tone=warning]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1565,
+      "property": "border-bottom",
+      "value": "1px solid var(--bds-border, #dcdfe6)",
+      "selector": ".ds-tabs__list"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1573,
+      "property": "color",
+      "value": "var(--bds-text-secondary, #646a73)",
+      "selector": ".ds-tabs__tab"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1577,
+      "property": "border-bottom-color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".ds-tabs__tab[aria-selected=true]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1578,
+      "property": "color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".ds-tabs__tab[aria-selected=true]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1583,
+      "property": "outline",
+      "value": "2px solid var(--bds-focus-ring, #0052d9)",
+      "selector": ".ds-tabs__tab:focus-visible,\n.ds-choice:focus-visible"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1591,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".ds-drawer"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1592,
+      "property": "box-shadow",
+      "value": "var(--bds-shadow-overlay, 0 8px 24px rgba(0,0,0,.16))",
+      "selector": ".ds-drawer"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1624,
+      "property": "color",
+      "value": "var(--bds-typo-form-label-color, var(--bds-text-secondary, #646a73))",
+      "selector": ".ds-field > label"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1632,
+      "property": "color",
+      "value": "var(--bds-danger, #d54941)",
+      "selector": ".ds-field > p,\n.ds-form [role=alert],\n.ds-upload [role=alert]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1643,
+      "property": "color",
+      "value": "var(--bds-text-disabled, #b5b8c0)",
+      "selector": ".ds-choice[data-disabled=true]"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1649,
+      "property": "border",
+      "value": "1px solid var(--bds-border, #dcdfe6)",
+      "selector": ".ds-choice__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1651,
+      "property": "background",
+      "value": "var(--bds-bg-surface, #fff)",
+      "selector": ".ds-choice__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1654,
+      "property": "background",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".ds-choice[data-selected=true] .ds-choice__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1655,
+      "property": "border-color",
+      "value": "var(--bds-brand, #0052d9)",
+      "selector": ".ds-choice[data-selected=true] .ds-choice__mark"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1672,
+      "property": "background",
+      "value": "var(--bds-bg-surface-alt, #f7f8fa)",
+      "selector": ".ds-tag,\n.ds-badge"
+    },
+    {
+      "file": "src/runtime/vendor/runtime.css",
+      "line": 1678,
+      "property": "color",
+      "value": "var(--bds-danger, #d54941)",
+      "selector": ".ds-badge[data-tone=error]"
+    }
+  ],
+  "pages": [
+    {
+      "file": "src/components/AppLayout.tsx",
+      "tags": {
+        "input": [
+          193
+        ],
+        "DSIconAction": [
+          200
+        ],
+        "button": [
+          208,
+          217
+        ],
+        "AppSelect": [
+          235,
+          283
+        ]
+      }
+    },
+    {
+      "file": "src/components/ComponentDirectory.tsx",
+      "tags": {
+        "input": [
+          24
+        ],
+        "button": [
+          26,
+          35
+        ]
+      }
+    },
+    {
+      "file": "src/components/LayoutCanvas.tsx",
+      "tags": {
+        "button": [
+          31
+        ]
+      }
+    },
+    {
+      "file": "src/components/NavigationControls.tsx",
+      "tags": {
+        "input": [
+          28
+        ],
+        "button": [
+          34
+        ]
+      }
+    },
+    {
+      "file": "src/components/ProjectSwitcher.tsx",
+      "tags": {
+        "AppSelect": [
+          15
+        ]
+      }
+    },
+    {
+      "file": "src/components/RuntimeExample.tsx",
+      "tags": {
+        "DS.DSButton": [
+          19,
+          21,
+          21,
+          21,
+          56,
+          56,
+          56,
+          57,
+          57,
+          57,
+          58,
+          60,
+          64,
+          64,
+          66,
+          96
+        ],
+        "DS.DSInput": [
+          20,
+          55,
+          57,
+          66
+        ],
+        "DS.DSButtonGroup": [
+          21
+        ],
+        "DS.DSCloseButton": [
+          22
+        ],
+        "DS.DSInputGroup": [
+          23
+        ],
+        "input": [
+          23,
+          67
+        ],
+        "DS.DSInputOTP": [
+          24
+        ],
+        "DS.DSAutocomplete": [
+          25
+        ],
+        "DS.DSCascader": [
+          26
+        ],
+        "DS.DSTextArea": [
+          27
+        ],
+        "DS.DSCheckbox": [
+          28,
+          55,
+          55
+        ],
+        "DS.DSSwitch": [
+          29
+        ],
+        "DS.DSCheckboxGroup": [
+          30
+        ],
+        "DS.DSRadio": [
+          31
+        ],
+        "DS.DSSelect": [
+          32
+        ],
+        "DS.DSComboBox": [
+          33
+        ],
+        "DS.DSColorArea": [
+          34
+        ],
+        "DS.DSColorField": [
+          35
+        ],
+        "DS.DSColorSlider": [
+          36
+        ],
+        "DS.DSColorSwatch": [
+          37
+        ],
+        "DS.DSColorSwatchPicker": [
+          38
+        ],
+        "DS.DSCalendar": [
+          39
+        ],
+        "DS.DSRangeCalendar": [
+          40
+        ],
+        "DS.DSDateField": [
+          41
+        ],
+        "DS.DSDatePicker": [
+          42
+        ],
+        "DS.DSDateRangePicker": [
+          43
+        ],
+        "DS.DSTimePicker": [
+          44
+        ],
+        "DS.DSColorPicker": [
+          45
+        ],
+        "DS.DSTimeField": [
+          46
+        ],
+        "DS.DSNumberField": [
+          47
+        ],
+        "DS.DSSearchField": [
+          48
+        ],
+        "DS.DSSlider": [
+          49
+        ],
+        "DS.DSProgress": [
+          50
+        ],
+        "DS.DSProgressCircle": [
+          51
+        ],
+        "DS.DSSpinner": [
+          52
+        ],
+        "DS.DSProgressBar": [
+          53
+        ],
+        "DS.DSMeter": [
+          54
+        ],
+        "DS.DSTabs": [
+          55
+        ],
+        "DS.DSIcon": [
+          56,
+          68,
+          82,
+          88
+        ],
+        "DS.DSToast": [
+          58
+        ],
+        "DS.DSAlert": [
+          59
+        ],
+        "DS.DSEmpty": [
+          60,
+          105
+        ],
+        "DS.DSLoading": [
+          61
+        ],
+        "DS.DSTag": [
+          62
+        ],
+        "DS.DSBadge": [
+          63,
+          98,
+          98,
+          99,
+          99
+        ],
+        "DS.DSTable": [
+          64
+        ],
+        "DS.DSPagination": [
+          65
+        ],
+        "DS.DSForm": [
+          66
+        ],
+        "DS.DSField": [
+          67
+        ],
+        "DS.DSUpload": [
+          68
+        ],
+        "DS.DSAccordion": [
+          69
+        ],
+        "DS.DSBreadcrumb": [
+          70
+        ],
+        "DS.DSListBox": [
+          71
+        ],
+        "DS.DSTree": [
+          72
+        ],
+        "DS.DSMenu": [
+          73
+        ],
+        "DS.DSDisclosure": [
+          74
+        ],
+        "DS.DSDisclosureGroup": [
+          75
+        ],
+        "DS.DSTagGroup": [
+          76
+        ],
+        "DS.DSTooltip": [
+          77
+        ],
+        "DS.DSPopover": [
+          78
+        ],
+        "DS.DSPopconfirm": [
+          79
+        ],
+        "DS.DSMessage": [
+          80
+        ],
+        "DS.DSSteps": [
+          81
+        ],
+        "DS.DSDropZone": [
+          82
+        ],
+        "DS.DSResizablePanel": [
+          83
+        ],
+        "DS.DSImagePreview": [
+          84
+        ],
+        "DS.DSDivider": [
+          89
+        ],
+        "DS.DSDropdown": [
+          90
+        ],
+        "DS.DSToggleButton": [
+          91,
+          92,
+          92,
+          93,
+          93,
+          93,
+          93,
+          93
+        ],
+        "DS.DSToggleButtonGroup": [
+          92
+        ],
+        "DS.DSToolbar": [
+          93,
+          93
+        ],
+        "DS.DSSeparator": [
+          94
+        ],
+        "DS.DSLink": [
+          95
+        ],
+        "DS.DSCard": [
+          96,
+          100,
+          100,
+          100
+        ],
+        "DS.DSSurface": [
+          97
+        ],
+        "DS.DSStack": [
+          98,
+          99
+        ],
+        "DS.DSGrid": [
+          100
+        ],
+        "DS.DSPageContainer": [
+          101
+        ],
+        "DS.DSKbd": [
+          102
+        ],
+        "DS.DSAvatar": [
+          103
+        ],
+        "DS.DSDescriptions": [
+          104
+        ],
+        "DS.DSFileList": [
+          105
+        ],
+        "DS.DSSkeleton": [
+          106
+        ],
+        "DS.DSScrollShadow": [
+          107
+        ]
+      }
+    },
+    {
+      "file": "src/components/ThemePreview.tsx",
+      "tags": {
+        "DSButton": [
+          34,
+          41,
+          42,
+          57
+        ],
+        "DSInput": [
+          47,
+          55
+        ],
+        "DSSelect": [
+          48,
+          56
+        ],
+        "DSCard": [
+          50
+        ],
+        "DSBadge": [
+          52,
+          52,
+          52
+        ],
+        "DSTable": [
+          60
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/AdvancedFields/index.tsx",
+      "tags": {
+        "DSIcon": [
+          17,
+          21
+        ],
+        "DSIconAction": [
+          17
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Collections/Additional.tsx",
+      "tags": {
+        "DSIconAction": [
+          12,
+          22
+        ],
+        "DSIcon": [
+          18,
+          36,
+          37,
+          38
+        ],
+        "DSButton": [
+          18,
+          18,
+          36
+        ],
+        "DSDialog": [
+          19,
+          20,
+          37
+        ],
+        "DSComboBox": [
+          21
+        ],
+        "DSSelect": [
+          34
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Collections/Tree.tsx",
+      "tags": {
+        "DSIcon": [
+          6
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Collections/index.tsx",
+      "tags": {
+        "DSIcon": [
+          7
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Colors/ColorPicker.tsx",
+      "tags": {
+        "DSColorSwatch": [
+          4
+        ],
+        "DSColorArea": [
+          4
+        ],
+        "DSColorSlider": [
+          4
+        ],
+        "DSColorField": [
+          4
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Colors/index.tsx",
+      "tags": {
+        "DSColorSwatch": [
+          9
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Content/index.tsx",
+      "tags": {
+        "DSStack": [
+          9
+        ],
+        "DSIcon": [
+          20
+        ],
+        "DSIconAction": [
+          20
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/DateTime/index.tsx",
+      "tags": {
+        "DSIcon": [
+          7,
+          7,
+          14,
+          15
+        ],
+        "DSCalendar": [
+          14
+        ],
+        "DSRangeCalendar": [
+          15
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Feedback/index.tsx",
+      "tags": {
+        "DSIcon": [
+          17
+        ],
+        "DSIconAction": [
+          19,
+          21,
+          31
+        ],
+        "DSDialog": [
+          30
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Forms/index.tsx",
+      "tags": {
+        "DSIcon": [
+          40
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/IconAction/index.tsx",
+      "tags": {
+        "DSIcon": [
+          23
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Overlays/index.tsx",
+      "tags": {
+        "DSIconAction": [
+          24
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Select/index.tsx",
+      "tags": {
+        "DSIcon": [
+          25
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/TextField/index.tsx",
+      "tags": {
+        "DSIconAction": [
+          41
+        ]
+      }
+    },
+    {
+      "file": "src/design-system/primitives/Upload/index.tsx",
+      "tags": {
+        "DSIcon": [
+          10,
+          10
+        ]
+      }
+    },
+    {
+      "file": "src/pages/AssetDetail.tsx",
+      "tags": {
+        "DSIcon": [
+          52,
+          52
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Assets.tsx",
+      "tags": {
+        "DSIcon": [
+          49
+        ],
+        "input": [
+          87
+        ],
+        "button": [
+          87,
+          89,
+          92,
+          101,
+          101,
+          102
+        ],
+        "AppSelect": [
+          90
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Assistant.tsx",
+      "tags": {
+        "button": [
+          35,
+          46,
+          48,
+          58
+        ],
+        "textarea": [
+          45
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Components.tsx",
+      "tags": {
+        "button": [
+          118,
+          198,
+          212,
+          495,
+          527,
+          533,
+          549,
+          550,
+          551,
+          681,
+          690,
+          1146,
+          1394
+        ],
+        "runtime.DSButton": [
+          246,
+          252,
+          258,
+          264,
+          282,
+          285,
+          288,
+          302,
+          308,
+          315,
+          331,
+          334,
+          337,
+          620,
+          622,
+          641,
+          642,
+          643,
+          706,
+          706
+        ],
+        "input": [
+          503,
+          559,
+          594,
+          1109
+        ],
+        "AppSelect": [
+          513,
+          1291,
+          1307,
+          1326,
+          1347
+        ],
+        "table": [
+          555,
+          1515
+        ],
+        "runtime.DSDialog": [
+          701,
+          745
+        ],
+        "runtime.DSInput": [
+          709,
+          720
+        ],
+        "runtime.DSSelect": [
+          725
+        ],
+        "runtime.DesignSystemProvider": [
+          1088,
+          1434
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Generator.tsx",
+      "tags": {
+        "input": [
+          56,
+          299,
+          300,
+          308,
+          314,
+          320,
+          321,
+          330,
+          355,
+          355,
+          360,
+          360,
+          360,
+          360
+        ],
+        "select": [
+          56,
+          320,
+          320,
+          327,
+          328,
+          329,
+          355,
+          355,
+          355,
+          355,
+          360,
+          360,
+          360,
+          360,
+          360,
+          360,
+          360,
+          360,
+          360,
+          360
+        ],
+        "button": [
+          285,
+          285,
+          285,
+          308,
+          313,
+          314,
+          320,
+          353,
+          355,
+          355,
+          355,
+          355,
+          355,
+          358,
+          364
+        ],
+        "textarea": [
+          301,
+          331
+        ],
+        "DSIconAction": [
+          307,
+          319
+        ]
+      }
+    },
+    {
+      "file": "src/pages/PatternDetail.tsx",
+      "tags": {
+        "input": [
+          26
+        ],
+        "button": [
+          26,
+          26,
+          26,
+          26
+        ]
+      }
+    },
+    {
+      "file": "src/pages/ProjectDetail.tsx",
+      "tags": {
+        "button": [
+          22
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Releases.tsx",
+      "tags": {
+        "DSButton": [
+          72,
+          72,
+          76,
+          76,
+          87,
+          87
+        ],
+        "DSDialog": [
+          80
+        ],
+        "DSInput": [
+          90,
+          91
+        ]
+      }
+    },
+    {
+      "file": "src/pages/SearchResults.tsx",
+      "tags": {
+        "input": [
+          34
+        ],
+        "button": [
+          34,
+          34
+        ]
+      }
+    },
+    {
+      "file": "src/pages/Templates.tsx",
+      "tags": {
+        "DSButton": [
+          186,
+          208,
+          218,
+          265,
+          277,
+          278,
+          296,
+          327,
+          384,
+          390,
+          411,
+          608
+        ],
+        "DSInput": [
+          199,
+          228,
+          369
+        ],
+        "DSSelect": [
+          239,
+          252,
+          370
+        ],
+        "DSTable": [
+          283
+        ],
+        "DSEmpty": [
+          323
+        ],
+        "DSPagination": [
+          340
+        ],
+        "DSTextArea": [
+          379
+        ]
+      }
+    },
+    {
+      "file": "src/pages/ThemeEditor.tsx",
+      "tags": {
+        "input": [
+          75,
+          81,
+          397,
+          410,
+          425,
+          439,
+          453
+        ],
+        "button": [
+          300
+        ],
+        "AppSelect": [
+          312,
+          325,
+          379,
+          467
+        ],
+        "DSButton": [
+          483,
+          491,
+          494
+        ]
+      }
+    },
+    {
+      "file": "src/pages/UsersPage.tsx",
+      "tags": {
+        "AppSelect": [
+          7
+        ]
+      }
+    }
+  ]
+}

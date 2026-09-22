@@ -1,0 +1,3 @@
+export function exampleUsage(component:'TemplateExample'|'PatternExample'|'ComponentExample',props:Record<string,unknown>,variables:Record<string,string>,context:{project:string;version:string}) {
+ return `import type { CSSProperties } from 'react'\nimport { ${component}, PreviewScope } from '@local/design-system'\nimport '@local/design-system/style.css'\n\n// ${context.project} / ${context.version} — 与当前预览相同的解析值\nconst variables = ${JSON.stringify(variables,null,2)}\n\nexport default function Example() {\n  return <PreviewScope vars={variables as CSSProperties}>\n    <${component} {...${JSON.stringify(props)}} />\n  </PreviewScope>\n}\n`
+}

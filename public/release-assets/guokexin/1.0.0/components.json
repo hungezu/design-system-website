@@ -1,0 +1,301 @@
+{
+  "formatVersion": "bds-release/1",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.0.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSButton.tsx",
+      "props": [
+        {
+          "name": "variant",
+          "type": "'primary' | 'secondary' | 'tertiary'",
+          "values": [
+            "primary",
+            "secondary",
+            "tertiary"
+          ],
+          "required": false,
+          "description": "操作层级（业务语义）。视觉形式由 Button Recipe 决定：primary=实底、secondary=线框或浅色填充（Recipe.secondaryStyle）、tertiary=文本。（@deprecated 旧视觉值 secondary-outline / secondary-soft 仅保留在加载迁移与内部兼容层，业务代码不得使用）"
+        },
+        {
+          "name": "semantic",
+          "type": "'default' | 'danger'",
+          "values": [
+            "default",
+            "danger"
+          ],
+          "required": false,
+          "description": "操作语义：默认 / 危险。危险是与操作层级独立的分类，不与主要、次要混用"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸，默认 md；高度使用共享控件尺寸 Token（controlHeightSm/Md/Lg，由视觉变量统一控制，不属于 Recipe 能力）；纯图标宽度来自 Recipe.iconOnlySize*"
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "description": "图标统一槽位（插槽内容，非 Icon 组件系统）；与文字间距来自 Recipe.iconGap"
+        },
+        {
+          "name": "iconPosition",
+          "type": "'start' | 'end'",
+          "values": [
+            "start",
+            "end"
+          ],
+          "required": false,
+          "description": "图标位置（单按钮覆盖）；缺省跟随 Recipe.iconPosition"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "禁用状态，默认 false"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "按下",
+          "status": "implemented"
+        },
+        {
+          "name": "聚焦（键盘可达）",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        },
+        {
+          "name": "加载中",
+          "status": "todo"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-btn-primary-bg",
+        "--bds-btn-primary-bg-hover",
+        "--bds-btn-primary-bg-pressed",
+        "--bds-btn-primary-bg-disabled",
+        "--bds-btn-primary-text",
+        "--bds-btn-danger-*",
+        "--bds-focus-ring"
+      ],
+      "recipeDependencies": [
+        "button"
+      ],
+      "accessibility": [
+        "造型（圆角 / 边框 / 内边距 / 图标间距 / 过渡 / 焦点环）全部来自方案级 Button Recipe，组件源码不含项目判断"
+      ],
+      "underlyingImplementation": {
+        "library": "react（自研底座，React Aria 焦点管理）",
+        "notes": "组件源码不含项目判断，造型来自 Button Recipe，颜色来自 Color Contract"
+      },
+      "semanticVariants": {
+        "variant": [
+          "primary",
+          "secondary",
+          "tertiary"
+        ],
+        "semantic": [
+          "default",
+          "danger"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ]
+      },
+      "legacyNote": "secondary-outline / secondary-soft 为旧视觉值，已迁移为 secondary（造型由 Recipe 决定）"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select（React Aria 底座试点）",
+      "runtimeExport": "DSSelect",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSSelect.tsx",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "description": "字段标签（自动与控件关联）"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": false,
+          "description": "未选择时的占位文字"
+        },
+        {
+          "name": "value",
+          "type": "string | null",
+          "required": false,
+          "description": "受控选中值（option.value）；传 undefined 表示非受控"
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "required": false,
+          "description": "非受控初始值"
+        },
+        {
+          "name": "onChange",
+          "type": "(value: string) => void",
+          "required": false,
+          "description": "选中变化回调（受控时必须提供）"
+        },
+        {
+          "name": "options",
+          "type": "{ value, label, disabled? }[]",
+          "required": true,
+          "description": "选项列表（value 唯一）"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸，默认 md；高度使用共享控件尺寸 Token（controlHeightSm/Md/Lg），不属于 Select Recipe 能力"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "整体禁用"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "必填（label 与 aria 关联）"
+        },
+        {
+          "name": "invalid",
+          "type": "boolean",
+          "required": false,
+          "description": "错误态（边框读 field.borderInvalid，aria-invalid 自动设置）"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "description": "辅助说明（辅助技术可读）"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string",
+          "required": false,
+          "description": "错误提示（invalid 时显示并关联控件）"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "表单提交名"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "聚焦（键盘可达，焦点环 ≥3:1）",
+          "status": "implemented"
+        },
+        {
+          "name": "打开（弹层）",
+          "status": "implemented"
+        },
+        {
+          "name": "已选择 / 选中项高亮",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        },
+        {
+          "name": "必填",
+          "status": "implemented"
+        },
+        {
+          "name": "无效（aria-invalid + 错误提示）",
+          "status": "implemented"
+        },
+        {
+          "name": "空选项",
+          "status": "implemented"
+        },
+        {
+          "name": "长选项文字（省略号）",
+          "status": "implemented"
+        },
+        {
+          "name": "多选项滚动（Recipe.maxVisibleOptions）",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-field-background",
+        "--bds-field-text",
+        "--bds-field-placeholder",
+        "--bds-field-border",
+        "--bds-field-border-hover",
+        "--bds-field-border-focus",
+        "--bds-field-border-invalid",
+        "--bds-field-bg-disabled",
+        "--bds-selection-bg",
+        "--bds-selection-text",
+        "--bds-surface-overlay"
+      ],
+      "recipeDependencies": [
+        "select"
+      ],
+      "accessibility": [
+        "键盘：Tab 聚焦；Enter / Space 打开；ArrowUp / ArrowDown / Home / End 移动；输入字符 typeahead；Enter 选择；Escape 关闭并回到 Trigger（来自 react-aria-components，无键盘陷阱）",
+        "无障碍：label 关联（aria-labelledby）、aria-invalid、错误与说明通过 FieldError / Text 关联（aria-describedby）、listbox 语义与 aria-selected（React Aria 内建）",
+        "Token 引用：field.background / field.text / field.placeholder / field.border / field.borderHover / field.borderFocus / field.borderInvalid / field.disabledBackground / selection.background / selection.text / surface.overlay / focus.ring（全部来自 Color Contract，组件与 CSS 无项目 HEX）",
+        "底层来源：react-aria-components（Select / Button / SelectValue / Popover / ListBox / ListBoxItem / Label / Text / FieldError）；不引入 Radix / Floating UI / Headless UI 等重复底座"
+      ],
+      "underlyingImplementation": {
+        "library": "react-aria-components",
+        "notes": "Select/Button/SelectValue/Popover/ListBox 等；弹层 Portal 到 body 并在弹层根节点重新注入主题变量（不写 :root，同页多项目不串色）"
+      },
+      "keyboardBehavior": [
+        "键盘：Tab 聚焦；Enter / Space 打开；ArrowUp / ArrowDown / Home / End 移动；输入字符 typeahead；Enter 选择；Escape 关闭并回到 Trigger（来自 react-aria-components，无键盘陷阱）"
+      ]
+    }
+  ],
+  "missingComponents": [],
+  "note": "availableComponents 只包含真实实现的组件契约；未实现组件见 missingComponents / manifest.missingCapabilities"
+}

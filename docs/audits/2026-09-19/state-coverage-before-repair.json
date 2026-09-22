@@ -1,0 +1,2379 @@
+[
+  {
+    "component": "combo-box",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "slider",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "单值"
+      },
+      {
+        "id": "range",
+        "label": "范围"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "calendar",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "date-field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "drop-zone",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "icon",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "alternate",
+        "label": "其他"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "button",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled",
+      "loading"
+    ],
+    "variants": [
+      {
+        "id": "primary",
+        "label": "主要"
+      },
+      {
+        "id": "secondary",
+        "label": "次要"
+      },
+      {
+        "id": "tertiary",
+        "label": "文字"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading"
+    ]
+  },
+  {
+    "component": "input",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "filled",
+        "label": "已填写"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "select",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "open",
+      "selected",
+      "disabled",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选择"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "textarea",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "filled",
+        "label": "已填写"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "checkbox",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "indeterminate",
+      "disabled",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选中"
+      },
+      {
+        "id": "checked",
+        "label": "已选中"
+      },
+      {
+        "id": "indeterminate",
+        "label": "部分选中"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "error"
+    ]
+  },
+  {
+    "component": "radio",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "error"
+    ]
+  },
+  {
+    "component": "switch",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "关闭"
+      },
+      {
+        "id": "checked",
+        "label": "开启"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "form",
+    "states": [
+      "default",
+      "disabled",
+      "loading",
+      "error",
+      "success"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "error",
+        "label": "提交错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "required",
+        "label": "必填"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "date-picker",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "date-range-picker",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "time-picker",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "cascader",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "region",
+        "label": "地区"
+      },
+      {
+        "id": "department",
+        "label": "部门"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "autocomplete",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "table",
+    "states": [
+      "default",
+      "hover",
+      "selected",
+      "loading",
+      "empty"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "标准"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "comfortable",
+        "label": "宽松"
+      },
+      {
+        "id": "selection",
+        "label": "可选择"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "empty"
+    ]
+  },
+  {
+    "component": "pagination",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "alternate",
+        "label": "其他"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "tag",
+    "states": [
+      "default",
+      "hover",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "badge",
+    "states": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "empty",
+    "states": [
+      "empty"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "action",
+        "label": "带操作"
+      }
+    ],
+    "reviewCandidates": [
+      "empty"
+    ]
+  },
+  {
+    "component": "loading",
+    "states": [
+      "loading"
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "progress",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "empty"
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "empty"
+    ]
+  },
+  {
+    "component": "descriptions",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "empty"
+    ],
+    "variants": [
+      {
+        "id": "basic",
+        "label": "基础"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "empty"
+    ]
+  },
+  {
+    "component": "tree",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "empty"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "empty"
+    ]
+  },
+  {
+    "component": "tabs",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "breadcrumb",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "deep",
+        "label": "多层"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "menu",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "dropdown",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "steps",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "start",
+        "label": "开始"
+      },
+      {
+        "id": "middle",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "完成"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled"
+    ]
+  },
+  {
+    "component": "dialog",
+    "states": [
+      "default",
+      "open",
+      "loading"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "form",
+        "label": "表单"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "drawer",
+    "states": [
+      "default",
+      "open",
+      "loading"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "查看"
+      },
+      {
+        "id": "form",
+        "label": "编辑"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "toast",
+    "states": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "message",
+    "states": [
+      "default",
+      "open",
+      "loading",
+      "error",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading"
+    ]
+  },
+  {
+    "component": "alert",
+    "states": [
+      "default",
+      "success",
+      "warning",
+      "error",
+      "info"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "success",
+        "label": "成功"
+      },
+      {
+        "id": "warning",
+        "label": "警告"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      }
+    ],
+    "reviewCandidates": []
+  },
+  {
+    "component": "tooltip",
+    "states": [
+      "default",
+      "open",
+      "loading",
+      "error",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "top",
+        "label": "上方"
+      },
+      {
+        "id": "bottom",
+        "label": "下方"
+      },
+      {
+        "id": "left",
+        "label": "左侧"
+      },
+      {
+        "id": "right",
+        "label": "右侧"
+      },
+      {
+        "id": "top-start",
+        "label": "左上"
+      },
+      {
+        "id": "top-end",
+        "label": "右上"
+      },
+      {
+        "id": "bottom-start",
+        "label": "左下"
+      },
+      {
+        "id": "bottom-end",
+        "label": "右下"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "popover",
+    "states": [
+      "default",
+      "open",
+      "loading",
+      "error",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "popconfirm",
+    "states": [
+      "default",
+      "open",
+      "loading",
+      "error",
+      "disabled"
+    ],
+    "variants": [
+      {
+        "id": "normal",
+        "label": "普通"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "card",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "simple",
+        "label": "简洁"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "divider",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "grid",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "two",
+        "label": "两列"
+      },
+      {
+        "id": "three",
+        "label": "三列"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "space",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "loose",
+        "label": "宽松"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "stack",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "vertical",
+        "label": "纵向"
+      },
+      {
+        "id": "horizontal",
+        "label": "横向"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "page-container",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "标准"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "resizable-panel",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "narrow",
+        "label": "窄"
+      },
+      {
+        "id": "wide",
+        "label": "宽"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "upload",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单文件"
+      },
+      {
+        "id": "multiple",
+        "label": "多文件"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "image-preview",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "landscape",
+        "label": "横图"
+      },
+      {
+        "id": "square",
+        "label": "方图"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "avatar",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "file-list",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "accordion",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单项展开"
+      },
+      {
+        "id": "multiple",
+        "label": "多项展开"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "alert-dialog",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "confirm",
+        "label": "确认"
+      },
+      {
+        "id": "danger",
+        "label": "危险"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "button-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "主要操作"
+      },
+      {
+        "id": "mixed",
+        "label": "混合层级"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "close-button",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "disclosure",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "disclosure-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单项展开"
+      },
+      {
+        "id": "multiple",
+        "label": "多项展开"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "checkbox-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading"
+    ]
+  },
+  {
+    "component": "color-area",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "color-field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "color-picker",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "color-slider",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "color-swatch",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "color-swatch-picker",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "brand",
+        "label": "品牌色"
+      },
+      {
+        "id": "status",
+        "label": "状态色"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "input-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "url",
+        "label": "网址"
+      },
+      {
+        "id": "amount",
+        "label": "金额"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "input-otp",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "six",
+        "label": "六位"
+      },
+      {
+        "id": "four",
+        "label": "四位"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "kbd",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "copy",
+        "label": "复制"
+      },
+      {
+        "id": "search",
+        "label": "搜索"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "link",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "internal",
+        "label": "站内"
+      },
+      {
+        "id": "external",
+        "label": "外部"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "list-box",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "meter",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "normal",
+        "label": "正常"
+      },
+      {
+        "id": "warning",
+        "label": "偏高"
+      },
+      {
+        "id": "critical",
+        "label": "临界"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "modal",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "info",
+        "label": "信息"
+      },
+      {
+        "id": "confirm",
+        "label": "确认"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "number-field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "progress-bar",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "progress-circle",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "range-calendar",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "scroll-shadow",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "tall",
+        "label": "较高"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "search-field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "空值"
+      },
+      {
+        "id": "filled",
+        "label": "已输入"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "separator",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "skeleton",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "text",
+        "label": "文本"
+      },
+      {
+        "id": "card",
+        "label": "卡片"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "spinner",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "sm",
+        "label": "小"
+      },
+      {
+        "id": "md",
+        "label": "中"
+      },
+      {
+        "id": "lg",
+        "label": "大"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "surface",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "subtle",
+        "label": "弱背景"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "tag-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "只读"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "time-field",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "toggle-button",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "default",
+        "label": "未选中"
+      },
+      {
+        "id": "selected",
+        "label": "已选中"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "reviewCandidates": [
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "toggle-button-group",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  },
+  {
+    "component": "toolbar",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "variants": [
+      {
+        "id": "format",
+        "label": "格式"
+      },
+      {
+        "id": "align",
+        "label": "对齐"
+      }
+    ],
+    "reviewCandidates": [
+      "disabled",
+      "loading",
+      "error"
+    ]
+  }
+]

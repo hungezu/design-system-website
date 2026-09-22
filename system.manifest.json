@@ -1,0 +1,56 @@
+{
+  "$schema": "./system-manifest.schema.json",
+  "schemaVersion": "design-system/1",
+  "name": "国科信设计系统",
+  "platform": "web",
+  "profile": "b2b-compact",
+  "constructionStyle": "hybrid",
+  "modes": ["light", "dark"],
+  "brand": {
+    "primary": "#165DFF",
+    "hover": "#4080FF",
+    "active": "#0E42D2",
+    "subtle": "#E8F3FF"
+  },
+  "appUi": {
+    "tokenNamespace": "--app-",
+    "source": "src/styles/app-tokens.css",
+    "inheritsProjectBrand": false
+  },
+  "tokens": {
+    "source": "src/data/global/semantic-tokens.ts",
+    "projectOverrides": "src/instances/guokexin/theme.ts",
+    "runtimeAliases": "src/design-system/theme/runtimeThemeAliases.ts",
+    "generatedCss": "src/design-system/tokens.css"
+  },
+  "icons": {
+    "family": "reicon",
+    "sourceVersion": "reicon-react@1.2.5",
+    "style": "outlined",
+    "registry": "src/runtime/vendor/runtime.js#ICON_REGISTRY",
+    "catalogProjection": "src/data/assets/icons.ts",
+    "projectPack": "src/services/icon-pack.ts",
+    "colorMode": "currentColor"
+  },
+  "components": {
+    "registry": "src/runtime/registry.ts",
+    "assetManifest": "src/data/assets/components.ts",
+    "matrix": "docs/COMPONENT-MATRIX.md",
+    "projectScope": ["button", "input", "select", "table", "pagination", "dialog", "drawer", "tabs", "tag", "badge", "toast", "form", "field", "upload", "empty", "loading", "alert", "checkbox", "radio", "switch", "chain-of-thought", "chat-attachment", "chat-conversation", "chat-list-view", "chat-loader", "chat-message", "chat-message-actions", "chat-source", "chat-tool", "code-block", "markdown", "prompt-input", "prompt-suggestion", "text-shimmer"],
+    "publicButtonApi": "DSButton",
+    "buttonImplementation": "src/design-system/primitives/Button/Button.tsx"
+  },
+  "releasePolicy": {
+    "draftVersionId": "draft",
+    "frozenArtifactsImmutable": true,
+    "guokexinLegacyCutoff": "1.5.5",
+    "newReleasesMustMatchManifest": true,
+    "designMarkdownImport": {
+      "schema": "design-workspace/design-md-1",
+      "target": "draft-only",
+      "merge": "source-ai-draft",
+      "automaticScope": "theme-token-allowlist",
+      "requiresExplicitConfirmationOnConflict": true
+    }
+  }
+}
