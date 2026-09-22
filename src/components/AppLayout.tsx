@@ -30,6 +30,7 @@ import { BrandMark } from "./BrandMark";
 import { AppSelect } from "./AppSelect";
 import { DSIconAction } from "../design-system/primitives/IconAction";
 import { DRAFT_VERSION, isDraftVersion } from "../services/release-catalog";
+import { isStaticDemo } from "../services/environment";
 
 export const publicNavigation = [
   { to: "/", label: "概览", icon: Sparkles, end: true },
@@ -65,7 +66,7 @@ export function AppLayout() {
         { to: `/projects/${projectRouteId}/components${projectVersionSearch}`, label: "组件" },
         { to: `/projects/${projectRouteId}/patterns${projectVersionSearch}`, label: "交互模式" },
         { to: `/projects/${projectRouteId}/templates${projectVersionSearch}`, label: "页面模板" },
-        { to: `/projects/${projectRouteId}/releases${projectVersionSearch}`, label: "版本记录" },
+        ...(!isStaticDemo ? [{ to: `/projects/${projectRouteId}/releases${projectVersionSearch}`, label: "版本记录" }] : []),
         ...(projectRole(projectRouteId) === 'project-admin' ? [{ to: `/projects/${projectRouteId}/members`, label: '成员与权限' }] : []),
       ]
     : [];
@@ -200,7 +201,7 @@ export function AppLayout() {
                 <Search size={18} />
               </button>
             )}
-            <div className="account-menu" ref={accountRef}>
+            {!isStaticDemo && <div className="account-menu" ref={accountRef}>
               <button
                 className="account-trigger"
                 aria-label={`${user.name}，账号菜单`}
@@ -238,7 +239,7 @@ export function AppLayout() {
                   }}>退出登录</button>
                 </div>
               )}
-            </div>
+            </div>}
           </div>
         </div>
         {projectRouteId && (
@@ -256,7 +257,7 @@ export function AppLayout() {
               <small>平台</small>
               <strong>Web</strong>
             </span>
-            {!isMemberManagement && <label className="version-switcher">
+            {!isStaticDemo && !isMemberManagement && <label className="version-switcher">
               <span>版本</span>
               <AppSelect
                 aria-label="切换当前版本"

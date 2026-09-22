@@ -1,6 +1,6 @@
 {
   "schema": "runtime-identity/1",
-  "buildId": "sha256:03f8b285bd015e4a83f5a2bffeb2718399f4810af9eb46a35b819f286c1b899e",
+  "buildId": "sha256:7c645833801ec4128427819fa49347172603c753d47478e8312ba8f219a1f6b4",
   "files": [
     "src/app/App.tsx",
     "src/app/ProjectContext.tsx",
@@ -223,6 +223,7 @@
     "src/services/demo-audit.ts",
     "src/services/design-markdown-import.ts",
     "src/services/design-markdown.ts",
+    "src/services/environment.ts",
     "src/services/external-review.ts",
     "src/services/grouped-table-markdown.ts",
     "src/services/icon-pack.ts",

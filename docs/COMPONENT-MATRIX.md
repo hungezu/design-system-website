@@ -6,7 +6,6 @@
 | --- | --- | --- | ---: | --- | --- | --- | --- |
 | 按钮 | `button` | `DSButton` | 49 | default / hover / active / disabled / loading | 已绑定 | 已绑定 | 待补充 |
 | 输入框 | `input` | `DSInput` | 4 | focus / error | 已绑定 | 已绑定 | 待补充 |
-| 搜索框 | `search-field` | `DSSearchField` | 8 | default / hover / focus / disabled / error | 已绑定 | 已绑定 | 待补充 |
 | 选择器 | `select` | `DSSelect` | 4 | open | 已绑定 | 已绑定 | 待补充 |
 | 表格 | `table` | `DSTable` | 8 | default / loading / empty | 已绑定 | 已绑定 | 待补充 |
 | 分页 | `pagination` | `DSPagination` | 4 | default / active / disabled | 已绑定 | 已绑定 | 待补充 |

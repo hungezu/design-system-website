@@ -11,6 +11,7 @@
     "dev": "tsx scripts/dev-workspace.ts",
     "prebuild": "npm run tokens:build && npm run validate:design-system && npm run validate:button && npm run verify:published-assets && npm run docs:api && npm run docs:components && npm run runtime:identity",
     "build": "npm run tokens:build && npm run validate:design-system && npm run validate:button && tsc -b && vite build",
+    "build:pages": "VITE_STATIC_DEMO=true npm run build -- --base=/design-system-website/",
     "lint": "eslint .",
     "preview": "vite preview",
     "prestorybook": "npm run tokens:build && npm run validate:button",

@@ -1,5 +1,9 @@
 # 设计规范管理平台
 
+在线公开演示：https://hungezu.github.io/design-system-website/
+
+公开演示不需要登录，保留组件、交互模式、页面模板和项目视觉预览；账号、成员权限、发布和服务端写入仅在本地完整工作区中启用。
+
 React / React Aria / TypeScript / Vite + Node 24 / SQLite 设计规范协作工作区。
 
 ```sh

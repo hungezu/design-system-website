@@ -1,10 +1,11 @@
 import { createContext, Fragment, useCallback, useContext, useEffect, useRef, useState, type ReactNode } from 'react'
 import { useLocation } from 'react-router-dom'
-import { setRuntimeProjects } from '../data/projects'
+import { projects, setRuntimeProjects } from '../data/projects'
 import { api, ApiError } from '../services/workspace-api'
 import type { Account, ProjectRole, SessionData } from '../services/access-types'
 import { LoginPage } from '../pages/LoginPage'
 import { DSButton } from '../design-system/primitives/Button/DSButton'
+import { isStaticDemo } from '../services/environment'
 export type UserRole = 'super-admin' | 'project-admin' | 'designer' | 'viewer'
 export interface AppUser extends Account { role: UserRole; projectIds: string[] }
 export const roleLabels: Record<UserRole, string> = { 'super-admin': '平台管理员', 'project-admin': '项目管理员', designer: '编辑者', viewer: '查看者' }
@@ -18,6 +19,20 @@ interface AccessValue {
 }
 const AccessContext = createContext<AccessValue | null>(null)
 export function AccessProvider({ children }: { children: ReactNode }) {
+  if (isStaticDemo) return <StaticAccessProvider>{children}</StaticAccessProvider>
+  return <ServerAccessProvider>{children}</ServerAccessProvider>
+}
+function StaticAccessProvider({ children }: { children: ReactNode }) {
+  const previewProjects = [...projects]
+  const account: Account = { id: 'public-preview', email: 'preview@localhost.invalid', name: '公开演示', profession: 'other', platformRole: 'member', status: 'active' }
+  const memberships = previewProjects.map(project => ({ projectId: project.id, userId: account.id, role: 'viewer' as const }))
+  const session: SessionData = { user: account, memberships, projects: previewProjects }
+  const visibleProjectIds = previewProjects.map(project => project.id)
+  const user: AppUser = { ...account, role: 'viewer', projectIds: visibleProjectIds }
+  const projectRole = (id: string): ProjectRole | undefined => visibleProjectIds.includes(id) ? 'viewer' : undefined
+  return <AccessContext.Provider value={{ user, session, visibleProjectIds, projectRole, refresh: async () => {}, logout: async () => {} }}><Fragment key={user.id}>{children}</Fragment></AccessContext.Provider>
+}
+function ServerAccessProvider({ children }: { children: ReactNode }) {
   const [session, setSession] = useState<SessionData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
