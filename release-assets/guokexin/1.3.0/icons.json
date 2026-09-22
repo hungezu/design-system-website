@@ -1,0 +1,1262 @@
+{
+  "formatVersion": "bds-release/2",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.3.0",
+  "iconGrammar": {
+    "canvas": 24,
+    "safeArea": 2,
+    "supportedWeights": [
+      "outline",
+      "filled"
+    ],
+    "defaultSize": "md",
+    "allowedSizes": [
+      "xs",
+      "sm",
+      "md",
+      "lg"
+    ],
+    "opticalAlignment": "Reicon 24px 网格内建光学居中；stroke-linecap/linejoin=round（资产决定）",
+    "colorMode": "currentColor",
+    "strokeWidthPolicy": "Outline 线宽由图标资产决定（reicon 默认 1.5）；平台与项目均不覆盖 strokeWidth（官方 mask 加粗能力不启用）"
+  },
+  "projectIconProfile": {
+    "family": "reicon",
+    "defaultWeight": "outline",
+    "defaultSize": "md",
+    "strokePreference": "资产默认线宽（1.5），不覆盖",
+    "status": "confirmed",
+    "source": "设计师确认（Icon 资源中心，发布前置确认 @ v1.3.0）",
+    "confirmedAt": "2026-09-12T17:26:51.912Z",
+    "locked": true
+  },
+  "projectIconPack": {
+    "status": "confirmed",
+    "version": 1,
+    "iconIds": [
+      "add",
+      "search",
+      "refresh",
+      "close",
+      "chevron-down",
+      "chevron-left",
+      "chevron-right",
+      "sort",
+      "sort-ascending",
+      "sort-descending",
+      "pagination-first",
+      "pagination-previous",
+      "pagination-next",
+      "pagination-last",
+      "success",
+      "warning",
+      "error",
+      "info",
+      "loading",
+      "user",
+      "users",
+      "role",
+      "permission"
+    ],
+    "overrides": [],
+    "fallback": false,
+    "note": "项目确认的图标子集"
+  },
+  "publishedIcons": [
+    {
+      "id": "add",
+      "nameZh": "添加",
+      "nameEn": "Add",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "edit",
+      "nameZh": "编辑",
+      "nameEn": "Edit",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "delete",
+      "nameZh": "删除",
+      "nameEn": "Delete",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "search",
+      "nameZh": "搜索",
+      "nameEn": "Search",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "refresh",
+      "nameZh": "刷新",
+      "nameEn": "Refresh",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "close",
+      "nameZh": "关闭",
+      "nameEn": "Close",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "confirm",
+      "nameZh": "确认",
+      "nameEn": "Confirm",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "cancel",
+      "nameZh": "取消",
+      "nameEn": "Cancel",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "more",
+      "nameZh": "更多操作",
+      "nameEn": "More",
+      "defaultWeight": "outline",
+      "category": "actions"
+    },
+    {
+      "id": "chevron-up",
+      "nameZh": "向上展开",
+      "nameEn": "Chevron Up",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "chevron-down",
+      "nameZh": "向下展开",
+      "nameEn": "Chevron Down",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "chevron-left",
+      "nameZh": "左箭头",
+      "nameEn": "Chevron Left",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "chevron-right",
+      "nameZh": "右箭头",
+      "nameEn": "Chevron Right",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "arrow-left",
+      "nameZh": "返回左",
+      "nameEn": "Arrow Left",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "arrow-right",
+      "nameZh": "前往右",
+      "nameEn": "Arrow Right",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "menu",
+      "nameZh": "菜单",
+      "nameEn": "Menu",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "home",
+      "nameZh": "首页",
+      "nameEn": "Home",
+      "defaultWeight": "outline",
+      "category": "navigation"
+    },
+    {
+      "id": "sort",
+      "nameZh": "排序",
+      "nameEn": "Sort",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "sort-ascending",
+      "nameZh": "升序",
+      "nameEn": "Sort Ascending",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "sort-descending",
+      "nameZh": "降序",
+      "nameEn": "Sort Descending",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "filter",
+      "nameZh": "筛选",
+      "nameEn": "Filter",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "column-settings",
+      "nameZh": "列设置",
+      "nameEn": "Column Settings",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "pagination-first",
+      "nameZh": "首页页码",
+      "nameEn": "Pagination First",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "pagination-previous",
+      "nameZh": "上一页",
+      "nameEn": "Pagination Previous",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "pagination-next",
+      "nameZh": "下一页",
+      "nameEn": "Pagination Next",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "pagination-last",
+      "nameZh": "末页页码",
+      "nameEn": "Pagination Last",
+      "defaultWeight": "outline",
+      "category": "data"
+    },
+    {
+      "id": "success",
+      "nameZh": "成功",
+      "nameEn": "Success",
+      "defaultWeight": "outline",
+      "category": "status"
+    },
+    {
+      "id": "warning",
+      "nameZh": "警告",
+      "nameEn": "Warning",
+      "defaultWeight": "outline",
+      "category": "status"
+    },
+    {
+      "id": "error",
+      "nameZh": "错误",
+      "nameEn": "Error",
+      "defaultWeight": "outline",
+      "category": "status"
+    },
+    {
+      "id": "info",
+      "nameZh": "信息",
+      "nameEn": "Info",
+      "defaultWeight": "outline",
+      "category": "status"
+    },
+    {
+      "id": "loading",
+      "nameZh": "加载中",
+      "nameEn": "Loading",
+      "defaultWeight": "outline",
+      "category": "status"
+    },
+    {
+      "id": "user",
+      "nameZh": "用户",
+      "nameEn": "User",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "users",
+      "nameZh": "用户组",
+      "nameEn": "Users",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "role",
+      "nameZh": "角色",
+      "nameEn": "Role",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "permission",
+      "nameZh": "权限",
+      "nameEn": "Permission",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "settings",
+      "nameZh": "设置",
+      "nameEn": "Settings",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "notification",
+      "nameZh": "通知",
+      "nameEn": "Notification",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "help",
+      "nameZh": "帮助",
+      "nameEn": "Help",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "lock",
+      "nameZh": "锁定",
+      "nameEn": "Lock",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "unlock",
+      "nameZh": "解锁",
+      "nameEn": "Unlock",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "calendar",
+      "nameZh": "日历",
+      "nameEn": "Calendar",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "upload",
+      "nameZh": "上传",
+      "nameEn": "Upload",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "download",
+      "nameZh": "下载",
+      "nameEn": "Download",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "eye",
+      "nameZh": "可见",
+      "nameEn": "Eye",
+      "defaultWeight": "outline",
+      "category": "system"
+    },
+    {
+      "id": "eye-off",
+      "nameZh": "隐藏",
+      "nameEn": "Eye Off",
+      "defaultWeight": "outline",
+      "category": "system"
+    }
+  ],
+  "semanticMetadata": {
+    "add": {
+      "nameZh": "添加",
+      "nameEn": "Add",
+      "aliases": [
+        "新增",
+        "plus",
+        "新建",
+        "创建"
+      ],
+      "intent": "新建数据或对象",
+      "category": "actions",
+      "recommendedContexts": [
+        "新增按钮",
+        "新建入口",
+        "表单添加行"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "edit": {
+      "nameZh": "编辑",
+      "nameEn": "Edit",
+      "aliases": [
+        "修改",
+        "更新",
+        "pen",
+        "pencil"
+      ],
+      "intent": "修改已有数据",
+      "category": "actions",
+      "recommendedContexts": [
+        "行内编辑",
+        "编辑弹窗",
+        "表单修改"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "delete": {
+      "nameZh": "删除",
+      "nameEn": "Delete",
+      "aliases": [
+        "移除",
+        "trash",
+        "清除",
+        "删除用户",
+        "删除数据"
+      ],
+      "intent": "删除数据（危险操作）",
+      "category": "actions",
+      "recommendedContexts": [
+        "删除按钮",
+        "批量删除",
+        "移除成员"
+      ],
+      "forbiddenContexts": [
+        "成功反馈",
+        "确认完成"
+      ],
+      "defaultWeight": "outline"
+    },
+    "search": {
+      "nameZh": "搜索",
+      "nameEn": "Search",
+      "aliases": [
+        "查询",
+        "检索",
+        "放大镜",
+        "筛选查询"
+      ],
+      "intent": "输入关键词检索数据",
+      "category": "actions",
+      "recommendedContexts": [
+        "搜索框前缀",
+        "查询按钮"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "refresh": {
+      "nameZh": "刷新",
+      "nameEn": "Refresh",
+      "aliases": [
+        "重置",
+        "重新加载",
+        "更新列表",
+        "reload"
+      ],
+      "intent": "刷新或重置数据",
+      "category": "actions",
+      "recommendedContexts": [
+        "刷新列表",
+        "重置筛选"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "close": {
+      "nameZh": "关闭",
+      "nameEn": "Close",
+      "aliases": [
+        "取消弹窗",
+        "关闭面板",
+        "x",
+        "dismiss"
+      ],
+      "intent": "关闭容器或取消当前视图",
+      "category": "actions",
+      "recommendedContexts": [
+        "对话框关闭",
+        "标签页关闭",
+        "抽屉关闭"
+      ],
+      "forbiddenContexts": [
+        "危险操作确认"
+      ],
+      "defaultWeight": "outline"
+    },
+    "confirm": {
+      "nameZh": "确认",
+      "nameEn": "Confirm",
+      "aliases": [
+        "确定",
+        "保存",
+        "提交",
+        "ok",
+        "check",
+        "done"
+      ],
+      "intent": "确认并提交操作",
+      "category": "actions",
+      "recommendedContexts": [
+        "确认按钮",
+        "保存操作",
+        "提交表单"
+      ],
+      "forbiddenContexts": [
+        "取消操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "cancel": {
+      "nameZh": "取消",
+      "nameEn": "Cancel",
+      "aliases": [
+        "放弃",
+        "撤销操作",
+        "cancel-icon"
+      ],
+      "intent": "取消当前操作",
+      "category": "actions",
+      "recommendedContexts": [
+        "取消按钮",
+        "放弃修改"
+      ],
+      "forbiddenContexts": [
+        "确认提交"
+      ],
+      "defaultWeight": "outline"
+    },
+    "more": {
+      "nameZh": "更多操作",
+      "nameEn": "More",
+      "aliases": [
+        "更多",
+        "省略号",
+        "ellipsis",
+        "操作菜单"
+      ],
+      "intent": "展开更多操作入口",
+      "category": "actions",
+      "recommendedContexts": [
+        "行操作菜单",
+        "更多按钮"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "chevron-up": {
+      "nameZh": "向上展开",
+      "nameEn": "Chevron Up",
+      "aliases": [
+        "上箭头",
+        "收起",
+        "展开向上",
+        "collapse"
+      ],
+      "intent": "向上折叠 / 展开指示",
+      "category": "navigation",
+      "recommendedContexts": [
+        "折叠面板",
+        "向上展开"
+      ],
+      "forbiddenContexts": [
+        "前进导航"
+      ],
+      "defaultWeight": "outline"
+    },
+    "chevron-down": {
+      "nameZh": "向下展开",
+      "nameEn": "Chevron Down",
+      "aliases": [
+        "下箭头",
+        "展开",
+        "下拉",
+        "expand",
+        "选择器箭头"
+      ],
+      "intent": "向下展开 / 下拉指示",
+      "category": "navigation",
+      "recommendedContexts": [
+        "下拉选择器",
+        "展开面板",
+        "表格分组展开"
+      ],
+      "forbiddenContexts": [
+        "后退导航"
+      ],
+      "defaultWeight": "outline"
+    },
+    "chevron-left": {
+      "nameZh": "左箭头",
+      "nameEn": "Chevron Left",
+      "aliases": [
+        "向左",
+        "上一步",
+        "返回"
+      ],
+      "intent": "向左折叠指示 / 上一步",
+      "category": "navigation",
+      "recommendedContexts": [
+        "上一步",
+        "面包屑返回"
+      ],
+      "forbiddenContexts": [
+        "打开菜单"
+      ],
+      "defaultWeight": "outline"
+    },
+    "chevron-right": {
+      "nameZh": "右箭头",
+      "nameEn": "Chevron Right",
+      "aliases": [
+        "向右",
+        "下一步",
+        "前进"
+      ],
+      "intent": "向右折叠指示 / 下一步",
+      "category": "navigation",
+      "recommendedContexts": [
+        "下一步",
+        "子菜单展开"
+      ],
+      "forbiddenContexts": [
+        "关闭视图"
+      ],
+      "defaultWeight": "outline"
+    },
+    "arrow-left": {
+      "nameZh": "返回左",
+      "nameEn": "Arrow Left",
+      "aliases": [
+        "返回上级",
+        "后退",
+        "back"
+      ],
+      "intent": "返回上一层级",
+      "category": "navigation",
+      "recommendedContexts": [
+        "页面返回",
+        "面包屑"
+      ],
+      "forbiddenContexts": [
+        "下拉指示"
+      ],
+      "defaultWeight": "outline"
+    },
+    "arrow-right": {
+      "nameZh": "前往右",
+      "nameEn": "Arrow Right",
+      "aliases": [
+        "前进",
+        "跳转",
+        "go"
+      ],
+      "intent": "进入下一层级",
+      "category": "navigation",
+      "recommendedContexts": [
+        "跳转链接",
+        "下一步强指示"
+      ],
+      "forbiddenContexts": [
+        "返回"
+      ],
+      "defaultWeight": "outline"
+    },
+    "menu": {
+      "nameZh": "菜单",
+      "nameEn": "Menu",
+      "aliases": [
+        "汉堡",
+        "导航栏",
+        "侧边栏",
+        "hamburger"
+      ],
+      "intent": "打开主导航",
+      "category": "navigation",
+      "recommendedContexts": [
+        "顶部菜单按钮",
+        "侧边栏开关"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "home": {
+      "nameZh": "首页",
+      "nameEn": "Home",
+      "aliases": [
+        "主页",
+        "工作台",
+        "dashboard 首页"
+      ],
+      "intent": "回到首页 / 主工作台",
+      "category": "navigation",
+      "recommendedContexts": [
+        "面包屑首页",
+        "侧边栏首页项"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "sort": {
+      "nameZh": "排序",
+      "nameEn": "Sort",
+      "aliases": [
+        "排序切换",
+        "sort-toggle"
+      ],
+      "intent": "列排序入口（未激活态）",
+      "category": "data",
+      "recommendedContexts": [
+        "可排序列表头"
+      ],
+      "forbiddenContexts": [
+        "状态反馈"
+      ],
+      "defaultWeight": "outline"
+    },
+    "sort-ascending": {
+      "nameZh": "升序",
+      "nameEn": "Sort Ascending",
+      "aliases": [
+        "正序",
+        "从小到大",
+        "升序排列"
+      ],
+      "intent": "当前列升序激活",
+      "category": "data",
+      "recommendedContexts": [
+        "升序表头",
+        "排序状态"
+      ],
+      "forbiddenContexts": [
+        "降序状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "sort-descending": {
+      "nameZh": "降序",
+      "nameEn": "Sort Descending",
+      "aliases": [
+        "倒序",
+        "从大到小",
+        "降序排列"
+      ],
+      "intent": "当前列降序激活",
+      "category": "data",
+      "recommendedContexts": [
+        "降序表头",
+        "排序状态"
+      ],
+      "forbiddenContexts": [
+        "升序状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "filter": {
+      "nameZh": "筛选",
+      "nameEn": "Filter",
+      "aliases": [
+        "过滤",
+        "条件筛选",
+        "漏斗"
+      ],
+      "intent": "数据条件筛选",
+      "category": "data",
+      "recommendedContexts": [
+        "筛选触发器",
+        "表格工具栏"
+      ],
+      "forbiddenContexts": [
+        "排序操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "column-settings": {
+      "nameZh": "列设置",
+      "nameEn": "Column Settings",
+      "aliases": [
+        "列配置",
+        "列显隐",
+        "表格设置"
+      ],
+      "intent": "表格列配置入口",
+      "category": "data",
+      "recommendedContexts": [
+        "表格工具栏",
+        "列显隐面板"
+      ],
+      "forbiddenContexts": [
+        "页面网格布局"
+      ],
+      "defaultWeight": "outline"
+    },
+    "pagination-first": {
+      "nameZh": "首页页码",
+      "nameEn": "Pagination First",
+      "aliases": [
+        "第一页",
+        "回到首页页",
+        "first page"
+      ],
+      "intent": "跳转第一页",
+      "category": "data",
+      "recommendedContexts": [
+        "分页器首端"
+      ],
+      "forbiddenContexts": [
+        "表格行操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "pagination-previous": {
+      "nameZh": "上一页",
+      "nameEn": "Pagination Previous",
+      "aliases": [
+        "前一页",
+        "previous page",
+        "上页"
+      ],
+      "intent": "翻到上一页",
+      "category": "data",
+      "recommendedContexts": [
+        "分页器上一页"
+      ],
+      "forbiddenContexts": [
+        "菜单展开"
+      ],
+      "defaultWeight": "outline"
+    },
+    "pagination-next": {
+      "nameZh": "下一页",
+      "nameEn": "Pagination Next",
+      "aliases": [
+        "后一页",
+        "next page",
+        "下页"
+      ],
+      "intent": "翻到下一页",
+      "category": "data",
+      "recommendedContexts": [
+        "分页器下一页"
+      ],
+      "forbiddenContexts": [
+        "菜单展开"
+      ],
+      "defaultWeight": "outline"
+    },
+    "pagination-last": {
+      "nameZh": "末页页码",
+      "nameEn": "Pagination Last",
+      "aliases": [
+        "最后一页",
+        "last page"
+      ],
+      "intent": "跳转最后一页",
+      "category": "data",
+      "recommendedContexts": [
+        "分页器末端"
+      ],
+      "forbiddenContexts": [
+        "表格行操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "success": {
+      "nameZh": "成功",
+      "nameEn": "Success",
+      "aliases": [
+        "完成",
+        "通过",
+        "已成功",
+        "ok-circle",
+        "success-state"
+      ],
+      "intent": "操作成功状态",
+      "category": "status",
+      "recommendedContexts": [
+        "成功反馈",
+        "流程完成"
+      ],
+      "forbiddenContexts": [
+        "错误提示",
+        "进行中"
+      ],
+      "defaultWeight": "outline"
+    },
+    "warning": {
+      "nameZh": "警告",
+      "nameEn": "Warning",
+      "aliases": [
+        "注意",
+        "警示",
+        "风险提示",
+        "警告提示"
+      ],
+      "intent": "非阻断性警告状态",
+      "category": "status",
+      "recommendedContexts": [
+        "警告反馈",
+        "风险提示"
+      ],
+      "forbiddenContexts": [
+        "错误状态",
+        "成功状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "error": {
+      "nameZh": "错误",
+      "nameEn": "Error",
+      "aliases": [
+        "失败",
+        "异常",
+        "错误提示",
+        "danger",
+        "失败状态"
+      ],
+      "intent": "错误 / 失败状态",
+      "category": "status",
+      "recommendedContexts": [
+        "错误反馈",
+        "校验失败"
+      ],
+      "forbiddenContexts": [
+        "成功状态",
+        "警告提示"
+      ],
+      "defaultWeight": "outline"
+    },
+    "info": {
+      "nameZh": "信息",
+      "nameEn": "Info",
+      "aliases": [
+        "说明",
+        "提示",
+        "info-circle",
+        "信息说明"
+      ],
+      "intent": "中性信息说明",
+      "category": "status",
+      "recommendedContexts": [
+        "信息提示",
+        "辅助说明"
+      ],
+      "forbiddenContexts": [
+        "错误反馈"
+      ],
+      "defaultWeight": "outline"
+    },
+    "loading": {
+      "nameZh": "加载中",
+      "nameEn": "Loading",
+      "aliases": [
+        "加载",
+        "进度",
+        "spinner",
+        "加载状态"
+      ],
+      "intent": "加载 / 处理中状态",
+      "category": "status",
+      "recommendedContexts": [
+        "表格加载",
+        "按钮提交中"
+      ],
+      "forbiddenContexts": [
+        "完成状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "user": {
+      "nameZh": "用户",
+      "nameEn": "User",
+      "aliases": [
+        "成员",
+        "个人",
+        "账号",
+        "member"
+      ],
+      "intent": "单个用户",
+      "category": "system",
+      "recommendedContexts": [
+        "用户列表",
+        "个人信息",
+        "创建人列"
+      ],
+      "forbiddenContexts": [
+        "用户组"
+      ],
+      "defaultWeight": "outline"
+    },
+    "users": {
+      "nameZh": "用户组",
+      "nameEn": "Users",
+      "aliases": [
+        "团队",
+        "成员组",
+        "多人",
+        "group",
+        "组织成员"
+      ],
+      "intent": "多个用户 / 团队",
+      "category": "system",
+      "recommendedContexts": [
+        "团队管理",
+        "成员分组"
+      ],
+      "forbiddenContexts": [
+        "单个用户"
+      ],
+      "defaultWeight": "outline"
+    },
+    "role": {
+      "nameZh": "角色",
+      "nameEn": "Role",
+      "aliases": [
+        "身份",
+        "权限角色",
+        "角色管理"
+      ],
+      "intent": "角色与身份",
+      "category": "system",
+      "recommendedContexts": [
+        "角色分配",
+        "权限矩阵"
+      ],
+      "forbiddenContexts": [
+        "锁定状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "permission": {
+      "nameZh": "权限",
+      "nameEn": "Permission",
+      "aliases": [
+        "授权",
+        "访问控制",
+        "安全",
+        "shield"
+      ],
+      "intent": "权限与访问控制",
+      "category": "system",
+      "recommendedContexts": [
+        "权限开关",
+        "授权状态"
+      ],
+      "forbiddenContexts": [
+        "普通信息"
+      ],
+      "defaultWeight": "outline"
+    },
+    "settings": {
+      "nameZh": "设置",
+      "nameEn": "Settings",
+      "aliases": [
+        "配置",
+        "系统设置",
+        "偏好设置",
+        "setting"
+      ],
+      "intent": "系统 / 偏好设置",
+      "category": "system",
+      "recommendedContexts": [
+        "设置入口",
+        "配置页"
+      ],
+      "forbiddenContexts": [
+        "筛选配置"
+      ],
+      "defaultWeight": "outline"
+    },
+    "notification": {
+      "nameZh": "通知",
+      "nameEn": "Notification",
+      "aliases": [
+        "消息",
+        "提醒",
+        "公告",
+        "bell"
+      ],
+      "intent": "消息通知",
+      "category": "system",
+      "recommendedContexts": [
+        "通知铃铛",
+        "消息中心"
+      ],
+      "forbiddenContexts": [
+        "错误反馈"
+      ],
+      "defaultWeight": "outline"
+    },
+    "help": {
+      "nameZh": "帮助",
+      "nameEn": "Help",
+      "aliases": [
+        "疑问",
+        "支持",
+        "question",
+        "帮助中心"
+      ],
+      "intent": "帮助与支持入口",
+      "category": "system",
+      "recommendedContexts": [
+        "帮助按钮",
+        "文档入口"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "lock": {
+      "nameZh": "锁定",
+      "nameEn": "Lock",
+      "aliases": [
+        "加密",
+        "只读",
+        "锁定状态",
+        "secure"
+      ],
+      "intent": "锁定 / 不可编辑状态",
+      "category": "system",
+      "recommendedContexts": [
+        "锁定字段",
+        "已锁定配置"
+      ],
+      "forbiddenContexts": [
+        "解锁操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "unlock": {
+      "nameZh": "解锁",
+      "nameEn": "Unlock",
+      "aliases": [
+        "开放",
+        "解除锁定",
+        "可编辑"
+      ],
+      "intent": "解锁 / 开放编辑",
+      "category": "system",
+      "recommendedContexts": [
+        "解锁按钮",
+        "开放状态"
+      ],
+      "forbiddenContexts": [
+        "锁定状态"
+      ],
+      "defaultWeight": "outline"
+    },
+    "calendar": {
+      "nameZh": "日历",
+      "nameEn": "Calendar",
+      "aliases": [
+        "日期",
+        "时间选择",
+        "schedule"
+      ],
+      "intent": "日期选择与展示",
+      "category": "system",
+      "recommendedContexts": [
+        "日期筛选",
+        "时间列"
+      ],
+      "forbiddenContexts": [],
+      "defaultWeight": "outline"
+    },
+    "upload": {
+      "nameZh": "上传",
+      "nameEn": "Upload",
+      "aliases": [
+        "导入文件",
+        "上传附件",
+        "import-file"
+      ],
+      "intent": "上传文件 / 数据导入",
+      "category": "system",
+      "recommendedContexts": [
+        "上传按钮",
+        "导入入口"
+      ],
+      "forbiddenContexts": [
+        "下载操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "download": {
+      "nameZh": "下载",
+      "nameEn": "Download",
+      "aliases": [
+        "导出",
+        "下载文件",
+        "export"
+      ],
+      "intent": "下载 / 导出数据",
+      "category": "system",
+      "recommendedContexts": [
+        "导出按钮",
+        "下载入口"
+      ],
+      "forbiddenContexts": [
+        "上传操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "eye": {
+      "nameZh": "可见",
+      "nameEn": "Eye",
+      "aliases": [
+        "查看",
+        "预览",
+        "显示密码",
+        "visible"
+      ],
+      "intent": "查看 / 明文可见",
+      "category": "system",
+      "recommendedContexts": [
+        "查看详情",
+        "显示密码"
+      ],
+      "forbiddenContexts": [
+        "隐藏操作"
+      ],
+      "defaultWeight": "outline"
+    },
+    "eye-off": {
+      "nameZh": "隐藏",
+      "nameEn": "Eye Off",
+      "aliases": [
+        "不可见",
+        "遮蔽",
+        "隐藏密码",
+        "invisible"
+      ],
+      "intent": "隐藏 / 不可见",
+      "category": "system",
+      "recommendedContexts": [
+        "隐藏密码",
+        "关闭预览"
+      ],
+      "forbiddenContexts": [
+        "查看操作"
+      ],
+      "defaultWeight": "outline"
+    }
+  },
+  "source": "reicon",
+  "sourceVersion": "reicon-react@1.2.5",
+  "license": "MIT",
+  "checksum": "c31de4379b7e84edf2ddb6e9240f8e0b",
+  "note": "Reicon 为人工绘制图标库（AI 只负责语义检索与匹配，不生成图形）；published 45 / registry 47；图形不复制进 JSON，运行时经 DSIcon（reiconAdapter 显式映射）渲染"
+}

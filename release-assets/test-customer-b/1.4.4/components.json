@@ -1,0 +1,876 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.4.4",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSButton.tsx",
+      "props": [
+        {
+          "name": "variant",
+          "type": "'primary' | 'secondary' | 'tertiary'",
+          "values": [
+            "primary",
+            "secondary",
+            "tertiary"
+          ],
+          "required": false,
+          "description": "操作层级（业务语义）。视觉形式由 Button Recipe 决定：primary=实底、secondary=线框或浅色填充（Recipe.secondaryStyle）、tertiary=文本。（@deprecated 旧视觉值 secondary-outline / secondary-soft 仅保留在加载迁移与内部兼容层，业务代码不得使用）"
+        },
+        {
+          "name": "semantic",
+          "type": "'default' | 'danger'",
+          "values": [
+            "default",
+            "danger"
+          ],
+          "required": false,
+          "description": "操作语义：默认 / 危险。危险是与操作层级独立的分类，不与主要、次要混用"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸，默认 md；高度使用共享控件尺寸 Token（controlHeightSm/Md/Lg，由视觉变量统一控制，不属于 Recipe 能力）；纯图标宽度来自 Recipe.iconOnlySize*"
+        },
+        {
+          "name": "icon",
+          "type": "ReactNode",
+          "required": false,
+          "description": "图标统一槽位（插槽内容，非 Icon 组件系统）；与文字间距来自 Recipe.iconGap"
+        },
+        {
+          "name": "iconPosition",
+          "type": "'start' | 'end'",
+          "values": [
+            "start",
+            "end"
+          ],
+          "required": false,
+          "description": "图标位置（单按钮覆盖）；缺省跟随 Recipe.iconPosition"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "禁用状态，默认 false"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "按下",
+          "status": "implemented"
+        },
+        {
+          "name": "聚焦（键盘可达）",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        },
+        {
+          "name": "加载中",
+          "status": "todo"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-btn-primary-bg",
+        "--bds-btn-primary-bg-hover",
+        "--bds-btn-primary-bg-pressed",
+        "--bds-btn-primary-bg-disabled",
+        "--bds-btn-primary-text",
+        "--bds-btn-danger-*",
+        "--bds-focus-ring"
+      ],
+      "recipeDependencies": [
+        "button"
+      ],
+      "accessibility": [
+        "造型（圆角 / 边框 / 内边距 / 图标间距 / 过渡 / 焦点环）全部来自方案级 Button Recipe，组件源码不含项目判断"
+      ],
+      "underlyingImplementation": {
+        "library": "react（自研底座，React Aria 焦点管理）",
+        "notes": "组件源码不含项目判断，造型来自 Button Recipe，颜色来自 Color Contract"
+      },
+      "semanticVariants": {
+        "variant": [
+          "primary",
+          "secondary",
+          "tertiary"
+        ],
+        "semantic": [
+          "default",
+          "danger"
+        ],
+        "sizes": [
+          "sm",
+          "md",
+          "lg"
+        ]
+      },
+      "legacyNote": "secondary-outline / secondary-soft 为旧视觉值，已迁移为 secondary（造型由 Recipe 决定）"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select（React Aria 底座试点）",
+      "runtimeExport": "DSSelect",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSSelect.tsx",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "description": "字段标签（自动与控件关联）"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": false,
+          "description": "未选择时的占位文字"
+        },
+        {
+          "name": "value",
+          "type": "string | null",
+          "required": false,
+          "description": "受控选中值（option.value）；传 undefined 表示非受控"
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "required": false,
+          "description": "非受控初始值"
+        },
+        {
+          "name": "onChange",
+          "type": "(value: string) => void",
+          "required": false,
+          "description": "选中变化回调（受控时必须提供）"
+        },
+        {
+          "name": "options",
+          "type": "{ value, label, disabled? }[]",
+          "required": true,
+          "description": "选项列表（value 唯一）"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸，默认 md；高度使用共享控件尺寸 Token（controlHeightSm/Md/Lg），不属于 Select Recipe 能力"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "整体禁用"
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "required": false,
+          "description": "必填（label 与 aria 关联）"
+        },
+        {
+          "name": "invalid",
+          "type": "boolean",
+          "required": false,
+          "description": "错误态（边框读 field.borderInvalid，aria-invalid 自动设置）"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "description": "辅助说明（辅助技术可读）"
+        },
+        {
+          "name": "errorMessage",
+          "type": "string",
+          "required": false,
+          "description": "错误提示（invalid 时显示并关联控件）"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "required": false,
+          "description": "表单提交名"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "聚焦（键盘可达，焦点环 ≥3:1）",
+          "status": "implemented"
+        },
+        {
+          "name": "打开（弹层）",
+          "status": "implemented"
+        },
+        {
+          "name": "已选择 / 选中项高亮",
+          "status": "implemented"
+        },
+        {
+          "name": "选项悬停（data-hovered → fill.hover）",
+          "status": "implemented"
+        },
+        {
+          "name": "选项键盘聚焦（data-focused / data-focus-visible → fill.subtle）",
+          "status": "implemented"
+        },
+        {
+          "name": "选项选中（data-selected → 品牌浅底 + 品牌文字）",
+          "status": "implemented"
+        },
+        {
+          "name": "选项选中 + 悬停（selectedHover → 品牌浅底深一级）",
+          "status": "implemented"
+        },
+        {
+          "name": "选项禁用（data-disabled，不响应悬停）",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        },
+        {
+          "name": "必填",
+          "status": "implemented"
+        },
+        {
+          "name": "无效（aria-invalid + 错误提示）",
+          "status": "implemented"
+        },
+        {
+          "name": "空选项",
+          "status": "implemented"
+        },
+        {
+          "name": "长选项文字（省略号）",
+          "status": "implemented"
+        },
+        {
+          "name": "多选项滚动（Recipe.maxVisibleOptions）",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-field-background",
+        "--bds-field-text",
+        "--bds-field-placeholder",
+        "--bds-field-border",
+        "--bds-field-border-hover",
+        "--bds-field-border-focus",
+        "--bds-field-border-invalid",
+        "--bds-field-bg-disabled",
+        "--bds-selection-bg",
+        "--bds-selection-text",
+        "--bds-surface-overlay"
+      ],
+      "recipeDependencies": [
+        "select"
+      ],
+      "accessibility": [
+        "键盘：Tab 聚焦；Enter / Space 打开；ArrowUp / ArrowDown / Home / End 移动；输入字符 typeahead；Enter 选择；Escape 关闭并回到 Trigger（来自 react-aria-components，无键盘陷阱）",
+        "无障碍：label 关联（aria-labelledby）、aria-invalid、错误与说明通过 FieldError / Text 关联（aria-describedby）、listbox 语义与 aria-selected（React Aria 内建）",
+        "Token 引用：field.background / field.text / field.placeholder / field.border / field.borderHover / field.borderFocus / field.borderInvalid / field.disabledBackground / selection.background / selection.text / surface.overlay / focus.ring（全部来自 Color Contract，组件与 CSS 无项目 HEX）",
+        "底层来源：react-aria-components（Select / Button / SelectValue / Popover / ListBox / ListBoxItem / Label / Text / FieldError）；不引入 Radix / Floating UI / Headless UI 等重复底座"
+      ],
+      "underlyingImplementation": {
+        "library": "react-aria-components",
+        "notes": "Select/Button/SelectValue/Popover/ListBox 等；弹层 Portal 到 body 并在弹层根节点重新注入主题变量（不写 :root，同页多项目不串色）"
+      },
+      "keyboardBehavior": [
+        "键盘：Tab 聚焦；Enter / Space 打开；ArrowUp / ArrowDown / Home / End 移动；输入字符 typeahead；Enter 选择；Escape 关闭并回到 Trigger（来自 react-aria-components，无键盘陷阱）"
+      ]
+    },
+    {
+      "id": "input",
+      "name": "文本输入 Input（React Aria 底座）",
+      "runtimeExport": "DSInput",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSInput.tsx",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true,
+          "description": "字段标签（与输入框自动关联）"
+        },
+        {
+          "name": "value / defaultValue",
+          "type": "string",
+          "required": false,
+          "description": "受控 / 非受控值"
+        },
+        {
+          "name": "onChange",
+          "type": "(v: string) => void",
+          "required": false,
+          "description": "值变化（中文组合输入不被截断）"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "required": false,
+          "description": "占位提示文本"
+        },
+        {
+          "name": "description / errorMessage",
+          "type": "string",
+          "required": false,
+          "description": "辅助说明 / 错误提示（aria 关联）"
+        },
+        {
+          "name": "required / disabled / readOnly / invalid",
+          "type": "boolean",
+          "required": false,
+          "description": "状态"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸，默认 md"
+        },
+        {
+          "name": "prefix / suffix",
+          "type": "ReactNode",
+          "required": false,
+          "description": "前后缀槽位"
+        },
+        {
+          "name": "clearable",
+          "type": "boolean",
+          "required": false,
+          "description": "显示清空按钮"
+        },
+        {
+          "name": "maxLength",
+          "type": "number",
+          "required": false,
+          "description": "最大字符数（含计数）"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "聚焦（键盘可达，焦点环）",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        },
+        {
+          "name": "只读",
+          "status": "implemented"
+        },
+        {
+          "name": "必填",
+          "status": "implemented"
+        },
+        {
+          "name": "无效（aria-invalid + 错误提示）",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-field-bg",
+        "--bds-field-text",
+        "--bds-field-placeholder",
+        "--bds-field-border",
+        "--bds-field-border-hover",
+        "--bds-field-border-focus",
+        "--bds-field-border-invalid",
+        "--bds-field-bg-disabled",
+        "--bds-focus-ring"
+      ],
+      "recipeDependencies": [
+        "input"
+      ],
+      "accessibility": [
+        "键盘行为 / 焦点 / IME 中文组合输入全部来自 react-aria-components（TextField / Input / Label / Text / FieldError）"
+      ],
+      "underlyingImplementation": {
+        "library": "react-aria-components",
+        "notes": "TextField/Input/Label/Text/FieldError；键盘 / 焦点 / IME 中文组合输入由 React Aria 管理"
+      }
+    },
+    {
+      "id": "table",
+      "name": "数据表格 Table（TanStack Table 底座）",
+      "runtimeExport": "DSTable",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSTable.tsx",
+      "props": [
+        {
+          "name": "columns",
+          "type": "DSTableColumn<Row>[]",
+          "required": true,
+          "description": "列定义：{ key, title, render?, sortable?, width?, ellipsis? }"
+        },
+        {
+          "name": "data",
+          "type": "Row[]",
+          "required": true,
+          "description": "数据行"
+        },
+        {
+          "name": "rowKey",
+          "type": "(row: Row) => string",
+          "required": true,
+          "description": "行唯一键"
+        },
+        {
+          "name": "loading / emptyState",
+          "type": "boolean / ReactNode",
+          "required": false,
+          "description": "Loading 与空状态"
+        },
+        {
+          "name": "selectable / selectedRowKeys / onSelectionChange / isRowSelectable",
+          "type": "受控行选择",
+          "required": false,
+          "description": "行选择与全选（禁用行不可选）"
+        },
+        {
+          "name": "sort / onSortChange",
+          "type": "{ key, dir } | null",
+          "required": false,
+          "description": "单列排序（受控）"
+        },
+        {
+          "name": "pagination",
+          "type": "{ page, pageSize, onPageChange? }",
+          "required": false,
+          "description": "内置分页（TanStack getPaginationRowModel）"
+        },
+        {
+          "name": "density",
+          "type": "'compact' | 'default' | 'comfortable'",
+          "required": false,
+          "description": "密度（行高变量）"
+        },
+        {
+          "name": "stickyHeader",
+          "type": "boolean",
+          "required": false,
+          "description": "固定表头"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认 / 数据行",
+          "status": "implemented"
+        },
+        {
+          "name": "行悬停",
+          "status": "implemented"
+        },
+        {
+          "name": "选中行 / 全选 / 半选",
+          "status": "implemented"
+        },
+        {
+          "name": "选择控件 checked / indeterminate / disabled（SelectionCheckboxPrimitive，跟随品牌状态 Token）",
+          "status": "implemented"
+        },
+        {
+          "name": "空状态 / Loading",
+          "status": "implemented"
+        },
+        {
+          "name": "排序（单列三态：升序 → 降序 → 取消；neutral 图标常显）",
+          "status": "implemented"
+        },
+        {
+          "name": "键盘焦点可见（选择控件 / 排序）",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-table-header-bg",
+        "--bds-table-header-text",
+        "--bds-table-row-bg",
+        "--bds-table-row-hover",
+        "--bds-table-row-selected",
+        "--bds-table-border",
+        "--bds-table-text",
+        "--bds-table-text-2"
+      ],
+      "recipeDependencies": [
+        "table"
+      ],
+      "accessibility": [],
+      "underlyingImplementation": {
+        "library": "@tanstack/react-table",
+        "notes": "getCoreRowModel / getSortedRowModel / getPaginationRowModel；组件只做受控接线与渲染"
+      },
+      "capabilities": [
+        "表头/数据行",
+        "空状态/Loading",
+        "单列排序",
+        "行选择与全选（禁用行不可选）",
+        "固定表头",
+        "密度（compact/default/comfortable）",
+        "长文本溢出省略"
+      ],
+      "limits": "虚拟滚动 / 树表 / 单元格编辑 / 拖拽列宽 / 服务端请求未实现（见 missingCapabilities）"
+    },
+    {
+      "id": "pagination",
+      "name": "分页 Pagination（TanStack 分页模型协同）",
+      "runtimeExport": "DSPagination",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSPagination.tsx",
+      "props": [
+        {
+          "name": "page",
+          "type": "number",
+          "required": true,
+          "description": "当前页（从 1 开始；越界时安全回退展示）"
+        },
+        {
+          "name": "pageSize",
+          "type": "number",
+          "required": true,
+          "description": "每页条数"
+        },
+        {
+          "name": "total",
+          "type": "number",
+          "required": true,
+          "description": "数据总数"
+        },
+        {
+          "name": "pageSizeOptions",
+          "type": "number[]",
+          "required": false,
+          "description": "每页条数选项（默认 [10, 20, 50]）"
+        },
+        {
+          "name": "onPageChange / onPageSizeChange",
+          "type": "(v: number) => void",
+          "required": false,
+          "description": "页码 / 页容量变化"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "required": false,
+          "description": "整体禁用"
+        },
+        {
+          "name": "showTotal",
+          "type": "boolean",
+          "required": false,
+          "description": "显示总数说明（默认 true）"
+        }
+      ],
+      "states": [
+        {
+          "name": "默认",
+          "status": "implemented"
+        },
+        {
+          "name": "当前页（active 高亮， aria-current=\"page\"）",
+          "status": "implemented"
+        },
+        {
+          "name": "边界禁用（首页 / 末页）",
+          "status": "implemented"
+        },
+        {
+          "name": "悬停 / 聚焦",
+          "status": "implemented"
+        },
+        {
+          "name": "禁用",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-pg-item-bg",
+        "--bds-pg-item-hover",
+        "--bds-pg-item-active",
+        "--bds-pg-item-disabled",
+        "--bds-pg-item-text",
+        "--bds-btn-*"
+      ],
+      "recipeDependencies": [
+        "pagination"
+      ],
+      "accessibility": [
+        "键盘行为复用 DSButton（React Aria）与原生 select（aria-label=每页条数）"
+      ],
+      "underlyingImplementation": {
+        "library": "@tanstack/react-table（分页模型协同）+ react-aria-components（按钮底座）",
+        "notes": "受控分页器；导航按钮复用 DSButton（统一 Button 底座）"
+      },
+      "helpers": [
+        "getTotalPages(total, pageSize)",
+        "getEffectivePage(page, total, pageSize)（越界安全回退）",
+        "getPageWindow(page, totalPages)"
+      ]
+    },
+    {
+      "id": "dialog",
+      "name": "对话框 Dialog（React Aria Modal 底座）",
+      "runtimeExport": "DSDialog",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSDialog.tsx",
+      "props": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "required": true,
+          "description": "是否打开（受控）"
+        },
+        {
+          "name": "onOpenChange",
+          "type": "(open: boolean) => void",
+          "required": true,
+          "description": "打开 / 关闭变化（Escape / 遮罩点击触发）"
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "required": true,
+          "description": "标题（ARIA 关联）"
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "required": false,
+          "description": "描述（ARIA 关联）"
+        },
+        {
+          "name": "children",
+          "type": "ReactNode",
+          "required": false,
+          "description": "内容"
+        },
+        {
+          "name": "footer",
+          "type": "ReactNode",
+          "required": false,
+          "description": "底部操作区（建议 DSButton）"
+        },
+        {
+          "name": "size",
+          "type": "'sm' | 'md' | 'lg'",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "宽度，默认 md"
+        },
+        {
+          "name": "dismissible",
+          "type": "boolean",
+          "required": false,
+          "description": "点击遮罩关闭（默认 true）"
+        },
+        {
+          "name": "closeOnEscape",
+          "type": "boolean",
+          "required": false,
+          "description": "Escape 关闭（默认 true）"
+        }
+      ],
+      "states": [
+        {
+          "name": "打开 / 关闭（动效）",
+          "status": "implemented"
+        },
+        {
+          "name": "焦点进入与锁定（React Aria）",
+          "status": "implemented"
+        },
+        {
+          "name": "关闭后焦点返回触发按钮",
+          "status": "implemented"
+        },
+        {
+          "name": "Escape 关闭",
+          "status": "implemented"
+        },
+        {
+          "name": "遮罩关闭 / 禁止遮罩关闭",
+          "status": "implemented"
+        },
+        {
+          "name": "页面滚动锁定",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-overlay-bg",
+        "--bds-dialog-bg",
+        "--bds-dialog-border",
+        "--bds-dialog-shadow-token",
+        "--bds-dialog-title",
+        "--bds-dialog-text"
+      ],
+      "recipeDependencies": [
+        "dialog"
+      ],
+      "accessibility": [],
+      "underlyingImplementation": {
+        "library": "react-aria-components",
+        "notes": "ModalOverlay/Modal/Dialog/Heading/Text；焦点陷阱由 React Aria 管理（禁止自行实现）；遮罩根节点重新注入主题变量"
+      },
+      "behaviors": [
+        "焦点进入/锁定/返回触发按钮（React Aria）",
+        "Escape 关闭",
+        "遮罩关闭（dismissible 可禁）",
+        "页面滚动锁定",
+        "Portal 主题变量继承"
+      ]
+    },
+    {
+      "id": "icon",
+      "name": "图标 Icon（Reicon 底座）",
+      "runtimeExport": "DSIcon",
+      "implemented": true,
+      "sourcePath": "src/components/base/DSIcon.tsx",
+      "props": [
+        {
+          "name": "name",
+          "type": "IconName",
+          "required": true,
+          "description": "语义 id（只能使用 icons.json publishedIcons）"
+        },
+        {
+          "name": "weight",
+          "type": "'outline' | 'filled'",
+          "values": [
+            "outline",
+            "filled"
+          ],
+          "required": false,
+          "description": "Reicon 真实双变体（默认项目 Profile）"
+        },
+        {
+          "name": "size",
+          "type": "'xs' | 'sm' | 'md' | 'lg' | number",
+          "values": [
+            "xs",
+            "sm",
+            "md",
+            "lg"
+          ],
+          "required": false,
+          "description": "尺寸 Token（12/16/20/24px）或显式 px，默认 md"
+        },
+        {
+          "name": "color",
+          "type": "'currentColor'",
+          "values": [
+            "currentColor"
+          ],
+          "required": false,
+          "description": "默认 currentColor（随文本语义色继承）"
+        },
+        {
+          "name": "decorative",
+          "type": "boolean",
+          "required": false,
+          "description": "装饰图标 → aria-hidden（按钮内图标请配文本或 aria-label）"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "description": "非装饰图标的可访问名称（decorative=false 必填）"
+        }
+      ],
+      "states": [
+        {
+          "name": "Outline / Filled（真实双变体）",
+          "status": "implemented"
+        },
+        {
+          "name": "currentColor 继承",
+          "status": "implemented"
+        },
+        {
+          "name": "装饰（aria-hidden）/ 非装饰（role=img + aria-label）",
+          "status": "implemented"
+        },
+        {
+          "name": "未知 id → missing 占位 + 报错",
+          "status": "implemented"
+        }
+      ],
+      "tokenDependencies": [
+        "--bds-icon-xs",
+        "--bds-icon-sm",
+        "--bds-icon-md",
+        "--bds-icon-lg",
+        "currentColor（继承文本语义色）"
+      ],
+      "recipeDependencies": [
+        "icon"
+      ],
+      "accessibility": [
+        "尺寸 Token：--bds-icon-xs/sm/md/lg（Icon Grammar）"
+      ],
+      "underlyingImplementation": {
+        "library": "reicon-react（reiconAdapter 显式静态映射，Tree Shaking）",
+        "notes": "前端唯一图标入口；供应商命名隔离在 Adapter；语义 id 来自 Icon Registry published 集合"
+      },
+      "grammar": "画布 24 / 双变体 outline·filled（Reicon 人工绘制，非算法填充）/ currentColor / 尺寸 Token xs·sm·md·lg",
+      "calling": "name 只能使用 icons.json publishedIcons 语义 id；decorative=true → aria-hidden；非装饰必须提供 label；未知 id → missing 占位 + 报错",
+      "antiPatterns": "禁止业务直接 import reicon-react / 自绘 SVG / emoji 代替"
+    }
+  ],
+  "missingComponents": [],
+  "note": "availableComponents 只包含真实实现的组件契约（Runtime Registry 驱动）；未实现组件见 missingComponents / manifest.missingCapabilities"
+}

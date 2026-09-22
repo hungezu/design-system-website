@@ -1,0 +1,81 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.5.2",
+  "status": "confirmed",
+  "source": "区域背景识别确认（GKX 列表页）",
+  "confirmedAt": "2026-09-11T18:10:34.919Z",
+  "roles": {
+    "surface.page": {
+      "value": "#F2F3F5",
+      "observedValue": "#F2F3F5",
+      "cssVar": "--bds-bg-page",
+      "resolvedValue": "#F2F3F5",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.9500000000000001,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "surface.card": {
+      "value": "#FFFFFF",
+      "observedValue": "#FFFFFF",
+      "cssVar": "--bds-bg-surface",
+      "resolvedValue": "#FFFFFF",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.94,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "surface.subtle": {
+      "value": "#F7F8FA",
+      "observedValue": "#F7F8FA",
+      "cssVar": "--bds-bg-surface-alt",
+      "resolvedValue": "#F7F8FA",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.8799999999999999,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "border.default": {
+      "value": "#E5E6EB",
+      "observedValue": "#E5E6EB",
+      "cssVar": "--bds-border",
+      "resolvedValue": "#E5E6EB",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.88,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "border.strong": {
+      "value": "#C9CDD4",
+      "observedValue": "#C9CDD4",
+      "cssVar": "--bds-border-strong",
+      "resolvedValue": "#C9CDD4",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.8,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "radius.container": {
+      "value": "6px",
+      "observedValue": "6px",
+      "cssVar": "--bds-radius-md",
+      "resolvedValue": "6px",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.87,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    },
+    "radius.control": {
+      "value": "4px",
+      "observedValue": "4px",
+      "cssVar": "--bds-radius-sm",
+      "resolvedValue": "4px",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.87,
+      "confirmedAt": "2026-09-11T18:10:34.919Z"
+    }
+  },
+  "note": "发布只输出已确认的 Region Appearance（Resolved）；未确认候选不进入发布资产"
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "bds-release/1",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "projectName": "guokexin",
+  "releaseVersion": "1.1.0",
+  "status": "published",
+  "publishedAt": "2026-09-11T18:14:07.919Z",
+  "approvedBy": "张设计",
+  "checksum": "9018e94831dc95ce2ab2be02596e6654",
+  "runtimeCompatibility": {
+    "runtime": "bds-runtime/1",
+    "entry": "src/runtime/index.ts",
+    "minReact": "18",
+    "styleStrategy": "css-variables",
+    "componentRuntimeVersion": "bds-components/1.0.0"
+  },
+  "colorSystemVersion": "tdesign-hct@1.6.0（palette 2026-09-11）",
+  "interactionColorPreset": "tdesign-web@tdesign-react@1.18.3（Token 基准：_light.less 与组件 CSS）",
+  "componentRuntimeVersion": "bds-components/1.0.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "sourcePath": "src/components/base/DSButton.tsx"
+    },
+    {
+      "id": "input",
+      "name": "输入框 Input",
+      "runtimeExport": null,
+      "sourcePath": "src/components/base/DSInput.tsx"
+    },
+    {
+      "id": "table",
+      "name": "基础表格 Table",
+      "runtimeExport": null,
+      "sourcePath": "src/components/base/DSTable.tsx"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select（React Aria 底座试点）",
+      "runtimeExport": "DSSelect",
+      "sourcePath": "src/components/base/DSSelect.tsx"
+    }
+  ],
+  "iconPack": null,
+  "figmaLibrary": "pending",
+  "artifactFiles": [
+    {
+      "path": "manifest.json",
+      "bytes": 0,
+      "checksum": "(self)",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 54618,
+      "checksum": "1c647f290b99337f1120fd038c1ab135",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 5757,
+      "checksum": "d973bd5b527a47cd48c99af1f3442407",
+      "mediaType": "text/css"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 2264,
+      "checksum": "7575134a220a90c428e2ec784f0d0306",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "components.json",
+      "bytes": 8619,
+      "checksum": "f6ddf64d6fbac13bdc8f12c763e9a741",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "region-appearance.json",
+      "bytes": 2396,
+      "checksum": "36e499daf03bbe8cacbaec78e0aba37e",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 15662,
+      "checksum": "36a89722642659906b8250ac5fd91a66",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "ai-rules.md",
+      "bytes": 1055,
+      "checksum": "5a4aab5adf6233b407dbf5f83306c3a6",
+      "mediaType": "text/markdown"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 3863,
+      "checksum": "22317d045d5ecb56d672515a1843c100",
+      "mediaType": "application/json"
+    }
+  ],
+  "missingCapabilities": [
+    "Icon Pack：未接入 —— manifest 中为 null，不提供图标资产",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "sourceSummary": {
+    "generatedFrom": "发布快照（不可变）",
+    "schemeRevision": 17,
+    "capturedAt": "2026-09-11T18:14:07.919Z",
+    "semanticTokens": 41,
+    "regionAppearanceRoles": 7,
+    "recipes": [
+      "button",
+      "select"
+    ],
+    "pages": 2
+  }
+}

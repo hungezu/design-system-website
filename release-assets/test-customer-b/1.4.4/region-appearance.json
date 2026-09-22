@@ -1,0 +1,71 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.4.4",
+  "status": "confirmed",
+  "source": "区域背景识别确认（客户B 列表页）",
+  "confirmedAt": "2026-09-11T16:41:29.404Z",
+  "roles": {
+    "surface.page": {
+      "value": "#EEF7F2",
+      "observedValue": "#EEF7F2",
+      "cssVar": "--bds-bg-page",
+      "resolvedValue": "#EEF7F2",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.9,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    },
+    "surface.card": {
+      "value": "#FFFFFF",
+      "observedValue": "#FFFFFF",
+      "cssVar": "--bds-bg-surface",
+      "resolvedValue": "#FFFFFF",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.86,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    },
+    "surface.subtle": {
+      "value": "#D9F3E6",
+      "observedValue": "#D9F3E6",
+      "cssVar": "--bds-bg-surface-alt",
+      "resolvedValue": "#D9F3E6",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.755,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    },
+    "border.default": {
+      "value": "#D3E4DA",
+      "observedValue": "#D3E4DA",
+      "cssVar": "--bds-border",
+      "resolvedValue": "#D3E4DA",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.8400000000000001,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    },
+    "radius.container": {
+      "value": "10px",
+      "observedValue": "10px",
+      "cssVar": "--bds-radius-md",
+      "resolvedValue": "10px",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.81,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    },
+    "radius.control": {
+      "value": "15px",
+      "observedValue": "15px",
+      "cssVar": "--bds-radius-sm",
+      "resolvedValue": "15px",
+      "source": "figma",
+      "readMethod": "Figma 原值读取（结构化节点）",
+      "confidence": 0.81,
+      "confirmedAt": "2026-09-11T16:41:29.404Z"
+    }
+  },
+  "note": "发布只输出已确认的 Region Appearance（Resolved）；未确认候选不进入发布资产"
+}

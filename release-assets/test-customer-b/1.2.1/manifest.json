@@ -1,0 +1,148 @@
+{
+  "schemaVersion": "bds-release/2",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "projectName": "test-customer-b",
+  "releaseVersion": "1.2.1",
+  "status": "published",
+  "publishedAt": "2026-09-12T23:54:25.333Z",
+  "approvedBy": "终验审批（自动化）",
+  "checksum": "52199927a61946a121776f4d2c27bf7b",
+  "runtimeCompatibility": {
+    "runtime": "bds-runtime/1",
+    "entry": "src/runtime/index.ts",
+    "minReact": "18",
+    "styleStrategy": "css-variables",
+    "componentRuntimeVersion": "bds-components/1.1.0"
+  },
+  "colorSystemVersion": "tdesign-hct@1.6.0（palette 2026-09-11）",
+  "interactionColorPreset": "tdesign-web@tdesign-react@1.18.3（Token 基准：_light.less 与组件 CSS）",
+  "componentRuntimeVersion": "bds-components/1.1.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "sourcePath": "src/components/base/DSButton.tsx"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select",
+      "runtimeExport": "DSSelect",
+      "sourcePath": "src/components/base/DSSelect.tsx"
+    },
+    {
+      "id": "input",
+      "name": "文本输入 Input",
+      "runtimeExport": "DSInput",
+      "sourcePath": "src/components/base/DSInput.tsx"
+    },
+    {
+      "id": "table",
+      "name": "数据表格 Table",
+      "runtimeExport": "DSTable",
+      "sourcePath": "src/components/base/DSTable.tsx"
+    },
+    {
+      "id": "pagination",
+      "name": "分页 Pagination",
+      "runtimeExport": "DSPagination",
+      "sourcePath": "src/components/base/DSPagination.tsx"
+    },
+    {
+      "id": "dialog",
+      "name": "对话框 Dialog",
+      "runtimeExport": "DSDialog",
+      "sourcePath": "src/components/base/DSDialog.tsx"
+    },
+    {
+      "id": "icon",
+      "name": "图标 Icon（Reicon 底座）",
+      "runtimeExport": "DSIcon",
+      "sourcePath": "src/components/base/DSIcon.tsx"
+    }
+  ],
+  "iconPack": {
+    "status": "confirmed",
+    "version": "1.2.1（pack v1）",
+    "count": 45,
+    "defaultWeight": "filled",
+    "defaultSize": "md",
+    "source": "reicon · reicon-react@1.2.5 · MIT",
+    "checksum": "c31de4379b7e84edf2ddb6e9240f8e0b"
+  },
+  "figmaLibrary": "pending",
+  "artifactFiles": [
+    {
+      "path": "tokens.json",
+      "bytes": 61319,
+      "checksum": "2885a4c41566b0feb606eb6a4a3ceea8",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 7252,
+      "checksum": "3f66aec1d98c6a67a0274e1b340d405d",
+      "mediaType": "text/css"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 6228,
+      "checksum": "88262767f336a40d9a467351ba25d663",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "components.json",
+      "bytes": 26295,
+      "checksum": "162fc3b1e4c4ef8bcb123ae739836415",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "icons.json",
+      "bytes": 28370,
+      "checksum": "73c2334ab1d2e1848180ce187ff10a16",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "region-appearance.json",
+      "bytes": 2296,
+      "checksum": "bf3194a8d815aa3612c6f19a05a30794",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 16180,
+      "checksum": "216cd25ece58d6b4d46affa8cfae4b0a",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "ai-rules.md",
+      "bytes": 2992,
+      "checksum": "8d898e117caf2e0f994894638b43056d",
+      "mediaType": "text/markdown"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 6658,
+      "checksum": "86e062ff8b1d0151144dff9deb963653",
+      "mediaType": "application/json"
+    }
+  ],
+  "missingCapabilities": [
+    "Table 高级能力：虚拟滚动 / 树表 / 单元格编辑 / 拖拽列宽 / 服务端请求 —— 未实现，不随 DSTable 发布",
+    "多行文本 Textarea / Toast：未开发（见组件目录 planned）",
+    "图标能力边界：仅接入 Reicon 已发布语义图标（icons.json publishedIcons）；图标品牌插画 / 动效图标未实现",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "sourceSummary": {
+    "generatedFrom": "发布快照（不可变）",
+    "schemeRevision": 7,
+    "capturedAt": "2026-09-12T23:54:24.183Z",
+    "semanticTokens": 41,
+    "regionAppearanceRoles": 6,
+    "recipes": [
+      "button",
+      "select"
+    ],
+    "pages": 2
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "formatVersion": "bds-release/1",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.0.0",
+  "status": "confirmed",
+  "source": "区域背景识别确认（图片参照：page-layout-1440x900.png）",
+  "confirmedAt": "2026-09-11T17:25:13.208Z",
+  "roles": {
+    "surface.page": {
+      "value": "#F2F3F5",
+      "observedValue": "#F2F3F5",
+      "cssVar": "--bds-bg-page",
+      "resolvedValue": "#F2F3F5",
+      "source": "image",
+      "readMethod": "图片连续区域像素分析（OKLab 聚类）",
+      "confidence": 0.6928300235646958,
+      "confirmedAt": "2026-09-11T17:25:13.208Z"
+    },
+    "surface.card": {
+      "value": "#FFFFFF",
+      "observedValue": "#FFFFFF",
+      "cssVar": "--bds-bg-surface",
+      "resolvedValue": "#FFFFFF",
+      "source": "image",
+      "readMethod": "图片连续区域像素分析（OKLab 聚类）",
+      "confidence": 0.95,
+      "confirmedAt": "2026-09-11T17:25:13.208Z"
+    }
+  },
+  "note": "发布只输出已确认的 Region Appearance（Resolved）；未确认候选不进入发布资产"
+}

@@ -1,0 +1,145 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.4.2",
+  "patternId": "query-list",
+  "patternVersion": "1.0.0",
+  "status": "confirmed",
+  "resolvedLayout": {
+    "pageContentMaxWidth": 1280,
+    "pagePaddingX": 32,
+    "pagePaddingY": 28,
+    "sectionGap": 20,
+    "headerGap": 12,
+    "headerActionAlignment": "start",
+    "contentContainerMode": "plain",
+    "contentPadding": 0,
+    "contentRadiusRole": "none"
+  },
+  "resolvedFilter": {
+    "displayMode": "grid",
+    "columns": 2,
+    "rowGap": 16,
+    "columnGap": 16,
+    "fieldWidthMode": "fill",
+    "fieldMinWidth": 260,
+    "fieldMaxWidth": 360,
+    "labelPlacement": "top",
+    "actionPlacement": "row",
+    "actionAlignment": "end",
+    "collapsible": true,
+    "defaultVisibleRows": 1,
+    "backgroundRole": "surface.card",
+    "padding": 16,
+    "radiusRole": "radius.container",
+    "fieldLabelTypographyRole": "formLabel"
+  },
+  "resolvedResults": {
+    "headerAlignment": "space-between",
+    "titleActionGap": 16,
+    "tableGap": 16,
+    "paginationAlignment": "center",
+    "paginationGap": 16,
+    "paginationSingleLine": true,
+    "paginationCompactMode": "window-shrink-then-hide-boundary",
+    "minTableWidth": 800,
+    "overflowStrategy": "scroll",
+    "backgroundRole": "none",
+    "padding": 0,
+    "sectionTitleTypographyRole": "sectionTitle",
+    "sectionMetaTypographyRole": "sectionMeta"
+  },
+  "responsiveRules": {
+    "breakpoints": {
+      "tablet": 1100,
+      "compact": 640
+    },
+    "desktop": {
+      "filterColumns": 2,
+      "actionsWrap": false,
+      "paginationAlignment": "center",
+      "contentMaxWidth": 1280
+    },
+    "tablet": {
+      "filterColumns": 2,
+      "actionsWrap": true,
+      "tableOverflow": "scroll"
+    },
+    "compact": {
+      "filterColumns": 1,
+      "actionsFullWidth": true,
+      "tableMinWidth": 600,
+      "paginationWrap": "stack"
+    }
+  },
+  "slotMapping": [
+    {
+      "slot": "pageHeader",
+      "domSelector": "[data-pattern-slot=\"page-header\"]",
+      "region": "page"
+    },
+    {
+      "slot": "description",
+      "domSelector": "[data-pattern-slot=\"description\"]",
+      "region": "page"
+    },
+    {
+      "slot": "filterArea",
+      "domSelector": "[data-pattern-slot=\"filter-area\"]",
+      "region": "filter-group"
+    },
+    {
+      "slot": "resultSummary",
+      "domSelector": "[data-pattern-slot=\"result-summary\"]",
+      "region": "results"
+    },
+    {
+      "slot": "primaryActions",
+      "domSelector": "[data-pattern-slot=\"primary-actions\"]",
+      "region": "results"
+    },
+    {
+      "slot": "secondaryActions",
+      "domSelector": "[data-pattern-slot=\"secondary-actions\"]",
+      "region": "results"
+    },
+    {
+      "slot": "table",
+      "domSelector": "[data-pattern-slot=\"table\"]",
+      "region": "results"
+    },
+    {
+      "slot": "pagination",
+      "domSelector": "[data-pattern-slot=\"pagination\"]",
+      "region": "results"
+    },
+    {
+      "slot": "emptyState",
+      "domSelector": "[data-pattern-slot=\"empty-state\"]",
+      "region": "results"
+    },
+    {
+      "slot": "loadingState",
+      "domSelector": "[data-pattern-slot=\"loading-state\"]",
+      "region": "results"
+    }
+  ],
+  "typographyBindings": {
+    "fieldLabel": "formLabel",
+    "sectionTitle": "sectionTitle",
+    "sectionMeta": "sectionMeta"
+  },
+  "patternCss": ".bds-pattern-query-list {\n  --bds-pattern-page-max-width: 1280px;\n  --bds-pattern-page-padding-x: 32px;\n  --bds-pattern-page-padding-y: 28px;\n  --bds-pattern-section-gap: 20px;\n  --bds-pattern-header-gap: 12px;\n  --bds-pattern-header-action-alignment: start;\n  --bds-pattern-content-padding: 0px;\n  --bds-pattern-content-radius: 0;\n  --bds-pattern-filter-columns: 2;\n  --bds-pattern-filter-row-gap: 16px;\n  --bds-pattern-filter-column-gap: 16px;\n  --bds-pattern-field-min-width: 260px;\n  --bds-pattern-field-max-width: 360px;\n  --bds-pattern-filter-padding: 16px;\n  --bds-pattern-filter-bg: var(--bds-bg-surface, transparent);\n  --bds-pattern-filter-radius: var(--bds-radius-md, 6px);\n  --bds-pattern-results-gap: 16px;\n  --bds-pattern-results-padding: 0px;\n  --bds-pattern-results-bg: transparent;\n  --bds-pattern-results-header-alignment: space-between;\n  --bds-pattern-pagination-alignment: center;\n  --bds-pattern-pagination-gap: 16px;\n  /* 分页单行（paginationSingleLine）：Desktop / Tablet 不换行；Compact 由下方断点放开 */\n  --bds-pattern-pagination-wrap: nowrap;\n  --bds-pattern-pagination-compact-mode: window-shrink-then-hide-boundary;\n  --bds-pattern-table-min-width: 800px;\n  --bds-pattern-action-alignment: end;\n  --bds-pattern-actions-wrap: nowrap;\n  --bds-pattern-compact-actions-full: 1;\n  --bds-pattern-compact-pagination-wrap: stack;\n}\n\n@media (max-width: 1100px) {\n  .bds-pattern-query-list {\n    --bds-pattern-filter-columns: 2;\n    --bds-pattern-actions-wrap: wrap;\n    --bds-pattern-page-max-width: none;\n  }\n}\n\n@media (max-width: 640px) {\n  .bds-pattern-query-list {\n    --bds-pattern-filter-columns: 1;\n    --bds-pattern-table-min-width: 600px;\n    --bds-pattern-pagination-alignment: center;\n    /* Compact 收敛（paginationCompactMode）：放开单行换行；组件侧同步隐藏首页 / 末页\n       与远离当前页的页码（保留上一页 / 当前页 / 下一页），不堆成凌乱多行 */\n    --bds-pattern-pagination-wrap: wrap;\n  }\n}",
+  "source": "test-customer-b 测试 Pattern（明确标注：仅用于双项目排版隔离验证，非真实客户规范） · 确认人：测试 Pattern 确认（明确标注测试用途，非真实客户规范）",
+  "fieldStatus": {
+    "total": 51,
+    "confirmed": 51,
+    "bySource": {
+      "platform-default": 51
+    }
+  },
+  "locked": true,
+  "missing": [],
+  "checksum": "6a4f52b30f7039d55c967fe90ec8535f",
+  "note": "页面内容排版唯一来源：Consumer 注入 patternCss（--bds-pattern-* 变量 + tablet/compact 媒体查询）；系统结构在 layout.json、表面在 region-appearance.json、组件造型在 recipes.json（四层职责分离）"
+}

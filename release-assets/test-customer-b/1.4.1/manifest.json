@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "bds-release/3",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "projectName": "test-customer-b",
+  "releaseVersion": "1.4.1",
+  "status": "published",
+  "publishedAt": "2026-09-13T03:22:06.203Z",
+  "approvedBy": "终验审批（自动化）",
+  "checksum": "baebe2aae6d3181c328476d08554cab6",
+  "runtimeCompatibility": {
+    "runtime": "bds-runtime/1",
+    "entry": "src/runtime/index.ts",
+    "minReact": "18",
+    "styleStrategy": "css-variables",
+    "componentRuntimeVersion": "bds-components/1.1.0"
+  },
+  "colorSystemVersion": "tdesign-hct@1.6.0（palette 2026-09-13）",
+  "interactionColorPreset": "tdesign-web@tdesign-react@1.18.3（Token 基准：_light.less 与组件 CSS）",
+  "componentRuntimeVersion": "bds-components/1.1.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "sourcePath": "src/components/base/DSButton.tsx"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select",
+      "runtimeExport": "DSSelect",
+      "sourcePath": "src/components/base/DSSelect.tsx"
+    },
+    {
+      "id": "input",
+      "name": "文本输入 Input",
+      "runtimeExport": "DSInput",
+      "sourcePath": "src/components/base/DSInput.tsx"
+    },
+    {
+      "id": "table",
+      "name": "数据表格 Table",
+      "runtimeExport": "DSTable",
+      "sourcePath": "src/components/base/DSTable.tsx"
+    },
+    {
+      "id": "pagination",
+      "name": "分页 Pagination",
+      "runtimeExport": "DSPagination",
+      "sourcePath": "src/components/base/DSPagination.tsx"
+    },
+    {
+      "id": "dialog",
+      "name": "对话框 Dialog",
+      "runtimeExport": "DSDialog",
+      "sourcePath": "src/components/base/DSDialog.tsx"
+    },
+    {
+      "id": "icon",
+      "name": "图标 Icon（Reicon 底座）",
+      "runtimeExport": "DSIcon",
+      "sourcePath": "src/components/base/DSIcon.tsx"
+    }
+  ],
+  "iconPack": {
+    "status": "confirmed",
+    "version": "1.4.1（pack v1）",
+    "count": 45,
+    "defaultWeight": "filled",
+    "defaultSize": "md",
+    "source": "reicon · reicon-react@1.2.5 · MIT",
+    "checksum": "d3d047fd1537c06fbf5fe81b47bfc371"
+  },
+  "patternPack": {
+    "patternId": "query-list",
+    "status": "confirmed",
+    "version": "1.4.1（pattern 1.0.0）",
+    "checksum": "6a4f52b30f7039d55c967fe90ec8535f",
+    "fieldStatus": {
+      "confirmed": 51,
+      "total": 51
+    }
+  },
+  "figmaLibrary": "pending",
+  "artifactFiles": [
+    {
+      "path": "tokens.json",
+      "bytes": 84169,
+      "checksum": "f3b71586d20dc47ce68997109640f9a2",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 14758,
+      "checksum": "f6e526e7f9338cf94eac499d58943613",
+      "mediaType": "text/css"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 6228,
+      "checksum": "e96f4c909cd6bac22b76f84e89a34474",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "components.json",
+      "bytes": 27205,
+      "checksum": "08f34a48f8c1e3664df0990af59bb244",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "icons.json",
+      "bytes": 29786,
+      "checksum": "008ce11ed19bac1089f7e74c29799e92",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "patterns.json",
+      "bytes": 6101,
+      "checksum": "fd3919fc2cc9cddec1490c5ad92fbdd0",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "region-appearance.json",
+      "bytes": 2296,
+      "checksum": "260746ab7521e61d64d077a910dea46f",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 16180,
+      "checksum": "45557421e9d0da0b62a35fa7b1a053a5",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "ai-rules.md",
+      "bytes": 4705,
+      "checksum": "4ba231dae5737d28121cc87caa4f02b6",
+      "mediaType": "text/markdown"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 6660,
+      "checksum": "a96e36639a1cddfdfd874819a4f7a017",
+      "mediaType": "application/json"
+    }
+  ],
+  "missingCapabilities": [
+    "Table 高级能力：虚拟滚动 / 树表 / 单元格编辑 / 拖拽列宽 / 服务端请求 —— 未实现，不随 DSTable 发布",
+    "多行文本 Textarea / Toast：未开发（见组件目录 planned）",
+    "图标能力边界：仅接入 Reicon 已发布语义图标（icons.json publishedIcons）；图标品牌插画 / 动效图标未实现",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "sourceSummary": {
+    "generatedFrom": "发布快照（不可变）",
+    "schemeRevision": 7,
+    "capturedAt": "2026-09-13T03:22:04.887Z",
+    "semanticTokens": 58,
+    "regionAppearanceRoles": 6,
+    "recipes": [
+      "button",
+      "select"
+    ],
+    "pages": 2
+  }
+}

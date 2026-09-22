@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "bds-release/1",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "projectName": "guokexin",
+  "releaseVersion": "1.1.1",
+  "status": "published",
+  "publishedAt": "2026-09-12T14:06:58.369Z",
+  "approvedBy": "终验审批（自动化）",
+  "checksum": "1b4f77f9ae7f313ff458b6c3e0e9f995",
+  "runtimeCompatibility": {
+    "runtime": "bds-runtime/1",
+    "entry": "src/runtime/index.ts",
+    "minReact": "18",
+    "styleStrategy": "css-variables",
+    "componentRuntimeVersion": "bds-components/1.0.0"
+  },
+  "colorSystemVersion": "tdesign-hct@1.6.0（palette 2026-09-11）",
+  "interactionColorPreset": "tdesign-web@tdesign-react@1.18.3（Token 基准：_light.less 与组件 CSS）",
+  "componentRuntimeVersion": "bds-components/1.0.0",
+  "availableComponents": [
+    {
+      "id": "button",
+      "name": "按钮 Button",
+      "runtimeExport": "DSButton",
+      "sourcePath": "src/components/base/DSButton.tsx"
+    },
+    {
+      "id": "select",
+      "name": "下拉选择 Select",
+      "runtimeExport": "DSSelect",
+      "sourcePath": "src/components/base/DSSelect.tsx"
+    }
+  ],
+  "iconPack": null,
+  "figmaLibrary": "pending",
+  "artifactFiles": [
+    {
+      "path": "tokens.json",
+      "bytes": 61774,
+      "checksum": "757c1eb46f6d3412e1311996dcdf3810",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "tokens.css",
+      "bytes": 5829,
+      "checksum": "6b6cac362af30dc094ed3b348df681c2",
+      "mediaType": "text/css"
+    },
+    {
+      "path": "recipes.json",
+      "bytes": 2442,
+      "checksum": "b19436fbfc4f0a7d4ad60d214dbe9bc7",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "components.json",
+      "bytes": 10009,
+      "checksum": "f9e27d48e8f5108efb1f4aba30c5215c",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "region-appearance.json",
+      "bytes": 2624,
+      "checksum": "4404bfa3306bf2bd34f46ff912fa1a07",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "layout.json",
+      "bytes": 16180,
+      "checksum": "f928959f3b6d240d73170be996500b03",
+      "mediaType": "application/json"
+    },
+    {
+      "path": "ai-rules.md",
+      "bytes": 1991,
+      "checksum": "5b752a82443a0c44a70f3fc04e8f4d06",
+      "mediaType": "text/markdown"
+    },
+    {
+      "path": "validation-report.json",
+      "bytes": 4799,
+      "checksum": "e54c70e3c415c791d029ee8d8d298297",
+      "mediaType": "application/json"
+    }
+  ],
+  "missingCapabilities": [
+    "Icon Pack：未接入 —— manifest 中为 null，不提供图标资产",
+    "Figma Library：尚未生成 —— 标记为 pending，不随发布输出"
+  ],
+  "sourceSummary": {
+    "generatedFrom": "发布快照（不可变）",
+    "schemeRevision": 17,
+    "capturedAt": "2026-09-12T14:06:57.358Z",
+    "semanticTokens": 41,
+    "regionAppearanceRoles": 7,
+    "recipes": [
+      "button",
+      "select"
+    ],
+    "pages": 2
+  }
+}

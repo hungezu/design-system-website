@@ -1,0 +1,72 @@
+{
+  "formatVersion": "bds-release/1",
+  "projectId": "proj-mtwba7n6-nh1d88",
+  "releaseVersion": "1.1.0",
+  "recipes": {
+    "button": {
+      "id": "button",
+      "version": "1.1.0",
+      "value": {
+        "primaryStyle": "filled",
+        "secondaryStyle": "outlined",
+        "tertiaryStyle": "text",
+        "radius": 8,
+        "borderWidth": 1,
+        "fontWeight": 500,
+        "horizontalPaddingSm": 10,
+        "horizontalPaddingMd": 14,
+        "horizontalPaddingLg": 18,
+        "iconGap": 4,
+        "iconPosition": "start",
+        "iconOnlySizeSm": 24,
+        "iconOnlySizeMd": 32,
+        "iconOnlySizeLg": 40,
+        "transitionDuration": 120,
+        "focusRingWidth": 2,
+        "focusRingOffset": 2
+      },
+      "source": "设计师确认（按钮样式界面）",
+      "status": "confirmed",
+      "confirmedAt": "2026-09-11T18:09:18.934Z",
+      "runtimeMapping": {
+        "radius": "--bds-btn-radius",
+        "borderWidth": "--bds-btn-border-width",
+        "horizontalPaddingMd": "--bds-btn-padding-x",
+        "transitionDuration": "--bds-btn-transition",
+        "focusRingWidth": "--bds-btn-focus-ring-width",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色来自 Color Contract Token（--bds-btn-*）"
+      }
+    },
+    "select": {
+      "id": "select",
+      "version": "1.1.0",
+      "value": {
+        "triggerStyle": "outlined",
+        "radius": 4,
+        "borderWidth": 1,
+        "horizontalPadding": 10,
+        "triggerIconGap": 8,
+        "popoverRadius": 6,
+        "popoverShadow": "0 12px 40px rgba(31, 35, 41, 0.18)",
+        "optionHeight": 24,
+        "optionPaddingX": 10,
+        "optionGap": 2,
+        "maxVisibleOptions": 6,
+        "transitionDuration": 120
+      },
+      "source": "设计师确认（下拉选择样式界面）",
+      "status": "confirmed",
+      "confirmedAt": "2026-09-11T02:05:08.181Z",
+      "runtimeMapping": {
+        "radius": "--bds-sel-radius",
+        "borderWidth": "--bds-sel-border-width",
+        "horizontalPadding": "--bds-sel-padding-x",
+        "optionHeight": "--bds-sel-option-h",
+        "popoverRadius": "--bds-sel-popover-radius",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用 --bds-field-* / --bds-selection-* 语义 Token"
+      }
+    }
+  },
+  "planned": [],
+  "note": "只输出已确认 Recipe 的最终值与来源；工作台编辑状态与测试方案不进入发布资产"
+}

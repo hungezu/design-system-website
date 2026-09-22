@@ -1,0 +1,180 @@
+{
+  "formatVersion": "bds-release/3",
+  "projectId": "proj-mtwbe3v9-zf5v8f",
+  "releaseVersion": "1.4.4",
+  "recipes": {
+    "button": {
+      "id": "button",
+      "version": "1.4.4",
+      "value": {
+        "primaryStyle": "filled",
+        "secondaryStyle": "soft",
+        "tertiaryStyle": "text",
+        "radius": 4,
+        "borderWidth": 1,
+        "fontWeight": 500,
+        "horizontalPaddingSm": 10,
+        "horizontalPaddingMd": 14,
+        "horizontalPaddingLg": 18,
+        "iconGap": 4,
+        "iconPosition": "start",
+        "iconOnlySizeSm": 24,
+        "iconOnlySizeMd": 32,
+        "iconOnlySizeLg": 40,
+        "transitionDuration": 120,
+        "focusRingWidth": 2,
+        "focusRingOffset": 2
+      },
+      "source": "设计师确认（按钮样式界面）",
+      "status": "confirmed",
+      "confirmedAt": "2026-09-11T02:07:58.576Z",
+      "runtimeMapping": {
+        "radius": "--bds-btn-radius",
+        "borderWidth": "--bds-btn-border-width",
+        "horizontalPaddingMd": "--bds-btn-padding-x",
+        "transitionDuration": "--bds-btn-transition",
+        "focusRingWidth": "--bds-btn-focus-ring-width",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色来自 Color Contract Token（--bds-btn-*）"
+      }
+    },
+    "select": {
+      "id": "select",
+      "version": "1.4.4",
+      "value": {
+        "triggerStyle": "soft",
+        "radius": 4,
+        "borderWidth": 1,
+        "horizontalPadding": 10,
+        "triggerIconGap": 8,
+        "popoverRadius": 6,
+        "popoverShadow": "0 12px 40px rgba(31, 35, 41, 0.18)",
+        "optionHeight": 24,
+        "optionPaddingX": 10,
+        "optionGap": 2,
+        "maxVisibleOptions": 6,
+        "transitionDuration": 120
+      },
+      "source": "设计师确认（下拉选择样式界面）",
+      "status": "confirmed",
+      "confirmedAt": "2026-09-11T02:08:40.168Z",
+      "runtimeMapping": {
+        "radius": "--bds-sel-radius",
+        "borderWidth": "--bds-sel-border-width",
+        "horizontalPadding": "--bds-sel-padding-x",
+        "optionHeight": "--bds-sel-option-h",
+        "popoverRadius": "--bds-sel-popover-radius",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用 --bds-field-* / --bds-selection-* 语义 Token"
+      }
+    },
+    "input": {
+      "id": "input",
+      "version": "1.4.4",
+      "value": {
+        "radius": 4,
+        "borderWidth": 1,
+        "horizontalPadding": 8,
+        "affixGap": 6,
+        "hintGap": 4,
+        "hintFontSize": 12,
+        "transitionDuration": 120,
+        "focusRingWidth": 2
+      },
+      "source": "default（未在工作台确认，发布时回退默认 Recipe，跟随视觉变量）",
+      "status": "default",
+      "confirmedAt": null,
+      "runtimeMapping": {
+        "radius": "--bds-input-radius",
+        "borderWidth": "--bds-input-border-w",
+        "horizontalPadding": "--bds-input-pad-x",
+        "affixGap": "--bds-input-affix-gap",
+        "transitionDuration": "--bds-input-transition",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用现有语义 Token（Recipe 不写死项目颜色）"
+      }
+    },
+    "table": {
+      "id": "table",
+      "version": "1.4.4",
+      "value": {
+        "radius": 4,
+        "borderWidth": 1,
+        "cellPaddingX": 12,
+        "cellPaddingY": 8,
+        "headerHeight": 34,
+        "rowHeight": 36,
+        "densityCompactOffset": -8,
+        "densityComfortableOffset": 8,
+        "striped": false,
+        "sortIconGap": 4,
+        "transitionDuration": 120
+      },
+      "source": "default（未在工作台确认，发布时回退默认 Recipe，跟随视觉变量）",
+      "status": "default",
+      "confirmedAt": null,
+      "runtimeMapping": {
+        "radius": "--bds-table-radius",
+        "borderWidth": "--bds-table-border-w",
+        "cellPaddingX": "--bds-table-cell-pad-x",
+        "headerHeight": "--bds-table-header-h",
+        "rowHeight": "--bds-table-row-h",
+        "striped": "--bds-table-striped",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用现有语义 Token（Recipe 不写死项目颜色）"
+      }
+    },
+    "pagination": {
+      "id": "pagination",
+      "version": "1.4.4",
+      "value": {
+        "itemRadius": 4,
+        "itemSize": 32,
+        "itemGap": 4,
+        "itemBorderWidth": 1,
+        "pageSizeSelectWidth": 96,
+        "totalGap": 12,
+        "transitionDuration": 120
+      },
+      "source": "default（未在工作台确认，发布时回退默认 Recipe，跟随视觉变量）",
+      "status": "default",
+      "confirmedAt": null,
+      "runtimeMapping": {
+        "itemRadius": "--bds-pg-item-radius",
+        "itemSize": "--bds-pg-item-size",
+        "itemGap": "--bds-pg-item-gap",
+        "itemBorderWidth": "--bds-pg-item-border-w",
+        "transitionDuration": "--bds-pg-transition",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用现有语义 Token（Recipe 不写死项目颜色）"
+      }
+    },
+    "dialog": {
+      "id": "dialog",
+      "version": "1.4.4",
+      "value": {
+        "widthSm": 360,
+        "widthMd": 480,
+        "widthLg": 640,
+        "radius": 6,
+        "borderWidth": 1,
+        "padding": 20,
+        "titleGap": 8,
+        "footerGap": 16,
+        "overlayOpacity": 0.55,
+        "overlayBlur": 2,
+        "shadow": "0 12px 40px rgba(0, 0, 0, 0.16)",
+        "transitionDuration": 200
+      },
+      "source": "default（未在工作台确认，发布时回退默认 Recipe，跟随视觉变量）",
+      "status": "default",
+      "confirmedAt": null,
+      "runtimeMapping": {
+        "widthSm": "--bds-dialog-w-sm",
+        "widthMd": "--bds-dialog-w-md",
+        "widthLg": "--bds-dialog-w-lg",
+        "radius": "--bds-dialog-radius",
+        "overlayOpacity": "--bds-dialog-overlay-opacity",
+        "shadow": "--bds-dialog-shadow",
+        "note": "造型变量由 runtime CSS Variables 提供；颜色引用现有语义 Token（Recipe 不写死项目颜色）"
+      }
+    }
+  },
+  "planned": [],
+  "note": "只输出已确认 Recipe 的最终值与来源（未确认的回退默认并如实标注）；工作台编辑状态与测试方案不进入发布资产"
+}
