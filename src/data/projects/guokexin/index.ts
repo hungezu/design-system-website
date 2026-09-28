@@ -2,6 +2,26 @@ import { guokexinTheme } from '../../../instances/guokexin/theme'
 import { AI_COMPONENT_IDS } from '../../ai-components'
 import type { ProjectConfig } from '../../../types/design-system'
 
+/** 第一批通过项目准入的 React Aria 基础家族。 */
+export const GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS = [
+  'search-field', 'number-field', 'checkbox-group', 'combo-box', 'list-box', 'tree',
+  'progress-bar', 'date-picker', 'menu', 'popover', 'tooltip', 'drop-zone',
+] as const
+
+/** 第二批将公共目录已有的其余 React Aria 基础家族全部纳入项目。 */
+export const GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS = [
+  'toggle-button', 'toggle-button-group', 'autocomplete', 'slider', 'tag-group', 'meter',
+  'calendar', 'date-field', 'date-range-picker', 'range-calendar', 'time-field',
+  'color-area', 'color-field', 'color-picker', 'color-slider', 'color-swatch', 'color-swatch-picker',
+  'breadcrumb', 'disclosure', 'disclosure-group', 'link', 'toolbar', 'separator',
+] as const
+
+/** 第三批补齐公共目录与国科信项目的 React Aria 基础家族。 */
+export const GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS = [
+  'token-field', 'grid-list', 'color-wheel', 'navigation-tree',
+  'preview-trigger', 'group', 'virtualizer',
+] as const
+
 // Compatibility adapter for the existing project/theme resolver.
 // The Guokexin source data lives in instances/guokexin.
 export const guokexinProject: ProjectConfig = {
@@ -25,7 +45,14 @@ export const guokexinProject: ProjectConfig = {
     '状态必须同时使用文字或图标表达，不能只依赖颜色。',
   ],
   customAssetIds: ['project-gkx-density-rule'],
-  componentIds: ['button', 'input', 'select', 'table', 'pagination', 'dialog', 'drawer', 'tabs', 'tag', 'badge', 'toast', 'form', 'field', 'upload', 'empty', 'loading', 'alert', 'checkbox', 'radio', 'switch', ...AI_COMPONENT_IDS],
+  componentIds: [
+    'button', 'input', 'select', 'table', 'pagination', 'dialog', 'drawer', 'tabs',
+    'tag', 'badge', 'toast', 'form', 'field', 'upload', 'empty', 'loading', 'alert',
+    'checkbox', 'radio', 'switch', ...GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS,
+    ...GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS,
+    ...GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS,
+    ...AI_COMPONENT_IDS,
+  ],
   status: 'active',
   iconRegistryVersion: '1.1.0',
 }

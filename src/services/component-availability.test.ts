@@ -1,11 +1,20 @@
 import { describe, expect, it } from 'vitest'
 import { COMPONENT_CATALOG } from '../design-system/component-catalog'
-import { guokexinProject } from '../data/projects/guokexin'
+import {
+  GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS,
+  guokexinProject,
+} from '../data/projects/guokexin'
 import { componentsForProjectContext } from './component-availability'
 
 describe('项目组件上下文', () => {
   it('草稿展示项目源码范围', () => {
-    expect(componentsForProjectContext(COMPONENT_CATALOG, guokexinProject.componentIds)).toHaveLength(34)
+    const result = componentsForProjectContext(COMPONENT_CATALOG, guokexinProject.componentIds)
+    expect(result).toHaveLength(76)
+    expect(GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS.every((id) => result.some((component) => component.componentId === id))).toBe(true)
+    expect(GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS.every((id) => result.some((component) => component.componentId === id))).toBe(true)
+    expect(GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS.every((id) => result.some((component) => component.componentId === id))).toBe(true)
   })
 
   it('冻结版本只展示 manifest 已发布组件', () => {

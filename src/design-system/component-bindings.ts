@@ -16,19 +16,30 @@ const componentStateSets: Record<string, string[]> = {
   checkbox: ['default','hover','focus','checked','indeterminate','disabled','error'], radio: ['default','hover','focus','checked','disabled','error'], switch: ['default','hover','focus','checked','disabled'],
 }
 const fieldStates = ['default', 'hover', 'focus', 'disabled', 'error']
-for (const id of ['textarea','combo-box','autocomplete','number-field','search-field','date-field','date-picker','date-range-picker','time-field','time-picker','color-field']) componentStateSets[id] = fieldStates
-for (const id of ['calendar','range-calendar','slider','color-area','color-slider','color-swatch-picker','list-box','checkbox-group','toggle-button','toggle-button-group']) componentStateSets[id] = ['default','focus','selected','disabled']
+for (const id of ['textarea','number-field','search-field','date-field','date-range-picker','time-field','time-picker','color-field']) componentStateSets[id] = fieldStates
+for (const id of ['combo-box','autocomplete','date-picker']) componentStateSets[id] = [...fieldStates, 'open', 'selected']
+for (const id of ['calendar','range-calendar','color-swatch-picker','list-box','checkbox-group']) componentStateSets[id] = ['default','focus','selected','disabled']
+for (const id of ['slider','color-area','color-slider','toggle-button','toggle-button-group']) componentStateSets[id] = ['default','hover','focus','selected','disabled']
 for (const id of ['accordion','disclosure','disclosure-group','dropdown','link','close-button']) componentStateSets[id] = ['default','hover','focus','disabled']
 for (const id of ['popover','tooltip','popconfirm','color-picker','image-preview']) componentStateSets[id] = ['default','open']
 for (const id of ['modal','alert-dialog']) componentStateSets[id] = ['default','open']
-for (const id of ['card','divider','grid','space','stack','page-container','descriptions','avatar','icon','kbd','surface','separator','meter','progress','progress-bar','progress-circle','steps','button-group','toolbar','input-group','file-list','tag-group','cascader','drop-zone','breadcrumb','tree','resizable-panel','scroll-shadow','color-swatch']) componentStateSets[id] = ['default']
+for (const id of ['card','divider','grid','space','stack','page-container','descriptions','avatar','icon','kbd','surface','separator','meter','progress','progress-circle','steps','button-group','toolbar','input-group','file-list','tag-group','cascader','breadcrumb','resizable-panel','scroll-shadow','color-swatch']) componentStateSets[id] = ['default']
 for (const id of ['spinner','skeleton']) componentStateSets[id] = ['loading']
 componentStateSets['input-otp'] = ['default','focus','disabled']
 componentStateSets['checkbox-group'] = ['default','hover','focus','selected','disabled','loading','error']
 for (const id of ['checkbox','radio','switch']) componentStateSets[id].push('loading')
-for (const id of ['slider','color-area','color-slider']) componentStateSets[id] = ['default','focus','disabled']
-componentStateSets['color-picker'] = ['default']
+for (const id of ['slider','color-area','color-slider']) componentStateSets[id] = ['default','hover','focus','disabled']
+componentStateSets['color-picker'] = ['default','disabled']
+componentStateSets['token-field'] = ['default','hover','focus','selected','readonly','disabled']
+componentStateSets['grid-list'] = ['default','hover','focus','selected','disabled','empty']
+componentStateSets['color-wheel'] = ['default','hover','focus','active','disabled']
+componentStateSets['navigation-tree'] = ['default','hover','focus','current','open','disabled']
+componentStateSets['preview-trigger'] = ['default','hover','focus','open','disabled']
+componentStateSets.group = ['default','hover','focus','disabled','error']
+componentStateSets.virtualizer = ['default','empty']
 componentStateSets.tree = ['default','focus','selected','open']
+componentStateSets['progress-bar'] = ['default','indeterminate','complete']
+componentStateSets['drop-zone'] = ['default','hover','focus','disabled']
 componentStateSets.dropdown = ['default','hover','focus','open','disabled']
 for (const id of ['accordion','disclosure','disclosure-group']) componentStateSets[id].push('open')
 componentStateSets.message = ['default','success','warning','error','info']
@@ -40,13 +51,13 @@ const make = (id: string, name: string, category: ComponentBinding['category']):
 }
 export const DESKTOP_COMPONENT_BINDINGS: readonly ComponentBinding[] = [
   ...AI_COMPONENTS.map(item=>make(item.id,item.exportName.slice(2),'data')),
-  ...[['combo-box','ComboBox'],['slider','Slider'],['calendar','Calendar'],['date-field','DateField'],['drop-zone','DropZone'],['icon','Icon']].map(([id,n]) => make(id,n,'form')),
+  ...[['combo-box','ComboBox'],['slider','Slider'],['calendar','Calendar'],['date-field','DateField'],['drop-zone','DropZone'],['icon','Icon'],['token-field','TokenField'],['color-wheel','ColorWheel']].map(([id,n]) => make(id,n,'form')),
   make('button','Button','form'),
   ...[['input','Input'],['select','Select'],['textarea','TextArea'],['checkbox','Checkbox'],['radio','Radio'],['switch','Switch'],['form','Form'],['field','Field'],['date-picker','DatePicker'],['date-range-picker','DateRangePicker'],['time-picker','TimePicker'],['cascader','Cascader'],['autocomplete','Autocomplete']].map(([id,n]) => make(id,n,'form')),
-  ...[['table','Table'],['pagination','Pagination'],['tag','Tag'],['badge','Badge'],['empty','Empty'],['loading','Loading'],['progress','Progress'],['descriptions','Descriptions'],['tree','Tree']].map(([id,n]) => make(id,n,'data')),
-  ...[['tabs','Tabs'],['breadcrumb','Breadcrumb'],['menu','Menu'],['dropdown','Dropdown'],['steps','Steps']].map(([id,n]) => make(id,n,'navigation')),
-  ...[['dialog','Dialog'],['drawer','Drawer'],['toast','Toast'],['message','Message'],['alert','Alert'],['tooltip','Tooltip'],['popover','Popover'],['popconfirm','Popconfirm']].map(([id,n]) => make(id,n,'feedback')),
-  ...[['card','Card'],['divider','Divider'],['grid','Grid'],['space','Space'],['stack','Stack'],['page-container','PageContainer'],['resizable-panel','ResizablePanel'],['upload','Upload'],['image-preview','ImagePreview'],['avatar','Avatar'],['file-list','FileList']].map(([id,n]) => make(id,n,id==='upload'||id.includes('image')||id.includes('file')||id==='avatar'?'media':'layout')),
+  ...[['table','Table'],['pagination','Pagination'],['tag','Tag'],['badge','Badge'],['empty','Empty'],['loading','Loading'],['progress','Progress'],['descriptions','Descriptions'],['tree','Tree'],['grid-list','GridList']].map(([id,n]) => make(id,n,'data')),
+  ...[['tabs','Tabs'],['breadcrumb','Breadcrumb'],['menu','Menu'],['dropdown','Dropdown'],['steps','Steps'],['navigation-tree','NavigationTree']].map(([id,n]) => make(id,n,'navigation')),
+  ...[['dialog','Dialog'],['drawer','Drawer'],['toast','Toast'],['message','Message'],['alert','Alert'],['tooltip','Tooltip'],['popover','Popover'],['popconfirm','Popconfirm'],['preview-trigger','PreviewTrigger']].map(([id,n]) => make(id,n,'feedback')),
+  ...[['card','Card'],['divider','Divider'],['grid','Grid'],['space','Space'],['stack','Stack'],['page-container','PageContainer'],['resizable-panel','ResizablePanel'],['upload','Upload'],['image-preview','ImagePreview'],['avatar','Avatar'],['file-list','FileList'],['group','Group'],['virtualizer','Virtualizer']].map(([id,n]) => make(id,n,id==='upload'||id.includes('image')||id.includes('file')||id==='avatar'?'media':'layout')),
   ...[['accordion','Accordion'],['alert-dialog','AlertDialog'],['button-group','ButtonGroup'],['close-button','CloseButton'],['disclosure','Disclosure'],['disclosure-group','DisclosureGroup'],['checkbox-group','CheckboxGroup'],['color-area','ColorArea'],['color-field','ColorField'],['color-picker','ColorPicker'],['color-slider','ColorSlider'],['color-swatch','ColorSwatch'],['color-swatch-picker','ColorSwatchPicker'],['input-group','InputGroup'],['input-otp','InputOTP'],['kbd','Kbd'],['link','Link'],['list-box','ListBox'],['meter','Meter'],['modal','Modal'],['number-field','NumberField'],['progress-bar','ProgressBar'],['progress-circle','ProgressCircle'],['range-calendar','RangeCalendar'],['scroll-shadow','ScrollShadow'],['search-field','SearchField'],['separator','Separator'],['skeleton','Skeleton'],['spinner','Spinner'],['surface','Surface'],['tag-group','TagGroup'],['time-field','TimeField'],['toggle-button','ToggleButton'],['toggle-button-group','ToggleButtonGroup'],['toolbar','Toolbar']].map(([id,n]) => make(id,n,'layout')),
 ]
 export function getDesktopComponentBinding(componentId: string) { return DESKTOP_COMPONENT_BINDINGS.find((binding) => binding.componentId === componentId) }
@@ -85,6 +96,8 @@ const stateTokenRoles: Record<string, Array<[string, string]>> = {
   success: [['背景', 'surface-primary'], ['文字', 'status-success-text'], ['边框', 'status-success']],
   warning: [['背景', 'surface-primary'], ['文字', 'status-warning-text'], ['边框', 'status-warning']],
   info: [['背景', 'surface-primary'], ['文字', 'status-info'], ['边框', 'status-info']],
+  current: [['背景', 'brand-secondary'], ['文字', 'brand-primary'], ['边框', 'brand-primary']],
+  readonly: [['背景', 'surface-primary'], ['文字', 'text-primary'], ['边框', 'border-default']],
   empty: [['背景', 'surface-primary'], ['文字', 'text-secondary'], ['边框', 'border-default']],
 }
 
@@ -115,6 +128,11 @@ const componentStateTokenRoles: Record<string, Record<string, Array<[string, str
   dialog: { default: [['背景','surface-primary'],['文字','text-primary'],['边框','border-default'],['阴影','shadow-dialog']], open: stateTokenRoles.open, loading: stateTokenRoles.loading },
   drawer: { default: [['背景','surface-primary'],['文字','text-primary'],['边框','border-default'],['阴影','shadow-overlay']], open: stateTokenRoles.open, loading: stateTokenRoles.loading },
   tag: feedbackRoles, badge: feedbackRoles, toast: feedbackRoles, alert: feedbackRoles,
+  'progress-bar': {
+    default: [['轨道','border-default'],['进度指示','brand-primary'],['文字','text-primary']],
+    indeterminate: [['轨道','border-default'],['活动指示','brand-primary'],['文字','text-primary']],
+    complete: [['轨道','border-default'],['完成指示','brand-primary'],['文字','text-primary']],
+  },
   form: { default: stateTokenRoles.default, disabled: stateTokenRoles.disabled, loading: stateTokenRoles.loading, error: stateTokenRoles.error, success: stateTokenRoles.success },
   empty: { empty: stateTokenRoles.empty }, loading: { loading: stateTokenRoles.loading },
 }

@@ -22,6 +22,7 @@ npm run dev
 ```sh
 npm test
 npm run test:access
+npm run validate:coverage
 npm run typecheck:server
 npm run build
 npm run lint
@@ -31,7 +32,8 @@ npm run delivery:build
 
 - [执行计划与任务状态](docs/PROJECT-PLAN.md)
 - [本地候选交付与独立消费](docs/LOCAL-STABLE.md)
-- [核心 20 项验收映射](docs/acceptance/local-stable/CORE-COMPONENTS.md)
+- [核心组件验收映射](docs/acceptance/local-stable/CORE-COMPONENTS.md)
+- [React Aria 54 个基础家族覆盖清单](docs/acceptance/react-aria/coverage.json)
 - [最终验收记录](docs/acceptance/local-stable/FINAL-RECHECK.md)
 - [项目组件包生成与前端接入](docs/PROJECT-DELIVERY-IMPLEMENTATION.md)
 - [外部扩展接入状态](docs/EXTERNAL-INTEGRATIONS.md)

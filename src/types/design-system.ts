@@ -23,9 +23,9 @@ export interface ProjectAssetOverride {
 }
 
 export interface ReactPropSchema {
-  type: 'string' | 'boolean' | 'react-node'
+  type: 'string' | 'number' | 'boolean' | 'react-node' | 'string[]' | 'collection' | 'date-value' | 'function'
   required?: boolean
-  default?: string | boolean
+  default?: string | number | boolean | string[]
   enum?: string[]
   description: string
 }

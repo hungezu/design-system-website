@@ -27,7 +27,30 @@
     "appUi": { "$ref": "#/$defs/sourceRecord" },
     "tokens": { "type": "object" },
     "icons": { "type": "object" },
-    "components": { "type": "object" },
+    "components": {
+      "type": "object",
+      "required": ["registry", "assetManifest", "matrix", "foundationCoverage", "projectScope"],
+      "properties": {
+        "registry": { "type": "string" },
+        "assetManifest": { "type": "string" },
+        "matrix": { "type": "string" },
+        "foundationCoverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source", "schema", "validator", "familyCount", "infrastructureCount"],
+          "properties": {
+            "source": { "type": "string" },
+            "schema": { "type": "string" },
+            "validator": { "type": "string" },
+            "familyCount": { "const": 54 },
+            "infrastructureCount": { "const": 6 }
+          }
+        },
+        "projectScope": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "publicButtonApi": { "type": "string" },
+        "buttonImplementation": { "type": "string" }
+      }
+    },
     "releasePolicy": { "type": "object" }
   },
   "$defs": {

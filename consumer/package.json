@@ -7,14 +7,14 @@
     "build": "tsc --noEmit && vite build"
   },
   "dependencies": {
-    "@local/design-system": "file:../artifacts/local-stable/local-design-system-0.0.0-local.20260919.rev33d6ce0079e3.tgz",
+    "@local/design-system": "file:../artifacts/local-stable/local-design-system-0.0.0-local.20260928.rev9a2babda64bc.tgz",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.7",
+    "vite": "7.3.6",
     "typescript": "5.9.3",
-    "vite": "7.3.6"
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7"
   }
 }

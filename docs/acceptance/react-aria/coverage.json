@@ -1,0 +1,93 @@
+{
+  "$schema": "./coverage.schema.json",
+  "schemaVersion": "react-aria-coverage/1",
+  "baseline": {
+    "package": "react-aria-components",
+    "auditedVersion": "1.21.1",
+    "auditedAt": "2026-09-28",
+    "countingRule": "Official component documentation grouped into user-visible semantic families; subcomponents, hooks, state objects and types are not counted again.",
+    "familyCount": 54,
+    "infrastructureCount": 6,
+    "expectedCoverage": {
+      "publicCovered": 54,
+      "projectApproved": 54
+    },
+    "projectPhaseOneFamilyIds": [
+      "SearchField", "NumberField", "CheckboxGroup", "ComboBox", "ListBox", "Tree",
+      "ProgressBar", "DatePicker", "Menu", "Popover", "Tooltip", "DropZone"
+    ],
+    "projectPhaseTwoFamilyIds": [
+      "ToggleButton", "ToggleButtonGroup", "Autocomplete", "Slider", "TagGroup", "Meter",
+      "Calendar", "DateField", "DateRangePicker", "RangeCalendar", "TimeField",
+      "ColorArea", "ColorField", "ColorPicker", "ColorSlider", "ColorSwatch", "ColorSwatchPicker",
+      "Breadcrumbs", "Disclosure", "DisclosureGroup", "Link", "Toolbar", "Separator"
+    ],
+    "projectPhaseThreeFamilyIds": [
+      "TokenField", "GridList", "ColorWheel", "NavigationTree", "PreviewTrigger", "Group", "Virtualizer"
+    ]
+  },
+  "families": [
+    { "id": "Button", "category": "按钮", "public": { "mode": "direct", "componentIds": ["button"] } },
+    { "id": "ToggleButton", "category": "按钮", "public": { "mode": "direct", "componentIds": ["toggle-button"] } },
+    { "id": "ToggleButtonGroup", "category": "按钮", "public": { "mode": "direct", "componentIds": ["toggle-button-group"] } },
+    { "id": "Checkbox", "category": "表单", "public": { "mode": "direct", "componentIds": ["checkbox"] } },
+    { "id": "CheckboxGroup", "category": "表单", "public": { "mode": "direct", "componentIds": ["checkbox-group"] } },
+    { "id": "Form", "category": "表单", "public": { "mode": "direct", "componentIds": ["form"] } },
+    { "id": "NumberField", "category": "表单", "public": { "mode": "direct", "componentIds": ["number-field"] } },
+    { "id": "RadioGroup", "category": "表单", "public": { "mode": "semantic-equivalent", "componentIds": ["radio"], "note": "项目对外以 Radio 命名，内部使用 RadioGroup 语义。" } },
+    { "id": "SearchField", "category": "表单", "public": { "mode": "direct", "componentIds": ["search-field"] } },
+    { "id": "Switch", "category": "表单", "public": { "mode": "direct", "componentIds": ["switch"] } },
+    { "id": "TextField", "category": "表单", "public": { "mode": "semantic-equivalent", "componentIds": ["input"], "note": "项目对外以 Input 命名。" } },
+    { "id": "TokenField", "category": "表单", "public": { "mode": "direct", "componentIds": ["token-field"] } },
+    { "id": "Autocomplete", "category": "选择器", "public": { "mode": "semantic-equivalent", "componentIds": ["autocomplete"], "note": "当前复用 ComboBox 实现，需后续拆分独立契约。" } },
+    { "id": "ComboBox", "category": "选择器", "public": { "mode": "direct", "componentIds": ["combo-box"] } },
+    { "id": "Select", "category": "选择器", "public": { "mode": "direct", "componentIds": ["select"] } },
+    { "id": "Slider", "category": "选择器", "public": { "mode": "direct", "componentIds": ["slider"] } },
+    { "id": "GridList", "category": "集合与列表", "public": { "mode": "direct", "componentIds": ["grid-list"] } },
+    { "id": "ListBox", "category": "集合与列表", "public": { "mode": "direct", "componentIds": ["list-box"] } },
+    { "id": "Table", "category": "集合与列表", "public": { "mode": "direct", "componentIds": ["table"] } },
+    { "id": "TagGroup", "category": "集合与列表", "public": { "mode": "direct", "componentIds": ["tag-group"] } },
+    { "id": "Tree", "category": "集合与列表", "public": { "mode": "direct", "componentIds": ["tree"] } },
+    { "id": "Meter", "category": "数据展示", "public": { "mode": "direct", "componentIds": ["meter"] } },
+    { "id": "ProgressBar", "category": "数据展示", "public": { "mode": "direct", "componentIds": ["progress-bar"] } },
+    { "id": "Calendar", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["calendar"] } },
+    { "id": "DateField", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["date-field"] } },
+    { "id": "DatePicker", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["date-picker"] } },
+    { "id": "DateRangePicker", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["date-range-picker"] } },
+    { "id": "RangeCalendar", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["range-calendar"] } },
+    { "id": "TimeField", "category": "日期与时间", "public": { "mode": "direct", "componentIds": ["time-field"] } },
+    { "id": "ColorArea", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-area"] } },
+    { "id": "ColorField", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-field"] } },
+    { "id": "ColorPicker", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-picker"] } },
+    { "id": "ColorSlider", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-slider"] } },
+    { "id": "ColorSwatch", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-swatch"] } },
+    { "id": "ColorSwatchPicker", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-swatch-picker"] } },
+    { "id": "ColorWheel", "category": "颜色", "public": { "mode": "direct", "componentIds": ["color-wheel"] } },
+    { "id": "Breadcrumbs", "category": "导航", "public": { "mode": "direct", "componentIds": ["breadcrumb"] } },
+    { "id": "Disclosure", "category": "导航", "public": { "mode": "direct", "componentIds": ["disclosure"] } },
+    { "id": "DisclosureGroup", "category": "导航", "public": { "mode": "direct", "componentIds": ["disclosure-group"] } },
+    { "id": "Link", "category": "导航", "public": { "mode": "direct", "componentIds": ["link"] } },
+    { "id": "Menu", "category": "导航", "public": { "mode": "direct", "componentIds": ["menu"] } },
+    { "id": "NavigationTree", "category": "导航", "public": { "mode": "direct", "componentIds": ["navigation-tree"] } },
+    { "id": "Tabs", "category": "导航", "public": { "mode": "direct", "componentIds": ["tabs"] } },
+    { "id": "Toolbar", "category": "导航", "public": { "mode": "direct", "componentIds": ["toolbar"] } },
+    { "id": "Modal", "category": "浮层与反馈", "public": { "mode": "semantic-equivalent", "componentIds": ["dialog", "modal"], "note": "Dialog 是项目默认模态对话契约。" } },
+    { "id": "Popover", "category": "浮层与反馈", "public": { "mode": "direct", "componentIds": ["popover"] } },
+    { "id": "PreviewTrigger", "category": "浮层与反馈", "public": { "mode": "direct", "componentIds": ["preview-trigger"] } },
+    { "id": "Toast", "category": "浮层与反馈", "public": { "mode": "semantic-equivalent", "componentIds": ["toast"], "note": "当前为自研语义等价实现，未接入 UNSTABLE_Toast 队列 API。" } },
+    { "id": "Tooltip", "category": "浮层与反馈", "public": { "mode": "direct", "componentIds": ["tooltip"] } },
+    { "id": "Group", "category": "布局", "public": { "mode": "direct", "componentIds": ["group"], "note": "以独立 DSGroup 契约公开，已有具体组件仍可内部组合 Group。" } },
+    { "id": "Separator", "category": "布局", "public": { "mode": "direct", "componentIds": ["separator"] } },
+    { "id": "Virtualizer", "category": "布局", "public": { "mode": "direct", "componentIds": ["virtualizer"] } },
+    { "id": "DropZone", "category": "文件与媒体", "public": { "mode": "direct", "componentIds": ["drop-zone"] } },
+    { "id": "FileTrigger", "category": "文件与媒体", "public": { "mode": "composite", "componentIds": ["upload"], "note": "Upload 对外承载文件选择能力。" } }
+  ],
+  "infrastructure": [
+    { "id": "I18nProvider", "businessComponent": false, "status": "partial", "evidence": ["src/runtime/vendor/runtime.js"] },
+    { "id": "VisuallyHidden", "businessComponent": false, "status": "semantic-equivalent", "evidence": ["src/design-system/primitives/Forms/Forms.css"] },
+    { "id": "FocusRing", "businessComponent": false, "status": "semantic-equivalent", "evidence": ["src/design-system/primitives"] },
+    { "id": "FocusScope", "businessComponent": false, "status": "composite", "evidence": ["src/design-system/primitives/Overlays/index.tsx"] },
+    { "id": "UNSAFE_PortalProvider", "businessComponent": false, "status": "semantic-equivalent", "evidence": ["src/design-system/theme/PreviewScope.tsx"] },
+    { "id": "SSRProvider", "businessComponent": false, "status": "unsupported", "evidence": ["server/project-delivery.ts"] }
+  ]
+}

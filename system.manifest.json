@@ -36,7 +36,14 @@
     "registry": "src/runtime/registry.ts",
     "assetManifest": "src/data/assets/components.ts",
     "matrix": "docs/COMPONENT-MATRIX.md",
-    "projectScope": ["button", "input", "select", "table", "pagination", "dialog", "drawer", "tabs", "tag", "badge", "toast", "form", "field", "upload", "empty", "loading", "alert", "checkbox", "radio", "switch", "chain-of-thought", "chat-attachment", "chat-conversation", "chat-list-view", "chat-loader", "chat-message", "chat-message-actions", "chat-source", "chat-tool", "code-block", "markdown", "prompt-input", "prompt-suggestion", "text-shimmer"],
+    "foundationCoverage": {
+      "source": "docs/acceptance/react-aria/coverage.json",
+      "schema": "docs/acceptance/react-aria/coverage.schema.json",
+      "validator": "scripts/verify-react-aria-coverage.ts",
+      "familyCount": 54,
+      "infrastructureCount": 6
+    },
+    "projectScope": ["button", "input", "search-field", "number-field", "select", "combo-box", "checkbox", "checkbox-group", "radio", "switch", "form", "field", "table", "list-box", "tree", "pagination", "tabs", "menu", "dialog", "drawer", "popover", "tooltip", "tag", "badge", "progress-bar", "toast", "upload", "drop-zone", "date-picker", "empty", "loading", "alert", "toggle-button", "toggle-button-group", "autocomplete", "slider", "tag-group", "meter", "calendar", "date-field", "date-range-picker", "range-calendar", "time-field", "color-area", "color-field", "color-picker", "color-slider", "color-swatch", "color-swatch-picker", "breadcrumb", "disclosure", "disclosure-group", "link", "toolbar", "separator", "token-field", "grid-list", "color-wheel", "navigation-tree", "preview-trigger", "group", "virtualizer", "chain-of-thought", "chat-attachment", "chat-conversation", "chat-list-view", "chat-loader", "chat-message", "chat-message-actions", "chat-source", "chat-tool", "code-block", "markdown", "prompt-input", "prompt-suggestion", "text-shimmer"],
     "publicButtonApi": "DSButton",
     "buttonImplementation": "src/design-system/primitives/Button/Button.tsx"
   },

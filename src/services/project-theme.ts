@@ -158,7 +158,22 @@ export function projectThemeOverrides(settings: ProjectThemeSettings): Record<st
     'spacing-16': `${settings.spacing}px`,
     'control-height-md': `${settings.controlHeight}px`,
     ...sizingTokens(settings),
+    ...primaryButtonOverrideTokens(settings),
   }
+}
+
+function primaryButtonOverrideTokens(settings: ProjectThemeSettings): Record<string, string> {
+  const values: Record<string, string> = {}
+  const background = settings.buttonPrimaryBackground && normalizeHex(settings.buttonPrimaryBackground)
+  if (background) {
+    values['button-brand-filled-bg-default'] = background
+    values['button-brand-filled-border-default'] = background
+    values['button-brand-filled-bg-hover'] = mixHex(background, '#000000', .9)
+    values['button-brand-filled-bg-active'] = mixHex(values['button-brand-filled-bg-hover'], '#000000', .84)
+  }
+  const text = settings.buttonPrimaryText && normalizeHex(settings.buttonPrimaryText)
+  if (text) for (const state of ['default', 'hover', 'active']) values[`button-brand-filled-text-${state}`] = text
+  return values
 }
 
 /** WCAG contrast for the supported six-digit theme colors. */
@@ -218,15 +233,8 @@ export function resolvePreviewTheme(settings: ProjectThemeSettings, base: Resolv
   // Danger has its own contrasting foreground; changing the brand must not recolor it.
   values['button-danger-filled-text-default'] = readableForeground(values['status-error-strong'])
   Object.assign(values, paletteValues(values))
-  const buttonPrimaryBackground = settings.buttonPrimaryBackground && normalizeHex(settings.buttonPrimaryBackground)
-  if (buttonPrimaryBackground) {
-    values['button-brand-filled-bg-default'] = buttonPrimaryBackground
-    values['button-brand-filled-border-default'] = buttonPrimaryBackground
-    values['button-brand-filled-bg-hover'] = mixHex(buttonPrimaryBackground, '#000000', .9)
-    values['button-brand-filled-bg-active'] = mixHex(values['button-brand-filled-bg-hover'], '#000000', .84)
-  }
-  const buttonPrimaryText = settings.buttonPrimaryText && normalizeHex(settings.buttonPrimaryText)
-  if (buttonPrimaryText) for (const state of ['default', 'hover', 'active']) values[`button-brand-filled-text-${state}`] = buttonPrimaryText
+  // Explicit Button colors must win after every derived palette/recipe pass.
+  Object.assign(values, primaryButtonOverrideTokens(settings))
   const sources = { ...base.sources }
   for (const id of Object.keys(values)) if (values[id] !== base.values[id]) sources[id] = base.projectId === 'global' ? 'global' : 'project'
   return { ...base, values, sources }

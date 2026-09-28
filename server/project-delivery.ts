@@ -9,6 +9,20 @@ import { canonicalJson, validateSnapshot } from '../src/services/release-snapsho
 import { readRuntimeArchive, sha256 } from './runtime-archive'
 import templateSchema from '../template.schema.json'
 const exec = promisify(execFile)
+function moduleExportNames(source: string): Set<string> {
+  const names = new Set<string>()
+  for (const match of source.matchAll(/export\s+(?:const|function|class)\s+([A-Za-z_$][\w$]*)/g)) names.add(match[1])
+  for (const match of source.matchAll(/export\s*\{([\s\S]*?)\}\s*;?/g)) {
+    for (const item of match[1].split(',')) {
+      const value = item.trim()
+      if (!value) continue
+      const alias = value.match(/\bas\s+([A-Za-z_$][\w$]*)\s*$/)?.[1]
+      const direct = value.match(/^([A-Za-z_$][\w$]*)$/)?.[1]
+      if (alias || direct) names.add(alias ?? direct!)
+    }
+  }
+  return names
+}
 export function deliveryIdentity(snapshot: LocalReleaseSnapshot) {
   validateSnapshot(snapshot)
   const manifest = snapshot.assets['manifest.json'] as { projectName: string; status: string; componentRuntimeVersion: string; availableComponents: Array<{id:string;runtimeExport:string}> }
@@ -18,7 +32,51 @@ export function deliveryIdentity(snapshot: LocalReleaseSnapshot) {
   return { projectId: manifest.projectName, releaseVersion: snapshot.entry.version, runtimeBuildId: manifest.componentRuntimeVersion, componentIds: manifest.availableComponents.map(item => item.id), componentExports, snapshotSha256: sha256(canonicalJson(snapshot)) }
 }
 export function deliveryGuide(artifact: Omit<ProjectDeliveryArtifact, 'sha256' | 'bytes' | 'createdAt'>): string {
-  return `# ${artifact.projectId} / ${artifact.releaseVersion} 前端接入\n\n支持：React 19.1.1 及同主版本、React DOM、ES Modules。已验证 Vite 客户端工程；Vue、SSR 和其他 React 主版本未验证。\n\n## 安装\n\nnpm install ./${artifact.archiveName} --save-exact\n\n提交包文件（或上传到团队批准的内部制品存储）与依赖锁文件，确保 CI 能取得相同版本。\n\n## 交给 AI 使用\n\n同时提供 DESIGN.md 与本版本组件包。DESIGN.md 明确项目身份、主题边界、组件 API、状态与可编译示例；管理平台根目录的 DESIGN.md 不适用于业务页面。旧归档保持不变，如果旧包没有此文件，可从版本页另行下载对应的 AI 设计规范。\n\n## 接入\n\n\`\`\`tsx\nimport { ProjectTheme, DSButton, PROJECT_RELEASE } from '${artifact.packageName}'\nimport '${artifact.packageName}/style.css'\n\nexport function SaveAction({ saving, onSave }: { saving: boolean; onSave: () => void }) {\n  return <ProjectTheme><DSButton variant="primary" loading={saving} onClick={onSave}>保存</DSButton></ProjectTheme>\n}\n\`\`\`\n\nProjectTheme 使用包内冻结变量，正式 DS 弹窗继承所属主题。不要在业务运行时请求管理站获取主题。\n\n项目组件清单：${artifact.componentIds.join('、')}。此清单是项目使用约定，不提供业务权限隔离。包导出共享控件供组合；不包含内置演示工作流。字段值、表格数据、分页、业务校验、API 和权限由调用方负责。\n\nexamples/ControlledForm.tsx 演示调用方控制字段、校验、加载和提交；将 onSave 接到你自己的业务请求，并保留失败后的输入。\n\n## 升级与回退\n\n1. 在版本页比较新旧版本的实际资产差异，阅读发布说明，评估样式、属性和行为影响。\n2. 安装目标版本并提交锁文件，在业务页面验证正常、加载、失败、禁用与窄屏状态。项目草稿变化不会自动更新已安装包。\n3. 回退时重新安装原包并恢复锁文件。业务数据结构的变更需要业务系统另行制定回退方案。\n\n## 版本关联\n\n项目版本：${artifact.releaseVersion}\n组件运行时：${artifact.runtimeBuildId}\n完整快照 SHA-256：${artifact.snapshotSha256}\n\n首次接入应完成查询列表与编辑表单的真实业务验收。包内项目数据只属于此项目；组件代码和字体为共享实现。\n`
+  return `# ${artifact.projectId} / ${artifact.releaseVersion} 前端接入
+
+支持：React 19.1.1 及同主版本、React DOM、ES Modules。已验证 Vite 客户端工程；Vue、SSR 和其他 React 主版本未验证。
+
+## 安装
+
+npm install ./${artifact.archiveName} --save-exact
+
+提交包文件（或上传到团队批准的内部制品存储）与依赖锁文件，确保 CI 能取得相同版本。
+
+## 交给 AI 使用
+
+同时提供 DESIGN.md 与本版本组件包。DESIGN.md 明确项目身份、主题边界、组件 API、状态与可编译示例；管理平台根目录的 DESIGN.md 不适用于业务页面。旧归档保持不变，如果旧包没有此文件，可从版本页另行下载对应的 AI 设计规范。
+
+## 接入
+
+\`\`\`tsx
+import { ProjectTheme, DSButton, PROJECT_RELEASE } from '${artifact.packageName}'
+import '${artifact.packageName}/style.css'
+
+export function SaveAction({ saving, onSave }: { saving: boolean; onSave: () => void }) {
+  return <ProjectTheme><DSButton variant="primary" loading={saving} onClick={onSave}>保存</DSButton></ProjectTheme>
+}
+\`\`\`
+
+ProjectTheme 使用包内冻结变量，正式 DS 弹窗继承所属主题。不要在业务运行时请求管理站获取主题。
+
+项目组件清单：${artifact.componentIds.join('、')}。包根只导出这份批准清单对应的业务组件；ProjectTheme 与 RUNTIME_BUILD_ID 是接入辅助能力。不得通过 dist 内部路径使用未批准组件。此清单是项目使用约定，不提供业务权限隔离；包内不包含演示工作流。字段值、表格数据、分页、业务校验、API 和权限由调用方负责。
+
+examples/ControlledForm.tsx 演示调用方控制字段、校验、加载和提交；将 onSave 接到你自己的业务请求，并保留失败后的输入。
+
+## 升级与回退
+
+1. 在版本页比较新旧版本的实际资产差异，阅读发布说明，评估样式、属性和行为影响。
+2. 安装目标版本并提交锁文件，在业务页面验证正常、加载、失败、禁用与窄屏状态。项目草稿变化不会自动更新已安装包。
+3. 回退时重新安装原包并恢复锁文件。业务数据结构的变更需要业务系统另行制定回退方案。
+
+## 版本关联
+
+项目版本：${artifact.releaseVersion}
+组件运行时：${artifact.runtimeBuildId}
+完整快照 SHA-256：${artifact.snapshotSha256}
+
+首次接入应完成查询列表与编辑表单的真实业务验收。包内项目数据只属于此项目；组件代码和字体为共享实现。
+`
 }
 export function createDeliveryService(options: { runtimeRoot: string; outputRoot: string }) {
   const jobs = new Map<string, Promise<void>>()
@@ -52,6 +110,9 @@ export function createDeliveryService(options: { runtimeRoot: string; outputRoot
   async function build(snapshot: LocalReleaseSnapshot) {
     const info = location(snapshot)
     const runtime = readRuntimeArchive(options.runtimeRoot, info.runtimeBuildId)
+    const runtimeExports = moduleExportNames(readFileSync(join(runtime.directory, 'dist/runtime.js'), 'utf8'))
+    const missingRuntimeExports = [...info.componentExports, 'PreviewScope', 'RUNTIME_BUILD_ID'].filter(name => !runtimeExports.has(name))
+    if (missingRuntimeExports.length) throw new Error(`运行时归档缺少项目批准导出：${missingRuntimeExports.join('、')}`)
     mkdirSync(info.directory, { recursive: true })
     writeFileSync(join(info.directory, 'attempt.json'), JSON.stringify({ startedAt: new Date().toISOString() }))
     const stage = mkdtempSync(join(info.directory, '.build-')), pkgDir = join(stage, 'package')

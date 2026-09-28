@@ -146,7 +146,7 @@ describe('真实交互与无障碍', () => {
     const user = userEvent.setup()
     render(<ResourceManagerDemo />)
     await user.click(screen.getByRole('button', { name: '新增资源' }))
-    await user.type(screen.getByLabelText('名称'), '新建资源')
+    await user.type(screen.getByRole('textbox', { name: /^名称/ }), '新建资源')
     await user.click(screen.getByRole('button', { name: '保存资源' }))
     expect(screen.getByText('资源已保存')).toBeTruthy()
     fireEvent.change(screen.getByLabelText('搜索资源'), { target: { value: '新建资源' } })

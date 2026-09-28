@@ -1455,6 +1455,16 @@
   ],
   "DSColorPicker": [
     {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
       "name": "value",
       "type": "string | Color | undefined",
       "required": false
@@ -1468,11 +1478,6 @@
       "name": "slot",
       "type": "string | null | undefined",
       "required": false
-    },
-    {
-      "name": "label",
-      "type": "string",
-      "required": true
     }
   ],
   "DSIconAction": [
@@ -2362,6 +2367,113 @@
       "required": false
     }
   ],
+  "DSTokenField": [
+    {
+      "name": "value",
+      "type": "TokenFieldValue<T> | undefined",
+      "required": false
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "dir",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "hidden",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "lang",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "slot",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "style",
+      "type": "StyleOrFunction<TokenFieldRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "translate",
+      "type": "\"yes\" | \"no\" | undefined",
+      "required": false
+    },
+    {
+      "name": "role",
+      "type": "\"combobox\" | \"searchbox\" | \"textbox\" | undefined",
+      "required": false
+    },
+    {
+      "name": "inert",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "render",
+      "type": "DOMRenderFunction<\"div\", TokenFieldRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "isReadOnly",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "allowsNewlines",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "description",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultValue",
+      "type": "TokenFieldValue<T> | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultTokens",
+      "type": "DSTokenFieldToken<T>[] | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultText",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "renderToken",
+      "type": "((segment: TokenSegment<T>) => ReactNode) | undefined",
+      "required": false
+    }
+  ],
   "DSComboBox": [
     {
       "name": "form",
@@ -2906,6 +3018,562 @@
       "required": false
     }
   ],
+  "DSGridList": [
+    {
+      "name": "autoFocus",
+      "type": "boolean | FocusStrategy | undefined",
+      "required": false
+    },
+    {
+      "name": "dir",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "hidden",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "id",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "lang",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "slot",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "style",
+      "type": "StyleOrFunction<GridListRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "translate",
+      "type": "\"yes\" | \"no\" | undefined",
+      "required": false
+    },
+    {
+      "name": "inert",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "render",
+      "type": "DOMRenderFunction<\"div\", GridListRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "selectionMode",
+      "type": "SelectionMode | undefined",
+      "required": false
+    },
+    {
+      "name": "orientation",
+      "type": "Orientation | undefined",
+      "required": false
+    },
+    {
+      "name": "selectionBehavior",
+      "type": "SelectionBehavior | undefined",
+      "required": false
+    },
+    {
+      "name": "shouldSelectOnPressUp",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "escapeKeyBehavior",
+      "type": "\"none\" | \"clearSelection\" | undefined",
+      "required": false
+    },
+    {
+      "name": "disallowEmptySelection",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "selectedKeys",
+      "type": "Iterable<Key> | \"all\" | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultSelectedKeys",
+      "type": "Iterable<Key> | \"all\" | undefined",
+      "required": false
+    },
+    {
+      "name": "keyboardNavigationBehavior",
+      "type": "\"tab\" | \"arrow\" | undefined",
+      "required": false
+    },
+    {
+      "name": "disabledBehavior",
+      "type": "DisabledBehavior | undefined",
+      "required": false
+    },
+    {
+      "name": "disallowTypeAhead",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "dragAndDropHooks",
+      "type": "DragAndDropHooks<NoInfer<DSGridListItem>> | undefined",
+      "required": false
+    },
+    {
+      "name": "layout",
+      "type": "\"grid\" | \"stack\" | undefined",
+      "required": false
+    },
+    {
+      "name": "UNSTABLE_focusOnEntry",
+      "type": "\"first\" | \"last\" | undefined",
+      "required": false
+    },
+    {
+      "name": "dependencies",
+      "type": "readonly any[] | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "items",
+      "type": "DSGridListItem[]",
+      "required": true
+    },
+    {
+      "name": "renderItem",
+      "type": "((item: DSGridListItem) => ReactNode) | undefined",
+      "required": false
+    },
+    {
+      "name": "showSelectionControl",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "disabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "emptyMessage",
+      "type": "ReactNode",
+      "required": false
+    }
+  ],
+  "DSGroup": [
+    {
+      "name": "defaultChecked",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | number | readonly string[] | undefined",
+      "required": false
+    },
+    {
+      "name": "suppressContentEditableWarning",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "suppressHydrationWarning",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "accessKey",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "autoCapitalize",
+      "type": "\"off\" | \"none\" | \"on\" | \"sentences\" | \"words\" | \"characters\" | (string & {}) | undefined",
+      "required": false
+    },
+    {
+      "name": "autoFocus",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "contentEditable",
+      "type": "Booleanish | \"inherit\" | \"plaintext-only\" | undefined",
+      "required": false
+    },
+    {
+      "name": "contextMenu",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "dir",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "draggable",
+      "type": "Booleanish | undefined",
+      "required": false
+    },
+    {
+      "name": "enterKeyHint",
+      "type": "\"enter\" | \"done\" | \"go\" | \"next\" | \"previous\" | \"search\" | \"send\" | undefined",
+      "required": false
+    },
+    {
+      "name": "hidden",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "id",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "lang",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "nonce",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "slot",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "spellCheck",
+      "type": "Booleanish | undefined",
+      "required": false
+    },
+    {
+      "name": "style",
+      "type": "StyleOrFunction<GroupRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "tabIndex",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "title",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "translate",
+      "type": "\"yes\" | \"no\" | undefined",
+      "required": false
+    },
+    {
+      "name": "radioGroup",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "about",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "content",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "datatype",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "inlist",
+      "type": "any",
+      "required": false
+    },
+    {
+      "name": "prefix",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "property",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "rel",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "resource",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "rev",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "typeof",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "vocab",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "autoCorrect",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "autoSave",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "color",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "itemProp",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "itemScope",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "itemType",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "itemID",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "itemRef",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "results",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "security",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "unselectable",
+      "type": "\"off\" | \"on\" | undefined",
+      "required": false
+    },
+    {
+      "name": "popover",
+      "type": "\"\" | \"auto\" | \"manual\" | \"hint\" | undefined",
+      "required": false
+    },
+    {
+      "name": "popoverTargetAction",
+      "type": "\"toggle\" | \"show\" | \"hide\" | undefined",
+      "required": false
+    },
+    {
+      "name": "popoverTarget",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "inert",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "inputMode",
+      "type": "\"none\" | \"search\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | undefined",
+      "required": false
+    },
+    {
+      "name": "is",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "exportparts",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "part",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "children",
+      "type": "ChildrenOrFunction<GroupRenderProps>",
+      "required": false
+    },
+    {
+      "name": "dangerouslySetInnerHTML",
+      "type": "{ __html: string | TrustedHTML; } | undefined",
+      "required": false
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "render",
+      "type": "DOMRenderFunction<\"div\", GroupRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "ref",
+      "type": "Ref<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "key",
+      "type": "Key | null | undefined",
+      "required": false
+    },
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "isReadOnly",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "isInvalid",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "role",
+      "type": "\"group\" | \"presentation\" | \"region\" | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string | undefined",
+      "required": false
+    }
+  ],
+  "DSPreviewTrigger": [
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "delay",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "closeDelay",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "isOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "preview",
+      "type": "ReactNode",
+      "required": true
+    },
+    {
+      "name": "previewLabel",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "href",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "target",
+      "type": "HTMLAttributeAnchorTarget | undefined",
+      "required": false
+    },
+    {
+      "name": "rel",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "disabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "onPress",
+      "type": "((e: PressEvent) => void) | undefined",
+      "required": false
+    },
+    {
+      "name": "placement",
+      "type": "Placement | undefined",
+      "required": false
+    }
+  ],
   "DSDropdown": [
     {
       "name": "label",
@@ -3390,6 +4058,175 @@
     {
       "name": "key",
       "type": "Key | null | undefined",
+      "required": false
+    }
+  ],
+  "DSNavigationTree": [
+    {
+      "name": "autoFocus",
+      "type": "boolean | FocusStrategy | undefined",
+      "required": false
+    },
+    {
+      "name": "dir",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "hidden",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "id",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "lang",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "slot",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "style",
+      "type": "StyleOrFunction<NavigationTreeRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "translate",
+      "type": "\"yes\" | \"no\" | undefined",
+      "required": false
+    },
+    {
+      "name": "inert",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "render",
+      "type": "DOMRenderFunction<\"div\", NavigationTreeRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "disabledKeys",
+      "type": "Iterable<Key> | undefined",
+      "required": false
+    },
+    {
+      "name": "dependencies",
+      "type": "readonly any[] | undefined",
+      "required": false
+    },
+    {
+      "name": "expandedKeys",
+      "type": "Iterable<Key> | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultExpandedKeys",
+      "type": "Iterable<Key> | undefined",
+      "required": false
+    },
+    {
+      "name": "selectedRoute",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "items",
+      "type": "DSNavigationTreeItem[]",
+      "required": true
+    },
+    {
+      "name": "onNavigate",
+      "type": "((href: string) => void) | undefined",
+      "required": false
+    }
+  ],
+  "DSVirtualizer": [
+    {
+      "name": "selectionMode",
+      "type": "SelectionMode | undefined",
+      "required": false
+    },
+    {
+      "name": "selectionBehavior",
+      "type": "SelectionBehavior | undefined",
+      "required": false
+    },
+    {
+      "name": "selectedKeys",
+      "type": "Iterable<Key> | \"all\" | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultSelectedKeys",
+      "type": "Iterable<Key> | \"all\" | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "items",
+      "type": "DSVirtualizerItem[]",
+      "required": true
+    },
+    {
+      "name": "height",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "rowSize",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "estimatedRowSize",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "gap",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "padding",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "shouldObserveItemSize",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "renderItem",
+      "type": "((item: DSVirtualizerItem) => ReactNode) | undefined",
+      "required": false
+    },
+    {
+      "name": "emptyState",
+      "type": "ReactNode",
       "required": false
     }
   ],
@@ -6897,6 +7734,16 @@
       "required": false
     },
     {
+      "name": "isOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
       "name": "isDateUnavailable",
       "type": "((date: DateValue) => boolean) | undefined",
       "required": false
@@ -6912,16 +7759,6 @@
       "required": false
     },
     {
-      "name": "isOpen",
-      "type": "boolean | undefined",
-      "required": false
-    },
-    {
-      "name": "defaultOpen",
-      "type": "boolean | undefined",
-      "required": false
-    },
-    {
       "name": "shouldCloseOnSelect",
       "type": "boolean | (() => boolean) | undefined",
       "required": false
@@ -6930,6 +7767,16 @@
       "name": "label",
       "type": "string",
       "required": true
+    },
+    {
+      "name": "description",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "errorMessage",
+      "type": "string | undefined",
+      "required": false
     }
   ],
   "DSDateRangePicker": [
@@ -7079,6 +7926,16 @@
       "required": false
     },
     {
+      "name": "isOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultOpen",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
       "name": "isDateUnavailable",
       "type": "((date: DateValue, anchorDate: CalendarDate | null) => boolean) | undefined",
       "required": false
@@ -7095,16 +7952,6 @@
     },
     {
       "name": "allowsNonContiguousRanges",
-      "type": "boolean | undefined",
-      "required": false
-    },
-    {
-      "name": "isOpen",
-      "type": "boolean | undefined",
-      "required": false
-    },
-    {
-      "name": "defaultOpen",
       "type": "boolean | undefined",
       "required": false
     },
@@ -7485,6 +8332,108 @@
       "required": true
     }
   ],
+  "DSColorWheel": [
+    {
+      "name": "form",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "string | Color | undefined",
+      "required": false
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | Color | undefined",
+      "required": false
+    },
+    {
+      "name": "dir",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "hidden",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "id",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "lang",
+      "type": "string | undefined",
+      "required": false
+    },
+    {
+      "name": "slot",
+      "type": "string | null | undefined",
+      "required": false
+    },
+    {
+      "name": "style",
+      "type": "StyleOrFunction<ColorWheelRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "translate",
+      "type": "\"yes\" | \"no\" | undefined",
+      "required": false
+    },
+    {
+      "name": "inert",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "onClick",
+      "type": "MouseEventHandler<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "render",
+      "type": "DOMRenderFunction<\"div\", ColorWheelRenderProps> | undefined",
+      "required": false
+    },
+    {
+      "name": "ref",
+      "type": "Ref<HTMLDivElement> | undefined",
+      "required": false
+    },
+    {
+      "name": "key",
+      "type": "Key | null | undefined",
+      "required": false
+    },
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "size",
+      "type": "number | undefined",
+      "required": false
+    },
+    {
+      "name": "trackWidth",
+      "type": "number | undefined",
+      "required": false
+    }
+  ],
   "DSColorSwatch": [
     {
       "name": "className",
@@ -7567,6 +8516,11 @@
       "name": "colors",
       "type": "string[]",
       "required": true
+    },
+    {
+      "name": "isDisabled",
+      "type": "boolean | undefined",
+      "required": false
     },
     {
       "name": "value",
@@ -8130,6 +9084,11 @@
       "name": "onFiles",
       "type": "(files: File[]) => void",
       "required": true
+    },
+    {
+      "name": "disabled",
+      "type": "boolean | undefined",
+      "required": false
     }
   ],
   "DSImagePreview": [

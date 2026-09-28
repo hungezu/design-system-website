@@ -14,20 +14,22 @@ export const COMPONENT_DISPLAY_NAMES: Record<string, string> = {
   'input-group': '输入框组', 'input-otp': '验证码输入', kbd: '键盘按键', link: '链接', 'list-box': '列表框', meter: '度量条', modal: '模态框', 'number-field': '数字输入框',
   'progress-bar': '进度条', 'progress-circle': '环形进度', 'range-calendar': '日期范围日历', 'scroll-shadow': '滚动阴影', 'search-field': '搜索框', separator: '分隔符', skeleton: '骨架屏', spinner: '加载指示器', surface: '内容表面',
   'tag-group': '标签组', 'time-field': '时间字段', 'toggle-button': '切换按钮', 'toggle-button-group': '切换按钮组', toolbar: '工具栏',
+  'token-field': '令牌输入', 'grid-list': '网格列表', 'color-wheel': '色相环', 'navigation-tree': '导航树', 'preview-trigger': '预览触发器', group: '组合', virtualizer: '虚拟化容器',
 }
 
 export const componentDisplayName = (componentId: string) => COMPONENT_DISPLAY_NAMES[componentId] ?? componentId
 const groupIds: Record<string,string[]> = {
   按钮:['button','button-group','close-button','toggle-button','toggle-button-group'],
-  表单:['input','textarea','checkbox','checkbox-group','radio','switch','form','field','input-group','input-otp','number-field','search-field'],
+  表单:['input','textarea','checkbox','checkbox-group','radio','switch','form','field','input-group','input-otp','number-field','search-field','token-field'],
   选择器:['select','autocomplete','combo-box','cascader','slider'],
-  集合与列表:['table','tree','list-box','tag-group'],
+  集合与列表:['table','tree','list-box','tag-group','grid-list'],
   数据展示:['tag','badge','empty','loading','progress','progress-bar','progress-circle','meter','skeleton','spinner','descriptions'],
   日期与时间:['date-picker','date-range-picker','date-field','time-picker','time-field','calendar','range-calendar'],
-  导航:['tabs','breadcrumb','menu','dropdown','steps','accordion','disclosure','disclosure-group','link','toolbar'],
-  浮层与反馈:['dialog','alert-dialog','drawer','modal','toast','message','alert','tooltip','popover','popconfirm'],
+  导航:['tabs','breadcrumb','menu','dropdown','steps','accordion','disclosure','disclosure-group','link','toolbar','pagination','navigation-tree'],
+  浮层与反馈:['dialog','alert-dialog','drawer','modal','toast','message','alert','tooltip','popover','popconfirm','preview-trigger'],
+  布局:['card','divider','grid','space','stack','page-container','resizable-panel','separator','surface','group','virtualizer'],
   文件与媒体:['upload','image-preview','avatar','file-list','drop-zone'],
-  排版与工具:['kbd','scroll-shadow'],
+  排版与工具:['kbd','scroll-shadow','icon'],
 }
 export function componentGroup(id:string) { if(AI_COMPONENT_IDS.includes(id))return 'AI 交互'; if(id.startsWith('color-')) return '颜色'; return Object.entries(groupIds).find(([,ids])=>ids.includes(id))?.[0] ?? '布局' }
 export const COMPONENT_CATALOG = DESKTOP_COMPONENT_BINDINGS.map(binding=>({...binding,group:componentGroup(binding.componentId)}))

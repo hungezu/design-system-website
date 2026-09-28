@@ -3,6 +3,13 @@ dist
 storybook-static
 .DS_Store
 *.local
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
 *.log
 
 dist-library

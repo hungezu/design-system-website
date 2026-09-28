@@ -47,11 +47,11 @@ export interface DSCheckboxGroupProps extends Omit<DSRadioProps, 'value' | 'defa
   value?: string[]; defaultValue?: string[]; onChange?: (value: string[]) => void
 }
 export function DSCheckboxGroup({ label, options, value, defaultValue, onChange, disabled, loading, required, invalid, errorMessage, description, name }: DSCheckboxGroupProps) {
-  return <CheckboxGroup className="owned-radio-group" value={value} defaultValue={defaultValue} onChange={onChange} isDisabled={disabled || loading} isRequired={required} isInvalid={invalid} name={name}>
+  return <div className="owned-choice-group" aria-busy={loading || undefined}><CheckboxGroup className="owned-radio-group" value={value} defaultValue={defaultValue} onChange={onChange} isDisabled={disabled || loading} isRequired={required} isInvalid={invalid} name={name}>
     <Label>{label}</Label>
     {options.map(option => <Checkbox key={option.value} className="owned-choice" value={option.value} isDisabled={option.disabled}><span className="owned-choice__box" aria-hidden="true"><Check size={12} strokeWidth={2.2} /></span>{option.label}</Checkbox>)}
     {description && <Text slot="description">{description}</Text>}<FieldError className="owned-form-error">{errorMessage}</FieldError>
-  </CheckboxGroup>
+  </CheckboxGroup></div>
 }
 export interface DSFieldControlProps { id: string; 'aria-describedby'?: string; 'aria-invalid'?: boolean; 'aria-required'?: boolean }
 export interface DSFieldProps { label: string; children: (props: DSFieldControlProps) => ReactNode; description?: string; error?: string; required?: boolean }

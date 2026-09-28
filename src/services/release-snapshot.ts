@@ -10,7 +10,7 @@ import { iconIdsForProject } from './icon-pack'
 import { getIcon } from '../runtime/vendor/runtime.js'
 import { getRuntimeComponent } from '../runtime/registry'
 import { getDesktopComponentBinding } from '../design-system/component-bindings'
-import { projectPreviewVariables, type ProjectThemeSettings } from './project-theme'
+import { contrastRatio, projectPreviewVariables, type ProjectThemeSettings } from './project-theme'
 import { resolveProjectTheme } from './theme-resolver'
 import type { ProjectConfig } from '../types/design-system'
 import type { LocalReleaseSnapshot, ReleaseAssetName } from './release-catalog'
@@ -73,10 +73,23 @@ export function validateSnapshot(snapshot:LocalReleaseSnapshot) {
  const cssTokens=Object.fromEntries([...css.matchAll(/(--[a-z0-9-]+)\s*:\s*([^;]+);/gi)].map(match=>[match[1],match[2].trim()]))
  if(canonicalJson(cssTokens)!==canonicalJson(tokens))throw new Error('Token CSS 与 JSON 不一致。')
  const region=snapshot.assets['region-appearance.json']
- if(isRecord(region)&&isRecord(region.theme)&&region.theme.sizing!==undefined){
+ if(!isRecord(region)||!isRecord(region.theme))throw new Error('区域外观主题无效。')
+ const frozenTheme=region.theme as unknown as ProjectThemeSettings
+ if(region.theme.sizing!==undefined){
   if(!['compact','comfortable','spacious'].includes(String(region.theme.density))||typeof region.theme.bodySize!=='number'||!Number.isFinite(region.theme.bodySize))throw new Error('分层尺寸主题基础值无效。')
-  validateResolvedSizing(region.theme as unknown as ProjectThemeSettings)
-  for(const [name,value] of Object.entries(sizingTokens(region.theme as unknown as ProjectThemeSettings)))if(tokens[`--${name}`]!==value)throw new Error(`分层尺寸输入与冻结取值不一致：${name}`)
+  validateResolvedSizing(frozenTheme)
+  for(const [name,value] of Object.entries(sizingTokens(frozenTheme)))if(tokens[`--${name}`]!==value)throw new Error(`分层尺寸输入与冻结取值不一致：${name}`)
+ }
+ const frozenButtonTokens=Object.fromEntries(Object.entries(tokens).filter(([key])=>key.startsWith('--button-')))
+ const recipes=snapshot.assets['recipes.json']
+ if(!isRecord(recipes)||!isRecord(recipes.values)||canonicalJson(recipes.values)!==canonicalJson(frozenButtonTokens))throw new Error('按钮配方与冻结 Token 不一致。')
+ if(frozenTheme.buttonPrimaryBackground!==undefined||frozenTheme.buttonPrimaryText!==undefined){
+  const expected=projectPreviewVariables(frozenTheme)
+  for(const id of ['--button-brand-filled-bg-default','--button-brand-filled-border-default','--button-brand-filled-bg-hover','--button-brand-filled-bg-active','--button-brand-filled-text-default','--button-brand-filled-text-hover','--button-brand-filled-text-active'])if(tokens[id]!==expected[id])throw new Error(`主按钮主题输入与冻结 Token 不一致：${id}`)
+ }
+ for(const state of ['default','hover','active']){
+  const foreground=tokens[`--button-brand-filled-text-${state}`],background=tokens[`--button-brand-filled-bg-${state}`]
+  if(typeof foreground!=='string'||typeof background!=='string'||contrastRatio(foreground,background)<4.5)throw new Error(`冻结主按钮${state}状态对比度不足 4.5:1。`)
  }
  const components=snapshot.assets['components.json'],icons=snapshot.assets['icons.json'],patterns=snapshot.assets['patterns.json']
  if(!isRecord(components)||components.projectId!==snapshot.entry.projectId||components.releaseVersion!==snapshot.entry.version||!Array.isArray(components.availableComponents)||!Array.isArray(manifest.availableComponents))throw new Error('组件清单关联无效。')

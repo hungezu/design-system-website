@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { createWorkspace } from './workspace'
 import type { SessionData, Account } from '../src/services/access-types'
+import { GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS, GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS, GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS } from '../src/data/projects/guokexin'
 const password = '12345678' // Boundary fixture: eight numeric characters must be accepted.
 const bootstrapToken = 'test-only-bootstrap-secret'
 test('真实会话、项目隔离、角色校验、邀请、并发保存与持久化', async t => {
@@ -158,15 +159,19 @@ test('真实会话、项目隔离、角色校验、邀请、并发保存与持�
       assert.equal((await outsider('/api/projects/test-customer-b/theme')).status, 404)
       const stored = workspace.db.prepare('SELECT config FROM projects WHERE id=?').get('guokexin') as { config: string }
       const legacyConfig = JSON.parse(stored.config)
-      legacyConfig.componentIds = legacyConfig.componentIds.filter((id: string) => id !== 'search-field')
+      const foundationBatchIds: readonly string[] = [...GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS, ...GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS, ...GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS]
+      legacyConfig.componentIds = legacyConfig.componentIds.filter((id: string) => !foundationBatchIds.includes(id))
       workspace.db.prepare('UPDATE projects SET config=? WHERE id=?').run(JSON.stringify(legacyConfig), 'guokexin')
-      workspace.db.prepare('DELETE FROM workspace_migrations WHERE id=?').run('guokexin-search-field-1')
+      workspace.db.prepare('DELETE FROM workspace_migrations WHERE id=?').run('guokexin-foundation-phase-one-1')
+      workspace.db.prepare('DELETE FROM workspace_migrations WHERE id=?').run('guokexin-foundation-phase-two-1')
+      workspace.db.prepare('DELETE FROM workspace_migrations WHERE id=?').run('guokexin-foundation-phase-three-1')
       await workspace.close()
       workspace = createWorkspace({ dbPath: join(dir, 'test.sqlite'), bootstrapToken })
       await new Promise<void>(done => workspace.server.listen(0, '127.0.0.1', done)); base = `http://127.0.0.1:${(workspace.server.address() as { port: number }).port}`
       const afterRestart = await admin('/api/auth/me')
       assert.equal(afterRestart.data.projects.some((project: { id: string }) => project.id === 'team-new' || project.id === 'test-customer-b'), false)
-      assert.equal(afterRestart.data.projects.find((project: { id: string }) => project.id === 'guokexin')?.componentIds.includes('search-field'), true)
+      const restored = afterRestart.data.projects.find((project: { id: string }) => project.id === 'guokexin')?.componentIds as string[]
+      assert.ok(foundationBatchIds.every((id) => restored.includes(id)))
     })
   } finally { await workspace.close(); rmSync(dir, { recursive: true, force: true }) }
 })

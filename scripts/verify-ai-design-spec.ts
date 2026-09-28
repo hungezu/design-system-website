@@ -1,5 +1,5 @@
 import { AI_COMPONENT_IDS } from '../src/data/ai-components'
-import { cpSync, mkdirSync, mkdtempSync, readFileSync, realpathSync, rmSync, writeFileSync } from 'node:fs'
+import { cpSync, existsSync, mkdirSync, mkdtempSync, readFileSync, realpathSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 import { execFileSync, spawnSync } from 'node:child_process'
@@ -23,8 +23,8 @@ writeFileSync(join(consumer, 'tsconfig.json'), JSON.stringify({ compilerOptions:
 const service = createDeliveryService({ runtimeRoot: resolve('artifacts/runtime-builds'), outputRoot: join(temp, 'packages') })
 const checks: object[] = []
 try {
-  for (const [project, releaseVersion, color] of [[testCustomerBProject, '8.0.0', '#006A70'], [guokexinProject, '8.0.0', '#165DFF'], [guokexinProject, '8.1.0', '#6236FF']] as const) {
-    const snapshot = createReleaseSnapshot({ project: {...project,componentIds:[...new Set([...project.componentIds,...AI_COMPONENT_IDS])]}, theme: { ...defaultProjectTheme(project), brandPrimary: color }, version: releaseVersion, status: 'published', note: 'AI 规范独立消费验收，仅测试夹具' })
+  for (const [project, releaseVersion, color, button] of [[testCustomerBProject, '8.0.0', '#006A70', null], [guokexinProject, '8.0.0', '#165DFF', null], [guokexinProject, '8.1.0', '#6236FF', { background: '#102030', text: '#F8FAFC' }]] as const) {
+    const snapshot = createReleaseSnapshot({ project: {...project,componentIds:[...new Set([...project.componentIds,...AI_COMPONENT_IDS])]}, theme: { ...defaultProjectTheme(project), brandPrimary: color, ...(button ? { buttonPrimaryBackground: button.background, buttonPrimaryText: button.text } : {}) }, version: releaseVersion, status: 'published', note: 'AI 规范独立消费验收，仅测试夹具' })
     service.start(snapshot); await service.idle()
     const result = service.status(snapshot)
     if (result.status !== 'ready' || !result.artifact || !result.designSpec) throw new Error(JSON.stringify(result))
@@ -47,6 +47,24 @@ try {
     const cssVariables = [...md.matchAll(/var\((--[a-z0-9-]+)\)/g)].map(match => match[1])
     const tokens = read(join(packageRoot, 'tokens.json'))
     if (cssVariables.some(name => !(name in tokens))) throw new Error('示例引用不存在的 Token。')
+    const packedSnapshot = read(join(packageRoot, 'snapshot.json'))
+    const approvedExports = packedSnapshot.assets['manifest.json'].availableComponents.map((item: { runtimeExport: string }) => item.runtimeExport).sort()
+    const packageIndex = readFileSync(join(packageRoot, 'index.js'), 'utf8')
+    const packageTypes = readFileSync(join(packageRoot, 'index.d.ts'), 'utf8')
+    const exportedValues = [...new Set(packageIndex.match(/\bDS[A-Z][A-Za-z0-9_$]*\b/g) ?? [])].sort()
+    const exportedTypes = [...new Set(packageTypes.match(/\bDS[A-Z][A-Za-z0-9_$]*\b/g) ?? [])].sort()
+    if (JSON.stringify(exportedValues) !== JSON.stringify(approvedExports) || JSON.stringify(exportedTypes) !== JSON.stringify(approvedExports)) throw new Error('包根组件导出与批准清单不一致。')
+    if (existsSync(join(packageRoot, 'dist/release-assets'))) throw new Error('项目包混入历史 release-assets。')
+    const runtimeStyle = readFileSync(join(packageRoot, 'dist/style.css'), 'utf8')
+    if (!runtimeStyle.includes('var(--button-brand-filled-bg-default)') || !runtimeStyle.includes('var(--button-brand-filled-text-default)')) throw new Error('组件样式没有消费冻结按钮变量。')
+    if (button) {
+      const expected = { default: '#102030', hover: '#0E1D2B', active: '#0C1824' }
+      for (const [state, background] of Object.entries(expected)) {
+        if (tokens[`--button-brand-filled-bg-${state}`] !== background || tokens[`--button-brand-filled-text-${state}`] !== button.text) throw new Error(`独立包主按钮 ${state} 颜色丢失。`)
+      }
+      if (packedSnapshot.assets['recipes.json'].values['--button-brand-filled-bg-default'] !== button.background) throw new Error('按钮配方未写入独立包快照。')
+      if (packedSnapshot.assets['region-appearance.json'].theme.buttonPrimaryBackground !== button.background || packedSnapshot.assets['region-appearance.json'].theme.buttonPrimaryText !== button.text) throw new Error('按钮主题输入未写入独立包快照。')
+    }
     // Negative control: ensure declarations catch a common event/value API mistake.
     writeFileSync(join(consumer, 'Generated.tsx'), code.replace('onChange={value => { setQuery(value);', 'onChange={event => { setQuery(event.target.value);'))
     const invalid = spawnSync(process.execPath, [join(root, 'node_modules/typescript/bin/tsc'), '-p', consumer], { cwd: consumer, encoding: 'utf8' })
@@ -55,7 +73,7 @@ try {
     writeFileSync(join(consumer, 'example.css'), md.match(/```css\n([\s\S]*?)```/)?.[1] ?? '')
     const identity = read(join(packageRoot, 'release.json'))
     if (identity.projectId !== project.id || identity.releaseVersion !== releaseVersion || identity.snapshotSha256 !== artifact.snapshotSha256) throw new Error('独立安装版本关联错误。')
-    checks.push({ projectId: project.id, releaseVersion, color, packageName: artifact.packageName, sha256: artifact.sha256, snapshotSha256: artifact.snapshotSha256, documentBytes: Buffer.byteLength(md), independentTypecheck: 'pass', compiledExamples: codeBlocks.length, invalidEventRejected: true, tokenReferences: cssVariables.length })
+    checks.push({ projectId: project.id, releaseVersion, color, button, packageName: artifact.packageName, sha256: artifact.sha256, snapshotSha256: artifact.snapshotSha256, approvedComponentExports: approvedExports.length, rootExportMatch: true, historicalReleaseAssetsExcluded: true, buttonOverrideVerified: Boolean(button), documentBytes: Buffer.byteLength(md), independentTypecheck: 'pass', compiledExamples: codeBlocks.length, invalidEventRejected: true, tokenReferences: cssVariables.length })
     console.log(`${project.id}/${releaseVersion}: DESIGN.md identity, API, tokens and independent compilation PASS`)
   }
   writeFileSync(join(consumer, 'index.html'), '<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AI 设计规范独立消费验收</title></head><body><div id="root"></div><script type="module" src="/main.tsx"></script></body></html>')

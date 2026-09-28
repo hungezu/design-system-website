@@ -18,3 +18,13 @@
 .owned-color-field[data-invalid] .owned-color-input { border-color:var(--bds-field-border-invalid,var(--status-error)); }
 .owned-color-field[data-invalid] .owned-color-input:focus-visible { outline-color:color-mix(in srgb,var(--bds-field-border-invalid,var(--status-error)) 32%,transparent); }
 .owned-color-field[data-disabled] .owned-color-input { background:var(--bds-field-bg-disabled,var(--surface-secondary)); color:var(--bds-text-disabled,var(--text-tertiary)); border-color:var(--bds-control-border-disabled,var(--border-default)); }
+.owned-color-area[data-disabled],.owned-color-slider[data-disabled],.owned-color-picker[data-disabled],.owned-color-picker-panel[data-disabled] { color:var(--bds-text-disabled,var(--text-tertiary)); cursor:not-allowed; opacity:.64; }
+.owned-color-area[data-disabled] .react-aria-ColorThumb,.owned-color-slider[data-disabled] .react-aria-ColorThumb { box-shadow:none; }
+.owned-color-wheel { width:max-content; max-width:100%; }
+.owned-color-wheel__track { border-radius:50%; }
+.owned-color-wheel__thumb { box-sizing:border-box; width:20px; height:20px; border:2px solid var(--bds-on-brand,var(--text-on-brand)); border-radius:50%; box-shadow:0 0 0 1px color-mix(in srgb,var(--bds-text-primary,var(--text-primary)) 72%,transparent),var(--bds-shadow-1,var(--shadow-base)); }
+.owned-color-wheel__thumb[data-hovered]:not([data-disabled]) { width:22px; height:22px; }
+.owned-color-wheel__thumb[data-focus-visible] { outline:2px solid var(--bds-focus-ring,var(--brand-primary)); outline-offset:3px; }
+.owned-color-wheel__thumb[data-dragging] { width:24px; height:24px; }
+.owned-color-wheel[data-disabled] { color:var(--bds-text-disabled,var(--text-tertiary)); cursor:not-allowed; opacity:.64; }
+.owned-color-wheel[data-disabled] .owned-color-wheel__thumb { box-shadow:none; }

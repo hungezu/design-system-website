@@ -1,6 +1,6 @@
-import { ScopedPopover as Popover } from '../../theme/PreviewScope'
+import { ScopedPopover as Popover, ScopedTooltip as Tooltip } from '../../theme/PreviewScope'
 import { useRef, useState, type KeyboardEvent, type ReactNode, type ComponentProps } from 'react'
-import { Disclosure, DisclosurePanel, Heading, Button, Group, TooltipTrigger, Tooltip, DialogTrigger, Dialog, TagGroup, TagList, Tag, Label, Text, Input, FileTrigger, DropZone, type Placement } from 'react-aria-components'
+import { Disclosure, DisclosurePanel, Heading, Button, Group, TooltipTrigger, DialogTrigger, Dialog, TagGroup, TagList, Tag, Label, Text, Input, FileTrigger, DropZone, type Placement } from 'react-aria-components'
 import { DSIcon } from '../../../runtime/vendor/runtime.js'
 import { DSComboBox, type DSComboBoxProps } from '../AdvancedFields'
 import { DSSelect } from '../Select'
@@ -62,7 +62,8 @@ export function DSCascader({label,options,onChange}:{label:string;options:Cascad
  for(const key of path){const next=current.find(x=>x.value===key)?.children;if(!next?.length)break;levels.push(next);current=next}
  return <div className="owned-toolbar">{levels.map((items,i)=><DSSelect key={i} label={`${label} 第${i+1}级`} options={items} value={path[i]??null} onChange={value=>{const next=[...path.slice(0,i),value];setPath(next);onChange?.(next)}}/>)}</div>
 }
-export function DSDropZone({label,onFiles}:{label:string;onFiles:(files:File[])=>void}) { return <DropZone className="owned-drop-zone" onDrop={async event=>{const files=await Promise.all(event.items.filter(item=>item.kind==='file').map(item=>item.getFile()));onFiles(files)}}><DSIcon className="owned-drop-zone__icon" name="upload" size="lg" decorative /><strong>{label}</strong><span>拖放文件到此处，或使用下方按钮选择</span><FileTrigger allowsMultiple onSelect={files=>{if(files)onFiles(Array.from(files))}}><DSButton size="sm">选择文件</DSButton></FileTrigger></DropZone> }
+export interface DSDropZoneProps { label:string; onFiles:(files:File[])=>void; disabled?:boolean }
+export function DSDropZone({label,onFiles,disabled=false}:DSDropZoneProps) { return <DropZone aria-label={label} isDisabled={disabled} className="owned-drop-zone" onDrop={async event=>{if(disabled)return;const files=await Promise.all(event.items.filter(item=>item.kind==='file').map(item=>item.getFile()));onFiles(files)}}><DSIcon className="owned-drop-zone__icon" name="upload" size="lg" decorative /><strong>{label}</strong><span>拖放文件到此处，或使用下方按钮选择</span><FileTrigger allowsMultiple onSelect={files=>{if(files&&!disabled)onFiles(Array.from(files))}}><DSButton size="sm" disabled={disabled}>选择文件</DSButton></FileTrigger></DropZone> }
 export function DSImagePreview({src,alt,aspect='landscape'}:{src:string;alt:string;aspect?:'landscape'|'square'}) { const [open,setOpen]=useState(false);return <><Button className={`owned-image-preview owned-image-preview--${aspect}`} onPress={()=>setOpen(true)} aria-label={`预览${alt}`}><img src={src} alt="" /><span className="owned-image-preview__action"><DSIcon name="eye" size="sm" decorative />查看大图</span></Button><DSDialog open={open} onOpenChange={setOpen} title={alt} size="sm"><div className="owned-image-preview__dialog"><img src={src} alt={alt} /></div></DSDialog></> }
 export function DSSteps({items,current}:{items:string[];current:number}) { return <ol className="owned-steps">{items.map((label,i)=><li key={`${i}-${label}`} aria-current={i===current?'step':undefined} data-complete={i<current||undefined}><span>{i<current?<DSIcon name="confirm" size="xs" decorative />:i+1}</span><strong>{label}</strong></li>)}</ol> }
 export function DSResizablePanel({children,label='调整面板宽度',min=180,max=600}:{children:ReactNode;label?:string;min?:number;max?:number}) {

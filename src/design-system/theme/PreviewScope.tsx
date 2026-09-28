@@ -1,5 +1,5 @@
 import { useContext, type CSSProperties, type ReactNode, type ComponentProps } from 'react'
-import { Popover } from 'react-aria-components'
+import { Popover, Tooltip } from 'react-aria-components'
 import { PreviewContext, PreviewOwnerContext } from './preview-context'
 /** Explicit per-instance overrides travel through React portals; no root mutation. */
 export function PreviewScope({vars,children,inspectionId}:{vars:CSSProperties;children:ReactNode;inspectionId?:string}) {
@@ -13,4 +13,9 @@ export function ScopedPopover({style,...props}:ComponentProps<typeof Popover>) {
  const vars=useContext(PreviewContext)
  const owner=useContext(PreviewOwnerContext)
  return <Popover data-preview-owner={owner} {...props} style={state=>({...vars,...(typeof style==='function'?style(state):style)})}/>
+}
+export function ScopedTooltip({style,...props}:ComponentProps<typeof Tooltip>) {
+ const vars=useContext(PreviewContext)
+ const owner=useContext(PreviewOwnerContext)
+ return <Tooltip data-preview-owner={owner} {...props} style={state=>({...vars,...(typeof style==='function'?style(state):style)})}/>
 }

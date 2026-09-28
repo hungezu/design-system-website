@@ -1,10 +1,11 @@
 # 组件库数量、分类与缺口盘点
 
 日期：2026-09-22
+当前源码复验：2026-09-28
 
 ## 统计口径
 
-- **基础组件库**：当前工程实际使用的 `react-aria-components@1.21.1`。统计官方文档中 60 个顶层条目，其中 54 个面向交互/展示的组件家族和 6 个辅助基础设施；排除 hooks、state 对象和类型工具。分类为了横向比较按本项目语义重分。
+- **基础组件库**：当前工程实际使用的 `react-aria-components@1.21.1`。按官方组件文档和本项目产品语义归并为 54 个用户可见组件家族，另将 6 个辅助能力单独治理；这不是 npm 包根导出数。排除子部件、hooks、state 对象和类型工具，分类为了横向比较按本项目语义重分。
 - **对标库**：HeroUI React `3.2.6` 官方组件目录，以及 TDesign React `1.18.3` 官方 `site.config.mjs`。保留各自官方分类和组件粒度。
 - **自身组件库**：`COMPONENT_CATALOG` 中的公共目录项。
 - **项目交付集**：国科信 v1.5.7 冻结快照的 `manifest.availableComponents`，也是前端业务项目的批准使用范围。
@@ -15,25 +16,27 @@
 
 | 库 | 版本 / 上下文 | 大分类 | 组件项 | 说明 |
 |---|---:|---:|---:|---|
-| React Aria Components | 1.21.1 | 12（统一归类） | 60 | 54 个组件家族 + 6 个辅助基础设施 |
+| React Aria Components | 1.21.1 | 12（统一归类） | 54 + 6 | 54 个组件家族 + 6 个单独治理的辅助能力 |
 | HeroUI React | 3.2.6 | 15 | 72 | 开源 React 组件目录，不含 HeroUI Pro AI 组件 |
 | TDesign React | 1.18.3 | 7 | 72 | 官方目录含 1 个 AI Chat 高阶入口 |
-| 自身公共组件目录 | 当前源码 | 13 | 102 | 包含 14 个 AI 交互组件 |
-| 国科信项目交付集 | v1.5.7 | 10 个非空分类 | 34 | 20 个通用组件 + 14 个 AI 组件 |
+| 自身公共组件目录 | 当前源码 | 13 | 109 | 包含 14 个 AI 交互组件 |
+| 国科信项目草稿 | 当前源码 | 12 个非空分类 | 76 | 62 个通用组件 + 14 个 AI 组件 |
+| 国科信项目交付集 | v1.5.7 | 9 个非空分类 | 34 | 20 个通用组件 + 14 个 AI 组件 |
 
 ## “组件数”必须分开显示
 
 | 口径 | 当前数量 | 用途 |
 |---|---:|---|
-| 公共组件目录 | 102 | 平台可查看、演示和候选的全部组件条目 |
-| Runtime `DS*` 导出 | 103 | 共享运行时 API；比目录多一个内部 `DSIconAction` |
-| Runtime Registry | 35 | 可发布的组件注册项；比国科信快照多一个 `icon` |
+| 公共组件目录 | 109 | 平台可查看、演示和候选的全部组件条目 |
+| Runtime `DS*` 导出 | 110 | 共享运行时 API；比目录多一个内部 `DSIconAction` |
+| Runtime Registry | 77 | 可发布的组件注册项；比当前国科信草稿多一个内部 `icon` |
+| 国科信当前草稿批准清单 | 76 | 未发布；React Aria 54 个基础家族已全部覆盖 |
 | 国科信 v1.5.7 批准清单 | 34 | 前端在该项目/版本可使用的业务组件 |
 | v1.5.7 旧交付包根 `DS*` 导出 | 103 | 打包时曾整体 `export *` Runtime，与批准数不同 |
 
-v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`，其中旧版清单只有 2–7 项。因此前端可能分别统计出 2–7、34、35、102 或 103；这是交付边界不清和历史资产误打包，不是同一个数字算错。冻结包的权威项目清单只能读包根 `release.json.componentIds` 或 `snapshot.json.assets["manifest.json"].availableComponents`。
+v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`，其中旧版清单只有 2–7 项。因此前端曾可能分别统计出 2–7、v1.5.7 批准清单的 34、旧 Registry 的 35、当时公共目录的 102 或旧包根 Runtime 的 103；这些都是历史快照事实，不随当前草稿更新。当前源码已是公共目录 109、Runtime `DS*` 导出 110、Registry 77、草稿批准 76；新项目包根仍必须只暴露新冻结版本的批准项。冻结包的权威项目清单只能读包根 `release.json.componentIds` 或 `snapshot.json.assets["manifest.json"].availableComponents`。
 
-## React Aria Components：60 项
+## React Aria Components：54 个组件家族 + 6 个辅助能力
 
 | 统一分类 | 数量 | 组件家族 |
 |---|---:|---|
@@ -48,7 +51,7 @@ v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`�
 | 浮层与反馈 | 5 | Modal、Popover、PreviewTrigger、Toast、Tooltip |
 | 布局 | 3 | Group、Separator、Virtualizer |
 | 文件与媒体 | 2 | DropZone、FileTrigger |
-| 辅助与基础设施 | 6 | I18nProvider、VisuallyHidden、FocusRing、FocusScope、PortalProvider、SSRProvider |
+| 辅助与基础设施 | 6 | I18nProvider、VisuallyHidden、FocusRing、FocusScope、UNSAFE_PortalProvider、SSRProvider |
 
 ## HeroUI React：72 项
 
@@ -84,52 +87,52 @@ v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`�
 | 数据展示 | 24 | Avatar、Badge、Calendar、Card、Collapse、Comment、Descriptions、Empty、Image、ImageViewer、List、Loading、Progress、QRCode、Skeleton、Statistic、Swiper、Table、Tag、Timeline、Tooltip、Tree、Watermark、Rate |
 | 消息提醒 | 8 | Alert、Dialog、Drawer、Guide、Message、Notification、Popconfirm、Popup |
 
-## 自身公共组件目录：102 项
+## 自身公共组件目录：109 项
 
 | 大分类 | 数量 | 组件 ID |
 |---|---:|---|
 | 按钮 | 5 | button、button-group、close-button、toggle-button、toggle-button-group |
-| 表单 | 12 | input、textarea、checkbox、checkbox-group、radio、switch、form、field、input-group、input-otp、number-field、search-field |
+| 表单 | 13 | input、textarea、checkbox、checkbox-group、radio、switch、form、field、input-group、input-otp、number-field、search-field、token-field |
 | 选择器 | 5 | select、autocomplete、combo-box、cascader、slider |
-| 集合与列表 | 4 | table、tree、list-box、tag-group |
+| 集合与列表 | 5 | table、tree、list-box、tag-group、grid-list |
 | 数据展示 | 11 | tag、badge、empty、loading、progress、progress-bar、progress-circle、meter、skeleton、spinner、descriptions |
 | 日期与时间 | 7 | calendar、date-field、date-picker、date-range-picker、time-picker、range-calendar、time-field |
-| 颜色 | 6 | color-area、color-field、color-picker、color-slider、color-swatch、color-swatch-picker |
-| 导航 | 10 | tabs、breadcrumb、menu、dropdown、steps、accordion、disclosure、disclosure-group、link、toolbar |
-| 浮层与反馈 | 10 | dialog、alert-dialog、drawer、modal、toast、message、alert、tooltip、popover、popconfirm |
-| 布局 | 11 | icon、pagination、card、divider、grid、space、stack、page-container、resizable-panel、separator、surface |
+| 颜色 | 7 | color-area、color-field、color-picker、color-slider、color-swatch、color-swatch-picker、color-wheel |
+| 导航 | 12 | tabs、breadcrumb、menu、dropdown、steps、accordion、disclosure、disclosure-group、link、toolbar、pagination、navigation-tree |
+| 浮层与反馈 | 11 | dialog、alert-dialog、drawer、modal、toast、message、alert、tooltip、popover、popconfirm、preview-trigger |
+| 布局 | 11 | card、divider、grid、space、stack、page-container、resizable-panel、separator、surface、group、virtualizer |
 | 文件与媒体 | 5 | upload、image-preview、avatar、file-list、drop-zone |
-| 排版与工具 | 2 | kbd、scroll-shadow |
+| 排版与工具 | 3 | kbd、scroll-shadow、icon |
 | AI 交互 | 14 | chain-of-thought、chat-attachment、chat-conversation、chat-list-view、chat-loader、chat-message、chat-message-actions、chat-source、chat-tool、code-block、markdown、prompt-input、prompt-suggestion、text-shimmer |
 
-当前分类有两个口径问题：`icon` 和 `pagination` 未显式分组，因默认回退规则被计入“布局”。建议将 `icon` 移到“基础 / 工具”，`pagination` 移到“导航”后再对外呈现分类统计。
+当前分类已显式修正：`pagination` 归入“导航”，`icon` 归入“排版与工具”，不再依赖“布局”默认回退。
 
 ## 国科信 v1.5.7 项目交付集：34 项
 
 | 大分类 | 项目数量 | 公共目录数量 | 未进入项目交付 |
 |---|---:|---:|---:|
 | 按钮 | 1 | 5 | 4 |
-| 表单 | 6 | 12 | 6 |
+| 表单 | 6 | 13 | 7 |
 | 选择器 | 1 | 5 | 4 |
-| 集合与列表 | 1 | 4 | 3 |
+| 集合与列表 | 1 | 5 | 4 |
 | 数据展示 | 4 | 11 | 7 |
 | 日期与时间 | 0 | 7 | 7 |
-| 颜色 | 0 | 6 | 6 |
-| 导航 | 1 | 10 | 9 |
-| 浮层与反馈 | 4 | 10 | 6 |
-| 布局 | 1 | 11 | 10 |
+| 颜色 | 0 | 7 | 7 |
+| 导航 | 2 | 12 | 10 |
+| 浮层与反馈 | 4 | 11 | 7 |
+| 布局 | 0 | 11 | 11 |
 | 文件与媒体 | 1 | 5 | 4 |
-| 排版与工具 | 0 | 2 | 2 |
+| 排版与工具 | 0 | 3 | 3 |
 | AI 交互 | 14 | 14 | 0 |
-| **合计** | **34** | **102** | **68** |
+| **合计** | **34** | **109** | **75** |
 
-项目交付集的数量并非“代码未实现”，而是白名单只批准了 34/102。但对通用 B 端项目而言，当前结构明显偏向 AI：AI 组件占 14/34，日期、颜色、排版工具三个分类为空，导航和选择器各只有 1 项。
+v1.5.7 项目交付集的数量并非“代码未实现”，而是当时白名单只批准了 34/102；该历史比例保持不变。与当前 109 项公共目录比较时，v1.5.7 尚未批准 75 项。当前草稿已扩充到 76 项，不应与 v1.5.7 冻结清单混用。
 
 ## 缺口结论
 
-### P1：不需要重复开发，应先从公共库补入项目交付
+### 已完成：公共库能力纳入项目草稿
 
-优先审批并进入项目包：
+以下能力已完成项目适用性审查并进入当前草稿；v1.5.7 冻结版本仍保留原批准范围：
 
 - 表单：`textarea`、`search-field`、`number-field`、`input-group`、`checkbox-group`。
 - 选择：`autocomplete`、`combo-box`、`cascader`、`slider`。
@@ -138,13 +141,12 @@ v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`�
 - 浮层反馈：`tooltip`、`popover`、`popconfirm`、`message`。
 - 数据与媒体：`descriptions`、`tree`、`card`、`avatar`、`file-list`、`skeleton`、`progress`。
 
-这些组件已在自身公共库存在，核心工作是项目适用性、状态验收和加入白名单，不是重写一套。
+这些组件复用公共实现，不另建项目专属组件副本。
 
 ### P1：自身公共库真正缺少
 
 - `TreeSelect`：组织、部门、技术领域等层级选择是 B 端高频需求。
 - `Transfer`：成员、权限、标签的批量双栏选择。
-- `TokenField / TagInput`：多值输入与可编辑标签。
 - `Notification`：比 Toast 更持久、可承载操作的通知。
 - `Timeline`：审批、发布、变更和审计记录。
 - `Statistic`：总览和业务指标表达。
@@ -153,7 +155,7 @@ v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`�
 
 ### P2：按业务需要补充
 
-- `QRCode`、`Watermark`、基础 `Image`、`ColorWheel`、`GridList`、`NavigationTree`。
+- `QRCode`、`Watermark`、基础 `Image`。
 - `Affix`、`Anchor`、`BackTop`、`RangeInput`。
 
 ### P3：不建议仅为追平数量而引入
@@ -163,9 +165,9 @@ v1.5.7 旧交付包还误带了 27 份 `dist/release-assets/**/components.json`�
 ## 建议的收口顺序
 
 1. 先统一口径：公共目录、项目批准清单、Runtime 导出和交付包分开显示，不再只写“组件数”。
-2. 修正分类：将 `pagination` 放回“导航”，`icon` 放入“基础 / 工具”。
-3. 先扩充项目白名单中的已有 B 端高频组件，每个通过状态、窄屏、键盘和冻结消费验收后再进入交付。
-4. 对真正缺失的组件按项目场景排期，优先 TreeSelect、Transfer、TokenField / TagInput、Notification、Timeline、Statistic 和 AvatarGroup。
+2. 保持分类映射自动校验：`pagination` 属于“导航”，`icon` 属于“排版与工具”。
+3. React Aria 54 个基础家族现已进入公共目录和国科信草稿；下一次发布前继续完成状态、窄屏、键盘和冻结消费验收。
+4. 对真正缺失的组件按项目场景排期，优先 TreeSelect、Transfer、Notification、Timeline、Statistic 和 AvatarGroup。
 5. 每次发布同时记录“公共目录数 / 项目批准数 / 包根可导入数”，三者分开验收。
 
 ## 来源

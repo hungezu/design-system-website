@@ -7,6 +7,7 @@ import { promisify } from 'node:util'
 import { existsSync, mkdirSync, readFileSync, writeFileSync, chmodSync, unlinkSync } from 'node:fs'
 import { dirname, resolve, extname, sep } from 'node:path'
 import { projects as seeds } from '../src/data/projects/index'
+import { GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS, GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS, GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS } from '../src/data/projects/guokexin'
 import { AI_COMPONENT_IDS } from '../src/data/ai-components'
 import { defaultProjectTheme, projectPreviewVariables, type ProjectThemeSettings } from '../src/services/project-theme'
 import { createReleaseSnapshot, validateSnapshot } from '../src/services/release-snapshot'
@@ -80,14 +81,44 @@ export function createWorkspace(options: { dbPath: string; root?: string; appOri
     }
     db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('ai-component-library-1')
   })
-  if (!db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-search-field-1')) transaction(() => {
+  if (!db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-component-scope-34-1')) transaction(() => {
+    const row = db.prepare('SELECT config FROM projects WHERE id=?').get('guokexin') as { config: string } | undefined
+    const phaseOneApplied = Boolean(db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-foundation-phase-one-1'))
+    if (row && !phaseOneApplied) {
+      const config = JSON.parse(row.config) as ProjectConfig
+      // A previous automatic migration added search-field without approval.
+      // Preserve the historical 34-item correction until the reviewed phase-one scope is applied.
+      config.componentIds = config.componentIds.filter(id => id !== 'search-field')
+      db.prepare('UPDATE projects SET config=? WHERE id=?').run(JSON.stringify(config), 'guokexin')
+    }
+    db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('guokexin-component-scope-34-1')
+  })
+  if (!db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-foundation-phase-one-1')) transaction(() => {
     const row = db.prepare('SELECT config FROM projects WHERE id=?').get('guokexin') as { config: string } | undefined
     if (row) {
       const config = JSON.parse(row.config) as ProjectConfig
-      config.componentIds = [...new Set([...config.componentIds, 'search-field'])]
+      config.componentIds = [...new Set([...config.componentIds, ...GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS])]
       db.prepare('UPDATE projects SET config=? WHERE id=?').run(JSON.stringify(config), 'guokexin')
     }
-    db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('guokexin-search-field-1')
+    db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('guokexin-foundation-phase-one-1')
+  })
+  if (!db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-foundation-phase-two-1')) transaction(() => {
+    const row = db.prepare('SELECT config FROM projects WHERE id=?').get('guokexin') as { config: string } | undefined
+    if (row) {
+      const config = JSON.parse(row.config) as ProjectConfig
+      config.componentIds = [...new Set([...config.componentIds, ...GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS])]
+      db.prepare('UPDATE projects SET config=? WHERE id=?').run(JSON.stringify(config), 'guokexin')
+    }
+    db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('guokexin-foundation-phase-two-1')
+  })
+  if (!db.prepare('SELECT id FROM workspace_migrations WHERE id=?').get('guokexin-foundation-phase-three-1')) transaction(() => {
+    const row = db.prepare('SELECT config FROM projects WHERE id=?').get('guokexin') as { config: string } | undefined
+    if (row) {
+      const config = JSON.parse(row.config) as ProjectConfig
+      config.componentIds = [...new Set([...config.componentIds, ...GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS])]
+      db.prepare('UPDATE projects SET config=? WHERE id=?').run(JSON.stringify(config), 'guokexin')
+    }
+    db.prepare('INSERT INTO workspace_migrations VALUES (?)').run('guokexin-foundation-phase-three-1')
   })
   const audit = (userId: string, projectId: string | null, action: string, subject: string) => db.prepare('INSERT INTO audit(userId,projectId,action,subject,createdAt) VALUES (?,?,?,?,?)').run(userId, projectId, action, subject, Date.now())
   const getUser = (id: string) => db.prepare('SELECT * FROM users WHERE id=?').get(id) as UserRow | undefined

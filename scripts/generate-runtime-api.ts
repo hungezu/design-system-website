@@ -3,7 +3,10 @@ import fs from 'node:fs'
 const configPath=ts.findConfigFile('.',ts.sys.fileExists,'tsconfig.app.json')!
 const config=ts.readConfigFile(configPath,ts.sys.readFile)
 const parsed=ts.parseJsonConfigFileContent(config.config,ts.sys,'.')
-const program=ts.createProgram(parsed.fileNames,parsed.options)
+// The API document only needs the Runtime dependency graph. Loading every
+// page and test under src made this generator depend on unrelated UI modules
+// and could stall before delivery builds.
+const program=ts.createProgram(['src/runtime/index.ts'],parsed.options)
 const checker=program.getTypeChecker()
 const file=program.getSourceFile('src/runtime/index.ts')!
 const symbol=checker.getSymbolAtLocation(file)!

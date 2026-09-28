@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { baselineThemeSettings, contrastRatio, defaultProjectTheme, projectPreviewVariables, releasePreviewVariables, resolvePreviewTheme } from './project-theme'
+import { baselineThemeSettings, contrastRatio, defaultProjectTheme, projectPreviewVariables, projectThemeOverrides, releasePreviewVariables, resolvePreviewTheme } from './project-theme'
 import { resolveReleaseThemeFromCss } from './theme-resolver'
 import { getDesktopComponentBinding, resolveComponentStateTokens } from '../design-system/component-bindings'
 import { guokexinProject } from '../data/projects/guokexin'
@@ -79,6 +79,10 @@ it('主按钮显式颜色在安全配方之后覆盖，并同步文字与图标�
  expect(vars['--button-brand-filled-bg-active']).toBe('#C1C1C1')
  expect(vars['--bds-btn-primary-bg']).toBe('#FFFFFF')
  for(const state of ['default','hover','active'])expect(vars[`--button-brand-filled-text-${state}`]).toBe('#000000')
+ const overrides=projectThemeOverrides(settings)
+ expect(overrides['button-brand-filled-bg-default']).toBe('#FFFFFF')
+ expect(overrides['button-brand-filled-bg-hover']).toBe('#E6E6E6')
+ expect(overrides['button-brand-filled-text-active']).toBe('#000000')
  expect(()=>checkTheme(settings)).not.toThrow()
  expect(()=>checkTheme({...baselineThemeSettings,buttonPrimaryBackground:'#FFFFFF'})).toThrow('4.5:1')
  expect(()=>checkTheme({...baselineThemeSettings,buttonPrimaryText:'red'})).toThrow('buttonPrimaryText')

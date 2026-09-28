@@ -25,6 +25,15 @@
 .owned-number__control input { text-align:center; }
 .owned-number__step-icon { width:14px; height:14px; display:block; color:currentColor; }
 .owned-search,.owned-combobox { max-width:360px; }
+.owned-token-field { max-width:560px; }
+.owned-token-input { box-sizing:border-box; width:100%; min-height:var(--bds-ctrl-lg,40px); padding:7px 10px; display:flex; align-items:center; align-content:flex-start; flex-wrap:wrap; gap:4px; color:var(--bds-field-text,var(--text-primary)); background:var(--bds-field-bg,var(--surface-primary)); border:1px solid var(--bds-field-border,var(--border-default)); border-radius:var(--bds-radius-sm,var(--radius-control)); outline:2px solid transparent; outline-offset:1px; cursor:text; line-height:24px; transition:border-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out),outline-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out),background-color var(--motion-duration-fast,120ms) var(--motion-ease-standard,ease-out); }
+.owned-token-input[data-hovered]:not([data-disabled]):not([data-readonly]) { border-color:var(--bds-field-border-hover,var(--border-strong)); }
+.owned-token-input[data-focus-visible] { border-color:var(--bds-field-border-focus,var(--brand-primary)); outline-color:color-mix(in srgb,var(--bds-focus-ring,var(--brand-primary)) 32%,transparent); }
+.owned-token { box-sizing:border-box; min-height:24px; padding:1px 7px; display:inline-flex; align-items:center; color:var(--bds-text-primary,var(--text-primary)); background:var(--bds-fill-subtle,var(--surface-secondary)); border:1px solid var(--bds-border,var(--border-default)); border-radius:var(--bds-radius-sm,var(--radius-control)); line-height:20px; }
+.owned-token[data-selected] { color:var(--bds-on-brand,var(--text-on-brand)); background:var(--bds-brand,var(--brand-primary)); border-color:var(--bds-brand,var(--brand-primary)); }
+.owned-token-field[data-readonly] .owned-token-input { cursor:default; }
+.owned-token-field[data-disabled] .owned-token-input { color:var(--bds-text-disabled,var(--text-tertiary)); background:var(--bds-field-bg-disabled,var(--surface-secondary)); border-color:var(--bds-control-border-disabled,var(--border-default)); cursor:not-allowed; }
+.owned-token-field[data-disabled] .owned-token { color:var(--bds-text-disabled,var(--text-tertiary)); background:transparent; border-color:var(--bds-control-border-disabled,var(--border-default)); }
 .owned-field-stack[data-disabled] .owned-control-row,
 .owned-field-stack[data-disabled] .owned-control-row:hover,
 .owned-field-stack[data-disabled] .owned-control-row[data-focus-within] { color:var(--bds-text-disabled,var(--text-tertiary)); background:var(--bds-field-bg-disabled,var(--surface-secondary)); border-color:var(--bds-control-border-disabled,var(--border-default)); outline-color:transparent; box-shadow:none; }
@@ -34,9 +43,14 @@
 .owned-slider .react-aria-SliderTrack::before { content:''; position:absolute; top:10px; width:100%; height:4px; background:var(--bds-border,var(--border-default)); border-radius:var(--radius-control); }
 .owned-slider .react-aria-SliderThumb { width:18px; height:18px; top:12px; border-radius:50%; background:var(--bds-brand,var(--brand-primary)); }
 .owned-slider .react-aria-SliderThumb[data-focus-visible] { outline:2px solid var(--bds-focus-ring,var(--brand-primary)); outline-offset:3px; }
+.owned-slider[data-disabled] { color:var(--bds-text-disabled,var(--text-tertiary)); cursor:not-allowed; opacity:.64; }
+.owned-slider[data-disabled] .react-aria-SliderThumb { background:var(--bds-control-icon-disabled,var(--text-tertiary)); }
 .owned-progress { display:grid; grid-template-columns:1fr auto; gap:8px; }
 .owned-progress__track { grid-column:1/-1; height:8px; border-radius:var(--radius-control); background:var(--bds-border,var(--border-default)); overflow:hidden; }
 .owned-progress__track > div { height:100%; background:var(--bds-brand,var(--brand-primary)); }
+.owned-progress[data-indeterminate] .owned-progress__track > div { width:40%; animation:owned-progress-indeterminate 1.2s ease-in-out infinite; }
+@keyframes owned-progress-indeterminate { from { transform:translateX(-100%); } to { transform:translateX(250%); } }
+@media (prefers-reduced-motion: reduce) { .owned-progress[data-indeterminate] .owned-progress__track > div { width:100%; transform:none; animation:none; opacity:.6; } }
 /* The outer field owns the state, including React Aria group/segment focus. */
 .owned-field-stack:not([data-disabled]):not([data-readonly]) .owned-control-row:has([data-focus-visible]),
 .owned-field-stack:not([data-disabled]):not([data-readonly]) .owned-control-row:has(:focus-visible) { outline-color:color-mix(in srgb,var(--bds-focus-ring,var(--brand-primary)) 32%,transparent); }

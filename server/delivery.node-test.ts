@@ -9,6 +9,11 @@ import { createDeliveryService } from './project-delivery'
 import { listFiles, sha256 } from './runtime-archive'
 import identity from '../src/data/generated/runtime-build.json'
 import { guokexinProject } from '../src/data/projects'
+import {
+  GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS,
+} from '../src/data/projects/guokexin'
 import { getRuntimeComponent } from '../src/runtime/registry'
 
 test('项目交付：权限、冻结版本、代码归档、异步生成、安装包与不可变下载', async t => {
@@ -32,7 +37,7 @@ test('项目交付：权限、冻结版本、代码归档、异步生成、安�
     await admin('/auth/setup','POST',{token:'test-setup',email:'admin@example.test',name:'测试',password})
     for(const [request,email,project] of [[viewer,'viewer@example.test','guokexin'],[other,'other@example.test','test-customer-b']] as const){const invitation=await admin(`/projects/${project}/invitations`,'POST',{email,role:'viewer'});await request('/auth/accept','POST',{token:invitation.data.token,name:'测试',password})}
     const theme=await admin('/projects/guokexin/theme')
-    await admin('/projects/guokexin/theme','PUT',{...theme.data,theme:{...theme.data.theme,brandPrimary:'#112233'}})
+    await admin('/projects/guokexin/theme','PUT',{...theme.data,theme:{...theme.data.theme,brandPrimary:'#112233',buttonPrimaryBackground:'#102030',buttonPrimaryText:'#F8FAFC'}})
     await admin('/projects/guokexin/releases','POST',{version:'9.0.0'})
     await t.test('缺代码归档及历史版本明确不可生成，草稿拒绝',async()=>{
       const unavailable=await admin(base);assert.equal(unavailable.data.status,'unavailable');assert.match(unavailable.data.designSpec,/releaseVersion: "9.0.0"/)
@@ -43,6 +48,10 @@ test('项目交付：权限、冻结版本、代码归档、异步生成、安�
       assert.equal((await admin('/projects/guokexin/deliveries/1.5.5')).data.status,'unavailable')
     })
     const approvedRuntimeExports=guokexinProject.componentIds.map(id=>getRuntimeComponent(id)!.runtimeExport)
+    assert.equal(approvedRuntimeExports.length,76)
+    assert.ok(GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS.every(id=>guokexinProject.componentIds.includes(id)))
+    assert.ok(GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS.every(id=>guokexinProject.componentIds.includes(id)))
+    assert.ok(GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS.every(id=>guokexinProject.componentIds.includes(id)))
     const runtimeValues=`export const RUNTIME_BUILD_ID=${JSON.stringify(identity.buildId)};\nexport const PreviewScope=({children})=>children;\n${approvedRuntimeExports.map(name=>`export const ${name}=()=>null;`).join('\n')}`
     const runtimeTypes=`export declare const RUNTIME_BUILD_ID: string;\nexport declare const PreviewScope: unknown;\n${approvedRuntimeExports.map(name=>`export declare const ${name}: unknown;`).join('\n')}`
     for(const [path,content] of Object.entries({'dist/runtime.js':runtimeValues,'dist/style.css':'.test{}','dist/release-assets/legacy/components.json':'{"availableComponents":[]}','types/delivery/project-runtime.d.ts':runtimeTypes,'THIRD_PARTY_NOTICES.md':'test fixture'})) {mkdirSync(join(archive,path,'..'),{recursive:true});writeFileSync(join(archive,path),content)}
@@ -63,12 +72,19 @@ test('项目交付：权限、冻结版本、代码归档、异步生成、安�
       const download=await viewer(base+'/package');assert.equal(download.status,200);assert.equal(sha256(download.data),ready.data.artifact.sha256)
       const file=join(dir,'download.tgz');writeFileSync(file,download.data);const extract=join(dir,'extract');mkdirSync(extract);execFileSync('tar',['-xzf',file,'-C',extract])
       const tokens=JSON.parse(readFileSync(join(extract,'package/tokens.json'),'utf8'));assert.equal(tokens['--brand-primary'],'#112233')
+      assert.equal(tokens['--button-brand-filled-bg-default'],'#102030');assert.equal(tokens['--button-brand-filled-bg-hover'],'#0E1D2B');assert.equal(tokens['--button-brand-filled-bg-active'],'#0C1824')
+      for(const state of ['default','hover','active'])assert.equal(tokens[`--button-brand-filled-text-${state}`],'#F8FAFC')
       const packedSnapshot=JSON.parse(readFileSync(join(extract,'package/snapshot.json'),'utf8'))
+      assert.equal(packedSnapshot.assets['recipes.json'].values['--button-brand-filled-bg-default'],'#102030')
+      assert.equal(packedSnapshot.assets['region-appearance.json'].theme.buttonPrimaryBackground,'#102030')
+      assert.equal(packedSnapshot.assets['region-appearance.json'].theme.buttonPrimaryText,'#F8FAFC')
       const approvedExports=(packedSnapshot.assets['manifest.json'].availableComponents as Array<{runtimeExport:string}>).map(item=>item.runtimeExport).sort()
       const pkg=JSON.parse(readFileSync(join(extract,'package/package.json'),'utf8'));assert.equal(pkg.name,'@design-workspace/guokexin');assert.equal(pkg.version,'9.0.0')
       const design=readFileSync(join(extract,'package/DESIGN.md'),'utf8')
       assert.equal(pkg.exports['./DESIGN.md'],'./DESIGN.md')
       assert.equal(ready.data.designSpec,design)
+      assert.doesNotMatch(ready.data.guide,/导出共享控件|可能导出更多共享控件/)
+      assert.match(ready.data.guide,/包根只导出这份批准清单/)
       assert.match(design,/projectId: "guokexin"/)
       assert.match(design,/releaseVersion: "9.0.0"/)
       assert.match(design,/\| `--brand-primary` \| #112233 \|/)

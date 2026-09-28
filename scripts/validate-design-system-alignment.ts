@@ -11,6 +11,7 @@ import systemManifest from '../system.manifest.json'
 import { buttonRecipeTokens } from '../src/data/components/button-recipe-tokens'
 import { componentAssets } from '../src/data/assets/components'
 import { RUNTIME_COMPONENT_REGISTRY } from '../src/runtime/registry'
+import { getDesktopComponentBinding } from '../src/design-system/component-bindings'
 import runtimeApi from '../src/data/generated/runtime-api.json'
 
 const projectRoot = path.resolve(fileURLToPath(new URL('..', import.meta.url)))
@@ -22,7 +23,9 @@ if (manifestComponentIds.size !== guokexinProject.componentIds.length || guokexi
 for (const componentId of systemManifest.components.projectScope) {
   const registry = RUNTIME_COMPONENT_REGISTRY[componentId]
   const asset = componentAssets.find((item) => item.id === componentId || item.id === `component-${componentId}`)
+  const binding = getDesktopComponentBinding(componentId)
   if (!registry) failures.push(`项目组件 ${componentId} 未进入 Runtime Registry`)
+  if (!binding) failures.push(`项目组件 ${componentId} 缺少组件 Binding`)
   if (registry && !fs.existsSync(path.join(projectRoot, registry.sourcePath))) failures.push(`项目组件 ${componentId} 的 Runtime sourcePath 不存在`)
   if (!asset) failures.push(`项目组件 ${componentId} 缺少 ComponentAsset`)
   if (asset && (!asset.bindings?.react || asset.bindings.react.exportName !== registry?.runtimeExport)) failures.push(`项目组件 ${componentId} 的 React Binding 与 Runtime Registry 不一致`)
@@ -30,6 +33,7 @@ for (const componentId of systemManifest.components.projectScope) {
   if (asset?.bindings?.react && !Object.keys(asset.bindings.react.props).length && !declaredProps?.length) failures.push(`项目组件 ${componentId} 的 React Binding 缺少 Props 契约`)
   if (asset?.bindings?.react && !fs.existsSync(path.join(projectRoot, asset.bindings.react.sourcePath))) failures.push(`项目组件 ${componentId} 的 React Binding sourcePath 不存在`)
   if (asset && (!asset.tokens.length || !asset.states.length)) failures.push(`项目组件 ${componentId} 缺少 Token 或状态契约`)
+  if (asset && binding && asset.states.some((state) => !binding.states.includes(state.id))) failures.push(`项目组件 ${componentId} 的资产状态超出 Binding 契约`)
 }
 
 const expectedProjectTokens = {

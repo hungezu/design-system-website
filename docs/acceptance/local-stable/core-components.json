@@ -547,6 +547,433 @@
     "test": "src/design-system/primitives/TextField/TextField.test.tsx"
   },
   {
+    "id": "search-field",
+    "export": "DSSearchField",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "enterKeyHint",
+        "type": "\"enter\" | \"done\" | \"go\" | \"next\" | \"previous\" | \"search\" | \"send\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "spellCheck",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<SearchFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "autoCorrect",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inputMode",
+        "type": "\"none\" | \"search\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", SearchFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: string) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "excludeFromTabOrder",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "autoComplete",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "maxLength",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "minLength",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "pattern",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "空值"
+      },
+      {
+        "id": "filled",
+        "label": "已输入"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      }
+    ],
+    "storybook": "core-search-field",
+    "storyFile": "src/design-system/stories/search-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "number-field",
+    "export": "DSNumberField",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<NumberFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "formatOptions",
+        "type": "NumberFormatOptions | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", NumberFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: number) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "decrementAriaLabel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "incrementAriaLabel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "isWheelDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "commitBehavior",
+        "type": "\"validate\" | \"snap\" | undefined",
+        "required": false
+      },
+      {
+        "name": "step",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "min",
+        "label": "最小值"
+      },
+      {
+        "id": "max",
+        "label": "最大值"
+      }
+    ],
+    "storybook": "core-number-field",
+    "storyFile": "src/design-system/stories/number-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
     "id": "select",
     "export": "DSSelect",
     "source": "src/design-system/primitives/Select/index.tsx",
@@ -696,6 +1123,780 @@
     "storybook": "core-select",
     "storyFile": "src/design-system/stories/select.stories.tsx",
     "test": "src/design-system/primitives/Select/Select.test.tsx"
+  },
+  {
+    "id": "combo-box",
+    "export": "DSComboBox",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "Key | readonly Key[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "Key | readonly Key[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ComboBoxRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ComboBoxRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: ComboBoxValidationValue<SelectionMode>) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldFocusWrap",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionMode",
+        "type": "SelectionMode | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKey",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultSelectedKey",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "inputValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultInputValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsCustomValue",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "menuTrigger",
+        "type": "MenuTriggerAction | undefined",
+        "required": false
+      },
+      {
+        "name": "disabledKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultFilter",
+        "type": "((textValue: string, inputValue: string) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "formValue",
+        "type": "\"text\" | \"key\" | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsEmptyCollection",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "options",
+        "type": "{ id: string; label: string; disabled?: boolean | undefined; }[]",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error",
+      "open",
+      "selected"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "no-results",
+        "label": "无匹配"
+      }
+    ],
+    "storybook": "core-combo-box",
+    "storyFile": "src/design-system/stories/combo-box.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "checkbox",
+    "export": "DSCheckbox",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "labelVisuallyHidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "checked",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultChecked",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onChange",
+        "type": "((checked: boolean) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "loading",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "invalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "indeterminate",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "required",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "indeterminate",
+      "disabled",
+      "error",
+      "loading"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "未选中"
+      },
+      {
+        "id": "checked",
+        "label": "已选中"
+      },
+      {
+        "id": "indeterminate",
+        "label": "部分选中"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "checked-disabled",
+        "label": "选中且禁用"
+      },
+      {
+        "id": "indeterminate-disabled",
+        "label": "部分选中且禁用"
+      }
+    ],
+    "storybook": "core-checkbox",
+    "storyFile": "src/design-system/stories/checkbox.stories.tsx",
+    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+  },
+  {
+    "id": "checkbox-group",
+    "export": "DSCheckboxGroup",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "string[] | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string[] | undefined",
+        "required": false
+      },
+      {
+        "name": "onChange",
+        "type": "((value: string[]) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "required",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "invalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "loading",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "options",
+        "type": "{ value: string; label: string; disabled?: boolean | undefined; }[]",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled",
+      "loading",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "selected-disabled",
+        "label": "选中且禁用"
+      }
+    ],
+    "storybook": "core-checkbox-group",
+    "storyFile": "src/design-system/stories/checkbox-group.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "radio",
+    "export": "DSRadio",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "options",
+        "type": "{ value: string; label: string; disabled?: boolean | undefined; }[]",
+        "required": true
+      },
+      {
+        "name": "value",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "onChange",
+        "type": "((value: string) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "loading",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "required",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "invalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled",
+      "error",
+      "loading"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "selected-disabled",
+        "label": "选中且禁用"
+      }
+    ],
+    "storybook": "core-radio",
+    "storyFile": "src/design-system/stories/radio.stories.tsx",
+    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+  },
+  {
+    "id": "switch",
+    "export": "DSSwitch",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultChecked",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onChange",
+        "type": "((checked: boolean) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "checked",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "loading",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "checked",
+      "disabled",
+      "loading"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "关闭"
+      },
+      {
+        "id": "checked",
+        "label": "开启"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "加载"
+      },
+      {
+        "id": "checked-disabled",
+        "label": "开启且禁用"
+      }
+    ],
+    "storybook": "core-switch",
+    "storyFile": "src/design-system/stories/switch.stories.tsx",
+    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+  },
+  {
+    "id": "form",
+    "export": "DSForm",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true
+      },
+      {
+        "name": "onSubmit",
+        "type": "((event: FormEvent<HTMLFormElement>) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "loading",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "error",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "success",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "disabled",
+      "loading",
+      "error",
+      "success"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "error",
+        "label": "提交错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "loading",
+        "label": "提交中"
+      }
+    ],
+    "storybook": "core-form",
+    "storyFile": "src/design-system/stories/form.stories.tsx",
+    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+  },
+  {
+    "id": "field",
+    "export": "DSField",
+    "source": "src/design-system/primitives/Forms/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "children",
+        "type": "(props: DSFieldControlProps) => ReactNode",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "error",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "required",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "required",
+        "label": "必填"
+      },
+      {
+        "id": "error",
+        "label": "错误"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-field",
+    "storyFile": "src/design-system/stories/field.stories.tsx",
+    "test": "src/design-system/core-acceptance.test.tsx"
   },
   {
     "id": "table",
@@ -863,7 +2064,104 @@
     ],
     "storybook": "core-table",
     "storyFile": "src/design-system/stories/table.stories.tsx",
-    "test": "src/design-system/../runtime/table-updates.test.tsx"
+    "test": "src/runtime/table-updates.test.tsx"
+  },
+  {
+    "id": "list-box",
+    "export": "DSListBox",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "{ id: string; label: string; disabled?: boolean | undefined; }[]",
+        "required": true
+      },
+      {
+        "name": "selectionMode",
+        "type": "\"none\" | \"single\" | \"multiple\" | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKeys",
+        "type": "Iterable<Key> | \"all\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onSelectionChange",
+        "type": "((keys: Selection) => void) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "storybook": "core-list-box",
+    "storyFile": "src/design-system/stories/list-box.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "tree",
+    "export": "DSTree",
+    "source": "src/design-system/primitives/Collections/Tree.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSTreeNode[]",
+        "required": true
+      },
+      {
+        "name": "selectionMode",
+        "type": "\"none\" | \"single\" | \"multiple\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onSelectionChange",
+        "type": "((keys: Selection) => void) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "open"
+    ],
+    "examples": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      }
+    ],
+    "storybook": "core-tree",
+    "storyFile": "src/design-system/stories/tree.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
   },
   {
     "id": "pagination",
@@ -943,7 +2241,243 @@
     ],
     "storybook": "core-pagination",
     "storyFile": "src/design-system/stories/pagination.stories.tsx",
-    "test": "src/design-system/../components/RuntimeExample.behavior.test.tsx"
+    "test": "src/components/RuntimeExample.behavior.test.tsx"
+  },
+  {
+    "id": "tabs",
+    "export": "DSTabs",
+    "source": "src/design-system/primitives/Navigation/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSTabItem[]",
+        "required": true
+      },
+      {
+        "name": "value",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "onChange",
+        "type": "((value: string) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "\"horizontal\" | \"vertical\" | undefined",
+        "required": false
+      },
+      {
+        "name": "appearance",
+        "type": "\"underline\" | \"filled\" | undefined",
+        "required": false
+      },
+      {
+        "name": "fullWidth",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "horizontal",
+        "label": "下划线"
+      },
+      {
+        "id": "filled",
+        "label": "填充式"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向下划线"
+      },
+      {
+        "id": "vertical-filled",
+        "label": "纵向填充"
+      },
+      {
+        "id": "full-width",
+        "label": "等宽填充"
+      },
+      {
+        "id": "with-icons",
+        "label": "图标与数量"
+      },
+      {
+        "id": "overflow",
+        "label": "溢出滚动"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      },
+      {
+        "id": "disabled",
+        "label": "全部禁用"
+      }
+    ],
+    "storybook": "core-tabs",
+    "storyFile": "src/design-system/stories/tabs.stories.tsx",
+    "test": "src/design-system/primitives/interaction.test.tsx"
+  },
+  {
+    "id": "menu",
+    "export": "DSMenu",
+    "source": "src/design-system/primitives/Navigation/Menu.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSMenuItem[]",
+        "required": true
+      },
+      {
+        "name": "mode",
+        "type": "\"horizontal\" | \"vertical\" | \"action\" | undefined",
+        "required": false
+      },
+      {
+        "name": "appearance",
+        "type": "\"underline\" | \"filled\" | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "onAction",
+        "type": "((key: string) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "openKeys",
+        "type": "string[] | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultOpenKeys",
+        "type": "string[] | undefined",
+        "required": false
+      },
+      {
+        "name": "onOpenChange",
+        "type": "((keys: string[]) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "accordion",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "collapsed",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultCollapsed",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onCollapsedChange",
+        "type": "((collapsed: boolean) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "collapsible",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "open",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "纵向导航"
+      },
+      {
+        "id": "horizontal",
+        "label": "横向导航"
+      },
+      {
+        "id": "horizontal-filled",
+        "label": "横向填充"
+      },
+      {
+        "id": "grouped",
+        "label": "分组导航"
+      },
+      {
+        "id": "inline",
+        "label": "内嵌子菜单"
+      },
+      {
+        "id": "accordion",
+        "label": "手风琴展开"
+      },
+      {
+        "id": "collapsed",
+        "label": "收起模式"
+      },
+      {
+        "id": "disabled-item",
+        "label": "含禁用项"
+      },
+      {
+        "id": "action",
+        "label": "操作列表"
+      }
+    ],
+    "storybook": "core-menu",
+    "storyFile": "src/design-system/stories/menu.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
   },
   {
     "id": "dialog",
@@ -1135,12 +2669,12 @@
     ],
     "storybook": "core-drawer",
     "storyFile": "src/design-system/stories/drawer.stories.tsx",
-    "test": "src/design-system/../components/RuntimeExample.behavior.test.tsx"
+    "test": "src/components/RuntimeExample.behavior.test.tsx"
   },
   {
-    "id": "tabs",
-    "export": "DSTabs",
-    "source": "src/design-system/primitives/Navigation/index.tsx",
+    "id": "popover",
+    "export": "DSPopover",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
     "props": [
       {
         "name": "label",
@@ -1148,94 +2682,101 @@
         "required": true
       },
       {
-        "name": "items",
-        "type": "DSTabItem[]",
+        "name": "children",
+        "type": "ReactNode",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "open"
+    ],
+    "examples": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "detailed",
+        "label": "详细"
+      }
+    ],
+    "storybook": "core-popover",
+    "storyFile": "src/design-system/stories/popover.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "tooltip",
+    "export": "DSTooltip",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
         "required": true
       },
       {
-        "name": "value",
-        "type": "string | undefined",
+        "name": "children",
+        "type": "ReactNode",
+        "required": true
+      },
+      {
+        "name": "placement",
+        "type": "Placement | undefined",
         "required": false
       },
       {
-        "name": "defaultValue",
-        "type": "string | undefined",
+        "name": "offset",
+        "type": "number | undefined",
         "required": false
       },
       {
-        "name": "onChange",
-        "type": "((value: string) => void) | undefined",
-        "required": false
-      },
-      {
-        "name": "disabled",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "orientation",
-        "type": "\"horizontal\" | \"vertical\" | undefined",
-        "required": false
-      },
-      {
-        "name": "appearance",
-        "type": "\"underline\" | \"filled\" | undefined",
-        "required": false
-      },
-      {
-        "name": "fullWidth",
+        "name": "shouldFlip",
         "type": "boolean | undefined",
         "required": false
       }
     ],
     "states": [
       "default",
-      "hover",
-      "focus",
-      "selected",
-      "disabled"
+      "open"
     ],
     "examples": [
       {
-        "id": "horizontal",
-        "label": "下划线"
+        "id": "top",
+        "label": "上方"
       },
       {
-        "id": "filled",
-        "label": "填充式"
+        "id": "bottom",
+        "label": "下方"
       },
       {
-        "id": "vertical",
-        "label": "纵向下划线"
+        "id": "left",
+        "label": "左侧"
       },
       {
-        "id": "vertical-filled",
-        "label": "纵向填充"
+        "id": "right",
+        "label": "右侧"
       },
       {
-        "id": "full-width",
-        "label": "等宽填充"
+        "id": "top-start",
+        "label": "左上"
       },
       {
-        "id": "with-icons",
-        "label": "图标与数量"
+        "id": "top-end",
+        "label": "右上"
       },
       {
-        "id": "overflow",
-        "label": "溢出滚动"
+        "id": "bottom-start",
+        "label": "左下"
       },
       {
-        "id": "disabled-item",
-        "label": "含禁用项"
-      },
-      {
-        "id": "disabled",
-        "label": "全部禁用"
+        "id": "bottom-end",
+        "label": "右下"
       }
     ],
-    "storybook": "core-tabs",
-    "storyFile": "src/design-system/stories/tabs.stories.tsx",
-    "test": "src/design-system/primitives/interaction.test.tsx"
+    "storybook": "core-tooltip",
+    "storyFile": "src/design-system/stories/tooltip.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
   },
   {
     "id": "tag",
@@ -1284,7 +2825,7 @@
     ],
     "storybook": "core-tag",
     "storyFile": "src/design-system/stories/tag.stories.tsx",
-    "test": "src/design-system/../components/RuntimeExample.behavior.test.tsx"
+    "test": "src/components/RuntimeExample.behavior.test.tsx"
   },
   {
     "id": "badge",
@@ -1330,6 +2871,130 @@
     "storybook": "core-badge",
     "storyFile": "src/design-system/stories/badge.stories.tsx",
     "test": "src/design-system/core-acceptance.test.tsx"
+  },
+  {
+    "id": "progress-bar",
+    "export": "DSProgressBar",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ProgressBarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "isIndeterminate",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "formatOptions",
+        "type": "NumberFormatOptions | undefined",
+        "required": false
+      },
+      {
+        "name": "valueLabel",
+        "type": "ReactNode",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ProgressBarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "indeterminate",
+      "complete"
+    ],
+    "examples": [
+      {
+        "id": "partial",
+        "label": "进行中"
+      },
+      {
+        "id": "indeterminate",
+        "label": "不确定进度"
+      },
+      {
+        "id": "complete",
+        "label": "已完成"
+      }
+    ],
+    "storybook": "core-progress-bar",
+    "storyFile": "src/design-system/stories/progress-bar.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
   },
   {
     "id": "toast",
@@ -1399,136 +3064,6 @@
     "storybook": "core-toast",
     "storyFile": "src/design-system/stories/toast.stories.tsx",
     "test": "src/design-system/primitives/Feedback/Toast.test.tsx"
-  },
-  {
-    "id": "form",
-    "export": "DSForm",
-    "source": "src/design-system/primitives/Forms/index.tsx",
-    "props": [
-      {
-        "name": "children",
-        "type": "ReactNode",
-        "required": true
-      },
-      {
-        "name": "onSubmit",
-        "type": "((event: FormEvent<HTMLFormElement>) => void) | undefined",
-        "required": false
-      },
-      {
-        "name": "disabled",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "loading",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "error",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "success",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "label",
-        "type": "string | undefined",
-        "required": false
-      }
-    ],
-    "states": [
-      "default",
-      "disabled",
-      "loading",
-      "error",
-      "success"
-    ],
-    "examples": [
-      {
-        "id": "default",
-        "label": "默认"
-      },
-      {
-        "id": "error",
-        "label": "提交错误"
-      },
-      {
-        "id": "disabled",
-        "label": "禁用"
-      },
-      {
-        "id": "loading",
-        "label": "提交中"
-      }
-    ],
-    "storybook": "core-form",
-    "storyFile": "src/design-system/stories/form.stories.tsx",
-    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
-  },
-  {
-    "id": "field",
-    "export": "DSField",
-    "source": "src/design-system/primitives/Forms/index.tsx",
-    "props": [
-      {
-        "name": "label",
-        "type": "string",
-        "required": true
-      },
-      {
-        "name": "children",
-        "type": "(props: DSFieldControlProps) => ReactNode",
-        "required": true
-      },
-      {
-        "name": "description",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "error",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "required",
-        "type": "boolean | undefined",
-        "required": false
-      }
-    ],
-    "states": [
-      "default",
-      "hover",
-      "focus",
-      "disabled",
-      "error"
-    ],
-    "examples": [
-      {
-        "id": "default",
-        "label": "默认"
-      },
-      {
-        "id": "required",
-        "label": "必填"
-      },
-      {
-        "id": "error",
-        "label": "错误"
-      },
-      {
-        "id": "disabled",
-        "label": "禁用"
-      }
-    ],
-    "storybook": "core-field",
-    "storyFile": "src/design-system/stories/field.stories.tsx",
-    "test": "src/design-system/core-acceptance.test.tsx"
   },
   {
     "id": "upload",
@@ -1617,7 +3152,301 @@
     ],
     "storybook": "core-upload",
     "storyFile": "src/design-system/stories/upload.stories.tsx",
-    "test": "src/design-system/../components/RuntimeExample.behavior.test.tsx"
+    "test": "src/components/RuntimeExample.behavior.test.tsx"
+  },
+  {
+    "id": "drop-zone",
+    "export": "DSDropZone",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "onFiles",
+        "type": "(files: File[]) => void",
+        "required": true
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "compact",
+        "label": "紧凑"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-drop-zone",
+    "storyFile": "src/design-system/stories/drop-zone.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
+  },
+  {
+    "id": "date-picker",
+    "export": "DSDatePicker",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<DatePickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", DatePickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hourCycle",
+        "type": "12 | 24 | undefined",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "type": "Granularity | undefined",
+        "required": false
+      },
+      {
+        "name": "hideTimeZone",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldForceLeadingZeros",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "placeholderValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: DateValue) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "autoComplete",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "isOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isDateUnavailable",
+        "type": "((date: DateValue) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "pageBehavior",
+        "type": "PageBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "firstDayOfWeek",
+        "type": "\"sun\" | \"mon\" | \"tue\" | \"wed\" | \"thu\" | \"fri\" | \"sat\" | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldCloseOnSelect",
+        "type": "boolean | (() => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "errorMessage",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error",
+      "open",
+      "selected"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "storybook": "core-date-picker",
+    "storyFile": "src/design-system/stories/date-picker.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-one.test.tsx"
   },
   {
     "id": "empty",
@@ -1750,73 +3579,108 @@
     "test": "src/design-system/core-acceptance.test.tsx"
   },
   {
-    "id": "checkbox",
-    "export": "DSCheckbox",
-    "source": "src/design-system/primitives/Forms/index.tsx",
+    "id": "toggle-button",
+    "export": "DSToggleButton",
+    "source": "src/design-system/primitives/Collections/index.tsx",
     "props": [
       {
-        "name": "label",
-        "type": "string",
-        "required": true
+        "name": "className",
+        "type": "ClassNameOrFunction<ToggleButtonRenderProps> | undefined",
+        "required": false
       },
       {
-        "name": "labelVisuallyHidden",
+        "name": "id",
+        "type": "Key | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "checked",
+        "name": "onClick",
+        "type": "((e: MouseEvent<FocusableElement, MouseEvent>) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "defaultChecked",
+        "name": "preventFocusOnPress",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "onChange",
-        "type": "((checked: boolean) => void) | undefined",
-        "required": false
-      },
-      {
-        "name": "disabled",
+        "name": "excludeFromTabOrder",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "loading",
+        "name": "isSelected",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "invalid",
+        "name": "defaultSelected",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "errorMessage",
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "children",
+        "type": "ChildrenOrFunction<ToggleButtonRenderProps>",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ToggleButtonRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"button\", ToggleButtonRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
         "type": "string | undefined",
         "required": false
       },
       {
-        "name": "indeterminate",
+        "name": "hidden",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "name",
+        "name": "lang",
         "type": "string | undefined",
         "required": false
       },
       {
-        "name": "value",
-        "type": "string | undefined",
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
         "required": false
       },
       {
-        "name": "required",
+        "name": "inert",
         "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLButtonElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
         "required": false
       }
     ],
@@ -1824,11 +3688,8 @@
       "default",
       "hover",
       "focus",
-      "checked",
-      "indeterminate",
-      "disabled",
-      "error",
-      "loading"
+      "selected",
+      "disabled"
     ],
     "examples": [
       {
@@ -1836,86 +3697,332 @@
         "label": "未选中"
       },
       {
-        "id": "checked",
+        "id": "selected",
         "label": "已选中"
-      },
-      {
-        "id": "indeterminate",
-        "label": "部分选中"
       },
       {
         "id": "disabled",
         "label": "禁用"
-      },
-      {
-        "id": "invalid",
-        "label": "错误"
-      },
-      {
-        "id": "loading",
-        "label": "加载"
-      },
-      {
-        "id": "checked-disabled",
-        "label": "选中且禁用"
-      },
-      {
-        "id": "indeterminate-disabled",
-        "label": "部分选中且禁用"
       }
     ],
-    "storybook": "core-checkbox",
-    "storyFile": "src/design-system/stories/checkbox.stories.tsx",
-    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+    "storybook": "core-toggle-button",
+    "storyFile": "src/design-system/stories/toggle-button.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
   },
   {
-    "id": "radio",
-    "export": "DSRadio",
-    "source": "src/design-system/primitives/Forms/index.tsx",
+    "id": "toggle-button-group",
+    "export": "DSToggleButtonGroup",
+    "source": "src/design-system/primitives/Collections/index.tsx",
     "props": [
+      {
+        "name": "className",
+        "type": "ClassNameOrFunction<ToggleButtonGroupRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionMode",
+        "type": "\"single\" | \"multiple\" | undefined",
+        "required": false
+      },
+      {
+        "name": "disallowEmptySelection",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultSelectedKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "children",
+        "type": "ChildrenOrFunction<ToggleButtonGroupRenderProps>",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ToggleButtonGroupRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ToggleButtonGroupRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "single",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-toggle-button-group",
+    "storyFile": "src/design-system/stories/toggle-button-group.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "autocomplete",
+    "export": "DSAutocomplete",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "Key | readonly Key[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "Key | readonly Key[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ComboBoxRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ComboBoxRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: ComboBoxValidationValue<SelectionMode>) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldFocusWrap",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionMode",
+        "type": "SelectionMode | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKey",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultSelectedKey",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "inputValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultInputValue",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsCustomValue",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "menuTrigger",
+        "type": "MenuTriggerAction | undefined",
+        "required": false
+      },
+      {
+        "name": "disabledKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultFilter",
+        "type": "((textValue: string, inputValue: string) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "formValue",
+        "type": "\"text\" | \"key\" | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsEmptyCollection",
+        "type": "boolean | undefined",
+        "required": false
+      },
       {
         "name": "label",
         "type": "string",
         "required": true
       },
       {
-        "name": "options",
-        "type": "{ value: string; label: string; disabled?: boolean | undefined; }[]",
-        "required": true
-      },
-      {
-        "name": "value",
+        "name": "description",
         "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "defaultValue",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "onChange",
-        "type": "((value: string) => void) | undefined",
-        "required": false
-      },
-      {
-        "name": "disabled",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "loading",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "required",
-        "type": "boolean | undefined",
-        "required": false
-      },
-      {
-        "name": "invalid",
-        "type": "boolean | undefined",
         "required": false
       },
       {
@@ -1924,24 +4031,19 @@
         "required": false
       },
       {
-        "name": "description",
-        "type": "string | undefined",
-        "required": false
-      },
-      {
-        "name": "name",
-        "type": "string | undefined",
-        "required": false
+        "name": "options",
+        "type": "{ id: string; label: string; disabled?: boolean | undefined; }[]",
+        "required": true
       }
     ],
     "states": [
       "default",
       "hover",
       "focus",
-      "checked",
       "disabled",
       "error",
-      "loading"
+      "open",
+      "selected"
     ],
     "examples": [
       {
@@ -1961,26 +4063,504 @@
         "label": "错误"
       },
       {
-        "id": "loading",
-        "label": "加载"
+        "id": "readonly",
+        "label": "只读"
       },
       {
-        "id": "selected-disabled",
-        "label": "选中且禁用"
+        "id": "no-results",
+        "label": "无匹配"
       }
     ],
-    "storybook": "core-radio",
-    "storyFile": "src/design-system/stories/radio.stories.tsx",
-    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+    "storybook": "core-autocomplete",
+    "storyFile": "src/design-system/stories/autocomplete.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
   },
   {
-    "id": "switch",
-    "export": "DSSwitch",
-    "source": "src/design-system/primitives/Forms/index.tsx",
+    "id": "slider",
+    "export": "DSSlider",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
     "props": [
       {
-        "name": "disabled",
+        "name": "value",
+        "type": "number | number[] | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "number | number[] | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
         "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<SliderRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "formatOptions",
+        "type": "NumberFormatOptions | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", SliderRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "step",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "单值"
+      },
+      {
+        "id": "range",
+        "label": "范围"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-slider",
+    "storyFile": "src/design-system/stories/slider.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "tag-group",
+    "export": "DSTagGroup",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "{ id: string; label: string; }[]",
+        "required": true
+      },
+      {
+        "name": "onRemove",
+        "type": "((ids: string[]) => void) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "只读"
+      },
+      {
+        "id": "removable",
+        "label": "可移除"
+      }
+    ],
+    "storybook": "core-tag-group",
+    "storyFile": "src/design-system/stories/tag-group.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "meter",
+    "export": "DSMeter",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<MeterRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "formatOptions",
+        "type": "NumberFormatOptions | undefined",
+        "required": false
+      },
+      {
+        "name": "valueLabel",
+        "type": "ReactNode",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", MeterRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "normal",
+        "label": "正常"
+      },
+      {
+        "id": "warning",
+        "label": "偏高"
+      },
+      {
+        "id": "critical",
+        "label": "临界"
+      }
+    ],
+    "storybook": "core-meter",
+    "storyFile": "src/design-system/stories/meter.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "calendar",
+    "export": "DSCalendar",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "DateValue | readonly (DateValue | null)[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "DateValue | readonly (DateValue | null)[] | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<CalendarRenderProps<CalendarSelectionMode>> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", CalendarRenderProps<CalendarSelectionMode>> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionMode",
+        "type": "CalendarSelectionMode | undefined",
+        "required": false
+      },
+      {
+        "name": "isDateUnavailable",
+        "type": "((date: DateValue) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "focusedValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultFocusedValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "pageBehavior",
+        "type": "PageBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "firstDayOfWeek",
+        "type": "\"sun\" | \"mon\" | \"tue\" | \"wed\" | \"thu\" | \"fri\" | \"sat\" | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionAlignment",
+        "type": "\"start\" | \"end\" | \"center\" | undefined",
+        "required": false
+      },
+      {
+        "name": "weeksInMonth",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "visibleDuration",
+        "type": "DateDuration | undefined",
+        "required": false
+      },
+      {
+        "name": "createCalendar",
+        "type": "((identifier: CalendarIdentifier) => Calendar) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "storybook": "core-calendar",
+    "storyFile": "src/design-system/stories/calendar.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "date-field",
+    "export": "DSDateField",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
         "required": false
       },
       {
@@ -1989,27 +4569,1593 @@
         "required": false
       },
       {
-        "name": "defaultChecked",
+        "name": "value",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "onChange",
-        "type": "((checked: boolean) => void) | undefined",
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<DateFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", DateFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hourCycle",
+        "type": "12 | 24 | undefined",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "type": "Granularity | undefined",
+        "required": false
+      },
+      {
+        "name": "hideTimeZone",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldForceLeadingZeros",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "placeholderValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: DateValue) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "autoComplete",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "isDateUnavailable",
+        "type": "((date: DateValue) => boolean) | undefined",
         "required": false
       },
       {
         "name": "label",
         "type": "string",
         "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
       },
       {
-        "name": "checked",
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      }
+    ],
+    "storybook": "core-date-field",
+    "storyFile": "src/design-system/stories/date-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "date-range-picker",
+    "export": "DSDateRangePicker",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "RangeValue<DateValue> | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "RangeValue<DateValue> | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
         "type": "boolean | undefined",
         "required": false
       },
       {
-        "name": "loading",
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<DateRangePickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", DateRangePickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hourCycle",
+        "type": "12 | 24 | undefined",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "type": "Granularity | undefined",
+        "required": false
+      },
+      {
+        "name": "hideTimeZone",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldForceLeadingZeros",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "placeholderValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: RangeValue<DateValue>) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "isOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isDateUnavailable",
+        "type": "((date: DateValue, anchorDate: CalendarDate | null) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "pageBehavior",
+        "type": "PageBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "firstDayOfWeek",
+        "type": "\"sun\" | \"mon\" | \"tue\" | \"wed\" | \"thu\" | \"fri\" | \"sat\" | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsNonContiguousRanges",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldCloseOnSelect",
+        "type": "boolean | (() => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "startName",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "endName",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "storybook": "core-date-range-picker",
+    "storyFile": "src/design-system/stories/date-range-picker.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "range-calendar",
+    "export": "DSRangeCalendar",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "RangeValue<DateValue> | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "RangeValue<DateValue> | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<RangeCalendarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", RangeCalendarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "commitBehavior",
+        "type": "\"reset\" | \"clear\" | \"select\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDateUnavailable",
+        "type": "((date: DateValue, anchorDate: CalendarDate | null) => boolean) | undefined",
+        "required": false
+      },
+      {
+        "name": "focusedValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultFocusedValue",
+        "type": "DateValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "pageBehavior",
+        "type": "PageBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "firstDayOfWeek",
+        "type": "\"sun\" | \"mon\" | \"tue\" | \"wed\" | \"thu\" | \"fri\" | \"sat\" | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionAlignment",
+        "type": "\"start\" | \"end\" | \"center\" | undefined",
+        "required": false
+      },
+      {
+        "name": "weeksInMonth",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "visibleDuration",
+        "type": "DateDuration | undefined",
+        "required": false
+      },
+      {
+        "name": "createCalendar",
+        "type": "((identifier: CalendarIdentifier) => Calendar) | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsNonContiguousRanges",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已选择"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      },
+      {
+        "id": "unavailable",
+        "label": "不可用日期"
+      }
+    ],
+    "storybook": "core-range-calendar",
+    "storyFile": "src/design-system/stories/range-calendar.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "time-field",
+    "export": "DSTimeField",
+    "source": "src/design-system/primitives/DateTime/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "TimeValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "TimeValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<DateFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "minValue",
+        "type": "TimeValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "maxValue",
+        "type": "TimeValue | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", DateFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hourCycle",
+        "type": "12 | 24 | undefined",
+        "required": false
+      },
+      {
+        "name": "granularity",
+        "type": "\"hour\" | \"minute\" | \"second\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hideTimeZone",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldForceLeadingZeros",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "placeholderValue",
+        "type": "TimeValue | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: TimeValue) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      },
+      {
+        "id": "selected",
+        "label": "已填写"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "invalid",
+        "label": "错误"
+      },
+      {
+        "id": "bounded",
+        "label": "范围限制"
+      }
+    ],
+    "storybook": "core-time-field",
+    "storyFile": "src/design-system/stories/time-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-area",
+    "export": "DSColorArea",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorAreaRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorAreaRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "xName",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "yName",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "colorSpace",
+        "type": "ColorSpace | undefined",
+        "required": false
+      },
+      {
+        "name": "xChannel",
+        "type": "ColorChannel | undefined",
+        "required": false
+      },
+      {
+        "name": "yChannel",
+        "type": "ColorChannel | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-area",
+    "storyFile": "src/design-system/stories/color-area.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-field",
+    "export": "DSColorField",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | null | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | null | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "validationBehavior",
+        "type": "\"native\" | \"aria\" | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isRequired",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "validate",
+        "type": "((value: Color | null) => true | ValidationError | null | undefined) | undefined",
+        "required": false
+      },
+      {
+        "name": "excludeFromTabOrder",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isWheelDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "colorSpace",
+        "type": "ColorSpace | undefined",
+        "required": false
+      },
+      {
+        "name": "channel",
+        "type": "ColorChannel | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-field",
+    "storyFile": "src/design-system/stories/color-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-picker",
+    "export": "DSColorPicker",
+    "source": "src/design-system/primitives/Colors/ColorPicker.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-picker",
+    "storyFile": "src/design-system/stories/color-picker.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-slider",
+    "export": "DSColorSlider",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorSliderRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorSliderRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "colorSpace",
+        "type": "ColorSpace | undefined",
+        "required": false
+      },
+      {
+        "name": "channel",
+        "type": "ColorChannel",
+        "required": true
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-slider",
+    "storyFile": "src/design-system/stories/color-slider.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-swatch",
+    "export": "DSColorSwatch",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "className",
+        "type": "ClassNameOrFunction<ColorSwatchRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "color",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "colorName",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorSwatchRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorSwatchRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "blue",
+        "label": "蓝色"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "red",
+        "label": "红色"
+      }
+    ],
+    "storybook": "core-color-swatch",
+    "storyFile": "src/design-system/stories/color-swatch.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "color-swatch-picker",
+    "export": "DSColorSwatchPicker",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "colors",
+        "type": "string[]",
+        "required": true
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorSwatchPickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorSwatchPickerRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "layout",
+        "type": "\"grid\" | \"stack\" | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "brand",
+        "label": "品牌色"
+      },
+      {
+        "id": "status",
+        "label": "状态色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-swatch-picker",
+    "storyFile": "src/design-system/stories/color-swatch-picker.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "breadcrumb",
+    "export": "DSBreadcrumb",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "items",
+        "type": "{ id: string; label: string; href?: string | undefined; }[]",
+        "required": true
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "short",
+        "label": "简短"
+      },
+      {
+        "id": "deep",
+        "label": "多层"
+      }
+    ],
+    "storybook": "core-breadcrumb",
+    "storyFile": "src/design-system/stories/breadcrumb.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "disclosure",
+    "export": "DSDisclosure",
+    "source": "src/design-system/primitives/Collections/Additional.tsx",
+    "props": [
+      {
+        "name": "title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "children",
+        "type": "ReactNode",
+        "required": true
+      },
+      {
+        "name": "disabled",
         "type": "boolean | undefined",
         "required": false
       }
@@ -2018,34 +6164,1577 @@
       "default",
       "hover",
       "focus",
-      "checked",
       "disabled",
-      "loading"
+      "open"
     ],
     "examples": [
       {
         "id": "default",
-        "label": "关闭"
+        "label": "默认"
       },
       {
-        "id": "checked",
-        "label": "开启"
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-disclosure",
+    "storyFile": "src/design-system/stories/disclosure.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "disclosure-group",
+    "export": "DSDisclosureGroup",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "label",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "items",
+        "type": "{ id: string; title: string; content: ReactNode; disabled?: boolean | undefined; }[]",
+        "required": true
+      },
+      {
+        "name": "allowsMultipleExpanded",
+        "type": "boolean | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "open"
+    ],
+    "examples": [
+      {
+        "id": "single",
+        "label": "单项展开"
+      },
+      {
+        "id": "multiple",
+        "label": "多项展开"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-disclosure-group",
+    "storyFile": "src/design-system/stories/disclosure-group.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "link",
+    "export": "DSLink",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "className",
+        "type": "ClassNameOrFunction<LinkRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "rel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "((e: MouseEvent<FocusableElement, MouseEvent>) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "href",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "target",
+        "type": "HTMLAttributeAnchorTarget | undefined",
+        "required": false
+      },
+      {
+        "name": "hrefLang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "download",
+        "type": "string | boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "ping",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "referrerPolicy",
+        "type": "HTMLAttributeReferrerPolicy | undefined",
+        "required": false
+      },
+      {
+        "name": "routerOptions",
+        "type": "undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<LinkRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "children",
+        "type": "ChildrenOrFunction<LinkRenderProps>",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "((props: DetailedHTMLProps<LinkWithRequiredHref, HTMLAnchorElement> | DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, renderProps: LinkRenderProps) => ReactElement<unknown, string | JSXElementConstructor<any>>) | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLAnchorElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "internal",
+        "label": "站内"
+      },
+      {
+        "id": "external",
+        "label": "外部"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-link",
+    "storyFile": "src/design-system/stories/link.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "toolbar",
+    "export": "DSToolbar",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "className",
+        "type": "ClassNameOrFunction<ToolbarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "children",
+        "type": "ChildrenOrFunction<ToolbarRenderProps>",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ToolbarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ToolbarRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "format",
+        "label": "格式"
+      },
+      {
+        "id": "align",
+        "label": "对齐"
+      }
+    ],
+    "storybook": "core-toolbar",
+    "storyFile": "src/design-system/stories/toolbar.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "separator",
+    "export": "DSSeparator",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "className",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "elementType",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "CSSProperties | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"hr\" | \"div\", undefined> | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default"
+    ],
+    "examples": [
+      {
+        "id": "horizontal",
+        "label": "横向"
+      },
+      {
+        "id": "vertical",
+        "label": "纵向"
+      }
+    ],
+    "storybook": "core-separator",
+    "storyFile": "src/design-system/stories/separator.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-two.test.tsx"
+  },
+  {
+    "id": "token-field",
+    "export": "DSTokenField",
+    "source": "src/design-system/primitives/AdvancedFields/index.tsx",
+    "props": [
+      {
+        "name": "value",
+        "type": "TokenFieldValue<T> | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<TokenFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "role",
+        "type": "\"combobox\" | \"searchbox\" | \"textbox\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", TokenFieldRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "allowsNewlines",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "TokenFieldValue<T> | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultTokens",
+        "type": "DSTokenFieldToken<T>[] | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultText",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "renderToken",
+        "type": "((segment: TokenSegment<T>) => ReactNode) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "readonly",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "multiline",
+        "label": "多行"
+      },
+      {
+        "id": "readonly",
+        "label": "只读"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-token-field",
+    "storyFile": "src/design-system/stories/token-field.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "grid-list",
+    "export": "DSGridList",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "autoFocus",
+        "type": "boolean | FocusStrategy | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<GridListRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", GridListRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionMode",
+        "type": "SelectionMode | undefined",
+        "required": false
+      },
+      {
+        "name": "orientation",
+        "type": "Orientation | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionBehavior",
+        "type": "SelectionBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldSelectOnPressUp",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "escapeKeyBehavior",
+        "type": "\"none\" | \"clearSelection\" | undefined",
+        "required": false
+      },
+      {
+        "name": "disallowEmptySelection",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKeys",
+        "type": "Iterable<Key> | \"all\" | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultSelectedKeys",
+        "type": "Iterable<Key> | \"all\" | undefined",
+        "required": false
+      },
+      {
+        "name": "keyboardNavigationBehavior",
+        "type": "\"tab\" | \"arrow\" | undefined",
+        "required": false
+      },
+      {
+        "name": "disabledBehavior",
+        "type": "DisabledBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "disallowTypeAhead",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "dragAndDropHooks",
+        "type": "DragAndDropHooks<NoInfer<DSGridListItem>> | undefined",
+        "required": false
+      },
+      {
+        "name": "layout",
+        "type": "\"grid\" | \"stack\" | undefined",
+        "required": false
+      },
+      {
+        "name": "UNSTABLE_focusOnEntry",
+        "type": "\"first\" | \"last\" | undefined",
+        "required": false
+      },
+      {
+        "name": "dependencies",
+        "type": "readonly any[] | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSGridListItem[]",
+        "required": true
+      },
+      {
+        "name": "renderItem",
+        "type": "((item: DSGridListItem) => ReactNode) | undefined",
+        "required": false
+      },
+      {
+        "name": "showSelectionControl",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "emptyMessage",
+        "type": "ReactNode",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled",
+      "empty"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "单选"
+      },
+      {
+        "id": "multiple",
+        "label": "多选"
+      },
+      {
+        "id": "actions",
+        "label": "行操作"
+      },
+      {
+        "id": "grid",
+        "label": "网格布局"
+      },
+      {
+        "id": "empty",
+        "label": "空数据"
+      },
+      {
+        "id": "disabled",
+        "label": "含禁用项"
+      }
+    ],
+    "storybook": "core-grid-list",
+    "storyFile": "src/design-system/stories/grid-list.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "color-wheel",
+    "export": "DSColorWheel",
+    "source": "src/design-system/primitives/Colors/index.tsx",
+    "props": [
+      {
+        "name": "form",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "name",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "value",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | Color | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<ColorWheelRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", ColorWheelRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "size",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "trackWidth",
+        "type": "number | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "active",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "green",
+        "label": "绿色"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-color-wheel",
+    "storyFile": "src/design-system/stories/color-wheel.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "navigation-tree",
+    "export": "DSNavigationTree",
+    "source": "src/design-system/primitives/Collections/NavigationTree.tsx",
+    "props": [
+      {
+        "name": "autoFocus",
+        "type": "boolean | FocusStrategy | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<NavigationTreeRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", NavigationTreeRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "disabledKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "dependencies",
+        "type": "readonly any[] | undefined",
+        "required": false
+      },
+      {
+        "name": "expandedKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultExpandedKeys",
+        "type": "Iterable<Key> | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedRoute",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSNavigationTreeItem[]",
+        "required": true
+      },
+      {
+        "name": "onNavigate",
+        "type": "((href: string) => void) | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "current",
+      "open",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "deep",
+        "label": "深层导航"
+      },
+      {
+        "id": "current",
+        "label": "当前路由"
+      },
+      {
+        "id": "disabled",
+        "label": "含禁用项"
+      }
+    ],
+    "storybook": "core-navigation-tree",
+    "storyFile": "src/design-system/stories/navigation-tree.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "preview-trigger",
+    "export": "DSPreviewTrigger",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "delay",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "closeDelay",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "isOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultOpen",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "preview",
+        "type": "ReactNode",
+        "required": true
+      },
+      {
+        "name": "previewLabel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "href",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "target",
+        "type": "HTMLAttributeAnchorTarget | undefined",
+        "required": false
+      },
+      {
+        "name": "rel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "disabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "onPress",
+        "type": "((e: PressEvent) => void) | undefined",
+        "required": false
+      },
+      {
+        "name": "placement",
+        "type": "Placement | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "open",
+      "disabled"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "interactive",
+        "label": "可交互内容"
+      },
+      {
+        "id": "slow",
+        "label": "延迟预览"
+      },
+      {
+        "id": "disabled",
+        "label": "禁用"
+      }
+    ],
+    "storybook": "core-preview-trigger",
+    "storyFile": "src/design-system/stories/preview-trigger.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "group",
+    "export": "DSGroup",
+    "source": "src/design-system/primitives/Collections/index.tsx",
+    "props": [
+      {
+        "name": "defaultChecked",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultValue",
+        "type": "string | number | readonly string[] | undefined",
+        "required": false
+      },
+      {
+        "name": "suppressContentEditableWarning",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "suppressHydrationWarning",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "accessKey",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "autoCapitalize",
+        "type": "\"off\" | \"none\" | \"on\" | \"sentences\" | \"words\" | \"characters\" | (string & {}) | undefined",
+        "required": false
+      },
+      {
+        "name": "autoFocus",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "contentEditable",
+        "type": "Booleanish | \"inherit\" | \"plaintext-only\" | undefined",
+        "required": false
+      },
+      {
+        "name": "contextMenu",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "dir",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "draggable",
+        "type": "Booleanish | undefined",
+        "required": false
+      },
+      {
+        "name": "enterKeyHint",
+        "type": "\"enter\" | \"done\" | \"go\" | \"next\" | \"previous\" | \"search\" | \"send\" | undefined",
+        "required": false
+      },
+      {
+        "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "id",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "lang",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "nonce",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "slot",
+        "type": "string | null | undefined",
+        "required": false
+      },
+      {
+        "name": "spellCheck",
+        "type": "Booleanish | undefined",
+        "required": false
+      },
+      {
+        "name": "style",
+        "type": "StyleOrFunction<GroupRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "tabIndex",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "title",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "translate",
+        "type": "\"yes\" | \"no\" | undefined",
+        "required": false
+      },
+      {
+        "name": "radioGroup",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "about",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "content",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "datatype",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "inlist",
+        "type": "any",
+        "required": false
+      },
+      {
+        "name": "prefix",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "property",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "rel",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "resource",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "rev",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "typeof",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "vocab",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "autoCorrect",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "autoSave",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "color",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "itemProp",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "itemScope",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "itemType",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "itemID",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "itemRef",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "results",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "security",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "unselectable",
+        "type": "\"off\" | \"on\" | undefined",
+        "required": false
+      },
+      {
+        "name": "popover",
+        "type": "\"\" | \"auto\" | \"manual\" | \"hint\" | undefined",
+        "required": false
+      },
+      {
+        "name": "popoverTargetAction",
+        "type": "\"toggle\" | \"show\" | \"hide\" | undefined",
+        "required": false
+      },
+      {
+        "name": "popoverTarget",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "inert",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "inputMode",
+        "type": "\"none\" | \"search\" | \"text\" | \"tel\" | \"url\" | \"email\" | \"numeric\" | \"decimal\" | undefined",
+        "required": false
+      },
+      {
+        "name": "is",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "exportparts",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "part",
+        "type": "string | undefined",
+        "required": false
+      },
+      {
+        "name": "children",
+        "type": "ChildrenOrFunction<GroupRenderProps>",
+        "required": false
+      },
+      {
+        "name": "dangerouslySetInnerHTML",
+        "type": "{ __html: string | TrustedHTML; } | undefined",
+        "required": false
+      },
+      {
+        "name": "onClick",
+        "type": "MouseEventHandler<HTMLElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "render",
+        "type": "DOMRenderFunction<\"div\", GroupRenderProps> | undefined",
+        "required": false
+      },
+      {
+        "name": "ref",
+        "type": "Ref<HTMLDivElement> | undefined",
+        "required": false
+      },
+      {
+        "name": "key",
+        "type": "Key | null | undefined",
+        "required": false
+      },
+      {
+        "name": "isDisabled",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isReadOnly",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "isInvalid",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "role",
+        "type": "\"group\" | \"presentation\" | \"region\" | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string | undefined",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "error"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认"
+      },
+      {
+        "id": "region",
+        "label": "区域"
       },
       {
         "id": "disabled",
         "label": "禁用"
       },
       {
-        "id": "loading",
-        "label": "加载"
-      },
-      {
-        "id": "checked-disabled",
-        "label": "开启且禁用"
+        "id": "error",
+        "label": "错误"
       }
     ],
-    "storybook": "core-switch",
-    "storyFile": "src/design-system/stories/switch.stories.tsx",
-    "test": "src/design-system/primitives/Forms/Forms.test.tsx"
+    "storybook": "core-group",
+    "storyFile": "src/design-system/stories/group.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
+  },
+  {
+    "id": "virtualizer",
+    "export": "DSVirtualizer",
+    "source": "src/design-system/primitives/Collections/Virtualizer.tsx",
+    "props": [
+      {
+        "name": "selectionMode",
+        "type": "SelectionMode | undefined",
+        "required": false
+      },
+      {
+        "name": "selectionBehavior",
+        "type": "SelectionBehavior | undefined",
+        "required": false
+      },
+      {
+        "name": "selectedKeys",
+        "type": "Iterable<Key> | \"all\" | undefined",
+        "required": false
+      },
+      {
+        "name": "defaultSelectedKeys",
+        "type": "Iterable<Key> | \"all\" | undefined",
+        "required": false
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "items",
+        "type": "DSVirtualizerItem[]",
+        "required": true
+      },
+      {
+        "name": "height",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "rowSize",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "estimatedRowSize",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "gap",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "padding",
+        "type": "number | undefined",
+        "required": false
+      },
+      {
+        "name": "shouldObserveItemSize",
+        "type": "boolean | undefined",
+        "required": false
+      },
+      {
+        "name": "renderItem",
+        "type": "((item: DSVirtualizerItem) => ReactNode) | undefined",
+        "required": false
+      },
+      {
+        "name": "emptyState",
+        "type": "ReactNode",
+        "required": false
+      }
+    ],
+    "states": [
+      "default",
+      "empty"
+    ],
+    "examples": [
+      {
+        "id": "default",
+        "label": "默认列表"
+      },
+      {
+        "id": "large",
+        "label": "大数据列表"
+      },
+      {
+        "id": "variable",
+        "label": "动态行高"
+      },
+      {
+        "id": "empty",
+        "label": "空数据"
+      }
+    ],
+    "storybook": "core-virtualizer",
+    "storyFile": "src/design-system/stories/virtualizer.stories.tsx",
+    "test": "src/design-system/primitives/foundation-phase-three.test.tsx"
   }
 ]

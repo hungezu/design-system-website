@@ -1,7 +1,7 @@
 import { describe,expect,it } from 'vitest'
 import { projects,guokexinProject } from '../data/projects'
 import { defaultProjectTheme,projectThemeStorageKey } from './project-theme'
-import { createReleaseSnapshot,contentChecksum,validateSnapshot } from './release-snapshot'
+import { canonicalJson,createReleaseSnapshot,contentChecksum,validateSnapshot } from './release-snapshot'
 import { createWorkspaceBackup,restoreWorkspaceBackup,validateWorkspaceBackup } from './workspace-backup'
 import { LOCAL_RELEASE_STORAGE_KEY,loadReleaseAsset,type ReleaseCatalogEntry,type ReleaseAssetName } from './release-catalog'
 import { compareMaps,compareReleaseAssets } from './release-diff'
@@ -32,11 +32,18 @@ it('快照返回值不共享可变的全局绑定对象',async()=>{
 })
 it('即使重算文件校验，CSS/JSON 矛盾或 Manifest 清单错误仍会拒绝',async()=>{
  const {snapshot}=fixture();const tokens=snapshot.assets['tokens.json'] as Record<string,string>;tokens['--brand-primary']='#123456'
- const {canonicalJson}=await import('./release-snapshot');const manifest=snapshot.assets['manifest.json'] as Record<string,unknown>
+ const manifest=snapshot.assets['manifest.json'] as Record<string,unknown>
  const files=Object.entries(snapshot.assets).filter(([path])=>path!=='manifest.json').map(([path,value])=>({path,checksum:contentChecksum(value),bytes:new TextEncoder().encode(typeof value==='string'?value:canonicalJson(value)).length}))
  manifest.artifactFiles=files;manifest.checksum=contentChecksum(files);snapshot.entry.checksum=String(manifest.checksum);snapshot.entry.releaseId=`local-guokexin-${snapshot.entry.version}-${snapshot.entry.checksum.slice(-16)}`
  expect(()=>validateSnapshot(snapshot)).toThrow('CSS 与 JSON')
  const other=fixture().snapshot;(other.assets['manifest.json'] as Record<string,unknown>).availableComponents=[];expect(()=>validateSnapshot(other)).toThrow('组件清单不一致')
+})
+it('即使重算文件校验，按钮配方与冻结主题不一致仍会拒绝',()=>{
+ const {snapshot}=fixture();const recipes=snapshot.assets['recipes.json'] as {values:Record<string,string>};recipes.values['--button-brand-filled-bg-default']='#FFFFFF'
+ const manifest=snapshot.assets['manifest.json'] as Record<string,unknown>
+ const files=Object.entries(snapshot.assets).filter(([path])=>path!=='manifest.json').map(([path,value])=>({path,checksum:contentChecksum(value),bytes:new TextEncoder().encode(typeof value==='string'?value:canonicalJson(value)).length}))
+ manifest.artifactFiles=files;manifest.checksum=contentChecksum(files);snapshot.entry.checksum=String(manifest.checksum);snapshot.entry.releaseId=`local-guokexin-${snapshot.entry.version}-${snapshot.entry.checksum.slice(-16)}`
+ expect(()=>validateSnapshot(snapshot)).toThrow('按钮配方与冻结 Token 不一致')
 })
 it('版本差异不会遗漏同一文件中的模板和布局变化',async()=>{
  const {snapshot}=fixture();const {assetRecords}=await import('./release-diff');const changes=compareMaps('patterns.json',assetRecords({patterns:[{id:'p'}],templates:[{id:'t',value:1}]}),assetRecords({patterns:[{id:'p'}],templates:[{id:'t',value:2}]}));expect(changes).toEqual([expect.objectContaining({id:'templates/t',kind:'changed'})])

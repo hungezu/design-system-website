@@ -1,6 +1,7 @@
 import { ScopedPopover as Popover } from '../../theme/PreviewScope'
-import type { ComponentProps } from 'react'
-import { NumberField, SearchField, Label, Input, Group, Button, Text, FieldError, ComboBox, ListBox, ListBoxItem, Slider, SliderOutput, SliderTrack, SliderThumb, ProgressBar, Meter } from 'react-aria-components'
+import type { ComponentProps, ReactNode } from 'react'
+import { NumberField, SearchField, Label, Input, Group, Button, Text, FieldError, ComboBox, ListBox, ListBoxItem, Slider, SliderOutput, SliderTrack, SliderThumb, ProgressBar, Meter, TokenField, TokenInput, Token } from 'react-aria-components'
+import { TokenFieldValue, type TokenFieldProps, type TokenSegment } from 'react-aria-components/TokenField'
 import { Add, Minus } from 'reicon-react'
 import { DSIcon } from '../../../runtime/vendor/runtime.js'
 import { DSIconAction } from '../IconAction'
@@ -14,7 +15,31 @@ export function DSNumberField({ label, description, errorMessage, ...props }: DS
 }
 export type DSSearchFieldProps = Omit<ComponentProps<typeof SearchField>, 'children' | 'className' | 'type'> & Common
 export function DSSearchField({ label, description, errorMessage, ...props }: DSSearchFieldProps) {
+  // SearchField injects clearButtonProps through React Aria ButtonContext; DSIconAction consumes that context.
   return <SearchField {...props} className="owned-search owned-field-stack">{({ isEmpty }) => <><Label className="owned-field-label">{label}</Label><Group className="owned-control-row"><DSIcon name="search" className="owned-control-row__leading" size="sm" decorative /><Input type="search" />{!isEmpty && !props.isReadOnly && <DSIconAction className="owned-search__clear" semantic="clear-input" iconWeight="filled" compact aria-label={`清空${label}`} />}</Group>{description && <Text slot="description" className="owned-field-description">{description}</Text>}<FieldError className="owned-field-error">{errorMessage}</FieldError></>}</SearchField>
+}
+export interface DSTokenFieldToken<T = unknown> { id:string; label:string; value?:T }
+export type DSTokenFieldProps<T = unknown> = Omit<TokenFieldProps<TokenFieldValue<T>>, 'children' | 'className' | 'defaultValue'> & {
+  label: string
+  description?: string
+  defaultValue?: TokenFieldValue<T>
+  defaultTokens?: DSTokenFieldToken<T>[]
+  defaultText?: string
+  renderToken?: (segment: TokenSegment<T>) => ReactNode
+}
+/** Rich text input with immutable inline tokens. Values are represented by React Aria TokenFieldValue. */
+export function DSTokenField<T = unknown>({ label, description, defaultValue, defaultTokens=[], defaultText='', renderToken, ...props }: DSTokenFieldProps<T>) {
+  const segments=[
+    ...defaultTokens.map(token=>({type:'token' as const,text:token.label,value:token.value??token.id as T})),
+    {type:'text' as const,text:defaultText},
+  ]
+  const lastIndex=segments.length-1
+  const initialValue=defaultValue??new TokenFieldValue<T>(segments,{selectedRange:new TokenFieldValue.SelectedRange({index:lastIndex,offset:segments[lastIndex].text.length})})
+  return <TokenField {...props} defaultValue={initialValue} className="owned-token-field owned-field-stack">
+    <Label className="owned-field-label">{label}</Label>
+    <TokenInput className="owned-token-input">{segment => <Token className="owned-token">{renderToken?.(segment) ?? segment.text}</Token>}</TokenInput>
+    {description && <Text slot="description" className="owned-field-description">{description}</Text>}
+  </TokenField>
 }
 export type DSComboBoxProps = Omit<ComponentProps<typeof ComboBox>, 'children' | 'className' | 'items' | 'defaultItems'> & Common & { options: { id: string; label: string; disabled?: boolean }[] }
 export function DSComboBox({ label, options, description, errorMessage, ...props }: DSComboBoxProps) {
@@ -27,6 +52,6 @@ export function DSSlider({ label, ...props }: DSSliderProps) {
   </Slider>
 }
 export type DSProgressBarProps = Omit<ComponentProps<typeof ProgressBar>, 'children' | 'className'> & { label: string }
-export function DSProgressBar({ label, ...props }: DSProgressBarProps) { return <ProgressBar {...props} className="owned-progress">{({percentage,valueText})=><><Label>{label}</Label><span>{valueText}</span><div className="owned-progress__track"><div style={{width: percentage === undefined ? '40%' : `${percentage}%`}} /></div></>}</ProgressBar> }
+export function DSProgressBar({ label, ...props }: DSProgressBarProps) { return <ProgressBar {...props} data-indeterminate={props.isIndeterminate || undefined} className="owned-progress">{({percentage,valueText})=><><Label>{label}</Label><span>{valueText}</span><div className="owned-progress__track"><div style={{width: percentage === undefined ? '40%' : `${percentage}%`}} /></div></>}</ProgressBar> }
 export type DSMeterProps = Omit<ComponentProps<typeof Meter>, 'children' | 'className'> & { label: string }
 export function DSMeter({ label, ...props }: DSMeterProps) { return <Meter {...props} className="owned-progress">{({percentage,valueText})=><><Label>{label}</Label><span>{valueText}</span><div className="owned-progress__track"><div style={{width:`${percentage}%`}} /></div></>}</Meter> }

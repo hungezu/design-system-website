@@ -1,6 +1,11 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { guokexinProject } from '../data/projects/guokexin'
+import {
+  GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS,
+  GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS,
+  guokexinProject,
+} from '../data/projects/guokexin'
 import { componentAssets } from '../data/assets/components'
 import { RUNTIME_COMPONENT_REGISTRY } from '../runtime/registry'
 import { getDesktopComponentBinding, resolveComponentStateTokens } from './component-bindings'
@@ -8,7 +13,11 @@ import { resolveProjectTheme, resolveReleaseThemeFromCss } from '../services/the
 import { CORE_COMPONENT_IDS } from '../data/core-quality'
 
 describe('国科信项目组件闭环', () => {
-  it('21 个核心组件都具有 Runtime、资产、Binding、Token 和状态契约', () => {
+  it('62 个核心组件都具有 Runtime、资产、Binding、Token 和状态契约', () => {
+    expect(CORE_COMPONENT_IDS).toHaveLength(62)
+    expect(GUOKEXIN_FOUNDATION_PHASE_ONE_COMPONENT_IDS.every((id) => guokexinProject.componentIds.includes(id))).toBe(true)
+    expect(GUOKEXIN_FOUNDATION_PHASE_TWO_COMPONENT_IDS.every((id) => guokexinProject.componentIds.includes(id))).toBe(true)
+    expect(GUOKEXIN_FOUNDATION_PHASE_THREE_COMPONENT_IDS.every((id) => guokexinProject.componentIds.includes(id))).toBe(true)
     for (const componentId of CORE_COMPONENT_IDS) {
       const runtime = RUNTIME_COMPONENT_REGISTRY[componentId]
       const asset = componentAssets.find((item) => item.id === componentId || item.id === `component-${componentId}`)
