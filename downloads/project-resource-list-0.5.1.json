@@ -1,0 +1,19 @@
+{
+  "name": "project-resource-list",
+  "version": "0.5.1",
+  "archive": "project-resource-list-0.5.1.zip",
+  "sha256": "dd1123c98ef68efe031f9cc6412f35093f6d2cafb63d12459f2e8807fd8d852a",
+  "skillSha256": "d825919810287c88cf0c3ac231d3d910c45094a82a11d66964e4beaa5823d86c",
+  "sourceSha256": "d825919810287c88cf0c3ac231d3d910c45094a82a11d66964e4beaa5823d86c",
+  "summary": [
+    "项目/版本显式选择；保存方案优先，再八类共享布局源码闭包，无匹配才组合",
+    "离线项目资料独立于通用Skill；runtime来源和冻结同版组件包要求明确",
+    "当前stdio到站点API与尚未部署的HTTP网关严格区分"
+  ],
+  "checks": {
+    "portableSkillMatchesSource": true,
+    "requiredGuidancePresent": true,
+    "noProjectSpecificContent": true
+  },
+  "createdAt": "2026-11-17T14:53:46.608Z"
+}
