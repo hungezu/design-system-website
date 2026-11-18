@@ -1,19 +1,14 @@
 {
   "schema": "public-demo-build/1",
-  "builtAt": "2026-11-17T17:07:35.731Z",
-  "sourceSha256": "df6f115d756c17f8ee2d7bbeea2621226359f8d774d2f51d5cec5f4e786b0fc7",
+  "builtAt": "2026-11-18T14:34:13.165Z",
+  "sourceSha256": "72893082437e76a5dafc4eec17cc76662493461401a312d096aef68b3b6645d3",
   "runtimeBuildId": "sha256:8d601c404c0a39715e9c89fb4f0a6611c0d309b15c8b82a24fcd3fe5f72e6ecb",
   "mode": "static-read-only",
   "base": "/design-system-website/",
-  "rollbackCommit": "d8f18da361e73c84aacb25624d3ec89040d6d109",
-  "adaptations": [
-    {
-      "path": "src/components/ProjectDraftConnection.tsx",
-      "sourceSha256": "cc3597f7dd6a2d1bf99fe519ca4600abdecaced7dc51b795121ec01867f474b8",
-      "publicSha256": "2b7ba6ad6513ef6f62008ddacb442eee97c994dd46eb6f455ee94f891c08e987",
-      "reason": "GitHub Pages subpath URLs for generic Skill manifest and archive"
-    }
-  ],
-  "publicSourceSha256": "6f7474fdf96c437889d40b0d64ea437be4edbdfa0191f07fc0fe705270a0b29e",
-  "sourceIdentityNote": "sourceSha256 identifies the verified mainline checkpoint; publicSourceSha256 identifies the isolated public inputs after the documented Pages URL adaptation and public asset selection."
+  "rollbackCommit": "084ce46b6d41061e240a6f308cb8fdfa76c082c8",
+  "adaptations": [],
+  "sourceIdentityNote": "sourceSha256 identifies the verified mainline checkpoint; publicSourceSha256 identifies the isolated public inputs after the documented Pages URL adaptation and public asset selection.",
+  "baseMainlineSourceSha256": "c29bdadf85c50b25f7e2882664eb2d3f49992060fb2552997a3a49110c6ad1f4",
+  "change": "Homepage compact Skill download; seven-file verified website-only diff; shared publicAssetUrl; Skill and SDK archives unchanged.",
+  "publicSourceSha256": "614ec08af8b06913aebc75d313dc53ff1fff6cb2a1f7e9c6f364a912d78bf98f"
 }
