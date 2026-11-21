@@ -1,10 +1,10 @@
 {
-  "runtimeBuildId": "sha256:8d601c404c0a39715e9c89fb4f0a6611c0d309b15c8b82a24fcd3fe5f72e6ecb",
+  "runtimeBuildId": "sha256:16f5cd673810107ea43daf52483140a3bf37bbdd968f7f46aecdcdb2b873b551",
   "generatorSources": {
     "integrations/workspace-design/project-resource-list/SKILL.md": "d825919810287c88cf0c3ac231d3d910c45094a82a11d66964e4beaa5823d86c",
-    "integrations/workspace-design/scene-examples/generate.ts": "db50c059940cbe9cee716a6da5ee98a7f92515356821073831de2fef45c22f71",
+    "integrations/workspace-design/scene-examples/generate.ts": "f03787ef3c7acd41e178982fadf42ce65b3e25b1d4b5ab1f9370bb0b779c5d0b",
     "integrations/workspace-design/scene-examples/index.html": "1106fdf6c18710cbc98a1e989409e7d3a88abb4728a239e75f0cfb5f3e17a1e8",
-    "integrations/workspace-design/scene-examples/main.tsx": "d15830320279dfd959deee17f8eb27b40db43ec88a055ebd29f85e336c93ac55",
+    "integrations/workspace-design/scene-examples/main.tsx": "97c76becd51b21479aa0237bddc667ad297d37b50f2fe0b50ec3017345661c4a",
     "integrations/workspace-design/scene-examples/public-synthetic-appearance.json": "9f2644da8746cc77eaa33380969761f76844826b65ba6ced5df8a68690eb71f8",
     "integrations/workspace-design/scene-examples/sample-composition.css": "f5e11980374c905fcd6b035d2253e054a8a0902bdb024bd3b4392c950a4b0654",
     "integrations/workspace-design/scene-examples/sample.css": "8f11e802b306fc229aec31020678ba766eb448c629c006badcb2ad7a6d09b385",
@@ -24,57 +24,57 @@
   "inputs": [
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:1d16d4ff3ee9b5ef28feeea5f651bfe9d2abc2f57b4ee1f3f7bddf5eb856e4e6",
+      "version": "1.0.6",
+      "checksum": "sha256:f27063ad0a94121753de0e7a28d777fd3f3eb4ceb36848569b714410508ba050",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:83366a2c52d6bf9a7ba94dd0ca1846c74c51bd873c57c3f4b8d0e413ed74da80",
+      "version": "1.0.6",
+      "checksum": "sha256:c2e5b2e043dc2a3b8f8159164756893ad2e9794106558665b1161a8e3673fd00",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:7c38b3ef3145b02f67fc1093b1769af81f8f10f65f10fa25e498265a591eba2f",
+      "version": "1.0.6",
+      "checksum": "sha256:d215da1fc0c9cc4070d8ce400ad0e9fba434540a71e3cf18d283b93934dc418d",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:7aae47955ca398ffc943851719a516a5cd6fd132a8048c1fb29b7dd018c59dd6",
+      "version": "1.0.6",
+      "checksum": "sha256:3b31747c9ea2a4dc34a3cf67b285d8a09417a9912475357dd5552331a1665ab6",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:61ebd86dfe276e48b8f77776e135319698c6344570a00ea014ef359daca7a3fa",
+      "version": "1.0.6",
+      "checksum": "sha256:58189067962efa8fede9a0fc366e25466a147e35c777a2d5d385e1beb3f2202c",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:a36bab40f4c470a32019e1c3ece1a47dae330d05d2080cedbae0240dd061cb44",
+      "version": "1.0.6",
+      "checksum": "sha256:67fcc4805e2f364bbd0e0ac96731ffee88837cfc2fd48fcdca1afaa33121e530",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:82691b7d1a6361bf6c9b1f9873421874b6b2db0d300246f95859d90f931558a0",
+      "version": "1.0.6",
+      "checksum": "sha256:4d3308b3dfc2d22a21ddaa3e879186825320ad89d6ae23a38db2558e6e4cc23d",
       "referenceRevision": 1
     },
     {
       "project": "scene-generation-sample",
-      "version": "1.0.1",
-      "checksum": "sha256:93eeedef36e57c8fc3f91f5fb3aacc591b117fade7dc762915c5d598ebff0d64",
+      "version": "1.0.6",
+      "checksum": "sha256:042cfc6306e1bfd65c8197dd1b99970ede774f5ae14915f6c87113e386b96116",
       "referenceRevision": 1
     }
   ],
-  "packageSha256": "cc8647648ab8fce106f32a7b4303a73cd24b2894fa819fd1b840f618c4f6f7ef",
+  "packageSha256": "60a855e390b520a7437c68a4b8412921d7ae7c5992b560afbf18d8f144a149ca",
   "files": {
-    "assets/index-Avv6hZMJ.js": "906cb805d5012d14fc24591227047b4db27cac42ef4c70680274dc3dd10b516d",
-    "assets/index-DcQi58GD.css": "ad2a97d25bc6698123e34ac6e416d5da290740f3c3879eb1796b4cfc480d3c2b",
-    "index.html": "0a88e62ed1e9d46f900aa9ce88bf7a02fc3a9f0d51f214f5d004a20e85826780"
+    "assets/index-BQAEAxkw.css": "5669d439d25f78f2b9e2b9d9bf575b2f659a0df3f673302fc245776acc381301",
+    "assets/index-D5Gurwj_.js": "d44c6c3ca3715abe92607320d4b1b514c12991c314b9c5a05d6cecf53f4136ca",
+    "index.html": "3b950336a13da87b2f861ed756411a1548cc47e99c0bd20a0bfb02f004546268"
   }
 }
