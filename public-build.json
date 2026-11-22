@@ -9,5 +9,26 @@
   "sampleVersion": "1.0.6",
   "adaptations": [],
   "note": "Isolated approved public inputs; normal authority build gates inherited, static Vite compilation separate.",
-  "publicSourceSha256": "406d7e1bb779cb12a67c0878507ea13cae09cd1ced6155ce651fd2108ad55377"
+  "publicSourceSha256": "406d7e1bb779cb12a67c0878507ea13cae09cd1ced6155ce651fd2108ad55377",
+  "homepageUpdate": {
+    "id": "home-skill-placement-20261122",
+    "scope": "Homepage task composition and generic AI Skill entry only",
+    "sourceSha256": "59f0560390816a7e163153515930cf5f682cca15a4fbde8aa3ea2ecc8202b1d6",
+    "changes": [
+      {
+        "path": "src/pages/Home.tsx",
+        "before": "f14999a59940b8b7d50ccd296d68b2f9c44d2b72dfd3a092c7ba5d6486209d66",
+        "approvedSourceSha256": "169114871db03b1101026493f8976d966a5d513c88be0e638fc6c331c07bced1",
+        "after": "6760d3aef1cb547ed0eb27bf7c1ba620638b40af3670927c0d741a863e19b09b",
+        "adaptation": "Retain existing public ThumbnailImage signature (omit priority); load homepage layout after existing base page CSS; load homepage layout after existing base page CSS"
+      },
+      {
+        "path": "src/pages/Home.workspace.css",
+        "before": null,
+        "approvedSourceSha256": "13b6d029469a38f77e60758082811ded4bc64567bad465129bacbc95be5b02fd",
+        "after": "4b1191c270788aea4d7880c107903800fdec1d06f6c4654a52859f8a9030297e",
+        "adaptation": "Bind approved homepage rules and container to actual homepage only"
+      }
+    ]
+  }
 }
